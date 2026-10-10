@@ -87,7 +87,8 @@ def sections(body):
 def parse(issue, scenes):
     sec = sections(issue.get("body"))
     esc = sec.get("Escena", "")
-    code = esc.split("·")[0].strip().split(" ")[0].upper()
+    m = re.search(r"(B\d\.\d\d)", esc) or re.search(r"(B\d\.\d\d)", issue.get("title", ""))
+    code = m.group(1).upper() if m else ""
     sc = next((s for s in scenes if s["code"].upper() == code), None)
     if not sc:
         raise ValueError(f"No reconozco la escena «{esc}».")
@@ -193,10 +194,14 @@ def ensure_labels():
 
 
 def pending():
-    items = gh("GET", f"/issues?state=open&labels={LABEL}&per_page=50&sort=created&direction=asc") or []
+    items = gh("GET", "/issues?state=open&per_page=100&sort=created&direction=asc") or []
     out = []
     for it in items:
         names = {l["name"] for l in it.get("labels", [])}
+        if "pull_request" in it or not (LABEL in names or it.get("title", "").lower().startswith("[previo]")):
+            continue
+        if LABEL not in names:
+            labels(it["number"], add=[LABEL])
         if names & {"en-proceso", "listo", "error"}:
             continue
         if it.get("author_association") not in ALLOWED:

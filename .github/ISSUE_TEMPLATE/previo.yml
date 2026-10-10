@@ -12,6 +12,7 @@ body:
     id: escena
     attributes:
       label: Escena
+      description: Ya viene en el título del pedido. Elegila acá solo si querés cambiarla.
       options:
         - "B0.00 · Antorcha sola"
         - "B0.01 · Buenaventura Luna"
@@ -46,7 +47,7 @@ body:
         - "B6.01 · Clarín"
         - "B6.02 · Grito de San Martín · Granaderos"
     validations:
-      required: true
+      required: false
   - type: textarea
     id: prompt
     attributes:

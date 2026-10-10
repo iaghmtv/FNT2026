@@ -30,7 +30,7 @@ def issues():
     import urllib.request
     out, page = [], 1
     while page < 6:
-        req = urllib.request.Request(f"https://api.github.com/repos/{REPO}/issues?state=all&labels=previo&per_page=100&page={page}",
+        req = urllib.request.Request(f"https://api.github.com/repos/{REPO}/issues?state=all&per_page=100&page={page}",
                                      headers={"Accept": "application/vnd.github+json", "User-Agent": "fnt2026-site",
                                               **({"Authorization": "Bearer " + os.environ["GITHUB_TOKEN"]} if os.environ.get("GITHUB_TOKEN") else {})})
         try:
@@ -64,7 +64,10 @@ def main():
     peds = {}
     for it in issues():
         body = it.get("body") or ""
-        m = re.search(r"###\s*Escena\s+(B\d\.\d\d)", body)
+        names = {l["name"] for l in it.get("labels", [])}
+        if "pull_request" in it or not ("previo" in names or it.get("title", "").lower().startswith("[previo]")):
+            continue
+        m = re.search(r"###\s*Escena\s+(B\d\.\d\d)", body) or re.search(r"(B\d\.\d\d)", it.get("title", ""))
         if not m:
             continue
         code = m.group(1)
