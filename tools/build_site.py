@@ -6,7 +6,7 @@ from datetime import datetime, timezone
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 IMG = (".jpg", ".jpeg", ".png", ".webp", ".gif")
-REPO = os.environ.get("GITHUB_REPOSITORY", "iaghmtv/fnt2026")
+REPO = os.environ.get("GITHUB_REPOSITORY", "iaghmtv/FNT2026")
 BRANCH = os.environ.get("FNT_BRANCH", "main")
 
 

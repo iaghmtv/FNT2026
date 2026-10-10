@@ -2,7 +2,7 @@
 
 Fiesta Nacional de la Tradición (Jáchal) · El Fogón de los Arrieros · producción visual GHM.
 
-Página: **https://iaghmtv.github.io/fnt2026/**
+Página: **https://iaghmtv.github.io/FNT2026/**
 
 ## Para el equipo (Gabi, Valentín, Analía, German, …)
 
