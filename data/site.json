@@ -1,6 +1,6 @@
 {
- "generado": "2026-10-10 15:57 UTC",
- "repo": "iaghmtv/fnt2026",
+ "generado": "2026-10-10 17:27 UTC",
+ "repo": "iaghmtv/FNT2026",
  "branch": "main",
  "blocks": [
   {
@@ -703,9 +703,9 @@
      "previos": {
       "code": "B1.08",
       "slug": "B1.08_RIOJANOS",
-      "version": "4478c41b41",
+      "version": "9db48b4403",
       "engine": "comfy",
-      "generated_at": "2026-10-10 12:48",
+      "generated_at": "2026-10-10 13:06",
       "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
       "files": {
        "luna_izq": "previos/B1.08_RIOJANOS/luna_izq.jpg",
@@ -713,7 +713,11 @@
        "luna_der": "previos/B1.08_RIOJANOS/luna_der.jpg",
        "atardecer_izq": "previos/B1.08_RIOJANOS/atardecer_izq.jpg",
        "atardecer_cen": "previos/B1.08_RIOJANOS/atardecer_cen.jpg",
-       "atardecer_der": "previos/B1.08_RIOJANOS/atardecer_der.jpg"
+       "atardecer_der": "previos/B1.08_RIOJANOS/atardecer_der.jpg",
+       "timelapse_izq": "previos/B1.08_RIOJANOS/timelapse_izq.mp4",
+       "luz_izq": "previos/B1.08_RIOJANOS/luz_izq.jpg",
+       "timelapse_der": "previos/B1.08_RIOJANOS/timelapse_der.mp4",
+       "luz_der": "previos/B1.08_RIOJANOS/luz_der.jpg"
       },
       "seed": 6215683,
       "refs_al_generar": [],

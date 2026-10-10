@@ -68,11 +68,15 @@ figure{margin:0} figcaption{font-size:12px;color:var(--ink3);margin-top:5px}
 .b-ok{color:var(--ok)} .b-mid{color:var(--mid)} .b-no{color:var(--no)} .b-moon{color:var(--moon2)} .b-red{color:var(--red)}
 blockquote{margin:0;padding:8px 18px 0;font-family:Fraunces,serif;font-style:italic;color:var(--ink2)}
 .nota{margin:8px 18px 0;font-size:13px;color:var(--mid)}
-.tabs{display:flex;gap:4px;padding:12px 18px 0;flex-wrap:wrap}
-.tab{font:600 13px Inter,sans-serif;color:var(--ink2);background:none;border:1px solid var(--line);border-bottom:none;padding:7px 12px;border-radius:9px 9px 0 0;cursor:pointer}
-.tab[aria-selected="true"]{background:var(--card);color:var(--ink)}
-.panel{background:var(--card);border-top:1px solid var(--line);padding:16px 18px 18px}
-.panel[hidden]{display:none}
+.cols{display:grid;grid-template-columns:1fr 1fr;margin-top:12px;border-top:1px solid var(--line)}
+.col{padding:16px 18px 18px;min-width:0}
+.c25{border-right:1px solid var(--line)}
+.c26{background:color-mix(in srgb,var(--moon) 4%,transparent)}
+.colh{font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;margin-bottom:10px}
+.c25 .colh{color:var(--fire2)} .c26 .colh,.refsrow .colh{color:var(--moon2)}
+.sub26{margin-bottom:18px} .sub26:last-child{margin-bottom:0}
+.h26{font-size:15px;margin:0 0 8px;color:var(--ink)}
+.refsrow{border-top:1px solid var(--line);padding:16px 18px 18px;background:var(--card)}
 .stage{display:flex;flex-direction:column;gap:8px}
 .mtn{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 .seg{display:inline-flex;border:1px solid var(--line);border-radius:99px;overflow:hidden;margin-bottom:10px}
@@ -96,7 +100,7 @@ footer{padding:30px 0 60px;color:var(--ink3);font-size:13px;border-top:1px solid
 #lb{position:fixed;inset:0;background:rgba(0,0,0,.92);display:none;align-items:center;justify-content:center;z-index:60;padding:20px;cursor:zoom-out}
 #lb.on{display:flex} #lb img{max-width:96vw;max-height:86vh;cursor:zoom-out} #lb div{position:absolute;bottom:12px;left:0;right:0;text-align:center;color:#ccc;font-size:13px}
 .hidden{display:none!important}
-@media (max-width:860px){.wrap{padding:0 16px}.grid3,.grid2{grid-template-columns:1fr}.mtn{grid-template-columns:1fr}.badges{margin-left:0}}
+@media (max-width:860px){.wrap{padding:0 16px}.grid3,.grid2,.cols{grid-template-columns:1fr}.c25{border-right:0;border-bottom:1px solid var(--line)}.mtn{grid-template-columns:1fr}.badges{margin-left:0}}
 </style>
 </head>
 <body>
@@ -212,18 +216,19 @@ function panelGerman(c){if(!c||c.status26==='sin') return '<div class="empty">Ge
 
 var KIND={paisaje:'Paisaje',tela:'Tela / poncho',fuego:'Fuego',bandera:'Bandera'};
 function scene(s,repo,branch){var c=s.ctx||{};var p=s.previos;var nref=s.refs.length;
-  var badges='<span class="badge '+(nref?'b-ok':'b-no')+'">'+nref+' ref.</span>'+(p?'<span class="badge b-moon">Previos IA</span>':'')+(c.status26&&c.status26!=='sin'?'<span class="badge b-mid">German</span>':'')+(s.timelapse?'<span class="badge b-moon">Timelapse</span>':'');
-  var first=p?'previos':'refs';
-  var tabs=[['previos','Previos IA'],['refs','Referencias ('+nref+')'],['y25','2025'],['german','German 2026']];
+  var g26=c.status26&&c.status26!=='sin';
+  var badges='<span class="badge '+(nref?'b-ok':'b-no')+'">'+nref+' ref.</span>'+(g26?'<span class="badge b-mid">Propuesta German</span>':'')+(p?'<span class="badge b-moon">Previos IA</span>':'')+(s.timelapse?'<span class="badge b-moon">Timelapse</span>':'');
   var h='<article class="scene" id="'+esc(s.code)+'" data-refs="'+nref+'" data-prev="'+(p?1:0)+'" data-text="'+esc((s.code+' '+s.title+' '+(s.verse||'')).toLowerCase())+'">';
   h+='<div class="shead"><span class="code">'+esc(s.code)+'</span><h3>'+esc(s.title)+'</h3><span class="meta">⏱ '+esc(s.time)+' · '+esc(KIND[s.kind]||s.kind)+(c.dur?' · '+esc(c.dur):'')+'</span><div class="badges">'+badges+'</div></div>';
   if(s.verse)h+='<blockquote>'+esc(s.verse)+'</blockquote>';
   if(s.nota)h+='<p class="nota">'+esc(s.nota)+'</p>';
-  h+='<div class="tabs" role="tablist">'+tabs.map(function(t){return '<button class="tab" role="tab" data-t="'+t[0]+'" aria-selected="'+(t[0]===first)+'">'+t[1]+'</button>'}).join('')+'</div>';
-  h+='<div class="panel" data-p="previos"'+(first==='previos'?'':' hidden')+'>'+panelPrevios(s)+'</div>';
-  h+='<div class="panel" data-p="refs"'+(first==='refs'?'':' hidden')+'>'+panelRefs(s,repo,branch)+'</div>';
-  h+='<div class="panel" data-p="y25" hidden>'+panel25(c)+'</div>';
-  h+='<div class="panel" data-p="german" hidden>'+panelGerman(c)+'</div>';
+  h+='<div class="cols">';
+  h+='<section class="col c25"><div class="colh">Edición 2025 · lo que se proyectó</div>'+panel25(c)+'</section>';
+  h+='<section class="col c26"><div class="colh">Propuestas 2026</div>';
+  h+='<div class="sub26"><h4 class="h26">Propuesta de German</h4>'+panelGerman(c)+'</div>';
+  h+='<div class="sub26"><h4 class="h26">Previos IA · ComfyUI</h4>'+panelPrevios(s)+'</div>';
+  h+='</section></div>';
+  h+='<section class="refsrow"><div class="colh">Referencias del equipo · '+nref+'</div>'+panelRefs(s,repo,branch)+'</section>';
   return h+'</article>'}
 
 fetch('data/site.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(d){
@@ -236,7 +241,6 @@ fetch('data/site.json',{cache:'no-store'}).then(function(r){return r.json()}).th
 
 function wire(){
   document.querySelectorAll('.scene').forEach(function(sc){
-    sc.querySelectorAll('.tab').forEach(function(tb){tb.onclick=function(){sc.querySelectorAll('.tab').forEach(function(x){x.setAttribute('aria-selected',x===tb)});sc.querySelectorAll('.panel').forEach(function(p){p.hidden=p.dataset.p!==tb.dataset.t})}});
     sc.querySelectorAll('.seg button').forEach(function(b){b.onclick=function(){var seg=b.parentNode;seg.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});sc.querySelectorAll('.lset').forEach(function(s){s.hidden=s.dataset.l!==b.dataset.l})}});
   });
 }
