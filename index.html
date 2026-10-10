@@ -77,6 +77,11 @@ blockquote{margin:0;padding:8px 18px 0;font-family:Fraunces,serif;font-style:ita
 .sub26{margin-bottom:18px} .sub26:last-child{margin-bottom:0}
 .h26{font-size:15px;margin:0 0 8px;color:var(--ink)}
 .refsrow{border-top:1px solid var(--line);padding:16px 18px 18px;background:var(--card)}
+.peds{display:flex;flex-direction:column;gap:10px;margin-bottom:12px}
+.ped{border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--bg2)}
+.pedh{font-size:13px;color:var(--ink2);display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.pedh a{color:var(--moon2);font-weight:600}
+.pedimgs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin-top:6px}
 .stage{display:flex;flex-direction:column;gap:8px}
 .mtn{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 .seg{display:inline-flex;border:1px solid var(--line);border-radius:99px;overflow:hidden;margin-bottom:10px}
@@ -134,10 +139,10 @@ footer{padding:30px 0 60px;color:var(--ink3);font-size:13px;border-top:1px solid
       <li>Loop: luna → amanecer → mediodía → atardecer → crepúsculo → luna.</li>
     </ul></div>
     <div class="card"><h4>Cómo participar</h4><ol>
-      <li>Entrá a la escena y tocá <b>Subir referencia</b> (necesitás tu usuario de GitHub invitado al repo).</li>
-      <li>Arrastrá las imágenes y, en el mensaje, escribí qué querés tomar de ellas (luz, paleta, vegetación…).</li>
-      <li>Tocá <b>Commit changes</b>. En 1–2 minutos aparecen acá con tu nombre.</li>
-      <li>Los previos se regeneran en la PC de render con <code>GENERAR_PREVIOS.bat</code>.</li>
+      <li>En la escena tocá <b>✦ Pedir previo con prompt</b> (necesitás tu usuario de GitHub invitado al repo).</li>
+      <li>Escribí qué buscás, arrastrá hasta 4 imágenes de referencia y marcá luna, atardecer y/o timelapse.</li>
+      <li><b>Submit</b>: la cola lo manda a la PC16 o la PC17, la que esté libre, y te responde en el pedido con los previos (unos 3 min; con timelapse, ~10).</li>
+      <li>Para sumar imágenes sin generar, usá <b>＋ Subir referencia</b>.</li>
     </ol></div>
   </div>
 </section>
@@ -190,11 +195,22 @@ function panelPrevios(s){var p=s.previos;
   h+='<p class="hint" style="margin-top:10px">Generado '+esc(p.generated_at)+' · motor '+esc(p.engine)+' · referencias usadas: '+(p.refs_al_generar&&p.refs_al_generar.length?esc(p.refs_al_generar.join(', ')):'ninguna (solo el prompt de la escena)')+'</p>';
   return h}
 
+var ST={'en cola':'b-mid','procesando':'b-moon','listo':'b-ok','error':'b-red','no autorizado':'b-no','cerrado':'b-no'};
+function pedidos(s){var ps=s.pedidos||[];if(!ps.length)return '';
+  return '<span class="lbl">Pedidos al generador ('+ps.length+')</span><div class="peds">'+ps.map(function(p){var f=p.files||{};
+    var th=['luna_cen','luna_izq','luna_der','atardecer_cen','atardecer_izq','atardecer_der'].filter(function(k){return f[k]}).map(function(k){return img(f[k],'Pedido #'+p.n+' · '+k.replace('_',' '))}).join('');
+    var vd=['timelapse_izq','timelapse_der'].filter(function(k){return f[k]}).map(function(k){return '<video src="'+esc(f[k])+'" muted loop playsinline autoplay preload="metadata"></video>'}).join('');
+    return '<div class="ped"><div class="pedh"><a href="'+esc(p.url)+'" target="_blank" rel="noopener">#'+p.n+'</a> <b>'+esc(p.autor)+'</b> · '+esc(p.fecha)+' <span class="badge '+(ST[p.estado]||'b-no')+'">'+esc(p.estado)+(p.maquina?' · '+esc(p.maquina):'')+'</span></div>'+(p.prompt?'<p class="small">'+esc(p.prompt)+'</p>':'')+(th?'<div class="pedimgs">'+th+'</div>':'')+(vd?'<div class="mtn" style="margin-top:6px">'+vd+'</div>':'')+'</div>'}).join('')+'</div>'}
+
 function panelRefs(s,repo,branch){var up='https://github.com/'+repo+'/upload/'+branch+'/referencias/'+encodeURIComponent(s.slug);
   var tree='https://github.com/'+repo+'/tree/'+branch+'/referencias/'+encodeURIComponent(s.slug);
-  var h='<div class="upl"><a class="btn" href="'+up+'" target="_blank" rel="noopener">＋ Subir referencia</a><a class="btn ghost" href="'+tree+'" target="_blank" rel="noopener">Ver carpeta</a><span class="hint">JPG/PNG. En el mensaje del commit contá qué querés tomar de la imagen.</span></div>';
-  if(!s.refs.length) return h+'<div class="empty">Sin referencias todavía. Subí la primera.</div>';
-  return h+'<div class="refs">'+s.refs.map(function(r){return '<figure class="ref">'+img(r.src,'Referencia '+s.code+(r.autor?' · '+r.autor:''))+'<figcaption><b>'+esc(r.autor||'—')+'</b> · '+esc(r.fecha||'')+(r.nota?'<br>'+esc(r.nota):'')+'</figcaption></figure>'}).join('')+'</div>'}
+  var opt=s.code+' · '+s.title;
+  var ask='https://github.com/'+repo+'/issues/new?template=previo.yml&title='+encodeURIComponent('[Previo] '+opt)+'&escena='+encodeURIComponent(opt);
+  var h='<div class="upl">'+(s.generar?'<a class="btn" href="'+ask+'" target="_blank" rel="noopener">✦ Pedir previo con prompt</a>':'')+'<a class="btn '+(s.generar?'ghost':'')+'" href="'+up+'" target="_blank" rel="noopener">＋ Subir referencia</a><a class="btn ghost" href="'+tree+'" target="_blank" rel="noopener">Ver carpeta</a></div>';
+  h+='<p class="hint" style="margin:-4px 0 12px">'+(s.generar?'<b>Pedir previo:</b> escribís un prompt, arrastrás tus imágenes y se genera en la PC16 o la PC17, la que esté libre; la respuesta llega al pedido y acá. ':'')+'<b>Subir referencia:</b> solo suma imágenes a la carpeta de la escena (en el mensaje del commit contá qué tomar de ellas).</p>';
+  h+=pedidos(s);
+  if(!s.refs.length) return h+'<span class="lbl">Imágenes de referencia</span><div class="empty">Sin referencias todavía. Subí la primera.</div>';
+  return h+'<span class="lbl">Imágenes de referencia</span><div class="refs">'+s.refs.map(function(r){return '<figure class="ref">'+img(r.src,'Referencia '+s.code+(r.autor?' · '+r.autor:''))+'<figcaption><b>'+esc(r.autor||'—')+'</b> · '+esc(r.fecha||'')+(r.nota?'<br>'+esc(r.nota):'')+'</figcaption></figure>'}).join('')+'</div>'}
 
 function panel25(c){if(!c||!c.y25) return '<div class="empty">Sin datos 2025.</div>';
   var i=c.img25||{};var h='<p class="small">'+esc(c.y25)+'</p>';

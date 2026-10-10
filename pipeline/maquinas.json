@@ -1,0 +1,12 @@
+[
+ {
+  "nombre": "PC17",
+  "url": "http://127.0.0.1:8188",
+  "activa": true
+ },
+ {
+  "nombre": "PC16",
+  "url": "http://192.168.1.38:8188",
+  "activa": true
+ }
+]

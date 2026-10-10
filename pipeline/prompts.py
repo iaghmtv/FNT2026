@@ -58,6 +58,9 @@ def build(scene, surface, light_name):
     body = scene["prompt_cen"] if surface == "cen" else scene["prompt_montana"]
     if surface == "cen" and scene.get("fauna"):
         body += f" {scene['fauna']} in the middle ground."
+    extra = scene.get("extra", "").strip()
+    if extra:     # indicación del equipo que vino con el pedido: manda sobre la descripción base
+        body = f"{extra}. Context: {body}"
     return light(light_name, surface) + SURFACE_HINT[surface] + body + QUALITY
 
 

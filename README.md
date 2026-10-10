@@ -13,6 +13,12 @@ Página: **https://iaghmtv.github.io/FNT2026/**
 
 Hace falta un usuario de GitHub con acceso de escritura al repo (invitación desde *Settings → Collaborators*).
 
+## Pedir previos con prompt (cola PC16 / PC17)
+
+En cada escena, **✦ Pedir previo con prompt** abre un formulario: prompt + hasta 4 imágenes + luna / atardecer / timelapse.
+La cola (`FNT_COLA.bat`, en la GHM17) lo manda a la ComfyUI desocupada (PC17 local o PC16 por red), sube los previos a
+`previos/<escena>/pedidos/<n>/` y responde en el pedido. Puesta en marcha: `pipeline/LEEME_COLA.md`.
+
 ## Criterio visual
 
 - El show es de noche: paisajes en **luz de luna azul** y **atardeceres naranjas**.

@@ -52,6 +52,8 @@ def scene_seed(code):
 
 
 def refs_of(sc):
+    if "_refs" in sc:                     # pedido puntual: solo las imágenes que vinieron con el pedido
+        return list(sc["_refs"])
     d = os.path.join(REFS, sc["slug"])
     if not os.path.isdir(d):
         return []
@@ -100,7 +102,7 @@ def stage_flux(sc, wd, video):
     seed = scene_seed(sc["code"])
     jobs = []
     for s in ("izq", "der", "cen"):
-        lights = list(STILL_LIGHTS)
+        lights = list(sc.get("_lights", STILL_LIGHTS))
         if video and sc.get("timelapse") and s != "cen":
             lights.append("mediodia")          # base neutra para re-iluminar los cuadros guía
         for L in lights:
@@ -190,9 +192,9 @@ def stage_h3(sc, wd):
 
 # ---------------------------------------------------------------- publicar en previos/
 def publish(sc, wd, video, engine):
-    od = os.path.join(PREV, sc["slug"]); os.makedirs(od, exist_ok=True)
+    od = sc.get("_out") or os.path.join(PREV, sc["slug"]); os.makedirs(od, exist_ok=True)
     files = {}
-    for L in STILL_LIGHTS:
+    for L in sc.get("_lights", STILL_LIGHTS):
         for s in ("izq", "cen", "der"):
             src = os.path.join(wd, f"refs_{L}_{s}.png")
             if not os.path.exists(src):
@@ -223,7 +225,8 @@ def publish(sc, wd, video, engine):
         "generated_at": datetime.now().strftime("%Y-%m-%d %H:%M"),
         "refs": [os.path.basename(p) for p in refs_of(sc)], "refs_hash": refs_hash(refs_of(sc)),
         "files": files, "seed": scene_seed(sc["code"]),
-        "prompts": {f"{L}_{s}": prompts.build(sc, s, L) for L in STILL_LIGHTS for s in ("izq", "cen", "der")},
+        "prompts": {f"{L}_{s}": prompts.build(sc, s, L) for L in sc.get("_lights", STILL_LIGHTS) for s in ("izq", "cen", "der")},
+        "pedido": sc.get("_pedido"), "prompt_equipo": sc.get("extra", ""), "maquina": comfy.url(),
     }
     with open(os.path.join(od, "meta.json"), "w", encoding="utf-8") as f:
         json.dump(meta, f, ensure_ascii=False, indent=1)
@@ -240,6 +243,16 @@ def keyframe_strip(wd, s):
     for i, t in enumerate(tiles):
         strip.paste(t, (384 * i, 0))
     return strip
+
+
+def process_one(sc, wd, video=True, engine="comfy"):
+    """Corre las tres etapas y publica una escena (lo usa la cola de pedidos, en la máquina del hilo)."""
+    os.makedirs(wd, exist_ok=True)
+    (stage_flux_seedream if engine == "seedream" else stage_flux)(sc, wd, video)
+    stage_qwen(sc, wd, video)
+    if video:
+        stage_h3(sc, wd)
+    return publish(sc, wd, video, engine)
 
 
 # ---------------------------------------------------------------- main
@@ -265,7 +278,7 @@ def main():
         log("No hay escenas con referencias nuevas. Nada para generar."); return
     log("Escenas:", ", ".join(s["code"] for s in scenes))
     if a.motor == "comfy" and not comfy.alive():
-        sys.exit("ComfyUI no responde en " + comfy.COMFY + ". Abrí run_nvidia_gpu.bat y volvé a intentar.")
+        sys.exit("ComfyUI no responde en " + comfy.url() + ". Abrí run_nvidia_gpu.bat y volvé a intentar.")
 
     dirs = {}
     for sc in scenes:

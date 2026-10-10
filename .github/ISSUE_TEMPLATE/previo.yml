@@ -1,0 +1,73 @@
+name: Pedir previo con prompt
+description: Pedí previos IA para una escena con tu indicación y tus imágenes de referencia. Se generan en la PC16 o la PC17, la que esté libre.
+title: "[Previo] "
+labels: ["previo"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Elegí la escena, escribí qué buscás y arrastrá tus referencias. La cola de la PC17 lo toma en menos de un minuto si hay una ComfyUI libre y te responde acá con los previos.
+        **Criterio:** el show es de noche (luna azul / atardecer naranja); en las montañas vale el color, la textura y la luz, sin elementos altos.
+  - type: dropdown
+    id: escena
+    attributes:
+      label: Escena
+      options:
+        - "B0.00 · Antorcha sola"
+        - "B0.01 · Buenaventura Luna"
+        - "B1.01 · Norte Selvático"
+        - "B1.02 · Los del Llano Sur · Selva"
+        - "B1.03 · Los Pastores"
+        - "B1.04 · Hijos de la Selva · Guaraníes"
+        - "B1.05 · Viejo Runa"
+        - "B1.06 · Los Jujeños"
+        - "B1.07 · Los de Salta"
+        - "B1.08 · Los Riojanos"
+        - "B1.09 · Verdes llanuras"
+        - "B1.10 · Los Correntinos"
+        - "B1.11 · Los Cordobeses"
+        - "B2.01 · Voz en off · Fuego y corazón"
+        - "B3.01 · Entrerrianos y chaqueños"
+        - "B3.02 · El Santiagueño"
+        - "B3.03 · El Ranquel"
+        - "B3.04 · Los de Güemes"
+        - "B3.05 · Los del Chacho"
+        - "B3.06 · Los del Ilustre Paz"
+        - "B3.07 · Pago Largo"
+        - "B3.08 · Pozo de Vargas y Quebracho"
+        - "B3.09 · Los Diaguitas"
+        - "B3.10 · Los de Quiroga"
+        - "B3.11 · Los de Fierro"
+        - "B3.12 · Los de Lavalle"
+        - "B4.01 · Aurora · Falucho"
+        - "B5.01 · Los 5 de Pringles"
+        - "B5.02 · Los de López"
+        - "B5.03 · Sanjuanino y mendocino"
+        - "B6.01 · Clarín"
+        - "B6.02 · Grito de San Martín · Granaderos"
+    validations:
+      required: true
+  - type: textarea
+    id: prompt
+    attributes:
+      label: Prompt
+      description: Qué querés ver (paisaje, paleta, textura, clima, elementos). En inglés o castellano simple.
+      placeholder: "Ej.: paredones de Talampaya con estratos violetas, luna llena muy baja, polvo en suspensión"
+    validations:
+      required: true
+  - type: textarea
+    id: referencias
+    attributes:
+      label: Imágenes de referencia
+      description: Arrastrá acá hasta 4 imágenes (JPG/PNG). Se suman a las referencias de la escena.
+  - type: checkboxes
+    id: generar
+    attributes:
+      label: Qué generar
+      options:
+        - label: Noche de luna
+          required: false
+        - label: Atardecer
+          required: false
+        - label: Timelapse de luz en las montañas (tarda ~6 min más)
+          required: false

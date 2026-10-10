@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Arma data/site.json para la página: escenas + contexto 2025/German + referencias del equipo + previos IA.
 Lo corre GitHub Actions en cada push (y se puede correr local para probar)."""
-import json, os, subprocess
+import json, os, re, subprocess
 from datetime import datetime, timezone
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -25,12 +25,54 @@ def git_info(path):
     return {"autor": "", "fecha": "", "nota": ""}
 
 
+def issues():
+    """Pedidos (issues con etiqueta 'previo'). En GitHub Actions usa GITHUB_TOKEN; local, sin token (API pública)."""
+    import urllib.request
+    out, page = [], 1
+    while page < 6:
+        req = urllib.request.Request(f"https://api.github.com/repos/{REPO}/issues?state=all&labels=previo&per_page=100&page={page}",
+                                     headers={"Accept": "application/vnd.github+json", "User-Agent": "fnt2026-site",
+                                              **({"Authorization": "Bearer " + os.environ["GITHUB_TOKEN"]} if os.environ.get("GITHUB_TOKEN") else {})})
+        try:
+            items = json.loads(urllib.request.urlopen(req, timeout=30).read())
+        except Exception as e:
+            print("no se pudieron leer los pedidos:", e); break
+        out += items
+        if len(items) < 100:
+            break
+        page += 1
+    return out
+
+
+def estado(it):
+    names = {l["name"] for l in it.get("labels", [])}
+    if "listo" in names: return "listo", ""
+    if "error" in names: return "error", ""
+    if "no-autorizado" in names: return "no autorizado", ""
+    if "en-proceso" in names:
+        maq = next((n.upper() for n in names if n.startswith("pc")), "")
+        return "procesando", maq
+    return ("cerrado", "") if it.get("state") == "closed" else ("en cola", "")
+
+
 def main():
     escenas = json.load(open(os.path.join(ROOT, "escenas.json"), encoding="utf-8"))
     ctx = json.load(open(os.path.join(ROOT, "data", "contexto.json"), encoding="utf-8"))
     cmap = {s["code"]: s for b in ctx["blocks"] for s in b["scenes"]}
     out = {"generado": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"), "repo": REPO, "branch": BRANCH, "blocks": []}
     by_block = {}
+    peds = {}
+    for it in issues():
+        body = it.get("body") or ""
+        m = re.search(r"###\s*Escena\s+(B\d\.\d\d)", body)
+        if not m:
+            continue
+        code = m.group(1)
+        sec = body.split("### Prompt", 1)[1].split("###", 1)[0].strip() if "### Prompt" in body else ""
+        st, maq = estado(it)
+        peds.setdefault(code, []).append({"n": it["number"], "url": it["html_url"], "autor": it["user"]["login"],
+                                          "fecha": it["created_at"][:16].replace("T", " "), "prompt": sec[:400],
+                                          "estado": st, "maquina": maq})
     for e in escenas:
         slug = e["slug"]
         rdir = os.path.join(ROOT, "referencias", slug)
@@ -54,6 +96,19 @@ def main():
         item["ctx"] = cmap.get(e["code"], {})
         item["refs"] = refs
         item["previos"] = prev
+        # resultados de cada pedido: previos/<escena>/pedidos/<n>/meta.json
+        res = {}
+        pdir = os.path.join(ROOT, "previos", slug, "pedidos")
+        if os.path.isdir(pdir):
+            for n in os.listdir(pdir):
+                mp2 = os.path.join(pdir, n, "meta.json")
+                if os.path.exists(mp2):
+                    m2 = json.load(open(mp2, encoding="utf-8"))
+                    res[n] = {k: f"previos/{slug}/pedidos/{n}/{v}" for k, v in m2.get("files", {}).items()}
+        lst = peds.get(e["code"], [])
+        for pd in lst:
+            pd["files"] = res.get(str(pd["n"]), {})
+        item["pedidos"] = sorted(lst, key=lambda x: x["n"], reverse=True)
         by_block.setdefault(e["block"], []).append(item)
     for b in ctx["blocks"]:
         out["blocks"].append({k: b[k] for k in ("id", "name", "track", "intro")} | {"scenes": by_block.get(b["id"], [])})
