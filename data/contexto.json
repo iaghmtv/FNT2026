@@ -1,0 +1,1269 @@
+{
+ "blocks": [
+  {
+   "id": "B0",
+   "name": "Apertura · Buenaventura Luna",
+   "track": "Apertura Fogón IN - 2023.mp3 · 0:00",
+   "intro": "Apagón, trailer de 1:50 y Danza del Fuego. 1er estruendo: se enciende el fogón. 2do estruendo (0:16): foto de Buenaventura Luna en la loma 2 (mismo cerro de San Martín). Luego el locutor y Mario recitador (3:31).",
+   "scenes": [
+    {
+     "code": "B0.00",
+     "y25": "Plano nocturno: una llama avanza sobre terreno rocoso dejando estela de humo. Pieza breve de apertura sobre toda la escenografía.",
+     "t25": [
+      "After Effects",
+      "Comp general"
+     ],
+     "fix25": [],
+     "dur": "16 s · comp general",
+     "img25": {
+      "comp": "assets/2025/B0.00_comp.jpg"
+     },
+     "status26": "sin",
+     "y26": "",
+     "crit26": "",
+     "t26": [],
+     "todo26": [],
+     "img26": []
+    },
+    {
+     "code": "B0.01",
+     "y25": "Sepia nocturno. Centro: un hombre de pie frente a una gran fogata con una carreta; llegan hombres de poncho y se reúnen; funde a negro con chispas. Montañas: brasas y chispas naranjas dibujan el contorno del cerro. En vivo se proyectó además el rostro de Buenaventura sobre la loma.",
+     "t25": [
+      "Rodaje propio (cámara Sony, clips C8914–C8919)",
+      "Loops IA del rostro (Meta AI)",
+      "Partículas sobre Z-depth del cerro",
+      "After Effects"
+     ],
+     "fix25": [
+      "Centro: Buenaventura mirando hacia distintas direcciones.",
+      "Mapping: fondo de fuego con los rostros apareciendo."
+     ],
+     "dur": "40 s centro · 60 s mapping",
+     "img25": {
+      "izq": "assets/2025/B0.01_izq.jpg",
+      "cen": "assets/2025/B0.01_cen.jpg",
+      "der": "assets/2025/B0.01_der.jpg"
+     },
+     "status26": "prop",
+     "y26": "Personaje de Buenaventura Luna consistente, armado con Qwen Image Edit (ComfyUI) a partir de las fotos de archivo: turnaround de cabeza y cuerpo, re-iluminado con la fogata y montado en el frame de las 3 pantallas. Versión 2 con sombrero y bufanda blanca, más fiel a las fotos de referencia.",
+     "crit26": "",
+     "t26": [
+      "Qwen Image Edit (ComfyUI)",
+      "Turnaround de personaje",
+      "Relight con fogata"
+     ],
+     "todo26": [
+      "Falta animar (mirada en distintas direcciones, según corrección 2025).",
+      "Falta el mapping de fuego con rostros."
+     ],
+     "img26": [
+      {
+       "src": "assets/german/B0.01_extra0.jpg",
+       "cap": "Frame 3 pantallas · v2 sombrero",
+       "kind": "single"
+      },
+      {
+       "src": "assets/german/B0.01_extra1.jpg",
+       "cap": "Turnaround cabeza · v2",
+       "kind": "single"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "B1",
+   "name": "Paisajes de las regiones",
+   "track": "Norte Selvático y Uranio.mp3 · 5:00 → 9:50",
+   "intro": "Llegan a Jáchal los paisanos de cada región. Cada escena combina una postal del lugar en las pantallas centrales con una textura del mismo paisaje sobre las montañas, y entra y sale con fundido desde negro. En escena, los jinetes entran alternando Oeste y Este.",
+   "scenes": [
+    {
+     "code": "B1.01",
+     "y25": "Selva con cascada y loros posados en una rama en primer plano. Montañas cubiertas de vegetación espesa.",
+     "t25": [
+      "IA video (Google Flow/Veo: tucán, loros)",
+      "Topaz Proteus (upscale _prob4)",
+      "After Effects"
+     ],
+     "fix25": [
+      "Faltó el 3D de la selva arrojando sombras con loros sobre el mapping."
+     ],
+     "dur": "30 s",
+     "img25": {
+      "izq": "assets/2025/B1.01_izq.jpg",
+      "cen": "assets/2025/B1.01_cen.jpg",
+      "der": "assets/2025/B1.01_der.jpg"
+     },
+     "status26": "trab",
+     "y26": "Cataratas del Iguazú con selva paranaense (pindó, helechos arborescentes, lapachos en flor). Laterales de selva con niebla y tierra colorada. Se reemplazó el ave africana por un coatí. Además ya hay un proyecto de After con loros misioneros en estilo render 3D (llegan, se posan y se van).",
+     "crit26": "Los pájaros parecían agapornis (africanos).",
+     "t26": [
+      "Flux Krea",
+      "Magnific (imagen loros)",
+      "IA video loros",
+      "After Effects: FNT26-B1.1-Norte_Selvatico.aep"
+     ],
+     "todo26": [],
+     "img26": [
+      {
+       "src": "assets/german/B1.01_cen.jpg",
+       "cap": "Variante A · mañana · Pantallas centro",
+       "kind": "cen"
+      },
+      {
+       "src": "assets/german/B1.01_izq.jpg",
+       "cap": "Variante A · mañana · Montaña izq.",
+       "kind": "izq"
+      },
+      {
+       "src": "assets/german/B1.01_der.jpg",
+       "cap": "Variante A · mañana · Montaña der.",
+       "kind": "der"
+      },
+      {
+       "src": "assets/german/B1.01_var1.jpg",
+       "cap": "Variante A · manana",
+       "kind": "strip"
+      },
+      {
+       "src": "assets/german/B1.01_var2.jpg",
+       "cap": "Variante B · atardecer",
+       "kind": "strip"
+      },
+      {
+       "src": "assets/german/B1.01_var3.jpg",
+       "cap": "Variante C · garganta",
+       "kind": "strip"
+      },
+      {
+       "src": "assets/german/B1.01_extra0.jpg",
+       "cap": "Loros (B 01.01, After)",
+       "kind": "single"
+      }
+     ]
+    },
+    {
+     "code": "B1.02",
+     "y25": "Selva en penumbra verde con haces de luz entre las ramas. En las montañas, arroyos celestes bajan entre los árboles.",
+     "t25": [
+      "Blender: Selva con Cascada (loop)",
+      "Green screen de cascada",
+      "Topaz",
+      "After Effects"
+     ],
+     "fix25": [
+      "Centro: paisaje sin cascada.",
+      "Mapping: pequeñas cascadas."
+     ],
+     "dur": "19 s",
+     "img25": {
+      "izq": "assets/2025/B1.02_izq.jpg",
+      "cen": "assets/2025/B1.02_cen.jpg",
+      "der": "assets/2025/B1.02_der.jpg"
+     },
+     "status26": "trab",
+     "y26": "Selva nublada de Yungas (Calilegua, Jujuy) con árboles con musgo, bromelias y arroyos; centro más luminoso. Animal: yaguareté. Los laterales tenían agaves y pastizal y se rehicieron como bosque cerrado.",
+     "crit26": "Centro muy oscuro (se pierde en proyección); celeste de los arroyos artificial.",
+     "t26": [
+      "Flux Krea"
+     ],
+     "todo26": [],
+     "img26": [
+      {
+       "src": "assets/german/B1.02_cen.jpg",
+       "cap": "Variante A · niebla · Pantallas centro",
+       "kind": "cen"
+      },
+      {
+       "src": "assets/german/B1.02_izq.jpg",
+       "cap": "Variante A · niebla · Montaña izq.",
+       "kind": "izq"
+      },
+      {
+       "src": "assets/german/B1.02_der.jpg",
+       "cap": "Variante A · niebla · Montaña der.",
+       "kind": "der"
+      },
+      {
+       "src": "assets/german/B1.02_var1.jpg",
+       "cap": "Variante A · niebla",
+       "kind": "strip"
+      },
+      {
+       "src": "assets/german/B1.02_var2.jpg",
+       "cap": "Variante B · sol",
+       "kind": "strip"
+      },
+      {
+       "src": "assets/german/B1.02_var3.jpg",
+       "cap": "Variante C · rio",
+       "kind": "strip"
+      }
+     ]
+    },
+    {
+     "code": "B1.03",
+     "y25": "Cerros áridos con cardones en flor. Las montañas toman textura de tierra y piedra con cactus y flores blancas.",
+     "t25": [
+      "IA video (Flow/Veo: flor de cactus que se abre, brisa)",
+      "Photoshop",
+      "Topaz",
+      "After Effects"
+     ],
+     "fix25": [],
+     "dur": "20 s",
+     "img25": {
+      "izq": "assets/2025/B1.03_izq.jpg",
+      "cen": "assets/2025/B1.03_cen.jpg",
+      "der": "assets/2025/B1.03_der.jpg"
+     },
+     "status26": "trab",
+     "y26": "Valle de prepuna (Catamarca/Jujuy) con corral de pirca, rancho de adobe con humo y cardones; terrazas y pircas en los laterales. Animal: llamas (en el atardecer tenían borlas de colores poco naturales y se rehizo).",
+     "crit26": "El título nombra pastores y no aparece ninguno.",
+     "t26": [
+      "Flux Krea"
+     ],
+     "todo26": [],
+     "img26": [
+      {
+       "src": "assets/german/B1.03_cen.jpg",
+       "cap": "Variante A · mediodía · Pantallas centro",
+       "kind": "cen"
+      },
+      {
+       "src": "assets/german/B1.03_izq.jpg",
+       "cap": "Variante A · mediodía · Montaña izq.",
+       "kind": "izq"
+      },
+      {
+       "src": "assets/german/B1.03_der.jpg",
+       "cap": "Variante A · mediodía · Montaña der.",
+       "kind": "der"
+      },
+      {
+       "src": "assets/german/B1.03_var1.jpg",
+       "cap": "Variante A · mediodia",
+       "kind": "strip"
+      },
+      {
+       "src": "assets/german/B1.03_var2.jpg",
+       "cap": "Variante B · atardecer",
+       "kind": "strip"
+      },
+      {
+       "src": "assets/german/B1.03_var3.jpg",
+       "cap": "Variante C · nevada",
+       "kind": "strip"
+      }
+     ]
+    },
+    {
+     "code": "B1.04",
+     "y25": "Selva florida con sendero, pasionarias blancas, mariposas y árboles de flores rojas. Mapping de vegetación baja con flores.",
+     "t25": [
+      "IA generativa",
+      "After Effects"
+     ],
+     "fix25": [
+      "Mantener el estilo con flores, pero rosadas."
+     ],
+     "dur": "16 s",
+     "img25": {
+      "izq": "assets/2025/B1.04_izq.jpg",
+      "cen": "assets/2025/B1.04_cen.jpg",
+      "der": "assets/2025/B1.04_der.jpg"
+     },
+     "status26": "trab",
+     "y26": "Sendero de tierra colorada en la selva con mburucuyá, lapachos y pinos Paraná; laterales con yerbales sobre tierra roja (el rojo salía neón y se corrigió a terracota). Animal: tucán.",
+     "crit26": "Entra y sale muy oscuro; sin rasgos que la identifiquen con Misiones.",
+     "t26": [
+      "Flux Krea"
+     ],
+     "todo26": [],
+     "img26": [
+      {
+       "src": "assets/german/B1.04_cen.jpg",
+       "cap": "Variante A · mañana · Pantallas centro",
+       "kind": "cen"
+      },
+      {
+       "src": "assets/german/B1.04_izq.jpg",
+       "cap": "Variante A · mañana · Montaña izq.",
+       "kind": "izq"
+      },
+      {
+       "src": "assets/german/B1.04_der.jpg",
+       "cap": "Variante A · mañana · Montaña der.",
+       "kind": "der"
+      },
+      {
+       "src": "assets/german/B1.04_var1.jpg",
+       "cap": "Variante A · manana",
+       "kind": "strip"
+      },
+      {
+       "src": "assets/german/B1.04_var2.jpg",
+       "cap": "Variante B · lluvia",
+       "kind": "strip"
+      },
+      {
+       "src": "assets/german/B1.04_var3.jpg",
+       "cap": "Variante C · yerbal",
+       "kind": "strip"
+      }
+     ]
+    },
+    {
+     "code": "B1.05",
+     "y25": "Ladera verde con cardones bajo cielo azul con nubes. En las montañas, pasto, piedras y cactus.",
+     "t25": [
+      "IA video sobre el render del cerro (Cerro_Atras_CactusSeco)",
+      "After Effects"
+     ],
+     "fix25": [
+      "Centro con cactus San Pedro grandes, cielo azul y nubes."
+     ],
+     "dur": "19 s",
+     "img25": {
+      "izq": "assets/2025/B1.05_izq.jpg",
+      "cen": "assets/2025/B1.05_cen.jpg",
+      "der": "assets/2025/B1.05_der.jpg"
+     },
+     "status26": "trab",
+     "y26": "Valle de Tafí del Valle (Tucumán) con menhires, pircas y el dique al fondo; laterales de pastizal de altura y pircas. Animal: caballos criollos.",
+     "crit26": "Paisaje genérico; no aparece el viejo runa del título.",
+     "t26": [
+      "Flux Krea"
+     ],
+     "todo26": [],
+     "img26": [
+      {
+       "src": "assets/german/B1.05_cen.jpg",
+       "cap": "Variante A · niebla · Pantallas centro",
+       "kind": "cen"
+      },
+      {
+       "src": "assets/german/B1.05_izq.jpg",
+       "cap": "Variante A · niebla · Montaña izq.",
+       "kind": "izq"
+      },
+      {
+       "src": "assets/german/B1.05_der.jpg",
+       "cap": "Variante A · niebla · Montaña der.",
+       "kind": "der"
+      },
+      {
+       "src": "assets/german/B1.05_var1.jpg",
+       "cap": "Variante A · niebla",
+       "kind": "strip"
+      },
+      {
+       "src": "assets/german/B1.05_var2.jpg",
+       "cap": "Variante B · sol",
+       "kind": "strip"
+      },
+      {
+       "src": "assets/german/B1.05_var3.jpg",
+       "cap": "Variante C · atardecer",
+       "kind": "strip"
+      }
+     ]
+    },
+    {
+     "code": "B1.06",
+     "y25": "Cerro de los siete colores con franjas rojas, ocres y verdes; las montañas laterales se cubren de capas rojizas.",
+     "t25": [
+      "ComfyUI (imagen base)",
+      "Timelapse de nubes stock",
+      "Cactus 3D (.glb)",
+      "After Effects"
+     ],
+     "fix25": [],
+     "dur": "29 s",
+     "img25": {
+      "izq": "assets/2025/B1.06_izq.jpg",
+      "cen": "assets/2025/B1.06_cen.jpg",
+      "der": "assets/2025/B1.06_der.jpg"
+     },
+     "status26": "trab",
+     "y26": "Serranía de Hornocal con estratos en zigzag (sin cactus) y variante Purmamarca con su iglesia; laterales de estratos de colores. Animal: vicuñas.",
+     "crit26": "Las franjas parejas recuerdan a la Montaña Arcoíris de Perú.",
+     "t26": [
+      "Flux Krea"
+     ],
+     "todo26": [
+      "Las vicuñas salen algo estilizadas (de lejos parecen antílopes)."
+     ],
+     "img26": [
+      {
+       "src": "assets/german/B1.06_cen.jpg",
+       "cap": "Variante A · mediodía · Pantallas centro",
+       "kind": "cen"
+      },
+      {
+       "src": "assets/german/B1.06_izq.jpg",
+       "cap": "Variante A · mediodía · Montaña izq.",
+       "kind": "izq"
+      },
+      {
+       "src": "assets/german/B1.06_der.jpg",
+       "cap": "Variante A · mediodía · Montaña der.",
+       "kind": "der"
+      },
+      {
+       "src": "assets/german/B1.06_var1.jpg",
+       "cap": "Variante A · mediodia",
+       "kind": "strip"
+      },
+      {
+       "src": "assets/german/B1.06_var2.jpg",
+       "cap": "Variante B · atardecer",
+       "kind": "strip"
+      },
+      {
+       "src": "assets/german/B1.06_var3.jpg",
+       "cap": "Variante C · purmamarca",
+       "kind": "strip"
+      }
+     ]
+    },
+    {
+     "code": "B1.07",
+     "y25": "Quebrada de cerros rojos con cardones. La luz pasa del día al atardecer y a la noche violeta. En el mapping, cerros rojos con cardones y pasto verde.",
+     "t25": [
+      "IA video (Flow/Veo: vasto paisaje)",
+      "Kling (gaucho)",
+      "Pase de luz día → noche",
+      "After Effects"
+     ],
+     "fix25": [],
+     "dur": "19 s",
+     "img25": {
+      "izq": "assets/2025/B1.07_izq.jpg",
+      "cen": "assets/2025/B1.07_cen.jpg",
+      "der": "assets/2025/B1.07_der.jpg"
+     },
+     "status26": "trab",
+     "y26": "Formaciones rojas de la Quebrada de las Conchas y variante con el valle de Cafayate. Se sacaron saguaros de Arizona y mesetas tipo Monument Valley. Animal: cóndor andino en vuelo, en silueta.",
+     "crit26": "El paso de luz es de lo mejor del bloque; el verde del mapping no combina con el centro.",
+     "t26": [
+      "Flux Krea"
+     ],
+     "todo26": [
+      "Quedan 1 o 2 cactus chicos tipo saguaro en los laterales.",
+      "Variante Cafayate: los viñedos casi no se ven."
+     ],
+     "img26": [
+      {
+       "src": "assets/german/B1.07_cen.jpg",
+       "cap": "Variante A · dorado · Pantallas centro",
+       "kind": "cen"
+      },
+      {
+       "src": "assets/german/B1.07_izq.jpg",
+       "cap": "Variante A · dorado · Montaña izq.",
+       "kind": "izq"
+      },
+      {
+       "src": "assets/german/B1.07_der.jpg",
+       "cap": "Variante A · dorado · Montaña der.",
+       "kind": "der"
+      },
+      {
+       "src": "assets/german/B1.07_var1.jpg",
+       "cap": "Variante A · dorado",
+       "kind": "strip"
+      },
+      {
+       "src": "assets/german/B1.07_var2.jpg",
+       "cap": "Variante B · mediodia",
+       "kind": "strip"
+      },
+      {
+       "src": "assets/german/B1.07_var3.jpg",
+       "cap": "Variante C · cafayate",
+       "kind": "strip"
+      }
+     ]
+    },
+    {
+     "code": "B1.08",
+     "y25": "Paredones de arenisca roja estilo Talampaya bajo cielo con nubes y vegetación seca al pie. En el mapping, los farallones rojos cubren las montañas.",
+     "t25": [
+      "IA generativa",
+      "Cactus seco 3D (.glb)",
+      "After Effects"
+     ],
+     "fix25": [
+      "Base de montañas rojas de Talampaya con cielo bien azul y vegetación."
+     ],
+     "dur": "20 s",
+     "img25": {
+      "izq": "assets/2025/B1.08_izq.jpg",
+      "cen": "assets/2025/B1.08_cen.jpg",
+      "der": "assets/2025/B1.08_der.jpg"
+     },
+     "status26": "trab",
+     "y26": "Cañón de Talampaya con jarilla y algarrobo; laterales de arenisca roja y estratos. Animal: guanacos. Es la escena más avanzada: referencias de luz (amanecer, atardecer, noche de luna), prueba de spotlight con luz volumétrica sobre el relieve, separación de imagen plana + secuencia de luz B/N (multiplicar en Resolume/After) y un loop de 20 s de la montaña izquierda con sombras de nubes, sol que cambia de ángulo y arbustos con viento (ProRes 4444 alpha).",
+     "crit26": "La escena más estática; cactus tipo ocotillo (no argentinos).",
+     "t26": [
+      "Flux Krea",
+      "Albedo + shading separados",
+      "Spotlight volumétrico calculado sobre la silueta",
+      "Loop 20 s ProRes 4444",
+      "After Effects: FNT26-B1.8-LOS-RIOJANOS.aep"
+     ],
+     "todo26": [
+      "Mediodía y noche: el paredón todavía parece meseta; la variante atardecer es la más fiel."
+     ],
+     "img26": [
+      {
+       "src": "assets/german/B1.08_cen.jpg",
+       "cap": "Variante B · atardecer (la más fiel) · Pantallas centro",
+       "kind": "cen"
+      },
+      {
+       "src": "assets/german/B1.08_izq.jpg",
+       "cap": "Variante B · atardecer (la más fiel) · Montaña izq.",
+       "kind": "izq"
+      },
+      {
+       "src": "assets/german/B1.08_der.jpg",
+       "cap": "Variante B · atardecer (la más fiel) · Montaña der.",
+       "kind": "der"
+      },
+      {
+       "src": "assets/german/B1.08_var1.jpg",
+       "cap": "Variante A · mediodia",
+       "kind": "strip"
+      },
+      {
+       "src": "assets/german/B1.08_var2.jpg",
+       "cap": "Variante B · atardecer",
+       "kind": "strip"
+      },
+      {
+       "src": "assets/german/B1.08_var3.jpg",
+       "cap": "Variante C · noche",
+       "kind": "strip"
+      },
+      {
+       "src": "assets/german/B1.08_extra0.jpg",
+       "cap": "Loop 20 s · montaña izquierda",
+       "kind": "single"
+      },
+      {
+       "src": "assets/german/B1.08_extra1.jpg",
+       "cap": "Spotlight: antes / después",
+       "kind": "single"
+      }
+     ]
+    },
+    {
+     "code": "B1.09",
+     "y25": "Sierras verdes con un río pedregoso al pie. La luz recorre amanecer, mediodía y atardecer; en las montañas, cerros boscosos con el río.",
+     "t25": [
+      "3ds Max: pases de luz sobre el modelo del cerro (mañana → atardecer)",
+      "Timelapse \"lupa\"",
+      "Topaz Chronos (interpolación _chr2)",
+      "After Effects"
+     ],
+     "fix25": [],
+     "dur": "19 s",
+     "img25": {
+      "izq": "assets/2025/B1.09_izq.jpg",
+      "cen": "assets/2025/B1.09_cen.jpg",
+      "der": "assets/2025/B1.09_der.jpg"
+     },
+     "status26": "trab",
+     "y26": "Llanura pampeana con ombú, molino y alambrado, sierras de Ventania al fondo; laterales de pastizal con afloramientos de cuarcita. Resuelve la contradicción: llanura en el centro, sierra baja en los laterales. Animal: ñandú.",
+     "crit26": "El título dice llanuras y la imagen muestra sierras.",
+     "t26": [
+      "Flux Krea"
+     ],
+     "todo26": [],
+     "img26": [
+      {
+       "src": "assets/german/B1.09_cen.jpg",
+       "cap": "Variante A · primavera · Pantallas centro",
+       "kind": "cen"
+      },
+      {
+       "src": "assets/german/B1.09_izq.jpg",
+       "cap": "Variante A · primavera · Montaña izq.",
+       "kind": "izq"
+      },
+      {
+       "src": "assets/german/B1.09_der.jpg",
+       "cap": "Variante A · primavera · Montaña der.",
+       "kind": "der"
+      },
+      {
+       "src": "assets/german/B1.09_var1.jpg",
+       "cap": "Variante A · primavera",
+       "kind": "strip"
+      },
+      {
+       "src": "assets/german/B1.09_var2.jpg",
+       "cap": "Variante B · atardecer",
+       "kind": "strip"
+      },
+      {
+       "src": "assets/german/B1.09_var3.jpg",
+       "cap": "Variante C · tormenta",
+       "kind": "strip"
+      }
+     ]
+    },
+    {
+     "code": "B1.10",
+     "y25": "Atardecer naranja sobre un estero con una canoa. En las montañas, el agua refleja el cielo naranja y los árboles se ven en silueta.",
+     "t25": [
+      "IA generativa",
+      "After Effects"
+     ],
+     "fix25": [
+      "Mapping con cielo amarillo con contorno."
+     ],
+     "dur": "31 s",
+     "img25": {
+      "izq": "assets/2025/B1.10_izq.jpg",
+      "cen": "assets/2025/B1.10_cen.jpg",
+      "der": "assets/2025/B1.10_der.jpg"
+     },
+     "status26": "trab",
+     "y26": "Esteros del Iberá con camalotes, juncos, canoa y palmeras yatay; laterales de bañado y palmares. Animal: carpinchos. La variante mañana se rehizo con niebla matinal.",
+     "crit26": "Cielo naranja plano en el mapping; es la escena que más gana con fauna.",
+     "t26": [
+      "Flux Krea"
+     ],
+     "todo26": [],
+     "img26": [
+      {
+       "src": "assets/german/B1.10_cen.jpg",
+       "cap": "Variante A · atardecer · Pantallas centro",
+       "kind": "cen"
+      },
+      {
+       "src": "assets/german/B1.10_izq.jpg",
+       "cap": "Variante A · atardecer · Montaña izq.",
+       "kind": "izq"
+      },
+      {
+       "src": "assets/german/B1.10_der.jpg",
+       "cap": "Variante A · atardecer · Montaña der.",
+       "kind": "der"
+      },
+      {
+       "src": "assets/german/B1.10_var1.jpg",
+       "cap": "Variante A · atardecer",
+       "kind": "strip"
+      },
+      {
+       "src": "assets/german/B1.10_var2.jpg",
+       "cap": "Variante B · manana",
+       "kind": "strip"
+      },
+      {
+       "src": "assets/german/B1.10_var3.jpg",
+       "cap": "Variante C · mediodia",
+       "kind": "strip"
+      }
+     ]
+    },
+    {
+     "code": "B1.11",
+     "y25": "Sierras de pastizal dorado con caminos de tierra y cielo con nubes; al final asoma el sol. En el mapping, un camino serpentea entre sierras y piedras.",
+     "t25": [
+      "IA generativa",
+      "After Effects"
+     ],
+     "fix25": [
+      "Sierras de Córdoba con cielo azul y nubes."
+     ],
+     "dur": "31 s",
+     "img25": {
+      "izq": "assets/2025/B1.11_izq.jpg",
+      "cen": "assets/2025/B1.11_cen.jpg",
+      "der": "assets/2025/B1.11_der.jpg"
+     },
+     "status26": "trab",
+     "y26": "Pastizal dorado con bloques de granito, palmeras caranday y arroyo serrano; variante Quebrada del Condorito (aparecían volcanes nevados y se cambiaron por sierras redondeadas). Animal: zorro gris.",
+     "crit26": "Bien lograda; le falta algo que la identifique como Córdoba.",
+     "t26": [
+      "Flux Krea"
+     ],
+     "todo26": [],
+     "img26": [
+      {
+       "src": "assets/german/B1.11_cen.jpg",
+       "cap": "Variante A · día · Pantallas centro",
+       "kind": "cen"
+      },
+      {
+       "src": "assets/german/B1.11_izq.jpg",
+       "cap": "Variante A · día · Montaña izq.",
+       "kind": "izq"
+      },
+      {
+       "src": "assets/german/B1.11_der.jpg",
+       "cap": "Variante A · día · Montaña der.",
+       "kind": "der"
+      },
+      {
+       "src": "assets/german/B1.11_var1.jpg",
+       "cap": "Variante A · dia",
+       "kind": "strip"
+      },
+      {
+       "src": "assets/german/B1.11_var2.jpg",
+       "cap": "Variante B · atardecer",
+       "kind": "strip"
+      },
+      {
+       "src": "assets/german/B1.11_var3.jpg",
+       "cap": "Variante C · condorito",
+       "kind": "strip"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "B2",
+   "name": "Voz en off y Bandera",
+   "track": "9:50 → Himno 10:57",
+   "intro": "Sin música y con apagón (opción de dejar solo el fogón). Voz en off del fogón y el corazón argentino; luego el Himno: aparece la Patria sobre el cerro y se desenrolla la bandera.",
+   "scenes": [
+    {
+     "code": "B2.01",
+     "y25": "Una línea de fuego recorre las tres superficies: llamas sobre las montañas y fogatas aisladas en las pantallas centrales. El storyboard pedía además el corazón latiendo con el fogón de fondo (las piezas de corazón en sombra y llamas se hicieron para el video promo).",
+     "t25": [
+      "Stock de fuego + partículas",
+      "Corazón: imágenes GPT / Nano Banana + Kling",
+      "After Effects"
+     ],
+     "fix25": [],
+     "dur": "77 s · comp general",
+     "img25": {
+      "comp": "assets/2025/B2.01_comp.jpg"
+     },
+     "status26": "sin",
+     "y26": "",
+     "crit26": "",
+     "t26": [],
+     "todo26": [],
+     "img26": []
+    },
+    {
+     "code": "B2.02",
+     "y25": "La bandera flamea sobre toda la escenografía: en las montañas con el Sol de Mayo y en el centro las franjas. Pieza larga pensada como loop. En vivo, la Patria aparece arriba del cerro.",
+     "t25": [
+      "Blender: simulación de tela (05-Bandera_ARG_Wind)",
+      "Caches Alembic (cayendo / ondeando / roll / flow)",
+      "Textura con sol nuevo (PSD)",
+      "After Effects"
+     ],
+     "fix25": [],
+     "dur": "4 min 30 s",
+     "img25": {
+      "izq": "assets/2025/B2.02_izq.jpg",
+      "cen": "assets/2025/B2.02_cen.jpg",
+      "der": "assets/2025/B2.02_der.jpg"
+     },
+     "status26": "trab",
+     "y26": "Bandera de tela realista (algodón con pliegues) encajada a las tres máscaras. Se probaron tres caminos: (1) motor procedural sobre el Z-depth con textura de tela de Qwen, IN de 6 s + LOOP de 10 s; (2) imágenes de Magnific deformadas columna por columna para que la tela cubra la silueta, con IN/OUT a partir de referencias de Seedance y Gemini; (3) toma completa de la montaña derecha con HunyuanVideo 1.5 local: la tela entra por detrás de la cresta, baja como un alud y se apoya (10,8 s, 2048×600, sol rígido).",
+     "crit26": "",
+     "t26": [
+      "Qwen Image Edit (textura de tela)",
+      "Motor procedural torch/CUDA sobre Z-depth",
+      "Magnific + Seedance / Gemini (referencias de movimiento)",
+      "HunyuanVideo 1.5 (ComfyUI local)",
+      "ProRes 4444 alpha",
+      "After Effects: FNT26-B2.2-HIMNO_BANDERA.aep"
+     ],
+     "todo26": [
+      "El Sol de Mayo nunca se deforma: componerlo como capa rígida (derecha ~4% estirado).",
+      "Los IN arrancan con ~2 s de negro; se pueden recortar.",
+      "Sincronizar izquierda (10,04 s) y derecha (10 s) para que lleguen juntas al reposo.",
+      "Falta la entrada de las pantallas centrales.",
+      "La toma Hunyuan está a media resolución (2048×600): falta llevarla a 4096×1200."
+     ],
+     "img26": [
+      {
+       "src": "assets/german/B2.02_extra0.jpg",
+       "cap": "Encajadas: montaña izquierda (arriba) y derecha",
+       "kind": "single"
+      },
+      {
+       "src": "assets/german/B2.02_extra1.jpg",
+       "cap": "Pantallas centrales 3712×896",
+       "kind": "single"
+      },
+      {
+       "src": "assets/german/B2.02_extra2.jpg",
+       "cap": "Toma completa derecha (Hunyuan) · hoja de cuadros",
+       "kind": "single"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "B3",
+   "name": "Las montoneras y los caudillos",
+   "track": "17:25 → 22:10",
+   "intro": "Misma estructura en todas: en el centro, jinetes que cabalgan hacia cámara enmarcados por una tela que flamea con el color del bando (rojo punzó federal, celeste unitario, vicuña con guarda pampa). En las montañas, siluetas negras de jinetes galopan sobre esa tela, sobre fuego o sobre paisaje. El centro dura 5–11 s y queda en negro; el mapping dura ~30 s.",
+   "scenes": [
+    {
+     "code": "B3.01",
+     "y25": "Llanura de pastos amarillos bajo cielo celeste con un árbol solitario. Dos jinetes avanzan en el centro y sus siluetas cruzan las montañas.",
+     "t25": [
+      "Jinetes IA (Firefly con green screen, Kling / Veo)",
+      "Telas flameando + siluetas recortadas",
+      "After Effects"
+     ],
+     "fix25": [
+      "Sacar los jinetes sin remera."
+     ],
+     "dur": "",
+     "img25": {
+      "izq": "assets/2025/B3.01_izq.jpg",
+      "cen": "assets/2025/B3.01_cen.jpg",
+      "der": "assets/2025/B3.01_der.jpg"
+     },
+     "status26": "sin",
+     "y26": "",
+     "crit26": "",
+     "t26": [],
+     "todo26": [],
+     "img26": []
+    },
+    {
+     "code": "B3.02",
+     "y25": "Llanura al atardecer con sierras al fondo. Un jinete armado avanza solo y su silueta recorre las montañas.",
+     "t25": [
+      "Jinetes IA (Firefly con green screen, Kling / Veo)",
+      "Telas flameando + siluetas recortadas",
+      "After Effects"
+     ],
+     "fix25": [
+      "Unificar el fondo del centro y del mapping."
+     ],
+     "dur": "",
+     "img25": {
+      "izq": "assets/2025/B3.02_izq.jpg",
+      "cen": "assets/2025/B3.02_cen.jpg",
+      "der": "assets/2025/B3.02_der.jpg"
+     },
+     "status26": "sin",
+     "y26": "",
+     "crit26": "",
+     "t26": [],
+     "todo26": [],
+     "img26": []
+    },
+    {
+     "code": "B3.03",
+     "y25": "Un jinete ranquel cabalga entre llamas, con columnas de fuego en las pantallas laterales. Las montañas arden mientras pasa su silueta.",
+     "t25": [
+      "Jinetes IA (Firefly con green screen, Kling / Veo)",
+      "Telas flameando + siluetas recortadas",
+      "After Effects"
+     ],
+     "fix25": [
+      "Agregar un poco de fuego en el centro."
+     ],
+     "dur": "",
+     "img25": {
+      "izq": "assets/2025/B3.03_izq.jpg",
+      "cen": "assets/2025/B3.03_cen.jpg",
+      "der": "assets/2025/B3.03_der.jpg"
+     },
+     "status26": "sin",
+     "y26": "",
+     "crit26": "",
+     "t26": [],
+     "todo26": [],
+     "img26": []
+    },
+    {
+     "code": "B3.04",
+     "y25": "Gauchos de poncho rojo a caballo, los Infernales, enmarcados por un paño rojo; sus siluetas galopan sobre tela roja.",
+     "t25": [
+      "Jinetes IA (Firefly con green screen, Kling / Veo)",
+      "Telas flameando + siluetas recortadas",
+      "After Effects"
+     ],
+     "fix25": [],
+     "dur": "",
+     "img25": {
+      "izq": "assets/2025/B3.04_izq.jpg",
+      "cen": "assets/2025/B3.04_cen.jpg",
+      "der": "assets/2025/B3.04_der.jpg"
+     },
+     "status26": "sin",
+     "y26": "",
+     "crit26": "",
+     "t26": [],
+     "todo26": [],
+     "img26": []
+    },
+    {
+     "code": "B3.05",
+     "y25": "Montoneros a caballo avanzan entre polvo, enmarcados por tela roja; en las montañas, siluetas en carga sobre rojo punzó.",
+     "t25": [
+      "Jinetes IA (Firefly con green screen, Kling / Veo)",
+      "Telas flameando + siluetas recortadas",
+      "After Effects"
+     ],
+     "fix25": [],
+     "dur": "",
+     "img25": {
+      "izq": "assets/2025/B3.05_izq.jpg",
+      "cen": "assets/2025/B3.05_cen.jpg",
+      "der": "assets/2025/B3.05_der.jpg"
+     },
+     "status26": "sin",
+     "y26": "",
+     "crit26": "",
+     "t26": [],
+     "todo26": [],
+     "img26": []
+    },
+    {
+     "code": "B3.06",
+     "y25": "Soldados de uniforme azul cabalgan con fuego detrás, enmarcados por tela celeste; en las montañas, siluetas sobre celeste.",
+     "t25": [
+      "Jinetes IA (Firefly con green screen, Kling / Veo)",
+      "Telas flameando + siluetas recortadas",
+      "After Effects"
+     ],
+     "fix25": [],
+     "dur": "",
+     "img25": {
+      "izq": "assets/2025/B3.06_izq.jpg",
+      "cen": "assets/2025/B3.06_cen.jpg",
+      "der": "assets/2025/B3.06_der.jpg"
+     },
+     "status26": "sin",
+     "y26": "",
+     "crit26": "",
+     "t26": [],
+     "todo26": [],
+     "img26": []
+    },
+    {
+     "code": "B3.07",
+     "y25": "Jinetes en tonos ocres; un poncho vicuña con guarda pampa se despliega sobre las pantallas y en las montañas pasan siluetas con lanzas.",
+     "t25": [
+      "Jinetes IA (Firefly con green screen, Kling / Veo)",
+      "Telas flameando + siluetas recortadas",
+      "After Effects"
+     ],
+     "fix25": [],
+     "dur": "",
+     "img25": {
+      "izq": "assets/2025/B3.07_izq.jpg",
+      "cen": "assets/2025/B3.07_cen.jpg",
+      "der": "assets/2025/B3.07_der.jpg"
+     },
+     "status26": "sin",
+     "y26": "",
+     "crit26": "",
+     "t26": [],
+     "todo26": [],
+     "img26": []
+    },
+    {
+     "code": "B3.08",
+     "y25": "Jinetes en un atardecer rojizo enmarcados por tela roja; en las montañas, una carga de jinetes en silueta.",
+     "t25": [
+      "Jinetes IA (Firefly con green screen, Kling / Veo)",
+      "Telas flameando + siluetas recortadas",
+      "After Effects"
+     ],
+     "fix25": [
+      "Mapping con ponchos rojos: ok."
+     ],
+     "dur": "",
+     "img25": {
+      "izq": "assets/2025/B3.08_izq.jpg",
+      "cen": "assets/2025/B3.08_cen.jpg",
+      "der": "assets/2025/B3.08_der.jpg"
+     },
+     "status26": "sin",
+     "y26": "",
+     "crit26": "",
+     "t26": [],
+     "todo26": [],
+     "img26": []
+    },
+    {
+     "code": "B3.09",
+     "y25": "Un grupo diaguita camina por un pastizal dorado al atardecer. En el mapping es de noche: montañas oscuras con fogatas y viviendas iluminadas.",
+     "t25": [
+      "Jinetes IA (Firefly con green screen, Kling / Veo)",
+      "Telas flameando + siluetas recortadas",
+      "After Effects"
+     ],
+     "fix25": [
+      "Que el paisaje continúe en las pantallas laterales.",
+      "Mapping con montañas y atardecer que después oscurece."
+     ],
+     "dur": "",
+     "img25": {
+      "izq": "assets/2025/B3.09_izq.jpg",
+      "cen": "assets/2025/B3.09_cen.jpg",
+      "der": "assets/2025/B3.09_der.jpg"
+     },
+     "status26": "sin",
+     "y26": "",
+     "crit26": "",
+     "t26": [],
+     "todo26": [],
+     "img26": []
+    },
+    {
+     "code": "B3.10",
+     "y25": "Jinetes bajo un atardecer rojo con columnas de fuego en las pantallas laterales; las montañas arden con siluetas al galope.",
+     "t25": [
+      "Jinetes IA (Firefly con green screen, Kling / Veo)",
+      "Telas flameando + siluetas recortadas",
+      "After Effects"
+     ],
+     "fix25": [
+      "Agregar fuego."
+     ],
+     "dur": "",
+     "img25": {
+      "izq": "assets/2025/B3.10_izq.jpg",
+      "cen": "assets/2025/B3.10_cen.jpg",
+      "der": "assets/2025/B3.10_der.jpg"
+     },
+     "status26": "sin",
+     "y26": "",
+     "crit26": "",
+     "t26": [],
+     "todo26": [],
+     "img26": []
+    },
+    {
+     "code": "B3.11",
+     "y25": "Jinetes en tonos ocres con tela vicuña con guarda pampa; en las montañas, siluetas de jinetes en carga.",
+     "t25": [
+      "Jinetes IA (Firefly con green screen, Kling / Veo)",
+      "Telas flameando + siluetas recortadas",
+      "After Effects"
+     ],
+     "fix25": [
+      "Fondo poncho marrón: ok."
+     ],
+     "dur": "",
+     "img25": {
+      "izq": "assets/2025/B3.11_izq.jpg",
+      "cen": "assets/2025/B3.11_cen.jpg",
+      "der": "assets/2025/B3.11_der.jpg"
+     },
+     "status26": "sin",
+     "y26": "",
+     "crit26": "",
+     "t26": [],
+     "todo26": [],
+     "img26": []
+    },
+    {
+     "code": "B3.12",
+     "y25": "Tropa de uniforme azul a caballo enmarcada por un paño celeste; en las montañas, siluetas sobre tela celeste. (En el collect 2025 figura como \"B3.4 Los de Lavalle\".)",
+     "t25": [
+      "Jinetes IA (Firefly con green screen, Kling / Veo)",
+      "Telas flameando + siluetas recortadas",
+      "After Effects"
+     ],
+     "fix25": [
+      "Fondo ponchos celestes: ok."
+     ],
+     "dur": "",
+     "img25": {
+      "izq": "assets/2025/B3.12_izq.jpg",
+      "cen": "assets/2025/B3.12_cen.jpg",
+      "der": "assets/2025/B3.12_der.jpg"
+     },
+     "status26": "sin",
+     "y26": "",
+     "crit26": "",
+     "t26": [],
+     "todo26": [],
+     "img26": []
+    }
+   ]
+  },
+  {
+   "id": "B4",
+   "name": "Mi bandera",
+   "track": "Aurora 23:50 · Mi Bandera 25:00",
+   "intro": "Falucho ondea una bandera desde el cerro Este (Aurora) y Belgrano baja a caballo desde el cerro Oeste, opuesto al mapping de la bandera (tarda 1:50 en bajar).",
+   "scenes": [
+    {
+     "code": "B4.01",
+     "y25": "El storyboard pedía un amanecer radiante con el sol saliendo entre las montañas. En el collect final no hay una pieza propia: se unificó con Mi bandera.",
+     "t25": [],
+     "fix25": [
+      "Unificar la proyección de 4.1 y 4.2.",
+      "Bandera que aparezca desde los costados del mapping hacia el centro, con el sol a un costado."
+     ],
+     "dur": "",
+     "img25": {},
+     "status26": "sin",
+     "y26": "",
+     "crit26": "",
+     "t26": [],
+     "todo26": [],
+     "img26": []
+    },
+    {
+     "code": "B4.02",
+     "y25": "En el centro flamea la bandera con el Sol de Mayo; las montañas se cubren de tela celeste y blanca ondulando. Es el reverso de B2.2: allá el sol estaba en las montañas y acá en el centro.",
+     "t25": [
+      "Blender: simulación de tela",
+      "After Effects"
+     ],
+     "fix25": [],
+     "dur": "5 min",
+     "img25": {
+      "izq": "assets/2025/B4.02_izq.jpg",
+      "cen": "assets/2025/B4.02_cen.jpg",
+      "der": "assets/2025/B4.02_der.jpg"
+     },
+     "status26": "sin",
+     "y26": "",
+     "crit26": "",
+     "t26": [],
+     "todo26": [],
+     "img26": []
+    }
+   ]
+  },
+  {
+   "id": "B5",
+   "name": "Pringles, López y Cuyo",
+   "track": "25:25 → 26:20",
+   "intro": "Misma estructura que el bloque 3: jinetes en el centro (6–8 s) y siluetas sobre las montañas (~30 s).",
+   "scenes": [
+    {
+     "code": "B5.01",
+     "y25": "Soldados de caballería con morrión y uniforme de época avanzan por una llanura con chañares y sierras. En el mapping, siluetas de jinetes contra un cielo celeste.",
+     "t25": [
+      "Jinetes IA",
+      "Siluetas recortadas sobre tela o paisaje",
+      "After Effects"
+     ],
+     "fix25": [],
+     "dur": "",
+     "img25": {
+      "izq": "assets/2025/B5.01_izq.jpg",
+      "cen": "assets/2025/B5.01_cen.jpg",
+      "der": "assets/2025/B5.01_der.jpg"
+     },
+     "status26": "sin",
+     "y26": "",
+     "crit26": "",
+     "t26": [],
+     "todo26": [],
+     "img26": []
+    },
+    {
+     "code": "B5.02",
+     "y25": "Jinetes con el sable en alto sobre fondo naranja, enmarcados por tela roja; en las montañas, siluetas sobre rojo punzó.",
+     "t25": [
+      "Jinetes IA",
+      "Siluetas recortadas sobre tela o paisaje",
+      "After Effects"
+     ],
+     "fix25": [],
+     "dur": "",
+     "img25": {
+      "izq": "assets/2025/B5.02_izq.jpg",
+      "cen": "assets/2025/B5.02_cen.jpg",
+      "der": "assets/2025/B5.02_der.jpg"
+     },
+     "status26": "sin",
+     "y26": "",
+     "crit26": "",
+     "t26": [],
+     "todo26": [],
+     "img26": []
+    },
+    {
+     "code": "B5.03",
+     "y25": "Dos gauchos a caballo frente a la cordillera nevada. El mapping muestra los Andes nevados con dos jinetes en silueta.",
+     "t25": [
+      "Jinetes IA",
+      "Siluetas recortadas sobre tela o paisaje",
+      "After Effects"
+     ],
+     "fix25": [],
+     "dur": "",
+     "img25": {
+      "izq": "assets/2025/B5.03_izq.jpg",
+      "cen": "assets/2025/B5.03_cen.jpg",
+      "der": "assets/2025/B5.03_der.jpg"
+     },
+     "status26": "sin",
+     "y26": "",
+     "crit26": "",
+     "t26": [],
+     "todo26": [],
+     "img26": []
+    }
+   ]
+  },
+  {
+   "id": "B6",
+   "name": "El Cruce de los Andes",
+   "track": "Clarín 27:20 · Grito de San Martín 27:35",
+   "intro": "Un granadero toca el clarín en la loma 1 Oeste; San Martín en el cerro grita \"Seamos libres y lo demás no importa nada\" (15 s). Después, marchas finales y desconcentración (~10 min).",
+   "scenes": [
+    {
+     "code": "B6.01",
+     "y25": "El storyboard pedía cordillera y cóndor. En el collect final no hay pieza propia; el bloque usa el valle vacío de B6.2.",
+     "t25": [],
+     "fix25": [],
+     "dur": "",
+     "img25": {},
+     "status26": "sin",
+     "y26": "",
+     "crit26": "",
+     "t26": [],
+     "todo26": [],
+     "img26": []
+    },
+    {
+     "code": "B6.02",
+     "y25": "Amanece sobre un valle cordillerano vacío con un camino hacia los picos nevados (IN + LOOP). Desde un crepúsculo violeta aparece una columna de granaderos a caballo, con primeros planos en las pantallas laterales; una fila de jinetes cruza la montaña derecha. Al final el valle queda vacío.",
+     "t25": [
+      "IA video por personaje (granadero, cazador, paisano, mestizo, mulas cargueras y con cañón)",
+      "Chroma de granaderos",
+      "After Effects"
+     ],
+     "fix25": [
+      "Más contraste.",
+      "Centro: los granaderos aparecen caminando, se iluminan unos segundos y vuelve a negro."
+     ],
+     "dur": "IN 22 s · LOOP 16 s · Granaderos 75 s",
+     "img25": {
+      "izq": "assets/2025/B6.02_izq.jpg",
+      "cen": "assets/2025/B6.02_cen.jpg",
+      "der": "assets/2025/B6.02_der.jpg"
+     },
+     "status26": "sin",
+     "y26": "",
+     "crit26": "",
+     "t26": [],
+     "todo26": [],
+     "img26": []
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,4 @@
+pillow
+numpy
+# motor opcional seedream:
+# higgsfield-client

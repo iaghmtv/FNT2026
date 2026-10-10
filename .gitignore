@@ -1,0 +1,7 @@
+pipeline/_work/
+pipeline/_test/
+__pycache__/
+*.pyc
+chk_*.jpg
+.env
+pipeline/*.log

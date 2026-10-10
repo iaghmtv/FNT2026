@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>FNT 2026 Tablero</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0f0d0c;--bg2:#171412;--card:#1f1b18;--line:#372f29;--ink:#efe7dc;--ink2:#b8ab9c;--ink3:#837769;
+  --fire:#e8843a;--fire2:#f3b26b;--moon:#7fa8e8;--moon2:#b3cdf5;--ok:#7fbf7a;--mid:#e6b54a;--no:#7b736a;--red:#d06a5a}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]){--bg:#f5f0e8;--bg2:#ece5da;--card:#fffdf9;--line:#dbcfbf;--ink:#231d17;--ink2:#5b5146;--ink3:#887d70;
+  --fire:#c4621c;--fire2:#a8501a;--moon:#2f63b3;--moon2:#244d8a;--ok:#3f8a3a;--mid:#a87a10;--no:#8d857c;--red:#a8432f}}
+:root[data-theme="light"]{--bg:#f5f0e8;--bg2:#ece5da;--card:#fffdf9;--line:#dbcfbf;--ink:#231d17;--ink2:#5b5146;--ink3:#887d70;
+  --fire:#c4621c;--fire2:#a8501a;--moon:#2f63b3;--moon2:#244d8a;--ok:#3f8a3a;--mid:#a87a10;--no:#8d857c;--red:#a8432f}
+:root[data-theme="dark"]{--bg:#0f0d0c;--bg2:#171412;--card:#1f1b18;--line:#372f29;--ink:#efe7dc;--ink2:#b8ab9c;--ink3:#837769;
+  --fire:#e8843a;--fire2:#f3b26b;--moon:#7fa8e8;--moon2:#b3cdf5;--ok:#7fbf7a;--mid:#e6b54a;--no:#7b736a;--red:#d06a5a}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:110px}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:Fraunces,Georgia,serif;margin:0;letter-spacing:-.01em}
+a{color:inherit}
+img,video{display:block;max-width:100%;height:auto;border-radius:6px;background:#000}
+img{cursor:zoom-in}
+.wrap{max-width:1360px;margin:0 auto;padding:0 24px}
+header.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:10px;padding:10px 0;flex-wrap:wrap}
+.brand{font-family:Fraunces,serif;font-weight:700;color:var(--fire2);white-space:nowrap}
+.chips{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;flex:1;min-width:0}
+.chips a,.chips button,.fbtn{white-space:nowrap;text-decoration:none;font:500 13px Inter,sans-serif;color:var(--ink2);padding:5px 10px;border-radius:99px;border:1px solid var(--line);background:none;cursor:pointer}
+.chips a b{color:var(--fire2)}
+.chips a:hover,.fbtn:hover{color:var(--ink);border-color:var(--fire)}
+.fbtn[aria-pressed="true"]{background:color-mix(in srgb,var(--fire) 20%,transparent);color:var(--ink);border-color:var(--fire)}
+.filters{display:flex;gap:6px;align-items:center;flex-wrap:wrap;padding:0 0 10px}
+.filters input{flex:1;min-width:160px;max-width:320px;background:var(--card);border:1px solid var(--line);color:var(--ink);border-radius:99px;padding:6px 12px;font:inherit;font-size:13px}
+#themeBtn{margin-left:auto}
+.hero{padding:40px 0 22px}
+.kicker{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--fire2);font-weight:600}
+.hero h1{font-size:clamp(28px,4vw,46px);line-height:1.05;margin:8px 0 10px}
+.lead{color:var(--ink2);max-width:78ch;margin:0}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:22px}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+.card h4{font-size:16px;margin-bottom:6px}
+.card p,.card li{color:var(--ink2);font-size:14px}
+.card ul,.card ol{margin:6px 0 0;padding-left:18px}
+.card li{margin-bottom:4px}
+.card b{color:var(--ink)}
+section.ctx{padding:26px 0;border-top:1px solid var(--line)}
+section.ctx h2{font-size:26px;margin-bottom:6px}
+.sub{color:var(--ink2);margin:0 0 16px;max-width:85ch}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:13px;color:var(--ink2);margin:8px 0 12px}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-2px}
+figure{margin:0} figcaption{font-size:12px;color:var(--ink3);margin-top:5px}
+.block{padding:30px 0 6px;border-top:1px solid var(--line)}
+.bhead{display:flex;align-items:center;gap:14px;margin-bottom:6px}
+.bnum{font-family:Fraunces,serif;font-weight:700;font-size:22px;width:52px;height:52px;border-radius:12px;display:grid;place-items:center;flex:none;background:color-mix(in srgb,var(--fire) 18%,var(--card));color:var(--fire2);border:1px solid var(--line)}
+.bhead h2{font-size:26px} .btrack{font-size:13px;color:var(--ink3)}
+.bintro{color:var(--ink2);margin:4px 0 16px;max-width:95ch}
+.scene{background:var(--bg2);border:1px solid var(--line);border-radius:16px;margin:0 0 18px;overflow:hidden}
+.shead{padding:14px 18px 10px;display:flex;gap:10px;align-items:center;flex-wrap:wrap;border-bottom:1px solid var(--line)}
+.code{font:600 13px Inter,sans-serif;background:var(--card);border:1px solid var(--line);padding:5px 8px;border-radius:8px;color:var(--fire2)}
+.shead h3{font-size:20px}
+.meta{font-size:12px;color:var(--ink3)}
+.badges{margin-left:auto;display:flex;gap:6px;flex-wrap:wrap}
+.badge{font-size:12px;font-weight:600;padding:3px 9px;border-radius:99px;border:1px solid currentColor}
+.b-ok{color:var(--ok)} .b-mid{color:var(--mid)} .b-no{color:var(--no)} .b-moon{color:var(--moon2)} .b-red{color:var(--red)}
+blockquote{margin:0;padding:8px 18px 0;font-family:Fraunces,serif;font-style:italic;color:var(--ink2)}
+.nota{margin:8px 18px 0;font-size:13px;color:var(--mid)}
+.tabs{display:flex;gap:4px;padding:12px 18px 0;flex-wrap:wrap}
+.tab{font:600 13px Inter,sans-serif;color:var(--ink2);background:none;border:1px solid var(--line);border-bottom:none;padding:7px 12px;border-radius:9px 9px 0 0;cursor:pointer}
+.tab[aria-selected="true"]{background:var(--card);color:var(--ink)}
+.panel{background:var(--card);border-top:1px solid var(--line);padding:16px 18px 18px}
+.panel[hidden]{display:none}
+.stage{display:flex;flex-direction:column;gap:8px}
+.mtn{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:99px;overflow:hidden;margin-bottom:10px}
+.seg button{font:600 12px Inter,sans-serif;background:none;border:0;color:var(--ink2);padding:6px 12px;cursor:pointer}
+.seg button[aria-pressed="true"].luna{background:color-mix(in srgb,var(--moon) 30%,transparent);color:var(--ink)}
+.seg button[aria-pressed="true"].atardecer{background:color-mix(in srgb,var(--fire) 30%,transparent);color:var(--ink)}
+.tl{margin-top:14px}
+.tl h5{font:600 12px Inter,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3);margin:0 0 6px}
+.refs{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:10px}
+.ref figcaption b{color:var(--ink2);font-weight:600}
+.upl{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
+.btn{display:inline-flex;align-items:center;gap:6px;font:600 13px Inter,sans-serif;text-decoration:none;padding:8px 14px;border-radius:10px;background:var(--fire);color:#1b120a;border:0;cursor:pointer}
+.btn.ghost{background:none;color:var(--ink2);border:1px solid var(--line)}
+.hint{font-size:12.5px;color:var(--ink3)}
+.empty{border:1px dashed var(--line);border-radius:10px;padding:18px;color:var(--ink3);font-size:13.5px;text-align:center}
+.chip{display:inline-block;font-size:12px;padding:3px 9px;border-radius:99px;background:color-mix(in srgb,var(--fire) 12%,var(--card));border:1px solid var(--line);margin:0 4px 4px 0}
+.chip.m{background:color-mix(in srgb,var(--moon) 12%,var(--card))}
+.small{font-size:13px;color:var(--ink2)} .small ul{margin:4px 0 8px;padding-left:18px}
+.lbl{display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3);font-weight:600;margin:10px 0 4px}
+footer{padding:30px 0 60px;color:var(--ink3);font-size:13px;border-top:1px solid var(--line)}
+#lb{position:fixed;inset:0;background:rgba(0,0,0,.92);display:none;align-items:center;justify-content:center;z-index:60;padding:20px;cursor:zoom-out}
+#lb.on{display:flex} #lb img{max-width:96vw;max-height:86vh;cursor:zoom-out} #lb div{position:absolute;bottom:12px;left:0;right:0;text-align:center;color:#ccc;font-size:13px}
+.hidden{display:none!important}
+@media (max-width:860px){.wrap{padding:0 16px}.grid3,.grid2{grid-template-columns:1fr}.mtn{grid-template-columns:1fr}.badges{margin-left:0}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <div class="bar"><span class="brand">FNT 2026</span><nav class="chips" id="nav" aria-label="Bloques"></nav><button id="themeBtn" class="fbtn" type="button">◐</button></div>
+  <div class="filters" role="group" aria-label="Filtros">
+    <button class="fbtn" data-f="todas" aria-pressed="true">Todas</button>
+    <button class="fbtn" data-f="conrefs" aria-pressed="false">Con referencias</button>
+    <button class="fbtn" data-f="sinrefs" aria-pressed="false">Sin referencias</button>
+    <button class="fbtn" data-f="previos" aria-pressed="false">Con previos IA</button>
+    <input id="q" type="search" placeholder="Buscar escena…" aria-label="Buscar escena">
+  </div>
+</div></header>
+
+<main class="wrap">
+<section class="hero">
+  <div class="kicker">El Fogón de los Arrieros · Jáchal · GHM</div>
+  <h1>Tablero de referencias y previos por escena</h1>
+  <p class="lead">Cada uno del equipo puede subir imágenes de referencia a cualquier escena para encauzar su perfil visual. En la PC de render, ComfyUI toma esas referencias y genera los previos: noche de luna, atardecer y el timelapse de luz de cada montaña, con la forma real de los cerros.</p>
+  <div class="grid3">
+    <div class="card"><h4>Criterio visual 2026</h4><ul>
+      <li>El show es de noche: los paisajes viven en <b>luz de luna azul</b> y en <b>atardeceres naranjas</b>.</li>
+      <li>El fuerte del mapping es el <b>color y la iluminación</b> que transforman la montaña, más elementos bien claros y definidos.</li>
+      <li>Nada de elementos altos en las laderas (cactus, árboles, postes): desde el fondo de las tribunas se ven acostados.</li>
+      <li>Las cascadas las rehace Diego en Blender 3D; las banderas las resuelve German.</li>
+    </ul></div>
+    <div class="card"><h4>El paso de luz</h4><ul>
+      <li>La luz entra <b>desde el centro</b>: en la montaña derecha por la izquierda, en la izquierda por la derecha.</li>
+      <li>Arranca como contraluz detrás de la cresta y barre el relieve marcando los detalles.</li>
+      <li><b>Pasa rápido por el mediodía</b> (pocas sombras) y <b>se demora en la golden hour</b>.</li>
+      <li>Loop: luna → amanecer → mediodía → atardecer → crepúsculo → luna.</li>
+    </ul></div>
+    <div class="card"><h4>Cómo participar</h4><ol>
+      <li>Entrá a la escena y tocá <b>Subir referencia</b> (necesitás tu usuario de GitHub invitado al repo).</li>
+      <li>Arrastrá las imágenes y, en el mensaje, escribí qué querés tomar de ellas (luz, paleta, vegetación…).</li>
+      <li>Tocá <b>Commit changes</b>. En 1–2 minutos aparecen acá con tu nombre.</li>
+      <li>Los previos se regeneran en la PC de render con <code>GENERAR_PREVIOS.bat</code>.</li>
+    </ol></div>
+  </div>
+</section>
+
+<section class="ctx" id="zonas">
+  <h2>Zonas aptas para elementos definidos</h2>
+  <p class="sub">Calculado con el Z-depth renderizado desde la cámara de cada proyector. Donde la superficie mira al público y es casi plana, lo proyectado se mantiene desde cualquier punto de las tribunas. La línea blanca es el camino por donde pasaron los granaderos en 2025.</p>
+  <div class="legend"><span><i style="background:#3cbe5a"></i>Figuras y elementos más altos</span><span><i style="background:#ebbe28"></i>Figuras bajas o recorridos horizontales</span><span><i style="background:#be2828"></i>Solo color, textura y luz</span><span><i style="background:#fff"></i>Camino granaderos 2025</span></div>
+  <div class="grid2">
+    <figure><img src="assets/zonas/zonas_izq_overlay.jpg" alt="Zonas aptas montaña izquierda"><figcaption>Montaña izquierda (3840×1200). La base está saturada en el Z-depth: falta un render de profundidad de 16 bits para afinarla.</figcaption></figure>
+    <figure><img src="assets/zonas/zonas_der_overlay.jpg" alt="Zonas aptas montaña derecha"><figcaption>Montaña derecha (4096×1200). Franja media apta de punta a punta.</figcaption></figure>
+  </div>
+</section>
+
+<div id="blocks"><p class="empty" id="loading">Cargando escenas…</p></div>
+</main>
+
+<footer><div class="wrap">FNT 2026 · GHM · Comparativo completo 2025 vs German: <a href="comparativo.html">comparativo.html</a> · Datos actualizados <span id="gen"></span></div></footer>
+<div id="lb" role="dialog" aria-label="Imagen ampliada"><img alt=""><div></div></div>
+
+<script>
+(function(){
+var esc=function(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})};
+var store={get:function(k){try{return localStorage.getItem(k)}catch(e){return null}},set:function(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+var root=document.documentElement, t=store.get('fnt-theme'); if(t) root.setAttribute('data-theme',t);
+document.getElementById('themeBtn').onclick=function(){var cur=root.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');var nx=cur==='light'?'dark':'light';root.setAttribute('data-theme',nx);store.set('fnt-theme',nx)};
+var lb=document.getElementById('lb'), li=lb.querySelector('img'), lc=lb.querySelector('div');
+document.addEventListener('click',function(e){var x=e.target;if(x.tagName==='IMG'&&!lb.contains(x)){li.src=x.src;lc.textContent=x.alt||'';lb.classList.add('on')}else if(lb.contains(x)){lb.classList.remove('on')}});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.classList.remove('on')});
+
+var LBL={izq:'Montaña izq.',cen:'Pantallas centro',der:'Montaña der.'};
+function img(src,alt){return src?'<img loading="lazy" src="'+esc(src)+'" alt="'+esc(alt)+'">':''}
+function stage(get,prefix){var c=get('cen'),i=get('izq'),d=get('der');var h='<div class="stage">';
+  if(c)h+='<figure>'+img(c,prefix+LBL.cen)+'<figcaption>'+LBL.cen+'</figcaption></figure>';
+  if(i||d)h+='<div class="mtn">'+(i?'<figure>'+img(i,prefix+LBL.izq)+'<figcaption>'+LBL.izq+'</figcaption></figure>':'')+(d?'<figure>'+img(d,prefix+LBL.der)+'<figcaption>'+LBL.der+'</figcaption></figure>':'')+'</div>';
+  return h+'</div>'}
+function chips(a,cls){return (a||[]).map(function(t){return '<span class="chip '+(cls||'')+'">'+esc(t)+'</span>'}).join('')}
+function list(a){return a&&a.length?'<ul>'+a.map(function(t){return '<li>'+esc(t)+'</li>'}).join('')+'</ul>':''}
+
+function panelPrevios(s){var p=s.previos;
+  if(!s.generar) return '<div class="empty">Esta escena no pasa por el generador. '+esc(s.nota||'')+'</div>';
+  if(!p) return '<div class="empty">Todavía no hay previos. Se generan en la PC de render con <code>GENERAR_PREVIOS.bat</code>.</div>';
+  var f=p.files||{};var h='';
+  if(p.desactualizado) h+='<p class="nota" style="margin:0 0 10px">Hay referencias nuevas desde la última generación: estos previos se van a rehacer.</p>';
+  h+='<div class="seg" role="group" aria-label="Luz"><button class="luna" data-l="luna" aria-pressed="true">☾ Noche de luna</button><button class="atardecer" data-l="atardecer" aria-pressed="false">☀ Atardecer</button></div>';
+  ['luna','atardecer'].forEach(function(L,ix){h+='<div class="lset" data-l="'+L+'"'+(ix?' hidden':'')+'>'+stage(function(k){return f[L+'_'+k]},'Previo '+L+' · ')+'</div>'});
+  if(f.timelapse_izq||f.timelapse_der){h+='<div class="tl"><h5>Timelapse de luz (loop · la luz entra desde el centro)</h5><div class="mtn">';
+    ['izq','der'].forEach(function(k){if(f['timelapse_'+k])h+='<figure><video src="'+esc(f['timelapse_'+k])+'" muted loop playsinline autoplay preload="metadata"'+(f['luz_'+k]?' poster="'+esc(f['luz_'+k])+'"':'')+'></video><figcaption>'+LBL[k]+'</figcaption>'+(f['luz_'+k]?img(f['luz_'+k],'Cuadros guía de luz · '+LBL[k]):'')+'</figure>'});
+    h+='</div></div>'}
+  h+='<p class="hint" style="margin-top:10px">Generado '+esc(p.generated_at)+' · motor '+esc(p.engine)+' · referencias usadas: '+(p.refs_al_generar&&p.refs_al_generar.length?esc(p.refs_al_generar.join(', ')):'ninguna (solo el prompt de la escena)')+'</p>';
+  return h}
+
+function panelRefs(s,repo,branch){var up='https://github.com/'+repo+'/upload/'+branch+'/referencias/'+encodeURIComponent(s.slug);
+  var tree='https://github.com/'+repo+'/tree/'+branch+'/referencias/'+encodeURIComponent(s.slug);
+  var h='<div class="upl"><a class="btn" href="'+up+'" target="_blank" rel="noopener">＋ Subir referencia</a><a class="btn ghost" href="'+tree+'" target="_blank" rel="noopener">Ver carpeta</a><span class="hint">JPG/PNG. En el mensaje del commit contá qué querés tomar de la imagen.</span></div>';
+  if(!s.refs.length) return h+'<div class="empty">Sin referencias todavía. Subí la primera.</div>';
+  return h+'<div class="refs">'+s.refs.map(function(r){return '<figure class="ref">'+img(r.src,'Referencia '+s.code+(r.autor?' · '+r.autor:''))+'<figcaption><b>'+esc(r.autor||'—')+'</b> · '+esc(r.fecha||'')+(r.nota?'<br>'+esc(r.nota):'')+'</figcaption></figure>'}).join('')+'</div>'}
+
+function panel25(c){if(!c||!c.y25) return '<div class="empty">Sin datos 2025.</div>';
+  var i=c.img25||{};var h='<p class="small">'+esc(c.y25)+'</p>';
+  if(i.comp)h+='<figure>'+img(i.comp,'2025 composición general')+'<figcaption>Composición general</figcaption></figure>';
+  if(i.cen||i.izq||i.der)h+=stage(function(k){return i[k]},'2025 · ');
+  if(!i.comp&&!i.cen&&!i.izq)h+='<div class="empty">Sin pieza propia en el collect 2025.</div>';
+  if(c.t25&&c.t25.length)h+='<span class="lbl">Cómo se hizo</span>'+chips(c.t25);
+  if(c.fix25&&c.fix25.length)h+='<span class="lbl">Correcciones del cliente 2025</span><div class="small">'+list(c.fix25)+'</div>';
+  return h}
+
+function panelGerman(c){if(!c||c.status26==='sin') return '<div class="empty">German todavía no trabajó esta escena.</div>';
+  var h=(c.crit26?'<span class="lbl">Diagnóstico</span><p class="small">'+esc(c.crit26)+'</p>':'')+'<p class="small">'+esc(c.y26)+'</p>';
+  var g=c.img26||[];var cen=g.filter(function(x){return x.kind==='cen'})[0],iz=g.filter(function(x){return x.kind==='izq'})[0],de=g.filter(function(x){return x.kind==='der'})[0];
+  if(cen||iz||de)h+=stage(function(k){var o={cen:cen,izq:iz,der:de}[k];return o&&o.src},'German · ');
+  g.filter(function(x){return x.kind==='strip'||x.kind==='single'}).forEach(function(x){h+='<figure style="margin-top:8px">'+img(x.src,x.cap)+'<figcaption>'+esc(x.cap)+'</figcaption></figure>'});
+  if(c.t26&&c.t26.length)h+='<span class="lbl">Herramientas</span>'+chips(c.t26,'m');
+  if(c.todo26&&c.todo26.length)h+='<span class="lbl">Pendientes</span><div class="small">'+list(c.todo26)+'</div>';
+  return h}
+
+var KIND={paisaje:'Paisaje',tela:'Tela / poncho',fuego:'Fuego',bandera:'Bandera'};
+function scene(s,repo,branch){var c=s.ctx||{};var p=s.previos;var nref=s.refs.length;
+  var badges='<span class="badge '+(nref?'b-ok':'b-no')+'">'+nref+' ref.</span>'+(p?'<span class="badge b-moon">Previos IA</span>':'')+(c.status26&&c.status26!=='sin'?'<span class="badge b-mid">German</span>':'')+(s.timelapse?'<span class="badge b-moon">Timelapse</span>':'');
+  var first=p?'previos':'refs';
+  var tabs=[['previos','Previos IA'],['refs','Referencias ('+nref+')'],['y25','2025'],['german','German 2026']];
+  var h='<article class="scene" id="'+esc(s.code)+'" data-refs="'+nref+'" data-prev="'+(p?1:0)+'" data-text="'+esc((s.code+' '+s.title+' '+(s.verse||'')).toLowerCase())+'">';
+  h+='<div class="shead"><span class="code">'+esc(s.code)+'</span><h3>'+esc(s.title)+'</h3><span class="meta">⏱ '+esc(s.time)+' · '+esc(KIND[s.kind]||s.kind)+(c.dur?' · '+esc(c.dur):'')+'</span><div class="badges">'+badges+'</div></div>';
+  if(s.verse)h+='<blockquote>'+esc(s.verse)+'</blockquote>';
+  if(s.nota)h+='<p class="nota">'+esc(s.nota)+'</p>';
+  h+='<div class="tabs" role="tablist">'+tabs.map(function(t){return '<button class="tab" role="tab" data-t="'+t[0]+'" aria-selected="'+(t[0]===first)+'">'+t[1]+'</button>'}).join('')+'</div>';
+  h+='<div class="panel" data-p="previos"'+(first==='previos'?'':' hidden')+'>'+panelPrevios(s)+'</div>';
+  h+='<div class="panel" data-p="refs"'+(first==='refs'?'':' hidden')+'>'+panelRefs(s,repo,branch)+'</div>';
+  h+='<div class="panel" data-p="y25" hidden>'+panel25(c)+'</div>';
+  h+='<div class="panel" data-p="german" hidden>'+panelGerman(c)+'</div>';
+  return h+'</article>'}
+
+fetch('data/site.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(d){
+  document.getElementById('gen').textContent=d.generado;
+  document.getElementById('nav').innerHTML=d.blocks.map(function(b){return '<a href="#'+b.id+'"><b>'+b.id+'</b> '+esc(b.name)+'</a>'}).join('')+'<a href="#zonas">Zonas aptas</a>';
+  document.getElementById('blocks').innerHTML=d.blocks.map(function(b){
+    return '<section class="block" id="'+b.id+'"><div class="bhead"><div class="bnum">'+b.id+'</div><div><h2>'+esc(b.name)+'</h2><div class="btrack">♪ '+esc(b.track)+'</div></div></div><p class="bintro">'+esc(b.intro)+'</p>'+b.scenes.map(function(s){return scene(s,d.repo,d.branch)}).join('')+'</section>'}).join('');
+  wire(); applyFilter(store.get('fnt-filter')||'todas');
+}).catch(function(e){document.getElementById('loading').textContent='No se pudieron cargar los datos ('+e+').'});
+
+function wire(){
+  document.querySelectorAll('.scene').forEach(function(sc){
+    sc.querySelectorAll('.tab').forEach(function(tb){tb.onclick=function(){sc.querySelectorAll('.tab').forEach(function(x){x.setAttribute('aria-selected',x===tb)});sc.querySelectorAll('.panel').forEach(function(p){p.hidden=p.dataset.p!==tb.dataset.t})}});
+    sc.querySelectorAll('.seg button').forEach(function(b){b.onclick=function(){var seg=b.parentNode;seg.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});sc.querySelectorAll('.lset').forEach(function(s){s.hidden=s.dataset.l!==b.dataset.l})}});
+  });
+}
+var cur='todas';
+function applyFilter(f){cur=f;store.set('fnt-filter',f);document.querySelectorAll('.filters .fbtn').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.f===f)});run()}
+function run(){var q=(document.getElementById('q').value||'').toLowerCase().trim();
+  document.querySelectorAll('.scene').forEach(function(s){var ok=true,n=+s.dataset.refs;
+    if(cur==='conrefs')ok=n>0;else if(cur==='sinrefs')ok=n===0;else if(cur==='previos')ok=s.dataset.prev==='1';
+    if(q&&s.dataset.text.indexOf(q)<0)ok=false;s.classList.toggle('hidden',!ok)});
+  document.querySelectorAll('.block').forEach(function(b){b.classList.toggle('hidden',!b.querySelector('.scene:not(.hidden)'))})}
+document.querySelectorAll('.filters .fbtn').forEach(function(b){b.onclick=function(){applyFilter(b.dataset.f)}});
+document.getElementById('q').addEventListener('input',run);
+})();
+</script>
+</body>
+</html>
