@@ -1,0 +1,27 @@
+{
+ "code": "B3.10",
+ "slug": "B3.10_LOS_DE_QUIROGA",
+ "version": "e2ee48b972",
+ "scene_hash": "b2ee25b8",
+ "engine": "comfy",
+ "generated_at": "2026-10-10 17:04",
+ "refs": [],
+ "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
+ "files": {
+  "luna_izq": "luna_izq.jpg",
+  "luna_cen": "luna_cen.jpg",
+  "luna_der": "luna_der.jpg",
+  "atardecer_izq": "atardecer_izq.jpg",
+  "atardecer_cen": "atardecer_cen.jpg",
+  "atardecer_der": "atardecer_der.jpg"
+ },
+ "seed": 11432187,
+ "prompts": {
+  "luna_izq": "Moonlit night scene. Everything is bathed in cold blue moonlight coming from the right: silver-blue rim light on the ridges, deep navy-blue shadows in every gully, strong blue color grading, local colors desaturated by the moonlight, very dark sky with a few stars. The landscape covers the whole mountain from base to summit. Treat the mountain as one continuous surface texture: vegetation only as low ground cover or as a continuous canopy seen from above, no isolated tall trees, no tall cacti, no poles, no vertical objects, no buildings. The beauty comes from color, rock texture, strata and the raking light that sculpts every ridge and gully. The mountain burns: flames and glowing embers cover the slopes following the relief under a blood-red sky, smoke. Natural landscape photography, highly detailed, realistic textures, no people, no text, no buildings unless described.",
+  "luna_cen": "Moonlit night scene. Everything is bathed in cold blue moonlight coming from behind the scene (backlight): silver-blue rim light on the ridges, deep navy-blue shadows in every gully, strong blue color grading, local colors desaturated by the moonlight, very dark sky with a few stars. Wide panoramic landscape view. La Rioja plains under a blood-red sky, columns of fire and smoke. Natural landscape photography, highly detailed, realistic textures, no people, no text, no buildings unless described.",
+  "luna_der": "Moonlit night scene. Everything is bathed in cold blue moonlight coming from the left: silver-blue rim light on the ridges, deep navy-blue shadows in every gully, strong blue color grading, local colors desaturated by the moonlight, very dark sky with a few stars. The landscape covers the whole long hill from base to ridge. Treat the mountain as one continuous surface texture: vegetation only as low ground cover or as a continuous canopy seen from above, no isolated tall trees, no tall cacti, no poles, no vertical objects, no buildings. The beauty comes from color, rock texture, strata and the raking light that sculpts every ridge and gully. The mountain burns: flames and glowing embers cover the slopes following the relief under a blood-red sky, smoke. Natural landscape photography, highly detailed, realistic textures, no people, no text, no buildings unless described.",
+  "atardecer_izq": "Golden hour sunset. Warm low orange sunlight rakes across the relief coming from the left: glowing orange and amber highlights on every ridge, rock and plant, long violet shadows in the gullies, warm orange and magenta color grading, dusky sky. The landscape covers the whole mountain from base to summit. Treat the mountain as one continuous surface texture: vegetation only as low ground cover or as a continuous canopy seen from above, no isolated tall trees, no tall cacti, no poles, no vertical objects, no buildings. The beauty comes from color, rock texture, strata and the raking light that sculpts every ridge and gully. The mountain burns: flames and glowing embers cover the slopes following the relief under a blood-red sky, smoke. Natural landscape photography, highly detailed, realistic textures, no people, no text, no buildings unless described.",
+  "atardecer_cen": "Golden hour sunset. Warm low orange sunlight rakes across the relief coming from behind the scene (backlight): glowing orange and amber highlights on every ridge, rock and plant, long violet shadows in the gullies, warm orange and magenta color grading, dusky sky. Wide panoramic landscape view. La Rioja plains under a blood-red sky, columns of fire and smoke. Natural landscape photography, highly detailed, realistic textures, no people, no text, no buildings unless described.",
+  "atardecer_der": "Golden hour sunset. Warm low orange sunlight rakes across the relief coming from the right: glowing orange and amber highlights on every ridge, rock and plant, long violet shadows in the gullies, warm orange and magenta color grading, dusky sky. The landscape covers the whole long hill from base to ridge. Treat the mountain as one continuous surface texture: vegetation only as low ground cover or as a continuous canopy seen from above, no isolated tall trees, no tall cacti, no poles, no vertical objects, no buildings. The beauty comes from color, rock texture, strata and the raking light that sculpts every ridge and gully. The mountain burns: flames and glowing embers cover the slopes following the relief under a blood-red sky, smoke. Natural landscape photography, highly detailed, realistic textures, no people, no text, no buildings unless described."
+ }
+}

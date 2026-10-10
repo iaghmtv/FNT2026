@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-10 17:52 UTC",
+ "generado": "2026-10-10 20:07 UTC",
  "repo": "iaghmtv/FNT2026",
  "branch": "main",
  "blocks": [
@@ -40,7 +40,26 @@
       "img26": []
      },
      "refs": [],
-     "previos": null,
+     "previos": {
+      "code": "B0.00",
+      "slug": "B0.00_ANTORCHA",
+      "version": "e2ee48b972",
+      "scene_hash": "e9d93a5b",
+      "engine": "comfy",
+      "generated_at": "2026-10-10 17:03",
+      "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
+      "files": {
+       "luna_izq": "previos/B0.00_ANTORCHA/luna_izq.jpg",
+       "luna_cen": "previos/B0.00_ANTORCHA/luna_cen.jpg",
+       "luna_der": "previos/B0.00_ANTORCHA/luna_der.jpg",
+       "atardecer_izq": "previos/B0.00_ANTORCHA/atardecer_izq.jpg",
+       "atardecer_cen": "previos/B0.00_ANTORCHA/atardecer_cen.jpg",
+       "atardecer_der": "previos/B0.00_ANTORCHA/atardecer_der.jpg"
+      },
+      "seed": 10991582,
+      "refs_al_generar": [],
+      "desactualizado": false
+     },
      "pedidos": []
     },
     {
@@ -99,7 +118,26 @@
       ]
      },
      "refs": [],
-     "previos": null,
+     "previos": {
+      "code": "B0.01",
+      "slug": "B0.01_BUENAVENTURA_LUNA",
+      "version": "e2ee48b972",
+      "scene_hash": "7c7da4ca",
+      "engine": "comfy",
+      "generated_at": "2026-10-10 17:03",
+      "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
+      "files": {
+       "luna_izq": "previos/B0.01_BUENAVENTURA_LUNA/luna_izq.jpg",
+       "luna_cen": "previos/B0.01_BUENAVENTURA_LUNA/luna_cen.jpg",
+       "luna_der": "previos/B0.01_BUENAVENTURA_LUNA/luna_der.jpg",
+       "atardecer_izq": "previos/B0.01_BUENAVENTURA_LUNA/atardecer_izq.jpg",
+       "atardecer_cen": "previos/B0.01_BUENAVENTURA_LUNA/atardecer_cen.jpg",
+       "atardecer_der": "previos/B0.01_BUENAVENTURA_LUNA/atardecer_der.jpg"
+      },
+      "seed": 14616238,
+      "refs_al_generar": [],
+      "desactualizado": false
+     },
      "pedidos": []
     }
    ]
@@ -187,7 +225,30 @@
       ]
      },
      "refs": [],
-     "previos": null,
+     "previos": {
+      "code": "B1.01",
+      "slug": "B1.01_NORTE_SELVATICO",
+      "version": "e2ee48b972",
+      "scene_hash": "d8f1fe24",
+      "engine": "comfy",
+      "generated_at": "2026-10-10 17:03",
+      "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
+      "files": {
+       "luna_izq": "previos/B1.01_NORTE_SELVATICO/luna_izq.jpg",
+       "luna_cen": "previos/B1.01_NORTE_SELVATICO/luna_cen.jpg",
+       "luna_der": "previos/B1.01_NORTE_SELVATICO/luna_der.jpg",
+       "atardecer_izq": "previos/B1.01_NORTE_SELVATICO/atardecer_izq.jpg",
+       "atardecer_cen": "previos/B1.01_NORTE_SELVATICO/atardecer_cen.jpg",
+       "atardecer_der": "previos/B1.01_NORTE_SELVATICO/atardecer_der.jpg",
+       "timelapse_izq": "previos/B1.01_NORTE_SELVATICO/timelapse_izq.mp4",
+       "luz_izq": "previos/B1.01_NORTE_SELVATICO/luz_izq.jpg",
+       "timelapse_der": "previos/B1.01_NORTE_SELVATICO/timelapse_der.mp4",
+       "luz_der": "previos/B1.01_NORTE_SELVATICO/luz_der.jpg"
+      },
+      "seed": 7876847,
+      "refs_al_generar": [],
+      "desactualizado": false
+     },
      "pedidos": []
     },
     {
@@ -261,7 +322,30 @@
       ]
      },
      "refs": [],
-     "previos": null,
+     "previos": {
+      "code": "B1.02",
+      "slug": "B1.02_LLANO_SUR_SELVA",
+      "version": "e2ee48b972",
+      "scene_hash": "b53e98de",
+      "engine": "comfy",
+      "generated_at": "2026-10-10 17:03",
+      "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
+      "files": {
+       "luna_izq": "previos/B1.02_LLANO_SUR_SELVA/luna_izq.jpg",
+       "luna_cen": "previos/B1.02_LLANO_SUR_SELVA/luna_cen.jpg",
+       "luna_der": "previos/B1.02_LLANO_SUR_SELVA/luna_der.jpg",
+       "atardecer_izq": "previos/B1.02_LLANO_SUR_SELVA/atardecer_izq.jpg",
+       "atardecer_cen": "previos/B1.02_LLANO_SUR_SELVA/atardecer_cen.jpg",
+       "atardecer_der": "previos/B1.02_LLANO_SUR_SELVA/atardecer_der.jpg",
+       "timelapse_izq": "previos/B1.02_LLANO_SUR_SELVA/timelapse_izq.mp4",
+       "luz_izq": "previos/B1.02_LLANO_SUR_SELVA/luz_izq.jpg",
+       "timelapse_der": "previos/B1.02_LLANO_SUR_SELVA/timelapse_der.mp4",
+       "luz_der": "previos/B1.02_LLANO_SUR_SELVA/luz_der.jpg"
+      },
+      "seed": 3622852,
+      "refs_al_generar": [],
+      "desactualizado": false
+     },
      "pedidos": []
     },
     {
@@ -332,7 +416,30 @@
       ]
      },
      "refs": [],
-     "previos": null,
+     "previos": {
+      "code": "B1.03",
+      "slug": "B1.03_PASTORES",
+      "version": "e2ee48b972",
+      "scene_hash": "c533eb4e",
+      "engine": "comfy",
+      "generated_at": "2026-10-10 17:03",
+      "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
+      "files": {
+       "luna_izq": "previos/B1.03_PASTORES/luna_izq.jpg",
+       "luna_cen": "previos/B1.03_PASTORES/luna_cen.jpg",
+       "luna_der": "previos/B1.03_PASTORES/luna_der.jpg",
+       "atardecer_izq": "previos/B1.03_PASTORES/atardecer_izq.jpg",
+       "atardecer_cen": "previos/B1.03_PASTORES/atardecer_cen.jpg",
+       "atardecer_der": "previos/B1.03_PASTORES/atardecer_der.jpg",
+       "timelapse_izq": "previos/B1.03_PASTORES/timelapse_izq.mp4",
+       "luz_izq": "previos/B1.03_PASTORES/luz_izq.jpg",
+       "timelapse_der": "previos/B1.03_PASTORES/timelapse_der.mp4",
+       "luz_der": "previos/B1.03_PASTORES/luz_der.jpg"
+      },
+      "seed": 3795293,
+      "refs_al_generar": [],
+      "desactualizado": false
+     },
      "pedidos": []
     },
     {
@@ -403,7 +510,30 @@
       ]
      },
      "refs": [],
-     "previos": null,
+     "previos": {
+      "code": "B1.04",
+      "slug": "B1.04_HIJOS_DE_LA_SELVA_GUARANIES",
+      "version": "e2ee48b972",
+      "scene_hash": "3a3ff116",
+      "engine": "comfy",
+      "generated_at": "2026-10-10 17:03",
+      "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
+      "files": {
+       "luna_izq": "previos/B1.04_HIJOS_DE_LA_SELVA_GUARANIES/luna_izq.jpg",
+       "luna_cen": "previos/B1.04_HIJOS_DE_LA_SELVA_GUARANIES/luna_cen.jpg",
+       "luna_der": "previos/B1.04_HIJOS_DE_LA_SELVA_GUARANIES/luna_der.jpg",
+       "atardecer_izq": "previos/B1.04_HIJOS_DE_LA_SELVA_GUARANIES/atardecer_izq.jpg",
+       "atardecer_cen": "previos/B1.04_HIJOS_DE_LA_SELVA_GUARANIES/atardecer_cen.jpg",
+       "atardecer_der": "previos/B1.04_HIJOS_DE_LA_SELVA_GUARANIES/atardecer_der.jpg",
+       "timelapse_izq": "previos/B1.04_HIJOS_DE_LA_SELVA_GUARANIES/timelapse_izq.mp4",
+       "luz_izq": "previos/B1.04_HIJOS_DE_LA_SELVA_GUARANIES/luz_izq.jpg",
+       "timelapse_der": "previos/B1.04_HIJOS_DE_LA_SELVA_GUARANIES/timelapse_der.mp4",
+       "luz_der": "previos/B1.04_HIJOS_DE_LA_SELVA_GUARANIES/luz_der.jpg"
+      },
+      "seed": 14472732,
+      "refs_al_generar": [],
+      "desactualizado": false
+     },
      "pedidos": []
     },
     {
@@ -474,7 +604,30 @@
       ]
      },
      "refs": [],
-     "previos": null,
+     "previos": {
+      "code": "B1.05",
+      "slug": "B1.05_VIEJO_RUNA",
+      "version": "e2ee48b972",
+      "scene_hash": "8a36f863",
+      "engine": "comfy",
+      "generated_at": "2026-10-10 17:03",
+      "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
+      "files": {
+       "luna_izq": "previos/B1.05_VIEJO_RUNA/luna_izq.jpg",
+       "luna_cen": "previos/B1.05_VIEJO_RUNA/luna_cen.jpg",
+       "luna_der": "previos/B1.05_VIEJO_RUNA/luna_der.jpg",
+       "atardecer_izq": "previos/B1.05_VIEJO_RUNA/atardecer_izq.jpg",
+       "atardecer_cen": "previos/B1.05_VIEJO_RUNA/atardecer_cen.jpg",
+       "atardecer_der": "previos/B1.05_VIEJO_RUNA/atardecer_der.jpg",
+       "timelapse_izq": "previos/B1.05_VIEJO_RUNA/timelapse_izq.mp4",
+       "luz_izq": "previos/B1.05_VIEJO_RUNA/luz_izq.jpg",
+       "timelapse_der": "previos/B1.05_VIEJO_RUNA/timelapse_der.mp4",
+       "luz_der": "previos/B1.05_VIEJO_RUNA/luz_der.jpg"
+      },
+      "seed": 15854308,
+      "refs_al_generar": [],
+      "desactualizado": false
+     },
      "pedidos": []
     },
     {
@@ -547,7 +700,30 @@
       ]
      },
      "refs": [],
-     "previos": null,
+     "previos": {
+      "code": "B1.06",
+      "slug": "B1.06_JUJENOS",
+      "version": "e2ee48b972",
+      "scene_hash": "37675e4f",
+      "engine": "comfy",
+      "generated_at": "2026-10-10 17:04",
+      "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
+      "files": {
+       "luna_izq": "previos/B1.06_JUJENOS/luna_izq.jpg",
+       "luna_cen": "previos/B1.06_JUJENOS/luna_cen.jpg",
+       "luna_der": "previos/B1.06_JUJENOS/luna_der.jpg",
+       "atardecer_izq": "previos/B1.06_JUJENOS/atardecer_izq.jpg",
+       "atardecer_cen": "previos/B1.06_JUJENOS/atardecer_cen.jpg",
+       "atardecer_der": "previos/B1.06_JUJENOS/atardecer_der.jpg",
+       "timelapse_izq": "previos/B1.06_JUJENOS/timelapse_izq.mp4",
+       "luz_izq": "previos/B1.06_JUJENOS/luz_izq.jpg",
+       "timelapse_der": "previos/B1.06_JUJENOS/timelapse_der.mp4",
+       "luz_der": "previos/B1.06_JUJENOS/luz_der.jpg"
+      },
+      "seed": 9733397,
+      "refs_al_generar": [],
+      "desactualizado": false
+     },
      "pedidos": []
     },
     {
@@ -621,7 +797,30 @@
       ]
      },
      "refs": [],
-     "previos": null,
+     "previos": {
+      "code": "B1.07",
+      "slug": "B1.07_LOS_DE_SALTA",
+      "version": "e2ee48b972",
+      "scene_hash": "7542a4d9",
+      "engine": "comfy",
+      "generated_at": "2026-10-10 17:04",
+      "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
+      "files": {
+       "luna_izq": "previos/B1.07_LOS_DE_SALTA/luna_izq.jpg",
+       "luna_cen": "previos/B1.07_LOS_DE_SALTA/luna_cen.jpg",
+       "luna_der": "previos/B1.07_LOS_DE_SALTA/luna_der.jpg",
+       "atardecer_izq": "previos/B1.07_LOS_DE_SALTA/atardecer_izq.jpg",
+       "atardecer_cen": "previos/B1.07_LOS_DE_SALTA/atardecer_cen.jpg",
+       "atardecer_der": "previos/B1.07_LOS_DE_SALTA/atardecer_der.jpg",
+       "timelapse_izq": "previos/B1.07_LOS_DE_SALTA/timelapse_izq.mp4",
+       "luz_izq": "previos/B1.07_LOS_DE_SALTA/luz_izq.jpg",
+       "timelapse_der": "previos/B1.07_LOS_DE_SALTA/timelapse_der.mp4",
+       "luz_der": "previos/B1.07_LOS_DE_SALTA/luz_der.jpg"
+      },
+      "seed": 9529547,
+      "refs_al_generar": [],
+      "desactualizado": false
+     },
      "pedidos": []
     },
     {
@@ -712,9 +911,10 @@
      "previos": {
       "code": "B1.08",
       "slug": "B1.08_RIOJANOS",
-      "version": "9db48b4403",
+      "version": "e2ee48b972",
+      "scene_hash": "0e8f1e18",
       "engine": "comfy",
-      "generated_at": "2026-10-10 13:06",
+      "generated_at": "2026-10-10 17:04",
       "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
       "files": {
        "luna_izq": "previos/B1.08_RIOJANOS/luna_izq.jpg",
@@ -802,7 +1002,30 @@
       ]
      },
      "refs": [],
-     "previos": null,
+     "previos": {
+      "code": "B1.09",
+      "slug": "B1.09_VERDES_LLANURAS",
+      "version": "e2ee48b972",
+      "scene_hash": "64fa913f",
+      "engine": "comfy",
+      "generated_at": "2026-10-10 17:04",
+      "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
+      "files": {
+       "luna_izq": "previos/B1.09_VERDES_LLANURAS/luna_izq.jpg",
+       "luna_cen": "previos/B1.09_VERDES_LLANURAS/luna_cen.jpg",
+       "luna_der": "previos/B1.09_VERDES_LLANURAS/luna_der.jpg",
+       "atardecer_izq": "previos/B1.09_VERDES_LLANURAS/atardecer_izq.jpg",
+       "atardecer_cen": "previos/B1.09_VERDES_LLANURAS/atardecer_cen.jpg",
+       "atardecer_der": "previos/B1.09_VERDES_LLANURAS/atardecer_der.jpg",
+       "timelapse_izq": "previos/B1.09_VERDES_LLANURAS/timelapse_izq.mp4",
+       "luz_izq": "previos/B1.09_VERDES_LLANURAS/luz_izq.jpg",
+       "timelapse_der": "previos/B1.09_VERDES_LLANURAS/timelapse_der.mp4",
+       "luz_der": "previos/B1.09_VERDES_LLANURAS/luz_der.jpg"
+      },
+      "seed": 10494647,
+      "refs_al_generar": [],
+      "desactualizado": false
+     },
      "pedidos": []
     },
     {
@@ -873,7 +1096,30 @@
       ]
      },
      "refs": [],
-     "previos": null,
+     "previos": {
+      "code": "B1.10",
+      "slug": "B1.10_CORRENTINOS",
+      "version": "e2ee48b972",
+      "scene_hash": "f9a69ab8",
+      "engine": "comfy",
+      "generated_at": "2026-10-10 17:04",
+      "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
+      "files": {
+       "luna_izq": "previos/B1.10_CORRENTINOS/luna_izq.jpg",
+       "luna_cen": "previos/B1.10_CORRENTINOS/luna_cen.jpg",
+       "luna_der": "previos/B1.10_CORRENTINOS/luna_der.jpg",
+       "atardecer_izq": "previos/B1.10_CORRENTINOS/atardecer_izq.jpg",
+       "atardecer_cen": "previos/B1.10_CORRENTINOS/atardecer_cen.jpg",
+       "atardecer_der": "previos/B1.10_CORRENTINOS/atardecer_der.jpg",
+       "timelapse_izq": "previos/B1.10_CORRENTINOS/timelapse_izq.mp4",
+       "luz_izq": "previos/B1.10_CORRENTINOS/luz_izq.jpg",
+       "timelapse_der": "previos/B1.10_CORRENTINOS/timelapse_der.mp4",
+       "luz_der": "previos/B1.10_CORRENTINOS/luz_der.jpg"
+      },
+      "seed": 9984175,
+      "refs_al_generar": [],
+      "desactualizado": false
+     },
      "pedidos": []
     },
     {
@@ -944,7 +1190,30 @@
       ]
      },
      "refs": [],
-     "previos": null,
+     "previos": {
+      "code": "B1.11",
+      "slug": "B1.11_CORDOBESES",
+      "version": "e2ee48b972",
+      "scene_hash": "f206622d",
+      "engine": "comfy",
+      "generated_at": "2026-10-10 17:04",
+      "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
+      "files": {
+       "luna_izq": "previos/B1.11_CORDOBESES/luna_izq.jpg",
+       "luna_cen": "previos/B1.11_CORDOBESES/luna_cen.jpg",
+       "luna_der": "previos/B1.11_CORDOBESES/luna_der.jpg",
+       "atardecer_izq": "previos/B1.11_CORDOBESES/atardecer_izq.jpg",
+       "atardecer_cen": "previos/B1.11_CORDOBESES/atardecer_cen.jpg",
+       "atardecer_der": "previos/B1.11_CORDOBESES/atardecer_der.jpg",
+       "timelapse_izq": "previos/B1.11_CORDOBESES/timelapse_izq.mp4",
+       "luz_izq": "previos/B1.11_CORDOBESES/luz_izq.jpg",
+       "timelapse_der": "previos/B1.11_CORDOBESES/timelapse_der.mp4",
+       "luz_der": "previos/B1.11_CORDOBESES/luz_der.jpg"
+      },
+      "seed": 6262992,
+      "refs_al_generar": [],
+      "desactualizado": false
+     },
      "pedidos": []
     }
    ]
@@ -987,7 +1256,26 @@
       "img26": []
      },
      "refs": [],
-     "previos": null,
+     "previos": {
+      "code": "B2.01",
+      "slug": "B2.01_VOZ_EN_OFF_FUEGO_CORAZON",
+      "version": "e2ee48b972",
+      "scene_hash": "a2bd4028",
+      "engine": "comfy",
+      "generated_at": "2026-10-10 17:04",
+      "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
+      "files": {
+       "luna_izq": "previos/B2.01_VOZ_EN_OFF_FUEGO_CORAZON/luna_izq.jpg",
+       "luna_cen": "previos/B2.01_VOZ_EN_OFF_FUEGO_CORAZON/luna_cen.jpg",
+       "luna_der": "previos/B2.01_VOZ_EN_OFF_FUEGO_CORAZON/luna_der.jpg",
+       "atardecer_izq": "previos/B2.01_VOZ_EN_OFF_FUEGO_CORAZON/atardecer_izq.jpg",
+       "atardecer_cen": "previos/B2.01_VOZ_EN_OFF_FUEGO_CORAZON/atardecer_cen.jpg",
+       "atardecer_der": "previos/B2.01_VOZ_EN_OFF_FUEGO_CORAZON/atardecer_der.jpg"
+      },
+      "seed": 186467,
+      "refs_al_generar": [],
+      "desactualizado": false
+     },
      "pedidos": []
     },
     {
@@ -1101,7 +1389,30 @@
       "img26": []
      },
      "refs": [],
-     "previos": null,
+     "previos": {
+      "code": "B3.01",
+      "slug": "B3.01_ENTRERRIANOS_Y_CHAQUENOS",
+      "version": "e2ee48b972",
+      "scene_hash": "05ecd111",
+      "engine": "comfy",
+      "generated_at": "2026-10-10 17:04",
+      "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
+      "files": {
+       "luna_izq": "previos/B3.01_ENTRERRIANOS_Y_CHAQUENOS/luna_izq.jpg",
+       "luna_cen": "previos/B3.01_ENTRERRIANOS_Y_CHAQUENOS/luna_cen.jpg",
+       "luna_der": "previos/B3.01_ENTRERRIANOS_Y_CHAQUENOS/luna_der.jpg",
+       "atardecer_izq": "previos/B3.01_ENTRERRIANOS_Y_CHAQUENOS/atardecer_izq.jpg",
+       "atardecer_cen": "previos/B3.01_ENTRERRIANOS_Y_CHAQUENOS/atardecer_cen.jpg",
+       "atardecer_der": "previos/B3.01_ENTRERRIANOS_Y_CHAQUENOS/atardecer_der.jpg",
+       "timelapse_izq": "previos/B3.01_ENTRERRIANOS_Y_CHAQUENOS/timelapse_izq.mp4",
+       "luz_izq": "previos/B3.01_ENTRERRIANOS_Y_CHAQUENOS/luz_izq.jpg",
+       "timelapse_der": "previos/B3.01_ENTRERRIANOS_Y_CHAQUENOS/timelapse_der.mp4",
+       "luz_der": "previos/B3.01_ENTRERRIANOS_Y_CHAQUENOS/luz_der.jpg"
+      },
+      "seed": 11799438,
+      "refs_al_generar": [],
+      "desactualizado": false
+     },
      "pedidos": []
     },
     {
@@ -1140,7 +1451,30 @@
       "img26": []
      },
      "refs": [],
-     "previos": null,
+     "previos": {
+      "code": "B3.02",
+      "slug": "B3.02_SANTIAGUENO",
+      "version": "e2ee48b972",
+      "scene_hash": "d4968571",
+      "engine": "comfy",
+      "generated_at": "2026-10-10 17:04",
+      "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
+      "files": {
+       "luna_izq": "previos/B3.02_SANTIAGUENO/luna_izq.jpg",
+       "luna_cen": "previos/B3.02_SANTIAGUENO/luna_cen.jpg",
+       "luna_der": "previos/B3.02_SANTIAGUENO/luna_der.jpg",
+       "atardecer_izq": "previos/B3.02_SANTIAGUENO/atardecer_izq.jpg",
+       "atardecer_cen": "previos/B3.02_SANTIAGUENO/atardecer_cen.jpg",
+       "atardecer_der": "previos/B3.02_SANTIAGUENO/atardecer_der.jpg",
+       "timelapse_izq": "previos/B3.02_SANTIAGUENO/timelapse_izq.mp4",
+       "luz_izq": "previos/B3.02_SANTIAGUENO/luz_izq.jpg",
+       "timelapse_der": "previos/B3.02_SANTIAGUENO/timelapse_der.mp4",
+       "luz_der": "previos/B3.02_SANTIAGUENO/luz_der.jpg"
+      },
+      "seed": 7700353,
+      "refs_al_generar": [],
+      "desactualizado": false
+     },
      "pedidos": []
     },
     {
@@ -1179,7 +1513,26 @@
       "img26": []
      },
      "refs": [],
-     "previos": null,
+     "previos": {
+      "code": "B3.03",
+      "slug": "B3.03_RANQUEL",
+      "version": "e2ee48b972",
+      "scene_hash": "493132b9",
+      "engine": "comfy",
+      "generated_at": "2026-10-10 17:04",
+      "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
+      "files": {
+       "luna_izq": "previos/B3.03_RANQUEL/luna_izq.jpg",
+       "luna_cen": "previos/B3.03_RANQUEL/luna_cen.jpg",
+       "luna_der": "previos/B3.03_RANQUEL/luna_der.jpg",
+       "atardecer_izq": "previos/B3.03_RANQUEL/atardecer_izq.jpg",
+       "atardecer_cen": "previos/B3.03_RANQUEL/atardecer_cen.jpg",
+       "atardecer_der": "previos/B3.03_RANQUEL/atardecer_der.jpg"
+      },
+      "seed": 7408117,
+      "refs_al_generar": [],
+      "desactualizado": false
+     },
      "pedidos": []
     },
     {
@@ -1216,7 +1569,26 @@
       "img26": []
      },
      "refs": [],
-     "previos": null,
+     "previos": {
+      "code": "B3.04",
+      "slug": "B3.04_LOS_DE_GUEMES",
+      "version": "e2ee48b972",
+      "scene_hash": "e9fef302",
+      "engine": "comfy",
+      "generated_at": "2026-10-10 17:04",
+      "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
+      "files": {
+       "luna_izq": "previos/B3.04_LOS_DE_GUEMES/luna_izq.jpg",
+       "luna_cen": "previos/B3.04_LOS_DE_GUEMES/luna_cen.jpg",
+       "luna_der": "previos/B3.04_LOS_DE_GUEMES/luna_der.jpg",
+       "atardecer_izq": "previos/B3.04_LOS_DE_GUEMES/atardecer_izq.jpg",
+       "atardecer_cen": "previos/B3.04_LOS_DE_GUEMES/atardecer_cen.jpg",
+       "atardecer_der": "previos/B3.04_LOS_DE_GUEMES/atardecer_der.jpg"
+      },
+      "seed": 7396943,
+      "refs_al_generar": [],
+      "desactualizado": false
+     },
      "pedidos": []
     },
     {
@@ -1253,7 +1625,26 @@
       "img26": []
      },
      "refs": [],
-     "previos": null,
+     "previos": {
+      "code": "B3.05",
+      "slug": "B3.05_LOS_DEL_CHACHO",
+      "version": "e2ee48b972",
+      "scene_hash": "e686d0bd",
+      "engine": "comfy",
+      "generated_at": "2026-10-10 17:04",
+      "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
+      "files": {
+       "luna_izq": "previos/B3.05_LOS_DEL_CHACHO/luna_izq.jpg",
+       "luna_cen": "previos/B3.05_LOS_DEL_CHACHO/luna_cen.jpg",
+       "luna_der": "previos/B3.05_LOS_DEL_CHACHO/luna_der.jpg",
+       "atardecer_izq": "previos/B3.05_LOS_DEL_CHACHO/atardecer_izq.jpg",
+       "atardecer_cen": "previos/B3.05_LOS_DEL_CHACHO/atardecer_cen.jpg",
+       "atardecer_der": "previos/B3.05_LOS_DEL_CHACHO/atardecer_der.jpg"
+      },
+      "seed": 10874012,
+      "refs_al_generar": [],
+      "desactualizado": false
+     },
      "pedidos": []
     },
     {
@@ -1290,7 +1681,26 @@
       "img26": []
      },
      "refs": [],
-     "previos": null,
+     "previos": {
+      "code": "B3.06",
+      "slug": "B3.06_ILUSTRE_PAZ",
+      "version": "e2ee48b972",
+      "scene_hash": "4f2026b4",
+      "engine": "comfy",
+      "generated_at": "2026-10-10 17:04",
+      "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
+      "files": {
+       "luna_izq": "previos/B3.06_ILUSTRE_PAZ/luna_izq.jpg",
+       "luna_cen": "previos/B3.06_ILUSTRE_PAZ/luna_cen.jpg",
+       "luna_der": "previos/B3.06_ILUSTRE_PAZ/luna_der.jpg",
+       "atardecer_izq": "previos/B3.06_ILUSTRE_PAZ/atardecer_izq.jpg",
+       "atardecer_cen": "previos/B3.06_ILUSTRE_PAZ/atardecer_cen.jpg",
+       "atardecer_der": "previos/B3.06_ILUSTRE_PAZ/atardecer_der.jpg"
+      },
+      "seed": 13103480,
+      "refs_al_generar": [],
+      "desactualizado": false
+     },
      "pedidos": []
     },
     {
@@ -1327,7 +1737,26 @@
       "img26": []
      },
      "refs": [],
-     "previos": null,
+     "previos": {
+      "code": "B3.07",
+      "slug": "B3.07_PAGO_LARGO",
+      "version": "e2ee48b972",
+      "scene_hash": "4779246a",
+      "engine": "comfy",
+      "generated_at": "2026-10-10 17:04",
+      "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
+      "files": {
+       "luna_izq": "previos/B3.07_PAGO_LARGO/luna_izq.jpg",
+       "luna_cen": "previos/B3.07_PAGO_LARGO/luna_cen.jpg",
+       "luna_der": "previos/B3.07_PAGO_LARGO/luna_der.jpg",
+       "atardecer_izq": "previos/B3.07_PAGO_LARGO/atardecer_izq.jpg",
+       "atardecer_cen": "previos/B3.07_PAGO_LARGO/atardecer_cen.jpg",
+       "atardecer_der": "previos/B3.07_PAGO_LARGO/atardecer_der.jpg"
+      },
+      "seed": 14679212,
+      "refs_al_generar": [],
+      "desactualizado": false
+     },
      "pedidos": []
     },
     {
@@ -1366,7 +1795,26 @@
       "img26": []
      },
      "refs": [],
-     "previos": null,
+     "previos": {
+      "code": "B3.08",
+      "slug": "B3.08_POZO_DE_VARGAS_Y_QUEBRACHO",
+      "version": "e2ee48b972",
+      "scene_hash": "922db4e5",
+      "engine": "comfy",
+      "generated_at": "2026-10-10 17:04",
+      "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
+      "files": {
+       "luna_izq": "previos/B3.08_POZO_DE_VARGAS_Y_QUEBRACHO/luna_izq.jpg",
+       "luna_cen": "previos/B3.08_POZO_DE_VARGAS_Y_QUEBRACHO/luna_cen.jpg",
+       "luna_der": "previos/B3.08_POZO_DE_VARGAS_Y_QUEBRACHO/luna_der.jpg",
+       "atardecer_izq": "previos/B3.08_POZO_DE_VARGAS_Y_QUEBRACHO/atardecer_izq.jpg",
+       "atardecer_cen": "previos/B3.08_POZO_DE_VARGAS_Y_QUEBRACHO/atardecer_cen.jpg",
+       "atardecer_der": "previos/B3.08_POZO_DE_VARGAS_Y_QUEBRACHO/atardecer_der.jpg"
+      },
+      "seed": 13023579,
+      "refs_al_generar": [],
+      "desactualizado": false
+     },
      "pedidos": []
     },
     {
@@ -1406,7 +1854,30 @@
       "img26": []
      },
      "refs": [],
-     "previos": null,
+     "previos": {
+      "code": "B3.09",
+      "slug": "B3.09_DIAGUITAS",
+      "version": "e2ee48b972",
+      "scene_hash": "e8b3d0f3",
+      "engine": "comfy",
+      "generated_at": "2026-10-10 17:04",
+      "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
+      "files": {
+       "luna_izq": "previos/B3.09_DIAGUITAS/luna_izq.jpg",
+       "luna_cen": "previos/B3.09_DIAGUITAS/luna_cen.jpg",
+       "luna_der": "previos/B3.09_DIAGUITAS/luna_der.jpg",
+       "atardecer_izq": "previos/B3.09_DIAGUITAS/atardecer_izq.jpg",
+       "atardecer_cen": "previos/B3.09_DIAGUITAS/atardecer_cen.jpg",
+       "atardecer_der": "previos/B3.09_DIAGUITAS/atardecer_der.jpg",
+       "timelapse_izq": "previos/B3.09_DIAGUITAS/timelapse_izq.mp4",
+       "luz_izq": "previos/B3.09_DIAGUITAS/luz_izq.jpg",
+       "timelapse_der": "previos/B3.09_DIAGUITAS/timelapse_der.mp4",
+       "luz_der": "previos/B3.09_DIAGUITAS/luz_der.jpg"
+      },
+      "seed": 3130640,
+      "refs_al_generar": [],
+      "desactualizado": false
+     },
      "pedidos": []
     },
     {
@@ -1445,7 +1916,26 @@
       "img26": []
      },
      "refs": [],
-     "previos": null,
+     "previos": {
+      "code": "B3.10",
+      "slug": "B3.10_LOS_DE_QUIROGA",
+      "version": "e2ee48b972",
+      "scene_hash": "b2ee25b8",
+      "engine": "comfy",
+      "generated_at": "2026-10-10 17:04",
+      "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
+      "files": {
+       "luna_izq": "previos/B3.10_LOS_DE_QUIROGA/luna_izq.jpg",
+       "luna_cen": "previos/B3.10_LOS_DE_QUIROGA/luna_cen.jpg",
+       "luna_der": "previos/B3.10_LOS_DE_QUIROGA/luna_der.jpg",
+       "atardecer_izq": "previos/B3.10_LOS_DE_QUIROGA/atardecer_izq.jpg",
+       "atardecer_cen": "previos/B3.10_LOS_DE_QUIROGA/atardecer_cen.jpg",
+       "atardecer_der": "previos/B3.10_LOS_DE_QUIROGA/atardecer_der.jpg"
+      },
+      "seed": 11432187,
+      "refs_al_generar": [],
+      "desactualizado": false
+     },
      "pedidos": []
     },
     {
@@ -1484,7 +1974,26 @@
       "img26": []
      },
      "refs": [],
-     "previos": null,
+     "previos": {
+      "code": "B3.11",
+      "slug": "B3.11_LOS_DE_FIERRO",
+      "version": "e2ee48b972",
+      "scene_hash": "5f74c46e",
+      "engine": "comfy",
+      "generated_at": "2026-10-10 17:04",
+      "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
+      "files": {
+       "luna_izq": "previos/B3.11_LOS_DE_FIERRO/luna_izq.jpg",
+       "luna_cen": "previos/B3.11_LOS_DE_FIERRO/luna_cen.jpg",
+       "luna_der": "previos/B3.11_LOS_DE_FIERRO/luna_der.jpg",
+       "atardecer_izq": "previos/B3.11_LOS_DE_FIERRO/atardecer_izq.jpg",
+       "atardecer_cen": "previos/B3.11_LOS_DE_FIERRO/atardecer_cen.jpg",
+       "atardecer_der": "previos/B3.11_LOS_DE_FIERRO/atardecer_der.jpg"
+      },
+      "seed": 5852787,
+      "refs_al_generar": [],
+      "desactualizado": false
+     },
      "pedidos": []
     },
     {
@@ -1523,7 +2032,26 @@
       "img26": []
      },
      "refs": [],
-     "previos": null,
+     "previos": {
+      "code": "B3.12",
+      "slug": "B3.12_LOS_DE_LAVALLE",
+      "version": "e2ee48b972",
+      "scene_hash": "d0c94fec",
+      "engine": "comfy",
+      "generated_at": "2026-10-10 17:04",
+      "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
+      "files": {
+       "luna_izq": "previos/B3.12_LOS_DE_LAVALLE/luna_izq.jpg",
+       "luna_cen": "previos/B3.12_LOS_DE_LAVALLE/luna_cen.jpg",
+       "luna_der": "previos/B3.12_LOS_DE_LAVALLE/luna_der.jpg",
+       "atardecer_izq": "previos/B3.12_LOS_DE_LAVALLE/atardecer_izq.jpg",
+       "atardecer_cen": "previos/B3.12_LOS_DE_LAVALLE/atardecer_cen.jpg",
+       "atardecer_der": "previos/B3.12_LOS_DE_LAVALLE/atardecer_der.jpg"
+      },
+      "seed": 14416138,
+      "refs_al_generar": [],
+      "desactualizado": false
+     },
      "pedidos": []
     }
    ]
@@ -1563,7 +2091,30 @@
       "img26": []
      },
      "refs": [],
-     "previos": null,
+     "previos": {
+      "code": "B4.01",
+      "slug": "B4.01_AURORA_FALUCHO",
+      "version": "e2ee48b972",
+      "scene_hash": "c5935375",
+      "engine": "comfy",
+      "generated_at": "2026-10-10 17:05",
+      "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
+      "files": {
+       "luna_izq": "previos/B4.01_AURORA_FALUCHO/luna_izq.jpg",
+       "luna_cen": "previos/B4.01_AURORA_FALUCHO/luna_cen.jpg",
+       "luna_der": "previos/B4.01_AURORA_FALUCHO/luna_der.jpg",
+       "atardecer_izq": "previos/B4.01_AURORA_FALUCHO/atardecer_izq.jpg",
+       "atardecer_cen": "previos/B4.01_AURORA_FALUCHO/atardecer_cen.jpg",
+       "atardecer_der": "previos/B4.01_AURORA_FALUCHO/atardecer_der.jpg",
+       "timelapse_izq": "previos/B4.01_AURORA_FALUCHO/timelapse_izq.mp4",
+       "luz_izq": "previos/B4.01_AURORA_FALUCHO/luz_izq.jpg",
+       "timelapse_der": "previos/B4.01_AURORA_FALUCHO/timelapse_der.mp4",
+       "luz_der": "previos/B4.01_AURORA_FALUCHO/luz_der.jpg"
+      },
+      "seed": 6802789,
+      "refs_al_generar": [],
+      "desactualizado": false
+     },
      "pedidos": []
     },
     {
@@ -1644,7 +2195,30 @@
       "img26": []
      },
      "refs": [],
-     "previos": null,
+     "previos": {
+      "code": "B5.01",
+      "slug": "B5.01_LOS_5_DE_PRINGLES",
+      "version": "e2ee48b972",
+      "scene_hash": "036a6144",
+      "engine": "comfy",
+      "generated_at": "2026-10-10 17:05",
+      "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
+      "files": {
+       "luna_izq": "previos/B5.01_LOS_5_DE_PRINGLES/luna_izq.jpg",
+       "luna_cen": "previos/B5.01_LOS_5_DE_PRINGLES/luna_cen.jpg",
+       "luna_der": "previos/B5.01_LOS_5_DE_PRINGLES/luna_der.jpg",
+       "atardecer_izq": "previos/B5.01_LOS_5_DE_PRINGLES/atardecer_izq.jpg",
+       "atardecer_cen": "previos/B5.01_LOS_5_DE_PRINGLES/atardecer_cen.jpg",
+       "atardecer_der": "previos/B5.01_LOS_5_DE_PRINGLES/atardecer_der.jpg",
+       "timelapse_izq": "previos/B5.01_LOS_5_DE_PRINGLES/timelapse_izq.mp4",
+       "luz_izq": "previos/B5.01_LOS_5_DE_PRINGLES/luz_izq.jpg",
+       "timelapse_der": "previos/B5.01_LOS_5_DE_PRINGLES/timelapse_der.mp4",
+       "luz_der": "previos/B5.01_LOS_5_DE_PRINGLES/luz_der.jpg"
+      },
+      "seed": 10931872,
+      "refs_al_generar": [],
+      "desactualizado": false
+     },
      "pedidos": []
     },
     {
@@ -1681,7 +2255,26 @@
       "img26": []
      },
      "refs": [],
-     "previos": null,
+     "previos": {
+      "code": "B5.02",
+      "slug": "B5.02_LOS_DE_LOPEZ",
+      "version": "e2ee48b972",
+      "scene_hash": "f5c84348",
+      "engine": "comfy",
+      "generated_at": "2026-10-10 17:05",
+      "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
+      "files": {
+       "luna_izq": "previos/B5.02_LOS_DE_LOPEZ/luna_izq.jpg",
+       "luna_cen": "previos/B5.02_LOS_DE_LOPEZ/luna_cen.jpg",
+       "luna_der": "previos/B5.02_LOS_DE_LOPEZ/luna_der.jpg",
+       "atardecer_izq": "previos/B5.02_LOS_DE_LOPEZ/atardecer_izq.jpg",
+       "atardecer_cen": "previos/B5.02_LOS_DE_LOPEZ/atardecer_cen.jpg",
+       "atardecer_der": "previos/B5.02_LOS_DE_LOPEZ/atardecer_der.jpg"
+      },
+      "seed": 15961450,
+      "refs_al_generar": [],
+      "desactualizado": false
+     },
      "pedidos": []
     },
     {
@@ -1718,7 +2311,30 @@
       "img26": []
      },
      "refs": [],
-     "previos": null,
+     "previos": {
+      "code": "B5.03",
+      "slug": "B5.03_SANJUANINO_Y_MENDOCINO",
+      "version": "e2ee48b972",
+      "scene_hash": "cb0edae9",
+      "engine": "comfy",
+      "generated_at": "2026-10-10 17:05",
+      "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
+      "files": {
+       "luna_izq": "previos/B5.03_SANJUANINO_Y_MENDOCINO/luna_izq.jpg",
+       "luna_cen": "previos/B5.03_SANJUANINO_Y_MENDOCINO/luna_cen.jpg",
+       "luna_der": "previos/B5.03_SANJUANINO_Y_MENDOCINO/luna_der.jpg",
+       "atardecer_izq": "previos/B5.03_SANJUANINO_Y_MENDOCINO/atardecer_izq.jpg",
+       "atardecer_cen": "previos/B5.03_SANJUANINO_Y_MENDOCINO/atardecer_cen.jpg",
+       "atardecer_der": "previos/B5.03_SANJUANINO_Y_MENDOCINO/atardecer_der.jpg",
+       "timelapse_izq": "previos/B5.03_SANJUANINO_Y_MENDOCINO/timelapse_izq.mp4",
+       "luz_izq": "previos/B5.03_SANJUANINO_Y_MENDOCINO/luz_izq.jpg",
+       "timelapse_der": "previos/B5.03_SANJUANINO_Y_MENDOCINO/timelapse_der.mp4",
+       "luz_der": "previos/B5.03_SANJUANINO_Y_MENDOCINO/luz_der.jpg"
+      },
+      "seed": 11521011,
+      "refs_al_generar": [],
+      "desactualizado": false
+     },
      "pedidos": []
     }
    ]
@@ -1755,7 +2371,30 @@
       "img26": []
      },
      "refs": [],
-     "previos": null,
+     "previos": {
+      "code": "B6.01",
+      "slug": "B6.01_CLARIN",
+      "version": "e2ee48b972",
+      "scene_hash": "d5c9f030",
+      "engine": "comfy",
+      "generated_at": "2026-10-10 17:05",
+      "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
+      "files": {
+       "luna_izq": "previos/B6.01_CLARIN/luna_izq.jpg",
+       "luna_cen": "previos/B6.01_CLARIN/luna_cen.jpg",
+       "luna_der": "previos/B6.01_CLARIN/luna_der.jpg",
+       "atardecer_izq": "previos/B6.01_CLARIN/atardecer_izq.jpg",
+       "atardecer_cen": "previos/B6.01_CLARIN/atardecer_cen.jpg",
+       "atardecer_der": "previos/B6.01_CLARIN/atardecer_der.jpg",
+       "timelapse_izq": "previos/B6.01_CLARIN/timelapse_izq.mp4",
+       "luz_izq": "previos/B6.01_CLARIN/luz_izq.jpg",
+       "timelapse_der": "previos/B6.01_CLARIN/timelapse_der.mp4",
+       "luz_der": "previos/B6.01_CLARIN/luz_der.jpg"
+      },
+      "seed": 9078265,
+      "refs_al_generar": [],
+      "desactualizado": false
+     },
      "pedidos": []
     },
     {
@@ -1795,7 +2434,30 @@
       "img26": []
      },
      "refs": [],
-     "previos": null,
+     "previos": {
+      "code": "B6.02",
+      "slug": "B6.02_GRITO_DE_SAN_MARTIN",
+      "version": "e2ee48b972",
+      "scene_hash": "39127e95",
+      "engine": "comfy",
+      "generated_at": "2026-10-10 17:05",
+      "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
+      "files": {
+       "luna_izq": "previos/B6.02_GRITO_DE_SAN_MARTIN/luna_izq.jpg",
+       "luna_cen": "previos/B6.02_GRITO_DE_SAN_MARTIN/luna_cen.jpg",
+       "luna_der": "previos/B6.02_GRITO_DE_SAN_MARTIN/luna_der.jpg",
+       "atardecer_izq": "previos/B6.02_GRITO_DE_SAN_MARTIN/atardecer_izq.jpg",
+       "atardecer_cen": "previos/B6.02_GRITO_DE_SAN_MARTIN/atardecer_cen.jpg",
+       "atardecer_der": "previos/B6.02_GRITO_DE_SAN_MARTIN/atardecer_der.jpg",
+       "timelapse_izq": "previos/B6.02_GRITO_DE_SAN_MARTIN/timelapse_izq.mp4",
+       "luz_izq": "previos/B6.02_GRITO_DE_SAN_MARTIN/luz_izq.jpg",
+       "timelapse_der": "previos/B6.02_GRITO_DE_SAN_MARTIN/timelapse_der.mp4",
+       "luz_der": "previos/B6.02_GRITO_DE_SAN_MARTIN/luz_der.jpg"
+      },
+      "seed": 15312785,
+      "refs_al_generar": [],
+      "desactualizado": false
+     },
      "pedidos": []
     }
    ]

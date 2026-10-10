@@ -1,9 +1,10 @@
 {
  "code": "B1.08",
  "slug": "B1.08_RIOJANOS",
- "version": "9db48b4403",
+ "version": "e2ee48b972",
+ "scene_hash": "0e8f1e18",
  "engine": "comfy",
- "generated_at": "2026-10-10 13:06",
+ "generated_at": "2026-10-10 17:04",
  "refs": [],
  "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
  "files": {
