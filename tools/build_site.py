@@ -59,6 +59,8 @@ def main():
     escenas = json.load(open(os.path.join(ROOT, "escenas.json"), encoding="utf-8"))
     ctx = json.load(open(os.path.join(ROOT, "data", "contexto.json"), encoding="utf-8"))
     cmap = {s["code"]: s for b in ctx["blocks"] for s in b["scenes"]}
+    ap = os.path.join(ROOT, "data", "audio.json")
+    audio = json.load(open(ap, encoding="utf-8")) if os.path.exists(ap) else {"escenas": {}, "finales": [], "sin_track": {}}
     out = {"generado": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"), "repo": REPO, "branch": BRANCH, "blocks": []}
     by_block = {}
     peds = {}
@@ -97,6 +99,8 @@ def main():
         item = {k: e.get(k) for k in ("code", "slug", "block", "title", "time", "verse", "kind", "timelapse", "nota")}
         item["generar"] = e.get("generar", True)
         item["ctx"] = cmap.get(e["code"], {})
+        item["audio"] = audio["escenas"].get(e["code"])
+        item["audio_nota"] = audio.get("sin_track", {}).get(e["code"], "")
         item["refs"] = refs
         item["previos"] = prev
         # resultados de cada pedido: previos/<escena>/pedidos/<n>/meta.json
@@ -115,6 +119,7 @@ def main():
         by_block.setdefault(e["block"], []).append(item)
     for b in ctx["blocks"]:
         out["blocks"].append({k: b[k] for k in ("id", "name", "track", "intro")} | {"scenes": by_block.get(b["id"], [])})
+    out["audio_finales"] = audio.get("finales", [])
     json.dump(out, open(os.path.join(ROOT, "data", "site.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     n_refs = sum(len(s["refs"]) for b in out["blocks"] for s in b["scenes"])
     n_prev = sum(1 for b in out["blocks"] for s in b["scenes"] if s["previos"])

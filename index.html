@@ -77,6 +77,17 @@ blockquote{margin:0;padding:8px 18px 0;font-family:Fraunces,serif;font-style:ita
 .sub26{margin-bottom:18px} .sub26:last-child{margin-bottom:0}
 .h26{font-size:15px;margin:0 0 8px;color:var(--ink)}
 .refsrow{border-top:1px solid var(--line);padding:16px 18px 18px;background:var(--card)}
+.audrow{margin:12px 18px 0;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--card)}
+.audrow .colh{color:var(--fire2)}
+.aud{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:14px;align-items:start}
+.audwave img{background:#100d0b;border-radius:8px;cursor:default}
+.audwave audio{width:100%;margin-top:8px;height:34px}
+.audt{width:100%;border-collapse:collapse;font-size:13px}
+.audt th{text-align:left;color:var(--ink3);font-weight:600;padding:3px 10px 3px 0;white-space:nowrap;vertical-align:top}
+.audt td{color:var(--ink2);padding:3px 0}
+.audt td b{color:var(--ink)}
+.mono{font-family:ui-monospace,Consolas,monospace;font-size:12px;word-break:break-all}
+.audw{grid-column:1/-1;display:flex;gap:6px;flex-wrap:wrap}
 .peds{display:flex;flex-direction:column;gap:10px;margin-bottom:12px}
 .ped{border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--bg2)}
 .pedh{font-size:13px;color:var(--ink2);display:flex;gap:6px;align-items:center;flex-wrap:wrap}
@@ -105,7 +116,7 @@ footer{padding:30px 0 60px;color:var(--ink3);font-size:13px;border-top:1px solid
 #lb{position:fixed;inset:0;background:rgba(0,0,0,.92);display:none;align-items:center;justify-content:center;z-index:60;padding:20px;cursor:zoom-out}
 #lb.on{display:flex} #lb img{max-width:96vw;max-height:86vh;cursor:zoom-out} #lb div{position:absolute;bottom:12px;left:0;right:0;text-align:center;color:#ccc;font-size:13px}
 .hidden{display:none!important}
-@media (max-width:860px){.wrap{padding:0 16px}.grid3,.grid2,.cols{grid-template-columns:1fr}.c25{border-right:0;border-bottom:1px solid var(--line)}.mtn{grid-template-columns:1fr}.badges{margin-left:0}}
+@media (max-width:860px){.aud{grid-template-columns:1fr}.audrow{margin:12px 12px 0}.wrap{padding:0 16px}.grid3,.grid2,.cols{grid-template-columns:1fr}.c25{border-right:0;border-bottom:1px solid var(--line)}.mtn{grid-template-columns:1fr}.badges{margin-left:0}}
 </style>
 </head>
 <body>
@@ -230,6 +241,27 @@ function panelGerman(c){if(!c||c.status26==='sin') return '<div class="empty">Ge
   if(c.todo26&&c.todo26.length)h+='<span class="lbl">Pendientes</span><div class="small">'+list(c.todo26)+'</div>';
   return h}
 
+function mmss(x){x=Math.round(x||0);return Math.floor(x/60)+':'+String(x%60).padStart(2,'0')}
+function secs(t){var m=String(t||'').match(/(\d+)\s*s/);var mm=String(t||'').match(/(\d+)\s*min/);return (mm?+mm[1]*60:0)+(m?+m[1]:0)}
+function audioBody(a,c,id){
+  var lufs=a.lufs,pk=a.pico_dbtp,warn=[];
+  if(lufs!=null){if(lufs>-9)warn.push('<span class="badge b-red">Muy fuerte ('+lufs+' LUFS)</span>');else if(lufs<-18)warn.push('<span class="badge b-mid">Bajo ('+lufs+' LUFS)</span>');}
+  if(pk!=null&&pk>-1)warn.push('<span class="badge b-red">Pico '+pk+' dBTP · saturado</span>');
+  (a.notas||[]).forEach(function(n){warn.push('<span class="badge b-mid">'+esc(n)+'</span>')});
+  var v25=c&&c.dur?secs(c.dur):0;
+  var cmp=v25?'<tr><th>Video 2025</th><td>'+esc(c.dur)+(v25&&a.duracion?' · el track dura '+(a.duracion>v25?'+':'')+Math.round(a.duracion-v25)+' s respecto del video':'')+'</td></tr>':'';
+  return '<div class="aud"><div class="audwave">'+img(a.onda,'Forma de onda · '+a.nombre)+'<audio id="'+id+'" controls preload="none" src="'+esc(a.audio_local)+'"></audio><p class="hint audmsg" hidden>El audio no se publica online (temas con derechos): se escucha abriendo la página desde la copia del repo en la PC17.</p></div>'+
+    '<table class="audt"><tr><th>Track</th><td><b>'+esc(a.nombre)+'</b> · n.º '+esc(a.track)+'</td></tr>'+
+    '<tr><th>Duración</th><td>'+mmss(a.duracion)+' ('+a.duracion+' s)</td></tr>'+cmp+
+    '<tr><th>Formato</th><td>'+esc((a.codec||'').toUpperCase())+' · '+a.kbps+' kbps · '+(a.hz/1000)+' kHz · '+(a.canales==2?'estéreo':a.canales==1?'mono':a.canales+' canales')+' · '+a.mb+' MB</td></tr>'+
+    '<tr><th>Sonoridad</th><td>'+(lufs!=null?lufs+' LUFS integrados':'—')+(a.lra!=null?' · rango '+a.lra+' LU':'')+(pk!=null?' · pico '+pk+' dBTP':'')+'</td></tr>'+
+    (a.artista_tag||a.titulo_tag?'<tr><th>Tags</th><td>'+esc([a.titulo_tag,a.artista_tag,a.album_tag].filter(Boolean).join(' · '))+'</td></tr>':'')+
+    '<tr><th>Archivo</th><td class="mono">'+esc(a.archivo)+'</td></tr></table>'+(warn.length?'<div class="audw">'+warn.join('')+'</div>':'')+'</div>'}
+function audioRow(s,c){
+  if(!s.audio&&!s.audio_nota)return '';
+  var h='<section class="audrow"><div class="colh">♪ Audio de la escena · arranca en '+esc(s.time)+' del show</div>';
+  if(!s.audio)return h+'<p class="small">'+esc(s.audio_nota)+'</p></section>';
+  return h+audioBody(s.audio,c,'aud_'+s.code.replace('.','_'))+'</section>'}
 var KIND={paisaje:'Paisaje',tela:'Tela / poncho',fuego:'Fuego',bandera:'Bandera'};
 function scene(s,repo,branch){var c=s.ctx||{};var p=s.previos;var nref=s.refs.length;
   var g26=c.status26&&c.status26!=='sin';
@@ -238,6 +270,7 @@ function scene(s,repo,branch){var c=s.ctx||{};var p=s.previos;var nref=s.refs.le
   h+='<div class="shead"><span class="code">'+esc(s.code)+'</span><h3>'+esc(s.title)+'</h3><span class="meta">⏱ '+esc(s.time)+' · '+esc(KIND[s.kind]||s.kind)+(c.dur?' · '+esc(c.dur):'')+'</span><div class="badges">'+badges+'</div></div>';
   if(s.verse)h+='<blockquote>'+esc(s.verse)+'</blockquote>';
   if(s.nota)h+='<p class="nota">'+esc(s.nota)+'</p>';
+  h+=audioRow(s,c);
   h+='<div class="cols">';
   h+='<section class="col c25"><div class="colh">Edición 2025 · lo que se proyectó</div>'+panel25(c)+'</section>';
   h+='<section class="col c26"><div class="colh">Propuestas 2026</div>';
@@ -251,11 +284,16 @@ fetch('data/site.json',{cache:'no-store'}).then(function(r){return r.json()}).th
   document.getElementById('gen').textContent=d.generado;
   document.getElementById('nav').innerHTML=d.blocks.map(function(b){return '<a href="#'+b.id+'"><b>'+b.id+'</b> '+esc(b.name)+'</a>'}).join('')+'<a href="#zonas">Zonas aptas</a>';
   document.getElementById('blocks').innerHTML=d.blocks.map(function(b){
-    return '<section class="block" id="'+b.id+'"><div class="bhead"><div class="bnum">'+b.id+'</div><div><h2>'+esc(b.name)+'</h2><div class="btrack">♪ '+esc(b.track)+'</div></div></div><p class="bintro">'+esc(b.intro)+'</p>'+b.scenes.map(function(s){return scene(s,d.repo,d.branch)}).join('')+'</section>'}).join('');
+    var fin=(b.id==='B6'&&(d.audio_finales||[]).length)?'<article class="scene" id="final" data-refs="0" data-prev="0" data-text="pistas finales desconcentracion marcha san lorenzo ituzaingo camelias"><div class="shead"><span class="code">Final</span><h3>Pistas finales · desconcentración</h3><span class="meta">Se alternan las tres marchas mientras dura la desconcentración (~10 min)</span></div>'+d.audio_finales.map(function(a,i){return '<section class="audrow" style="margin-bottom:12px"><div class="colh">♪ '+esc(a.nombre)+'</div>'+audioBody(a,null,'aud_fin_'+i)+'</section>'}).join('')+'</article>':'';
+    return '<section class="block" id="'+b.id+'"><div class="bhead"><div class="bnum">'+b.id+'</div><div><h2>'+esc(b.name)+'</h2><div class="btrack">♪ '+esc(b.track)+'</div></div></div><p class="bintro">'+esc(b.intro)+'</p>'+b.scenes.map(function(s){return scene(s,d.repo,d.branch)}).join('')+fin+'</section>'}).join('');
   wire(); applyFilter(store.get('fnt-filter')||'todas');
 }).catch(function(e){document.getElementById('loading').textContent='No se pudieron cargar los datos ('+e+').'});
 
 function wire(){
+  document.querySelectorAll('.audwave audio').forEach(function(au){
+    var off=function(){au.hidden=true;var m=au.parentNode.querySelector('.audmsg');if(m)m.hidden=false};
+    fetch(au.getAttribute('src'),{method:'HEAD'}).then(function(r){if(!r.ok)off()}).catch(off);
+  });
   document.querySelectorAll('.scene').forEach(function(sc){
     sc.querySelectorAll('.seg button').forEach(function(b){b.onclick=function(){var seg=b.parentNode;seg.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});sc.querySelectorAll('.lset').forEach(function(s){s.hidden=s.dataset.l!==b.dataset.l})}});
   });
