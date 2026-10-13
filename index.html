@@ -246,7 +246,7 @@ function secs(t){var m=String(t||'').match(/(\d+)\s*s/);var mm=String(t||'').mat
 function audioBody(a,c,id){
   var lufs=a.lufs,pk=a.pico_dbtp,warn=[];
   if(lufs!=null){if(lufs>-9)warn.push('<span class="badge b-red">Muy fuerte ('+lufs+' LUFS)</span>');else if(lufs<-18)warn.push('<span class="badge b-mid">Bajo ('+lufs+' LUFS)</span>');}
-  if(pk!=null&&pk>-1)warn.push('<span class="badge b-red">Pico '+pk+' dBTP · saturado</span>');
+  if(pk!=null&&pk>0)warn.push('<span class="badge b-red">Pico '+pk+' dBTP · saturado</span>');else if(pk!=null&&pk>-1)warn.push('<span class="badge b-mid">Pico '+pk+' dBTP · al límite</span>');
   (a.notas||[]).forEach(function(n){warn.push('<span class="badge b-mid">'+esc(n)+'</span>')});
   var v25=c&&c.dur?secs(c.dur):0;
   var cmp=v25?'<tr><th>Video 2025</th><td>'+esc(c.dur)+(v25&&a.duracion?' · el track dura '+(a.duracion>v25?'+':'')+Math.round(a.duracion-v25)+' s respecto del video':'')+'</td></tr>':'';
