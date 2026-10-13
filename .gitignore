@@ -6,4 +6,4 @@ chk_*.jpg
 .env
 pipeline/.env
 pipeline/*.log
-audio/
+/audio/
