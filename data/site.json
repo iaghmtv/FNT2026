@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-14 22:43 UTC",
+ "generado": "2026-10-14 22:48 UTC",
  "repo": "iaghmtv/FNT2026",
  "branch": "main",
  "blocks": [
@@ -82,6 +82,12 @@
        "titulo": "Propuesta pantallas · la antorcha como nota musical de fuego",
        "nota": "En lugar de la llama, una nota musical de fuego recorre el cerro e ilumina la roca (sobre el encuadre de la antorcha 2025). Reemplaza a la luna y el atardecer del previo.",
        "imgs": [
+        {
+         "src": "assets/propuestas/B0.00_nota_musical_fuego_animada.mp4?v=481ed027",
+         "poster": "assets/propuestas/B0.00_nota_musical_fuego_animada.jpg?v=b8414b9e",
+         "video": true,
+         "cap": "Animada (MiniMax, 6,6 s) · la nota de fuego avanza sobre la roca y la ilumina"
+        },
         {
          "src": "assets/propuestas/B0.00_nota_musical_fuego_A.jpg?v=4c3d73ef",
          "cap": "Variante A · la nota de fuego enciende la roca, con chispas"

@@ -228,7 +228,7 @@ function panelPrevios(s,repo,branch){var p=s.previos;
   if(!p) return '<div class="empty">Todavía no hay previos. Se generan en la PC de render con <code>GENERAR_PREVIOS.bat</code>.</div>';
   var f=p.files||{};var h='';
   if(p.desactualizado) h+='<p class="nota" style="margin:0 0 10px">Hay referencias nuevas desde la última generación: estos previos se van a rehacer.</p>';
-  if(p.propuesta){var pr=p.propuesta;h+='<span class="lbl">'+esc(pr.titulo||'Propuesta')+'</span>'+(pr.nota?'<p class="small">'+esc(pr.nota)+'</p>':'')+'<div class="grid2" style="margin-bottom:14px">'+(pr.imgs||[]).map(function(x){return '<figure>'+img(x.src,x.cap)+'<figcaption>'+esc(x.cap)+'</figcaption></figure>'}).join('')+'</div>'}
+  if(p.propuesta){var pr=p.propuesta;h+='<span class="lbl">'+esc(pr.titulo||'Propuesta')+'</span>'+(pr.nota?'<p class="small">'+esc(pr.nota)+'</p>':'')+'<div class="grid2" style="margin-bottom:14px">'+(pr.imgs||[]).map(function(x){return x.video?'<figure style="grid-column:1/-1"><video src="'+esc(x.src)+'"'+(x.poster?' poster="'+esc(x.poster)+'"':'')+' controls muted loop playsinline autoplay preload="metadata"></video><figcaption>'+esc(x.cap)+'</figcaption></figure>':'<figure>'+img(x.src,x.cap)+'<figcaption>'+esc(x.cap)+'</figcaption></figure>'}).join('')+'</div>'}
   var LS=['luna','atardecer'].filter(function(L){return f[L+'_cen']||f[L+'_izq']||f[L+'_der']});var LN={luna:'☾ Noche de luna',atardecer:'☀ Atardecer'};
   if(LS.length>1)h+='<div class="seg" role="group" aria-label="Luz">'+LS.map(function(L,ix){return '<button class="'+L+'" data-l="'+L+'" aria-pressed="'+(ix?'false':'true')+'">'+LN[L]+'</button>'}).join('')+'</div>';
   else if(LS.length)h+='<p class="hint" style="margin:0 0 8px">'+LN[LS[0]]+'</p>';

@@ -175,6 +175,8 @@ def main():
             prev.pop("prompts", None)
             for im in (prev.get("propuesta") or {}).get("imgs", []):   # propuesta en el lugar de un previo
                 im["src"] = ver(im["src"])
+                if im.get("poster"):
+                    im["poster"] = ver(im["poster"])
             if prev.get("animacion"):        # render final de la escena (videos por montaña)
                 an = prev["animacion"]
                 for k in ("izq", "cen", "der"):

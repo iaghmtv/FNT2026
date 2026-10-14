@@ -36,6 +36,12 @@
   "nota": "En lugar de la llama, una nota musical de fuego recorre el cerro e ilumina la roca (sobre el encuadre de la antorcha 2025). Reemplaza a la luna y el atardecer del previo.",
   "imgs": [
    {
+    "src": "assets/propuestas/B0.00_nota_musical_fuego_animada.mp4",
+    "poster": "assets/propuestas/B0.00_nota_musical_fuego_animada.jpg",
+    "video": true,
+    "cap": "Animada (MiniMax, 6,6 s) · la nota de fuego avanza sobre la roca y la ilumina"
+   },
+   {
     "src": "assets/propuestas/B0.00_nota_musical_fuego_A.jpg",
     "cap": "Variante A · la nota de fuego enciende la roca, con chispas"
    },
