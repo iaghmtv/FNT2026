@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-14 20:32 UTC",
+ "generado": "2026-10-14 20:46 UTC",
  "repo": "iaghmtv/FNT2026",
  "branch": "main",
  "blocks": [
@@ -869,10 +869,10 @@
       "version": "e2ee48b972",
       "scene_hash": "37675e4f",
       "engine": "comfy",
-      "generated_at": "2026-10-14 16:56",
+      "generated_at": "2026-10-14 17:46",
       "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
       "files": {
-       "luna_izq": "previos/B1.06_JUJENOS/luna_izq.jpg?v=9431e113",
+       "luna_izq": "previos/B1.06_JUJENOS/luna_izq.jpg?v=53d6cb1d",
        "luna_cen": "previos/B1.06_JUJENOS/luna_cen.jpg?v=9fd43c0d",
        "luna_der": "previos/B1.06_JUJENOS/luna_der.jpg?v=47b19c85",
        "atardecer_izq": "previos/B1.06_JUJENOS/atardecer_izq.jpg?v=9867db33",
@@ -894,7 +894,7 @@
       "luna_v2": {
        "fecha": "2026-10-14 16:56",
        "fuente": "03_BLOQUES/B1_PAISAJES/B1.06_JUJENOS/02_IA_GENERACION/PROPUESTA PANTALLAS",
-       "nota": "Centro y montana derecha nuevos; la montana izquierda sigue con la luna del 10/10 (no vino imagen nueva). Anteriores en LUNA_2026_v2/_reemplazadas."
+       "nota": "Centro, izquierda y derecha con las imagenes del equipo. Anteriores en LUNA_2026_v2/_reemplazadas."
       },
       "refs_al_generar": [],
       "desactualizado": false

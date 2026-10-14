@@ -4,7 +4,7 @@
  "version": "e2ee48b972",
  "scene_hash": "37675e4f",
  "engine": "comfy",
- "generated_at": "2026-10-14 16:56",
+ "generated_at": "2026-10-14 17:46",
  "refs": [],
  "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
  "files": {
@@ -21,7 +21,7 @@
  },
  "seed": 9733397,
  "prompts": {
-  "luna_izq": "Moonlit night scene. Everything is bathed in cold blue moonlight coming from the right: silver-blue rim light on the ridges, deep navy-blue shadows in every gully, strong blue color grading, local colors desaturated by the moonlight, very dark sky with a few stars. The landscape covers the whole mountain from base to summit. Treat the mountain as one continuous surface texture: vegetation only as low ground cover or as a continuous canopy seen from above, no isolated tall trees, no tall cacti, no poles, no vertical objects, no buildings. The beauty comes from color, rock texture, strata and the raking light that sculpts every ridge and gully. Serrania de Hornocal in Jujuy: the mountain is made of folded rock strata in a sharp zigzag pattern of ochre, red, purple, green and cream bands, sparse dry grass at the base. Natural landscape photography, highly detailed, realistic textures, no people, no text, no buildings unless described.",
+  "luna_izq": "Noche del equipo (14/10, ElevenLabs gpt-image, PROPUESTA PANTALLAS): cerro de franjas con cardones; franja alineada con la luna anterior + mascara de mapping (en 2025 esta escena tenia cielo).",
   "luna_cen": "Noche del equipo (14/10, ElevenLabs gpt-image, PROPUESTA PANTALLAS): cordillera nevada con vicunas; franja alineada con la luna anterior a 1856x448 + mascara de pantallas.",
   "luna_der": "Noche del equipo (14/10, ElevenLabs gpt-image, PROPUESTA PANTALLAS): Hornocal de noche; franja alineada con la silueta + mascara + silueta 2025 (sin cielo).",
   "atardecer_izq": "Qwen (relight 2025): Relight this exact image as a golden hour sunset. Warm low orange sunlight comes from the left and rakes across the landscape: glowing orange and amber highlights on every ridge, rock, tree and plant, long soft shadows on the opposite sides, warm golden color grading. Vegetation keeps its natural green color, only lit by the warm golden light. Where there is sky, turn it into a warm sunset sky with soft orange, pink and lilac clouds. Keep every tree, plant, flower, rock, cliff, water and the whole composition exactly the same; only the lighting and colors change. Do not add any waterfall or new element. Crisp clear air: no fog, no mist, no haze, no smoke and no glow along the outline; the outer silhouette stays sharp and clean against the black background. Keep the black background pure black. || Flux Krea img2img 0.5: Cinematic film still, golden hour sunset: Serrania de Hornocal in Jujuy: mountains of folded rock strata in red, ochre and cream bands above a dry plateau, open sky. Warm low sunlight from the left rakes across the landscape with long soft shadows; rich natural colors, green vegetation stays green under the warm golden light. No waterfalls. Shot on ARRI Alexa with an anamorphic lens, real filmed footage, natural film grain, photorealistic, sharp detailed textures, crisp clear air, no fog, no mist, no haze, no glow along the outline. The black background stays pure black.",
@@ -42,6 +42,6 @@
  "luna_v2": {
   "fecha": "2026-10-14 16:56",
   "fuente": "03_BLOQUES/B1_PAISAJES/B1.06_JUJENOS/02_IA_GENERACION/PROPUESTA PANTALLAS",
-  "nota": "Centro y montana derecha nuevos; la montana izquierda sigue con la luna del 10/10 (no vino imagen nueva). Anteriores en LUNA_2026_v2/_reemplazadas."
+  "nota": "Centro, izquierda y derecha con las imagenes del equipo. Anteriores en LUNA_2026_v2/_reemplazadas."
  }
 }
