@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-14 22:12 UTC",
+ "generado": "2026-10-14 22:21 UTC",
  "repo": "iaghmtv/FNT2026",
  "branch": "main",
  "blocks": [
@@ -140,6 +140,12 @@
         "src": "assets/propuestas/B0.01_prop_fogon_guitarra_1_solo.jpg",
         "cap": "Propuesta · Buenaventura con la guitarra junto al fogón, solo bajo las estrellas (B/N, el fuego único color)",
         "kind": "single"
+       },
+       {
+        "src": "assets/propuestas/B0.01_fogon_guitarra_animada.mp4",
+        "poster": "assets/propuestas/B0.01_fogon_guitarra_animada.jpg",
+        "kind": "video",
+        "cap": "Propuesta animada (MiniMax, 6,6 s) · Buenaventura toca la guitarra junto al fogón · 02_IA_GENERACION/MINIMAX_H3"
        },
        {
         "src": "assets/propuestas/B0.01_prop_fogon_guitarra_4_solo_izq.jpg",

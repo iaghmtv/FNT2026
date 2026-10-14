@@ -73,6 +73,12 @@
        "kind": "single"
       },
       {
+       "src": "assets/propuestas/B0.01_fogon_guitarra_animada.mp4",
+       "poster": "assets/propuestas/B0.01_fogon_guitarra_animada.jpg",
+       "kind": "video",
+       "cap": "Propuesta animada (MiniMax, 6,6 s) · Buenaventura toca la guitarra junto al fogón · 02_IA_GENERACION/MINIMAX_H3"
+      },
+      {
        "src": "assets/propuestas/B0.01_prop_fogon_guitarra_4_solo_izq.jpg",
        "cap": "Propuesta · Buenaventura de poncho a la izquierda, solo frente al fogón",
        "kind": "single"
