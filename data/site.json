@@ -938,38 +938,7 @@
        "Quedan 1 o 2 cactus chicos tipo saguaro en los laterales.",
        "Variante Cafayate: los viñedos casi no se ven."
       ],
-      "img26": [
-       {
-        "src": "assets/german/B1.07_cen.jpg",
-        "cap": "Variante A · dorado · Pantallas centro",
-        "kind": "cen"
-       },
-       {
-        "src": "assets/german/B1.07_izq.jpg",
-        "cap": "Variante A · dorado · Montaña izq.",
-        "kind": "izq"
-       },
-       {
-        "src": "assets/german/B1.07_der.jpg",
-        "cap": "Variante A · dorado · Montaña der.",
-        "kind": "der"
-       },
-       {
-        "src": "assets/german/B1.07_var1.jpg",
-        "cap": "Variante A · dorado",
-        "kind": "strip"
-       },
-       {
-        "src": "assets/german/B1.07_var2.jpg",
-        "cap": "Variante B · mediodia",
-        "kind": "strip"
-       },
-       {
-        "src": "assets/german/B1.07_var3.jpg",
-        "cap": "Variante C · cafayate",
-        "kind": "strip"
-       }
-      ]
+      "img26": []
      },
      "audio": {
       "track": "7",
