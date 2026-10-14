@@ -70,7 +70,23 @@ def _seccion(body, nombre):
     return "" if v in ("_No response_", "None") else v
 
 
+MESES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"]
+
+
+def _hora(txt):
+    m = re.search(r"\b(\d{1,2})(?::(\d{2}))?\s*(am|pm|a\.\s?m\.|p\.\s?m\.|hs|h)\b", txt or "", re.I)
+    if not m:
+        return ""
+    h = int(m.group(1)); mi = int(m.group(2) or 0); suf = m.group(3).lower().replace(".", "").replace(" ", "")
+    if suf == "pm" and h < 12:
+        h += 12
+    return f"{h}:{mi:02d}" if 0 <= h < 24 and mi < 60 else ""
+
+
 def _fecha(txt):
+    m = re.search(r"\b(\d{1,2})\s+de\s+(" + "|".join(MESES) + r")(?:\s+(?:de\s+)?(20\d\d))?", txt or "", re.I)
+    if m:
+        return f"{int(m.group(3) or 2026):04d}-{MESES.index(m.group(2).lower()) + 1:02d}-{int(m.group(1)):02d}"
     m = re.search(r"(20\d\d)-(\d{1,2})-(\d{1,2})", txt or "")
     if m:
         return f"{int(m.group(1)):04d}-{int(m.group(2)):02d}-{int(m.group(3)):02d}"
@@ -90,17 +106,21 @@ def calendario(todos):
     TIPOS = {"entrega": "entrega", "revis": "revision", "correc": "correccion"}
     for it in todos:
         names = {l["name"] for l in it.get("labels", [])}
-        if "pull_request" in it or not ("calendario" in names or it.get("title", "").lower().startswith("[nota]")):
-            continue
         body = it.get("body") or ""
+        es_nota = "calendario" in names or "[nota]" in it.get("title", "").lower() or ("### Fecha" in body and "### Tipo" in body)
+        if "pull_request" in it or not es_nota:
+            continue
         f = _fecha(_seccion(body, "Fecha")) or _fecha(it.get("title", "")) or it["created_at"][:10]
         t = _seccion(body, "Tipo").lower()
         tipo = next((v for k, v in TIPOS.items() if k in t), "otro")
         esc = _seccion(body, "Escena"); m = re.search(r"B\d\.\d\d", esc)
-        texto = _seccion(body, "Detalle") or re.sub(r"^\[nota\]\s*", "", it.get("title", ""), flags=re.I)
+        titulo = re.sub(r"\[nota\]\s*(20\d\d-\d\d-\d\d)?", "", it.get("title", ""), flags=re.I).strip(" -:·")
+        det = _seccion(body, "Detalle")
+        texto = (titulo + ": " + det) if (titulo and det and titulo.lower() not in det.lower()) else (det or titulo)
+        hora = _hora(det) or _hora(it.get("title", ""))
         resp = _seccion(body, "Responsable")
         notas.append({"fecha": f, "tipo": tipo, "escena": m.group(0) if m else ("General" if esc else ""), "texto": texto[:500],
-                      "responsable": resp[:60], "autor": it["user"]["login"], "url": it["html_url"], "n": it["number"],
+                      "responsable": resp[:60], "hora": hora, "autor": it["user"]["login"], "url": it["html_url"], "n": it["number"],
                       "hecho": it.get("state") == "closed", "fuente": "nota"})
     notas.sort(key=lambda n: (n["fecha"], n.get("n", 0)))
     return {"desde": cal.get("desde", ""), "hasta": cal.get("hasta", ""), "notas": notas}

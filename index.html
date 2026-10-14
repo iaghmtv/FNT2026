@@ -263,7 +263,7 @@ function calendario(c,repo){var notas=(c.notas||[]).filter(function(n){return /^
   for(var x=new Date(a);x<=b;x.setDate(x.getDate()+1)){var k=iso(x),ns=by[k]||[],dentro=(k>=c.desde&&k<=c.hasta)||ns.length>0;
     h+='<div class="cday'+(dentro?'':' out')+(k===hoy?' hoy':'')+(x.getDay()%6===0?' finde':'')+'"><div class="dn"><span><span class="dw">'+DIA[x.getDay()]+' </span><b>'+x.getDate()+'</b>'+((x.getDate()===1||k===iso(a))?' '+MES[x.getMonth()]:'')+(k===hoy?' <em>hoy</em>':'')+'</span>'+
       (dentro?'<a class="cadd" href="'+nueva+'&title='+encodeURIComponent('[Nota] '+k)+'&fecha='+k+'" target="_blank" rel="noopener" title="Agregar nota el '+fecha(k)+'" aria-label="Agregar nota el '+fecha(k)+'">+</a>':'')+'</div>';
-    ns.forEach(function(n){var tp=TIPO[n.tipo]?n.tipo:'otro',t=(n.escena?'<b>'+esc(n.escena)+'</b> · ':'')+esc(n.texto);
+    ns.forEach(function(n){var tp=TIPO[n.tipo]?n.tipo:'otro',t=(n.hora?'<b>'+esc(n.hora)+'</b> · ':'')+(n.escena?'<b>'+esc(n.escena)+'</b> · ':'')+esc(n.texto);
       var tip=TIPO[tp]+(n.hecho?' · hecho':'')+(n.responsable?' · '+n.responsable:'')+(n.autor?' · '+n.autor:'')+'\n'+n.texto;
       var cls='cnote t-'+tp+(n.hecho?' hecho':''),inner=(n.hecho?'✓ ':'')+'<span class="tx">'+t+'</span>';
       h+=n.url?'<a class="'+cls+'" href="'+esc(n.url)+'" target="_blank" rel="noopener" title="'+esc(tip)+'">'+inner+'</a>':'<span class="'+cls+'" title="'+esc(tip)+'">'+inner+'</span>'});
