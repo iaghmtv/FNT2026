@@ -5,10 +5,7 @@
    "timelapse_izq",
    "timelapse_der",
    "luz_izq",
-   "luz_der",
-   "luna_izq",
-   "luna_cen",
-   "luna_der"
+   "luz_der"
   ],
   "B1.02": [
    "timelapse_izq",

@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-14 20:14 UTC",
+ "generado": "2026-10-14 20:32 UTC",
  "repo": "iaghmtv/FNT2026",
  "branch": "main",
  "blocks": [
@@ -302,9 +302,12 @@
       "version": "e2ee48b972",
       "scene_hash": "d8f1fe24",
       "engine": "comfy",
-      "generated_at": "2026-10-13 19:33",
+      "generated_at": "2026-10-14 17:32",
       "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
       "files": {
+       "luna_izq": "previos/B1.01_NORTE_SELVATICO/luna_izq.jpg?v=e9f5bae9",
+       "luna_cen": "previos/B1.01_NORTE_SELVATICO/luna_cen.jpg?v=43fa0fab",
+       "luna_der": "previos/B1.01_NORTE_SELVATICO/luna_der.jpg?v=3444506b",
        "atardecer_izq": "previos/B1.01_NORTE_SELVATICO/atardecer_izq.jpg?v=234878be",
        "atardecer_cen": "previos/B1.01_NORTE_SELVATICO/atardecer_cen.jpg?v=5c28ea64",
        "atardecer_der": "previos/B1.01_NORTE_SELVATICO/atardecer_der.jpg?v=85cf6a27"
@@ -320,6 +323,11 @@
        "fecha": "2026-10-14 10:16",
        "luz": "solo atardecer: tarde dorada -> atardecer -> atardecer profundo -> ultima luz (sin noche, sin sol en cuadro)",
        "metodo": "cuadros guia con Qwen desde el fijo nuevo + MiniMax H3 (243 cuadros, 24 fps)"
+      },
+      "luna_v2": {
+       "fecha": "2026-10-14 17:32",
+       "fuente": "03_BLOQUES/B1_PAISAJES/B1.01_NORTE_SELVATICO/02_IA_GENERACION/PROPUESTAS PANTALLAS",
+       "nota": "Reemplaza la noche de luna del 10/10 (Iguazu con coati), que estaba oculta."
       },
       "refs_al_generar": [],
       "desactualizado": false
@@ -393,11 +401,11 @@
       "version": "e2ee48b972",
       "scene_hash": "b53e98de",
       "engine": "comfy",
-      "generated_at": "2026-10-14 16:19",
+      "generated_at": "2026-10-14 17:32",
       "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
       "files": {
        "luna_izq": "previos/B1.02_LLANO_SUR_SELVA/luna_izq.jpg?v=1258bcb0",
-       "luna_cen": "previos/B1.02_LLANO_SUR_SELVA/luna_cen.jpg?v=269f9721",
+       "luna_cen": "previos/B1.02_LLANO_SUR_SELVA/luna_cen.jpg?v=0eba5825",
        "luna_der": "previos/B1.02_LLANO_SUR_SELVA/luna_der.jpg?v=9c8146f9",
        "atardecer_izq": "previos/B1.02_LLANO_SUR_SELVA/atardecer_izq.jpg?v=4155ab1a",
        "atardecer_cen": "previos/B1.02_LLANO_SUR_SELVA/atardecer_cen.jpg?v=3e61eece",
@@ -418,7 +426,7 @@
       "luna_v2": {
        "fecha": "2026-10-14 16:19",
        "fuente": "03_BLOQUES/B1_PAISAJES/B1.02_LLANO_SUR_SELVA/02_IA_GENERACION/PROPUESTA PANTALLAS",
-       "nota": "Reemplaza la luna del 10/10 (copias en LUNA_2026_v2/_reemplazadas)."
+       "nota": "Montanas izq y der con las imagenes del equipo; el centro sigue con el previo del 10/10 (la imagen de centro que vino era de B1.01)."
       },
       "refs_al_generar": [],
       "desactualizado": false
