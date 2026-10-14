@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-14 19:27 UTC",
+ "generado": "2026-10-14 19:43 UTC",
  "repo": "iaghmtv/FNT2026",
  "branch": "main",
  "blocks": [
@@ -762,12 +762,12 @@
       "version": "e2ee48b972",
       "scene_hash": "8a36f863",
       "engine": "comfy",
-      "generated_at": "2026-10-13 19:33",
+      "generated_at": "2026-10-14 16:43",
       "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
       "files": {
-       "luna_izq": "previos/B1.05_VIEJO_RUNA/luna_izq.jpg?v=3e46e093",
-       "luna_cen": "previos/B1.05_VIEJO_RUNA/luna_cen.jpg?v=75015802",
-       "luna_der": "previos/B1.05_VIEJO_RUNA/luna_der.jpg?v=a7593cfa",
+       "luna_izq": "previos/B1.05_VIEJO_RUNA/luna_izq.jpg?v=8b90cc57",
+       "luna_cen": "previos/B1.05_VIEJO_RUNA/luna_cen.jpg?v=6b1421c0",
+       "luna_der": "previos/B1.05_VIEJO_RUNA/luna_der.jpg?v=b6f92344",
        "atardecer_izq": "previos/B1.05_VIEJO_RUNA/atardecer_izq.jpg?v=9898da7e",
        "atardecer_cen": "previos/B1.05_VIEJO_RUNA/atardecer_cen.jpg?v=ded1554a",
        "atardecer_der": "previos/B1.05_VIEJO_RUNA/atardecer_der.jpg?v=b93f5fd6",
@@ -787,6 +787,11 @@
        "fecha": "2026-10-14 10:16",
        "luz": "solo atardecer: tarde dorada -> atardecer -> atardecer profundo -> ultima luz (sin noche, sin sol en cuadro)",
        "metodo": "cuadros guia con Qwen desde el fijo nuevo + MiniMax H3 (243 cuadros, 24 fps)"
+      },
+      "luna_v2": {
+       "fecha": "2026-10-14 16:43",
+       "fuente": "03_BLOQUES/B1_PAISAJES/B1.05_VIEJO_RUNA/02_IA_GENERACION/PROPUESTA PANTALLA",
+       "nota": "Reemplaza la noche de luna del 10/10 (copias en LUNA_2026_v2/_reemplazadas)."
       },
       "refs_al_generar": [],
       "desactualizado": false
