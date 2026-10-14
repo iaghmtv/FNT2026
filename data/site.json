@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-14 19:19 UTC",
+ "generado": "2026-10-14 19:27 UTC",
  "repo": "iaghmtv/FNT2026",
  "branch": "main",
  "blocks": [
@@ -152,26 +152,6 @@
         "src": "assets/propuestas/B0.01_prop_fogon_guitarra_4_solo_izq.jpg",
         "cap": "Propuesta · Buenaventura de poncho a la izquierda, solo frente al fogón",
         "kind": "single"
-       },
-       {
-        "src": "assets/propuestas/B0.01_laterales_notas_fuego_1.jpg",
-        "cap": "Propuesta pantallas laterales · notas musicales de fuego (1/4): clave de sol y pentagrama encendidos, con chispas",
-        "kind": "single"
-       },
-       {
-        "src": "assets/propuestas/B0.01_laterales_notas_fuego_2.jpg",
-        "cap": "Propuesta pantallas laterales · notas musicales de fuego (2/4): pentagrama de fuego ondulante; las notas se desprenden en chispas",
-        "kind": "single"
-       },
-       {
-        "src": "assets/propuestas/B0.01_laterales_notas_fuego_3.jpg",
-        "cap": "Propuesta pantallas laterales · notas musicales de fuego (3/4): pentagrama recto de brasas sobre un fondo de destellos",
-        "kind": "single"
-       },
-       {
-        "src": "assets/propuestas/B0.01_laterales_notas_fuego_4.jpg",
-        "cap": "Propuesta pantallas laterales · notas musicales de fuego (4/4): espiral de humo y chispas que se abre en un pentagrama",
-        "kind": "single"
        }
       ]
      },
@@ -206,14 +186,33 @@
       "generated_at": "2026-10-10 17:03",
       "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
       "files": {
-       "luna_izq": "previos/B0.01_BUENAVENTURA_LUNA/luna_izq.jpg?v=7acf22de",
-       "luna_cen": "previos/B0.01_BUENAVENTURA_LUNA/luna_cen.jpg?v=7bf93bc7",
-       "luna_der": "previos/B0.01_BUENAVENTURA_LUNA/luna_der.jpg?v=e4b6f252",
        "atardecer_izq": "previos/B0.01_BUENAVENTURA_LUNA/atardecer_izq.jpg?v=6571ef90",
        "atardecer_cen": "previos/B0.01_BUENAVENTURA_LUNA/atardecer_cen.jpg?v=a72583ef",
        "atardecer_der": "previos/B0.01_BUENAVENTURA_LUNA/atardecer_der.jpg?v=998f5855"
       },
       "seed": 14616238,
+      "propuesta": {
+       "titulo": "Propuesta pantallas · notas musicales de fuego",
+       "nota": "Reemplaza a la noche de luna del previo (pedido del 14/10). Clave de sol y pentagramas encendidos sobre negro; el fuego es el único color.",
+       "imgs": [
+        {
+         "src": "assets/propuestas/B0.01_laterales_notas_fuego_1.jpg?v=aa5951b1",
+         "cap": "clave de sol y pentagrama encendidos, con chispas"
+        },
+        {
+         "src": "assets/propuestas/B0.01_laterales_notas_fuego_2.jpg?v=661cdfbd",
+         "cap": "pentagrama de fuego ondulante; las notas se desprenden en chispas"
+        },
+        {
+         "src": "assets/propuestas/B0.01_laterales_notas_fuego_3.jpg?v=cf95deb8",
+         "cap": "pentagrama recto de brasas sobre un fondo de destellos"
+        },
+        {
+         "src": "assets/propuestas/B0.01_laterales_notas_fuego_4.jpg?v=616074a9",
+         "cap": "espiral de humo y chispas que se abre en un pentagrama"
+        }
+       ]
+      },
       "refs_al_generar": [],
       "desactualizado": false
      },
@@ -310,9 +309,6 @@
       "generated_at": "2026-10-13 19:33",
       "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
       "files": {
-       "luna_izq": "previos/B1.01_NORTE_SELVATICO/luna_izq.jpg?v=7a157ed5",
-       "luna_cen": "previos/B1.01_NORTE_SELVATICO/luna_cen.jpg?v=cc2bfd5e",
-       "luna_der": "previos/B1.01_NORTE_SELVATICO/luna_der.jpg?v=31170a8e",
        "atardecer_izq": "previos/B1.01_NORTE_SELVATICO/atardecer_izq.jpg?v=234878be",
        "atardecer_cen": "previos/B1.01_NORTE_SELVATICO/atardecer_cen.jpg?v=5c28ea64",
        "atardecer_der": "previos/B1.01_NORTE_SELVATICO/atardecer_der.jpg?v=85cf6a27"

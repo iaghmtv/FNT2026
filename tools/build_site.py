@@ -153,6 +153,8 @@ def main():
             prev = json.load(open(mp, encoding="utf-8"))
             prev["files"] = {k: ver(f"previos/{slug}/{v}") for k, v in prev.get("files", {}).items() if k not in oprev.get(e["code"], [])}
             prev.pop("prompts", None)
+            for im in (prev.get("propuesta") or {}).get("imgs", []):   # propuesta en el lugar de un previo
+                im["src"] = ver(im["src"])
             if prev.get("animacion"):        # render final de la escena (videos por montaña)
                 an = prev["animacion"]
                 for k in ("izq", "cen", "der"):
