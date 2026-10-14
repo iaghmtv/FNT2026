@@ -1,0 +1,83 @@
+name: Nota de calendario
+description: Anotá una entrega, una revisión o una corrección en el calendario del tablero.
+title: "[Nota] "
+labels: ["calendario"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        La nota aparece en el **calendario del tablero** en 1–2 minutos, en el día que pongas.
+        Cuando esté resuelta, **cerrá esta nota** (Close issue) y en el calendario queda marcada como hecha ✓.
+  - type: input
+    id: fecha
+    attributes:
+      label: Fecha
+      description: "Formato AAAA-MM-DD (ya viene cargada si entraste desde el + de un día)."
+      placeholder: "2026-10-20"
+    validations:
+      required: true
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: Tipo
+      options:
+        - "Entrega"
+        - "Revisión"
+        - "Corrección"
+        - "Reunión / otro"
+    validations:
+      required: true
+  - type: dropdown
+    id: escena
+    attributes:
+      label: Escena
+      options:
+        - "General (todo el show)"
+        - "B0.00 · Antorcha sola"
+        - "B0.01 · Buenaventura Luna"
+        - "B1.01 · Norte Selvático"
+        - "B1.02 · Los del Llano Sur · Selva"
+        - "B1.03 · Los Pastores"
+        - "B1.04 · Hijos de la Selva · Guaraníes"
+        - "B1.05 · Viejo Runa"
+        - "B1.06 · Los Jujeños"
+        - "B1.07 · Los de Salta"
+        - "B1.08 · Los Riojanos"
+        - "B1.09 · Verdes llanuras"
+        - "B1.10 · Los Correntinos"
+        - "B1.11 · Los Cordobeses"
+        - "B2.01 · Voz en off · Fuego y corazón"
+        - "B3.01 · Entrerrianos y chaqueños"
+        - "B3.02 · El Santiagueño"
+        - "B3.03 · El Ranquel"
+        - "B3.04 · Los de Güemes"
+        - "B3.05 · Los del Chacho"
+        - "B3.06 · Los del Ilustre Paz"
+        - "B3.07 · Pago Largo"
+        - "B3.08 · Pozo de Vargas y Quebracho"
+        - "B3.09 · Los Diaguitas"
+        - "B3.10 · Los de Quiroga"
+        - "B3.11 · Los de Fierro"
+        - "B3.12 · Los de Lavalle"
+        - "B4.01 · Aurora · Falucho"
+        - "B5.01 · Los 5 de Pringles"
+        - "B5.02 · Los de López"
+        - "B5.03 · Sanjuanino y mendocino"
+        - "B6.01 · Clarín"
+        - "B6.02 · Grito de San Martín · Granaderos"
+    validations:
+      required: false
+  - type: textarea
+    id: detalle
+    attributes:
+      label: Detalle
+      description: Qué se entrega, qué hay que revisar o qué corregir.
+    validations:
+      required: true
+  - type: input
+    id: responsable
+    attributes:
+      label: Responsable
+      placeholder: "Ej.: German, Diego, Gabi"
+    validations:
+      required: false

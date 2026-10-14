@@ -25,6 +25,14 @@ Tamaños de referencia: montaña izquierda 1920×600, centro 1856×448, montaña
 
 Las imágenes llevan `?v=<hash>` en la página, así que el reemplazo se ve sin que quede la versión vieja en caché.
 
+## Calendario de producción
+
+Al final del tablero hay un calendario con las entregas, revisiones y correcciones. Por ahora va del 14/10 al 4/11; el rango está en `data/calendario.json`.
+
+- **Agregar una nota:** **+** en el día (o **＋ Nueva nota**). Abre el formulario `nota.yml` en GitHub con la fecha cargada; se elige el tipo y la escena y se escribe el detalle. Aparece en 1–2 minutos.
+- **Marcar como hecha:** cerrar la nota (issue) en GitHub. En el calendario queda tachada con ✓.
+- **Notas fijas** cargadas desde la PC17: `data/calendario.json` (campo `notas`).
+
 ## Pedir previos con prompt (cola PC16 / PC17)
 
 En cada escena, **✦ Pedir previo con prompt** abre un formulario: prompt + hasta 4 imágenes + luna / atardecer / timelapse.

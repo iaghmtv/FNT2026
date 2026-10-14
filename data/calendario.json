@@ -1,0 +1,35 @@
+{
+ "nota": "Calendario del tablero. Las notas del equipo se cargan como issues '[Nota]' (formulario nota.yml); estas son notas fijas cargadas desde la PC17. 'hecho': true las muestra tachadas con ✓.",
+ "desde": "2026-10-14",
+ "hasta": "2026-11-04",
+ "notas": [
+  {
+   "fecha": "2026-10-14",
+   "tipo": "entrega",
+   "escena": "B0.00",
+   "hecho": true,
+   "texto": "Antorcha en las dos montañas: izquierda v03b (3840×1200) y derecha v03 (4096×1200). DXV en 06_ENTREGA_DXV y preview en el tablero."
+  },
+  {
+   "fecha": "2026-10-14",
+   "tipo": "correccion",
+   "escena": "B1.03",
+   "hecho": true,
+   "texto": "Los Pastores: cardones variados con las fotos del equipo y noche de luna nueva."
+  },
+  {
+   "fecha": "2026-10-14",
+   "tipo": "correccion",
+   "escena": "B1.04",
+   "hecho": true,
+   "texto": "Hijos de la Selva: mburucuyá real (Passiflora caerulea) a escala, con las referencias del equipo."
+  },
+  {
+   "fecha": "2026-10-14",
+   "tipo": "entrega",
+   "escena": "General",
+   "hecho": true,
+   "texto": "Tablero: videos de German (loros B1.01, 6 de la bandera B2.02) y se ocultaron las imágenes de 'no mostrar en el tablero'."
+  }
+ ]
+}

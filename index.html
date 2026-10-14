@@ -116,6 +116,23 @@ footer{padding:30px 0 60px;color:var(--ink3);font-size:13px;border-top:1px solid
 #lb{position:fixed;inset:0;background:rgba(0,0,0,.92);display:none;align-items:center;justify-content:center;z-index:60;padding:20px;cursor:zoom-out}
 #lb.on{display:flex} #lb img{max-width:96vw;max-height:86vh;cursor:zoom-out} #lb div{position:absolute;bottom:12px;left:0;right:0;text-align:center;color:#ccc;font-size:13px}
 .hidden{display:none!important}
+.calgrid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px;margin-top:4px}
+.calh{font-size:11.5px;font-weight:600;color:var(--ink3);text-transform:uppercase;letter-spacing:.08em;padding:0 6px 2px}
+.cday{background:var(--card);border:1px solid var(--line);border-radius:10px;min-height:120px;padding:7px 7px 8px;display:flex;flex-direction:column;gap:5px;min-width:0}
+.cday.finde{background:color-mix(in srgb,var(--card) 65%,var(--bg2))}
+.cday.out{background:transparent;border-style:dashed;opacity:.45}
+.cday.hoy{border-color:var(--fire);box-shadow:inset 0 0 0 1px var(--fire)}
+.cday .dn{display:flex;justify-content:space-between;align-items:center;gap:6px;font-size:12.5px;color:var(--ink3)}
+.cday .dn b{font-size:17px;color:var(--ink);font-variant-numeric:tabular-nums}
+.cday .dn em{font-style:normal;font-size:11px;font-weight:700;color:var(--fire);text-transform:uppercase;letter-spacing:.06em}
+.cday .dw{display:none}
+.cadd{flex:none;width:26px;height:26px;border-radius:99px;display:grid;place-items:center;border:1px solid var(--line);color:var(--ink2);text-decoration:none;font-size:16px;line-height:1}
+.cadd:hover,.cadd:focus-visible{border-color:var(--fire);color:var(--fire)}
+.cnote{font-size:12px;line-height:1.35;padding:4px 7px;border-radius:6px;border-left:3px solid var(--t);background:color-mix(in srgb,var(--t) 13%,var(--card));color:var(--ink);text-decoration:none;overflow:hidden;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical}
+a.cnote:hover,a.cnote:focus-visible{background:color-mix(in srgb,var(--t) 24%,var(--card))}
+.cnote.hecho{opacity:.62}.cnote.hecho .tx{text-decoration:line-through;text-decoration-color:color-mix(in srgb,var(--ink) 45%,transparent)}
+.t-entrega{--t:var(--ok)}.t-revision{--t:var(--moon)}.t-correccion{--t:var(--fire)}.t-otro{--t:var(--ink3)}
+@media (max-width:860px){.calgrid{grid-template-columns:1fr}.calh{display:none}.cday.out{display:none}.cday{min-height:0}.cday .dw{display:inline}}
 @media (max-width:860px){.aud{grid-template-columns:1fr}.audrow{margin:12px 12px 0}.wrap{padding:0 16px}.grid3,.grid2,.cols{grid-template-columns:1fr}.c25{border-right:0;border-bottom:1px solid var(--line)}.mtn{grid-template-columns:1fr}.badges{margin-left:0}}
 </style>
 </head>
@@ -169,6 +186,14 @@ footer{padding:30px 0 60px;color:var(--ink3);font-size:13px;border-top:1px solid
 </section>
 
 <div id="blocks"><p class="empty" id="loading">Cargando escenas…</p></div>
+
+<section class="ctx" id="calendario">
+  <h2>Calendario de producción</h2>
+  <p class="sub" id="calsub">Entregas, revisiones y correcciones.</p>
+  <div class="legend"><span><i style="background:var(--ok)"></i>Entrega</span><span><i style="background:var(--moon)"></i>Revisión</span><span><i style="background:var(--fire)"></i>Corrección</span><span><i style="background:var(--ink3)"></i>Reunión / otro</span><span>✓ hecho (nota cerrada)</span></div>
+  <div class="upl" id="calacc"></div>
+  <div id="cal"><p class="empty">Cargando calendario…</p></div>
+</section>
 </main>
 
 <footer><div class="wrap">FNT 2026 · GHM · Comparativo completo 2025 vs German: <a href="comparativo.html">comparativo.html</a> · Datos actualizados <span id="gen"></span></div></footer>
@@ -218,6 +243,26 @@ function panelAnim(an){var v=function(k){return an[k]?'<figure><video src="'+esc
   h+='<div class="upl" style="margin-top:10px"><button class="btn ghost" type="button" onclick="juntas(this)">▶ Reproducir juntas desde el inicio</button></div>';
   return h}
 function juntas(b){var vs=b.closest('.sub26').querySelectorAll('video');vs.forEach(function(x){x.pause();x.currentTime=0});vs.forEach(function(x){x.play()})}
+var MES=['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'],DIA=['dom','lun','mar','mié','jue','vie','sáb'];
+var TIPO={entrega:'Entrega',revision:'Revisión',correccion:'Corrección',otro:'Reunión / otro'};
+function iso(d){return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')}
+function pd(s){var a=String(s).split('-');return new Date(+a[0],+a[1]-1,+a[2])}
+function fecha(s){var d=pd(s);return d.getDate()+' de '+['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'][d.getMonth()]}
+function calendario(c,repo){var notas=(c.notas||[]).filter(function(n){return /^\d{4}-\d\d-\d\d$/.test(n.fecha)});if(!c.desde)return '<p class="empty">Sin calendario.</p>';
+  var nueva='https://github.com/'+repo+'/issues/new?template=nota.yml';
+  var d0=pd(c.desde),d1=pd(c.hasta);notas.forEach(function(n){var x=pd(n.fecha);if(x<d0)d0=x;if(x>d1)d1=x});
+  var a=new Date(d0);a.setDate(a.getDate()-((a.getDay()+6)%7));var b=new Date(d1);b.setDate(b.getDate()+(7-b.getDay())%7);
+  var hoy=iso(new Date()),by={};notas.forEach(function(n){(by[n.fecha]=by[n.fecha]||[]).push(n)});
+  var h='<div class="calgrid">'+['lun','mar','mié','jue','vie','sáb','dom'].map(function(x){return '<div class="calh">'+x+'</div>'}).join('');
+  for(var x=new Date(a);x<=b;x.setDate(x.getDate()+1)){var k=iso(x),ns=by[k]||[],dentro=(k>=c.desde&&k<=c.hasta)||ns.length>0;
+    h+='<div class="cday'+(dentro?'':' out')+(k===hoy?' hoy':'')+(x.getDay()%6===0?' finde':'')+'"><div class="dn"><span><span class="dw">'+DIA[x.getDay()]+' </span><b>'+x.getDate()+'</b>'+((x.getDate()===1||k===iso(a))?' '+MES[x.getMonth()]:'')+(k===hoy?' <em>hoy</em>':'')+'</span>'+
+      (dentro?'<a class="cadd" href="'+nueva+'&title='+encodeURIComponent('[Nota] '+k)+'&fecha='+k+'" target="_blank" rel="noopener" title="Agregar nota el '+fecha(k)+'" aria-label="Agregar nota el '+fecha(k)+'">+</a>':'')+'</div>';
+    ns.forEach(function(n){var tp=TIPO[n.tipo]?n.tipo:'otro',t=(n.escena?'<b>'+esc(n.escena)+'</b> · ':'')+esc(n.texto);
+      var tip=TIPO[tp]+(n.hecho?' · hecho':'')+(n.responsable?' · '+n.responsable:'')+(n.autor?' · '+n.autor:'')+'\n'+n.texto;
+      var cls='cnote t-'+tp+(n.hecho?' hecho':''),inner=(n.hecho?'✓ ':'')+'<span class="tx">'+t+'</span>';
+      h+=n.url?'<a class="'+cls+'" href="'+esc(n.url)+'" target="_blank" rel="noopener" title="'+esc(tip)+'">'+inner+'</a>':'<span class="'+cls+'" title="'+esc(tip)+'">'+inner+'</span>'});
+    h+='</div>'}
+  return h+'</div>'}
 var ST={'en cola':'b-mid','procesando':'b-moon','listo':'b-ok','error':'b-red','no autorizado':'b-no','cerrado':'b-no'};
 function pedidos(s){var ps=s.pedidos||[];if(!ps.length)return '';
   return '<span class="lbl">Pedidos al generador ('+ps.length+')</span><div class="peds">'+ps.map(function(p){var f=p.files||{};
@@ -296,10 +341,14 @@ function scene(s,repo,branch){var c=s.ctx||{};var p=s.previos;var nref=s.refs.le
 
 fetch('data/site.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(d){
   document.getElementById('gen').textContent=d.generado;
-  document.getElementById('nav').innerHTML=d.blocks.map(function(b){return '<a href="#'+b.id+'"><b>'+b.id+'</b> '+esc(b.name)+'</a>'}).join('')+'<a href="#zonas">Zonas aptas</a>';
+  document.getElementById('nav').innerHTML=d.blocks.map(function(b){return '<a href="#'+b.id+'"><b>'+b.id+'</b> '+esc(b.name)+'</a>'}).join('')+'<a href="#zonas">Zonas aptas</a><a href="#calendario">Calendario</a>';
   document.getElementById('blocks').innerHTML=d.blocks.map(function(b){
     var fin=(b.id==='B6'&&(d.audio_finales||[]).length)?'<article class="scene" id="final" data-refs="0" data-prev="0" data-text="pistas finales desconcentracion marcha san lorenzo ituzaingo camelias"><div class="shead"><span class="code">Final</span><h3>Pistas finales · desconcentración</h3><span class="meta">Se alternan las tres marchas mientras dura la desconcentración (~10 min)</span></div>'+d.audio_finales.map(function(a,i){return '<section class="audrow" style="margin-bottom:12px"><div class="colh">♪ '+esc(a.nombre)+'</div>'+audioBody(a,null,'aud_fin_'+i)+'</section>'}).join('')+'</article>':'';
     return '<section class="block" id="'+b.id+'"><div class="bhead"><div class="bnum">'+b.id+'</div><div><h2>'+esc(b.name)+'</h2><div class="btrack">♪ '+esc(b.track)+'</div></div></div><p class="bintro">'+esc(b.intro)+'</p>'+b.scenes.map(function(s){return scene(s,d.repo,d.branch)}).join('')+fin+'</section>'}).join('');
+  var cal=d.calendario||{};
+  if(cal.desde)document.getElementById('calsub').innerHTML='Entregas, revisiones y correcciones del '+fecha(cal.desde)+' al '+fecha(cal.hasta)+'. Tocá <b>+</b> en un día para agregar una nota: se abre GitHub con la fecha cargada, elegís el tipo y la escena y escribís el detalle. Aparece acá en 1–2 minutos. Cuando esté resuelta, cerrá la nota en GitHub y queda tachada con ✓.';
+  document.getElementById('calacc').innerHTML='<a class="btn" href="https://github.com/'+d.repo+'/issues/new?template=nota.yml" target="_blank" rel="noopener">＋ Nueva nota</a><a class="btn ghost" href="https://github.com/'+d.repo+'/issues?q='+encodeURIComponent('is:issue "[Nota]" in:title')+'" target="_blank" rel="noopener">Ver todas las notas en GitHub</a>';
+  document.getElementById('cal').innerHTML=calendario(cal,d.repo);
   wire(); applyFilter(store.get('fnt-filter')||'todas');
 }).catch(function(e){document.getElementById('loading').textContent='No se pudieron cargar los datos ('+e+').'});
 

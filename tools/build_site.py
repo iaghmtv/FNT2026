@@ -64,6 +64,48 @@ def estado(it):
     return ("cerrado", "") if it.get("state") == "closed" else ("en cola", "")
 
 
+def _seccion(body, nombre):
+    m = re.search(r"###\s*" + nombre + r"\s*\n(.*?)(?=\n###\s|\Z)", body, re.S)
+    v = m.group(1).strip() if m else ""
+    return "" if v in ("_No response_", "None") else v
+
+
+def _fecha(txt):
+    m = re.search(r"(20\d\d)-(\d{1,2})-(\d{1,2})", txt or "")
+    if m:
+        return f"{int(m.group(1)):04d}-{int(m.group(2)):02d}-{int(m.group(3)):02d}"
+    m = re.search(r"\b(\d{1,2})[/.-](\d{1,2})(?:[/.-](\d{2,4}))?\b", txt or "")
+    if m:
+        y = int(m.group(3)) if m.group(3) else 2026
+        y = y + 2000 if y < 100 else y
+        return f"{y:04d}-{int(m.group(2)):02d}-{int(m.group(1)):02d}"
+    return ""
+
+
+def calendario(todos):
+    """Calendario: notas fijas de data/calendario.json + issues '[Nota]' del formulario nota.yml (cerrada = hecha)."""
+    cp = os.path.join(ROOT, "data", "calendario.json")
+    cal = json.load(open(cp, encoding="utf-8")) if os.path.exists(cp) else {"desde": "", "hasta": "", "notas": []}
+    notas = [dict(n, fuente="tablero") for n in cal.get("notas", [])]
+    TIPOS = {"entrega": "entrega", "revis": "revision", "correc": "correccion"}
+    for it in todos:
+        names = {l["name"] for l in it.get("labels", [])}
+        if "pull_request" in it or not ("calendario" in names or it.get("title", "").lower().startswith("[nota]")):
+            continue
+        body = it.get("body") or ""
+        f = _fecha(_seccion(body, "Fecha")) or _fecha(it.get("title", "")) or it["created_at"][:10]
+        t = _seccion(body, "Tipo").lower()
+        tipo = next((v for k, v in TIPOS.items() if k in t), "otro")
+        esc = _seccion(body, "Escena"); m = re.search(r"B\d\.\d\d", esc)
+        texto = _seccion(body, "Detalle") or re.sub(r"^\[nota\]\s*", "", it.get("title", ""), flags=re.I)
+        resp = _seccion(body, "Responsable")
+        notas.append({"fecha": f, "tipo": tipo, "escena": m.group(0) if m else ("General" if esc else ""), "texto": texto[:500],
+                      "responsable": resp[:60], "autor": it["user"]["login"], "url": it["html_url"], "n": it["number"],
+                      "hecho": it.get("state") == "closed", "fuente": "nota"})
+    notas.sort(key=lambda n: (n["fecha"], n.get("n", 0)))
+    return {"desde": cal.get("desde", ""), "hasta": cal.get("hasta", ""), "notas": notas}
+
+
 def main():
     escenas = json.load(open(os.path.join(ROOT, "escenas.json"), encoding="utf-8"))
     ctx = json.load(open(os.path.join(ROOT, "data", "contexto.json"), encoding="utf-8"))
@@ -79,7 +121,9 @@ def main():
     out = {"generado": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"), "repo": REPO, "branch": BRANCH, "blocks": []}
     by_block = {}
     peds = {}
-    for it in issues():
+    todos = issues()
+    out["calendario"] = calendario(todos)
+    for it in todos:
         body = it.get("body") or ""
         names = {l["name"] for l in it.get("labels", [])}
         if "pull_request" in it or not ("previo" in names or it.get("title", "").lower().startswith("[previo]")):
