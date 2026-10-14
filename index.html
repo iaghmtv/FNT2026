@@ -34,7 +34,8 @@ header.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--b
 .fbtn[aria-pressed="true"]{background:color-mix(in srgb,var(--fire) 20%,transparent);color:var(--ink);border-color:var(--fire)}
 .filters{display:flex;gap:6px;align-items:center;flex-wrap:wrap;padding:0 0 10px}
 .filters input{flex:1;min-width:160px;max-width:320px;background:var(--card);border:1px solid var(--line);color:var(--ink);border-radius:99px;padding:6px 12px;font:inherit;font-size:13px}
-#themeBtn{margin-left:auto}
+.calbtn{margin-left:auto;display:inline-flex;align-items:center;gap:6px;color:var(--fire)!important;border-color:color-mix(in srgb,var(--fire) 55%,var(--line))!important}
+.calbtn:hover,.calbtn:focus-visible{background:color-mix(in srgb,var(--fire) 12%,transparent)!important}
 .hero{padding:40px 0 22px}
 .kicker{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--fire2);font-weight:600}
 .hero h1{font-size:clamp(28px,4vw,46px);line-height:1.05;margin:8px 0 10px}
@@ -138,7 +139,7 @@ a.cnote:hover,a.cnote:focus-visible{background:color-mix(in srgb,var(--t) 24%,va
 </head>
 <body>
 <header class="top"><div class="wrap">
-  <div class="bar"><span class="brand">FNT 2026</span><nav class="chips" id="nav" aria-label="Bloques"></nav><button id="themeBtn" class="fbtn" type="button">◐</button></div>
+  <div class="bar"><span class="brand">FNT 2026</span><nav class="chips" id="nav" aria-label="Bloques"></nav><a class="fbtn calbtn" href="#calendario" title="Ir al calendario de producción"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>Calendario</a><button id="themeBtn" class="fbtn" type="button">◐</button></div>
   <div class="filters" role="group" aria-label="Filtros">
     <button class="fbtn" data-f="todas" aria-pressed="true">Todas</button>
     <button class="fbtn" data-f="conrefs" aria-pressed="false">Con referencias</button>
@@ -204,6 +205,10 @@ a.cnote:hover,a.cnote:focus-visible{background:color-mix(in srgb,var(--t) 24%,va
 var esc=function(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})};
 var store={get:function(k){try{return localStorage.getItem(k)}catch(e){return null}},set:function(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
 var root=document.documentElement, t=store.get('fnt-theme'); if(t) root.setAttribute('data-theme',t);
+// saltos a secciones (#B1, #calendario…): las imágenes cargan mientras se baja y empujan el destino; se corrige hasta llegar
+function irA(id){var el=document.getElementById(id);if(!el)return;var n=0;el.scrollIntoView({behavior:'smooth',block:'start'});
+  var t=setInterval(function(){var d=el.getBoundingClientRect().top-110;if(Math.abs(d)<24||++n>25){clearInterval(t);return}if(n>2)window.scrollBy(0,d)},250)}
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href^="#"]');if(!a)return;var id=a.getAttribute('href').slice(1);if(!id||!document.getElementById(id))return;e.preventDefault();history.replaceState(null,'','#'+id);irA(id)});
 document.getElementById('themeBtn').onclick=function(){var cur=root.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');var nx=cur==='light'?'dark':'light';root.setAttribute('data-theme',nx);store.set('fnt-theme',nx)};
 var lb=document.getElementById('lb'), li=lb.querySelector('img'), lc=lb.querySelector('div');
 document.addEventListener('click',function(e){var x=e.target;if(x.tagName==='IMG'&&!lb.contains(x)){li.src=x.src;lc.textContent=x.alt||'';lb.classList.add('on')}else if(lb.contains(x)){lb.classList.remove('on')}});
@@ -342,7 +347,7 @@ function scene(s,repo,branch){var c=s.ctx||{};var p=s.previos;var nref=s.refs.le
 
 fetch('data/site.json?t='+Date.now(),{cache:'no-store'}).then(function(r){return r.json()}).then(function(d){
   document.getElementById('gen').textContent=d.generado;
-  document.getElementById('nav').innerHTML=d.blocks.map(function(b){return '<a href="#'+b.id+'"><b>'+b.id+'</b> '+esc(b.name)+'</a>'}).join('')+'<a href="#zonas">Zonas aptas</a><a href="#calendario">Calendario</a>';
+  document.getElementById('nav').innerHTML=d.blocks.map(function(b){return '<a href="#'+b.id+'"><b>'+b.id+'</b> '+esc(b.name)+'</a>'}).join('')+'<a href="#zonas">Zonas aptas</a>';
   document.getElementById('blocks').innerHTML=d.blocks.map(function(b){
     var fin=(b.id==='B6'&&(d.audio_finales||[]).length)?'<article class="scene" id="final" data-refs="0" data-prev="0" data-text="pistas finales desconcentracion marcha san lorenzo ituzaingo camelias"><div class="shead"><span class="code">Final</span><h3>Pistas finales · desconcentración</h3><span class="meta">Se alternan las tres marchas mientras dura la desconcentración (~10 min)</span></div>'+d.audio_finales.map(function(a,i){return '<section class="audrow" style="margin-bottom:12px"><div class="colh">♪ '+esc(a.nombre)+'</div>'+audioBody(a,null,'aud_fin_'+i)+'</section>'}).join('')+'</article>':'';
     return '<section class="block" id="'+b.id+'"><div class="bhead"><div class="bnum">'+b.id+'</div><div><h2>'+esc(b.name)+'</h2><div class="btrack">♪ '+esc(b.track)+'</div></div></div><p class="bintro">'+esc(b.intro)+'</p>'+b.scenes.map(function(s){return scene(s,d.repo,d.branch)}).join('')+fin+'</section>'}).join('');
@@ -351,6 +356,7 @@ fetch('data/site.json?t='+Date.now(),{cache:'no-store'}).then(function(r){return
   document.getElementById('calacc').innerHTML='<a class="btn" href="https://github.com/'+d.repo+'/issues/new?template=nota.yml" target="_blank" rel="noopener">＋ Nueva nota</a><a class="btn ghost" href="https://github.com/'+d.repo+'/issues?q='+encodeURIComponent('is:issue "[Nota]" in:title')+'" target="_blank" rel="noopener">Ver todas las notas en GitHub</a>';
   document.getElementById('cal').innerHTML=calendario(cal,d.repo);
   wire(); applyFilter(store.get('fnt-filter')||'todas');
+  if(location.hash.length>1)setTimeout(function(){irA(decodeURIComponent(location.hash.slice(1)))},200);
 }).catch(function(e){document.getElementById('loading').textContent='No se pudieron cargar los datos ('+e+').'});
 
 function wire(){

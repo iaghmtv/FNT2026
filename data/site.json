@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-14 22:03 UTC",
+ "generado": "2026-10-14 22:12 UTC",
  "repo": "iaghmtv/FNT2026",
  "branch": "main",
  "blocks": [
@@ -3061,7 +3061,55 @@
     "tipo": "entrega",
     "escena": "General",
     "hecho": true,
-    "texto": "Tablero: videos de German (loros B1.01, 6 de la bandera B2.02) y se ocultaron las imágenes de 'no mostrar en el tablero'.",
+    "texto": "Tablero: videos de German (loros B1.01 y bandera B2.02, quedan 4) y se ocultaron las imágenes de 'no mostrar en el tablero'.",
+    "fuente": "tablero"
+   },
+   {
+    "fecha": "2026-10-14",
+    "tipo": "correccion",
+    "escena": "B1",
+    "hecho": true,
+    "texto": "Noche nueva con las imágenes del equipo en B1.01, B1.02, B1.04, B1.05, B1.06, B1.07, B1.08, B1.09 y B1.10, ajustadas a cada pantalla. Archivos renombrados por pantalla en PROPUESTA PANTALLA(S).",
+    "fuente": "tablero"
+   },
+   {
+    "fecha": "2026-10-14",
+    "tipo": "entrega",
+    "escena": "B0.01",
+    "hecho": true,
+    "texto": "Propuesta para las pantallas: notas musicales de fuego, en lugar de la luna y el atardecer del previo.",
+    "fuente": "tablero"
+   },
+   {
+    "fecha": "2026-10-14",
+    "tipo": "revision",
+    "escena": "General",
+    "hecho": true,
+    "texto": "Tablero depurado: fuera las propuestas de German del Bloque 1 (menos los loros), los timelapses del B1, varias lunas, 2 videos de bandera y 2 propuestas de Buenaventura.",
+    "fuente": "tablero"
+   },
+   {
+    "fecha": "2026-10-14",
+    "tipo": "entrega",
+    "escena": "General",
+    "hecho": true,
+    "texto": "Archivos: Flux Bloque 1 y previos del tablero en 03_BLOQUES de cada escena; HANDOFF_FNT2026.md con la organización y el material 2025.",
+    "fuente": "tablero"
+   },
+   {
+    "fecha": "2026-10-14",
+    "tipo": "revision",
+    "escena": "B1.09",
+    "hecho": false,
+    "texto": "Falta la noche de la montaña izquierda (sigue la del 10/10).",
+    "fuente": "tablero"
+   },
+   {
+    "fecha": "2026-10-14",
+    "tipo": "revision",
+    "escena": "B0.00",
+    "hecho": false,
+    "texto": "Probar los DXV de las dos antorchas en Resolume sobre las máscaras.",
     "fuente": "tablero"
    }
   ]
