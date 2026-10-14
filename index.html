@@ -340,7 +340,7 @@ function scene(s,repo,branch){var c=s.ctx||{};var p=s.previos;var nref=s.refs.le
   h+='<section class="refsrow"><div class="colh">Referencias del equipo · '+nref+'</div>'+panelRefs(s,repo,branch)+'</section>';
   return h+'</article>'}
 
-fetch('data/site.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(d){
+fetch('data/site.json?t='+Date.now(),{cache:'no-store'}).then(function(r){return r.json()}).then(function(d){
   document.getElementById('gen').textContent=d.generado;
   document.getElementById('nav').innerHTML=d.blocks.map(function(b){return '<a href="#'+b.id+'"><b>'+b.id+'</b> '+esc(b.name)+'</a>'}).join('')+'<a href="#zonas">Zonas aptas</a><a href="#calendario">Calendario</a>';
   document.getElementById('blocks').innerHTML=d.blocks.map(function(b){
