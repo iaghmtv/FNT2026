@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-14 19:56 UTC",
+ "generado": "2026-10-14 19:57 UTC",
  "repo": "iaghmtv/FNT2026",
  "branch": "main",
  "blocks": [
@@ -185,11 +185,7 @@
       "engine": "comfy",
       "generated_at": "2026-10-10 17:03",
       "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
-      "files": {
-       "atardecer_izq": "previos/B0.01_BUENAVENTURA_LUNA/atardecer_izq.jpg?v=6571ef90",
-       "atardecer_cen": "previos/B0.01_BUENAVENTURA_LUNA/atardecer_cen.jpg?v=a72583ef",
-       "atardecer_der": "previos/B0.01_BUENAVENTURA_LUNA/atardecer_der.jpg?v=998f5855"
-      },
+      "files": {},
       "seed": 14616238,
       "propuesta": {
        "titulo": "Propuesta pantallas · notas musicales de fuego",

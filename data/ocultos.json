@@ -143,7 +143,10 @@
   "B0.01": [
    "luna_izq",
    "luna_cen",
-   "luna_der"
+   "luna_der",
+   "atardecer_izq",
+   "atardecer_cen",
+   "atardecer_der"
   ]
  },
  "german_por_tipo": {
