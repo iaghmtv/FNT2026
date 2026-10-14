@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-14 21:32 UTC",
+ "generado": "2026-10-14 21:50 UTC",
  "repo": "iaghmtv/FNT2026",
  "branch": "main",
  "blocks": [
@@ -1297,12 +1297,12 @@
       "version": "e2ee48b972",
       "scene_hash": "f9a69ab8",
       "engine": "comfy",
-      "generated_at": "2026-10-13 19:33",
+      "generated_at": "2026-10-14 18:50",
       "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
       "files": {
-       "luna_izq": "previos/B1.10_CORRENTINOS/luna_izq.jpg?v=9603110d",
-       "luna_cen": "previos/B1.10_CORRENTINOS/luna_cen.jpg?v=affb54d6",
-       "luna_der": "previos/B1.10_CORRENTINOS/luna_der.jpg?v=e38cfca6",
+       "luna_izq": "previos/B1.10_CORRENTINOS/luna_izq.jpg?v=966d7227",
+       "luna_cen": "previos/B1.10_CORRENTINOS/luna_cen.jpg?v=010541aa",
+       "luna_der": "previos/B1.10_CORRENTINOS/luna_der.jpg?v=c4604004",
        "atardecer_izq": "previos/B1.10_CORRENTINOS/atardecer_izq.jpg?v=3b1e16c2",
        "atardecer_cen": "previos/B1.10_CORRENTINOS/atardecer_cen.jpg?v=35f82892",
        "atardecer_der": "previos/B1.10_CORRENTINOS/atardecer_der.jpg?v=4f8e44f3"
@@ -1318,6 +1318,11 @@
        "fecha": "2026-10-14 10:16",
        "luz": "solo atardecer: tarde dorada -> atardecer -> atardecer profundo -> ultima luz (sin noche, sin sol en cuadro)",
        "metodo": "cuadros guia con Qwen desde el fijo nuevo + MiniMax H3 (243 cuadros, 24 fps)"
+      },
+      "luna_v2": {
+       "fecha": "2026-10-14 18:50",
+       "fuente": "03_BLOQUES/B1_PAISAJES/B1.10_CORRENTINOS/02_IA_GENERACION/PROPUESTA PANTALLA",
+       "nota": "Reemplaza la noche de luna del 10/10 (copias en LUNA_2026_v2/_reemplazadas)."
       },
       "refs_al_generar": [],
       "desactualizado": false
