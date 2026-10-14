@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-14 19:01 UTC",
+ "generado": "2026-10-14 19:09 UTC",
  "repo": "iaghmtv/FNT2026",
  "branch": "main",
  "blocks": [
@@ -151,6 +151,26 @@
        {
         "src": "assets/propuestas/B0.01_prop_fogon_guitarra_4_solo_izq.jpg",
         "cap": "Propuesta · Buenaventura de poncho a la izquierda, solo frente al fogón",
+        "kind": "single"
+       },
+       {
+        "src": "assets/propuestas/B0.01_laterales_notas_fuego_1.jpg",
+        "cap": "Propuesta pantallas laterales · notas musicales de fuego (1/4): clave de sol y pentagrama encendidos, con chispas",
+        "kind": "single"
+       },
+       {
+        "src": "assets/propuestas/B0.01_laterales_notas_fuego_2.jpg",
+        "cap": "Propuesta pantallas laterales · notas musicales de fuego (2/4): pentagrama de fuego ondulante; las notas se desprenden en chispas",
+        "kind": "single"
+       },
+       {
+        "src": "assets/propuestas/B0.01_laterales_notas_fuego_3.jpg",
+        "cap": "Propuesta pantallas laterales · notas musicales de fuego (3/4): pentagrama recto de brasas sobre un fondo de destellos",
+        "kind": "single"
+       },
+       {
+        "src": "assets/propuestas/B0.01_laterales_notas_fuego_4.jpg",
+        "cap": "Propuesta pantallas laterales · notas musicales de fuego (4/4): espiral de humo y chispas que se abre en un pentagrama",
         "kind": "single"
        }
       ]
