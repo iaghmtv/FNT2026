@@ -22,9 +22,13 @@ TIMELINE = [("tarde", 0), ("atardecer", 80), ("profundo", 165), ("ultima", 242)]
 KEEP = (" Keep every tree, plant, rock, cliff, water and the whole composition exactly the same; only the lighting and colors change. "
         "Crisp clear air, no fog, no mist, no haze, no glow along the outline. Keep the black background pure black.")
 CASC = {("B1.02", "izq"), ("B1.02", "der")}
+SIN_CIELO = flux_cine.SIN_CIELO
+NO_SOL = (" The sun itself is outside the frame and never visible: no sun disk, no lens flare, no bright glow or hot spot at the edges of the image; "
+          "only its warm light enters from outside. Do not add any new element (no trees, no rocks, no buildings).")
+NO_CIELO = " There is no sky: above the ridgeline and the treetops everything stays pure black, no sky, no clouds, no glow."
 
 
-def relight(L, s):
+def relight(L, s, code=""):
     e = EXT[s]
     return {
         "tarde": (f"Relight this exact landscape as late afternoon golden light: the sun is a bit higher, warm golden-yellow light from the {e}, "
@@ -33,7 +37,7 @@ def relight(L, s):
                      "the tops of the trees and the rocks, the lower parts fall into soft warm violet shadow, long dramatic shadows."),
         "ultima": ("Relight this exact landscape with the very last light of the sunset: only the highest ridge and the tallest treetops glow with a thin "
                    "pink-orange light, everything else is in soft dusky violet shadow but still clearly visible; it is not night yet."),
-    }[L] + KEEP
+    }[L] + (NO_SOL if L in ("profundo", "ultima") else "") + (NO_CIELO if code in SIN_CIELO else "") + KEEP
 
 
 def prompt_video(code, s):
@@ -42,7 +46,7 @@ def prompt_video(code, s):
     return ("Static locked-off camera, no camera movement: a time-lapse of a long golden hour sunset over this landscape. "
             f"The low sun keeps sinking on the {e}: warm golden light rakes across the relief, long shadows slowly stretch and crawl across every gully, "
             "rock and plant, the light turns deeper orange and pink and slowly climbs up the slopes, until only the highest ridge glows with the last light. "
-            f"Gentle wind in the vegetation.{agua} Crisp clear air, no fog, no mist. The black background stays pure black. "
+            f"Gentle wind in the vegetation.{agua}{NO_CIELO if code in SIN_CIELO else ''}{NO_SOL} Crisp clear air, no fog, no mist. The black background stays pure black. "
             "Smooth continuous light transition, no cuts, no night.")
 
 
@@ -70,7 +74,7 @@ for code in want:
         for L in ("tarde", "profundo", "ultima"):
             dst = os.path.join(WD, f"{code}_kf_{L}_{s}.png")
             if not os.path.exists(dst):
-                out = comfy.run(graphs.qwen_edit([bn], relight(L, s), seed, f"FNT26/B1tl/{code}_{L}_{s}", megapixels=1.4),
+                out = comfy.run(graphs.qwen_edit([bn], relight(L, s, code), seed, f"FNT26/B1tl/{code}_{L}_{s}", megapixels=1.4),
                                 os.path.join(WD, "raw"), label=f"{code} {L} {s}")
                 recortar(Image.open(out[0]), code, s, base.size).save(dst)
             kf[L] = Image.open(dst).convert("RGB")
@@ -97,7 +101,7 @@ for code in want:
         for i, t in enumerate(tiles):
             strip.paste(t, (384 * i, 0))
         strip.save(os.path.join(WD, f"{code}_luz_{s}.jpg"), quality=82)
-        log[f"{code}_{s}"] = {"seed": seed, "prompt_video": prompt_video(code, s), "relight": {L: relight(L, s) for L in ("tarde", "profundo", "ultima")}}
+        log[f"{code}_{s}"] = {"seed": seed, "prompt_video": prompt_video(code, s), "relight": {L: relight(L, s, code) for L in ("tarde", "profundo", "ultima")}}
         print("ok", code, s, flush=True)
 with open(os.path.join(WD, "log.json"), "a", encoding="utf-8") as fh:
     json.dump(log, fh, ensure_ascii=False, indent=1)
