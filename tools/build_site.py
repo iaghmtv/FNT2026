@@ -68,6 +68,12 @@ def main():
     escenas = json.load(open(os.path.join(ROOT, "escenas.json"), encoding="utf-8"))
     ctx = json.load(open(os.path.join(ROOT, "data", "contexto.json"), encoding="utf-8"))
     cmap = {s["code"]: s for b in ctx["blocks"] for s in b["scenes"]}
+    op = os.path.join(ROOT, "data", "ocultos.json")       # imágenes que no se muestran en el tablero
+    ocultos = json.load(open(op, encoding="utf-8")) if os.path.exists(op) else {}
+    oprev, oger = ocultos.get("previos", {}), ocultos.get("german_por_tipo", {})
+    for code, kinds in oger.items():
+        if code in cmap:
+            cmap[code] = dict(cmap[code], img26=[x for x in cmap[code].get("img26", []) if x.get("kind") not in kinds])
     ap = os.path.join(ROOT, "data", "audio.json")
     audio = json.load(open(ap, encoding="utf-8")) if os.path.exists(ap) else {"escenas": {}, "finales": [], "sin_track": {}}
     out = {"generado": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"), "repo": REPO, "branch": BRANCH, "blocks": []}
@@ -101,7 +107,7 @@ def main():
         mp = os.path.join(ROOT, "previos", slug, "meta.json")
         if os.path.exists(mp):
             prev = json.load(open(mp, encoding="utf-8"))
-            prev["files"] = {k: ver(f"previos/{slug}/{v}") for k, v in prev.get("files", {}).items()}
+            prev["files"] = {k: ver(f"previos/{slug}/{v}") for k, v in prev.get("files", {}).items() if k not in oprev.get(e["code"], [])}
             prev.pop("prompts", None)
             if prev.get("animacion"):        # render final de la escena (videos por montaña)
                 an = prev["animacion"]

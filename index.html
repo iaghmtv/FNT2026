@@ -198,8 +198,10 @@ function panelPrevios(s,repo,branch){var p=s.previos;
   if(!p) return '<div class="empty">Todavía no hay previos. Se generan en la PC de render con <code>GENERAR_PREVIOS.bat</code>.</div>';
   var f=p.files||{};var h='';
   if(p.desactualizado) h+='<p class="nota" style="margin:0 0 10px">Hay referencias nuevas desde la última generación: estos previos se van a rehacer.</p>';
-  h+='<div class="seg" role="group" aria-label="Luz"><button class="luna" data-l="luna" aria-pressed="true">☾ Noche de luna</button><button class="atardecer" data-l="atardecer" aria-pressed="false">☀ Atardecer</button></div>';
-  ['luna','atardecer'].forEach(function(L,ix){h+='<div class="lset" data-l="'+L+'"'+(ix?' hidden':'')+'>'+stage(function(k){return f[L+'_'+k]},'Previo '+L+' · ')+'</div>'});
+  var LS=['luna','atardecer'].filter(function(L){return f[L+'_cen']||f[L+'_izq']||f[L+'_der']});var LN={luna:'☾ Noche de luna',atardecer:'☀ Atardecer'};
+  if(LS.length>1)h+='<div class="seg" role="group" aria-label="Luz">'+LS.map(function(L,ix){return '<button class="'+L+'" data-l="'+L+'" aria-pressed="'+(ix?'false':'true')+'">'+LN[L]+'</button>'}).join('')+'</div>';
+  else if(LS.length)h+='<p class="hint" style="margin:0 0 8px">'+LN[LS[0]]+'</p>';
+  LS.forEach(function(L,ix){h+='<div class="lset" data-l="'+L+'"'+(ix?' hidden':'')+'>'+stage(function(k){return f[L+'_'+k]},'Previo '+L+' · ')+'</div>'});
   if(f.timelapse_izq||f.timelapse_der){h+='<div class="tl"><h5>Timelapse de luz (loop · la luz entra desde el centro)</h5><div class="mtn">';
     ['izq','der'].forEach(function(k){if(f['timelapse_'+k])h+='<figure><video src="'+esc(f['timelapse_'+k])+'" muted loop playsinline autoplay preload="metadata"'+(f['luz_'+k]?' poster="'+esc(f['luz_'+k])+'"':'')+'></video><figcaption>'+LBL[k]+'</figcaption>'+(f['luz_'+k]?img(f['luz_'+k],'Cuadros guía de luz · '+LBL[k]):'')+'</figure>'});
     h+='</div></div>'}

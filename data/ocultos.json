@@ -1,0 +1,197 @@
+{
+ "nota": "Imagenes que NO se muestran en el tablero (pedido del 14/10/2026; capturas en D:/FNT2026/07_PRESENTACIONES/no mostrar en el tablero). Los archivos siguen en el repo. Para volver a mostrar algo, sacarlo de esta lista y publicar.",
+ "previos": {
+  "B1.01": [
+   "timelapse_izq",
+   "timelapse_der",
+   "luz_izq",
+   "luz_der"
+  ],
+  "B1.02": [
+   "timelapse_izq",
+   "timelapse_der",
+   "luz_izq",
+   "luz_der"
+  ],
+  "B1.03": [
+   "timelapse_izq",
+   "timelapse_der",
+   "luz_izq",
+   "luz_der"
+  ],
+  "B1.04": [
+   "timelapse_izq",
+   "timelapse_der",
+   "luz_izq",
+   "luz_der"
+  ],
+  "B1.06": [
+   "timelapse_izq",
+   "timelapse_der",
+   "luz_izq",
+   "luz_der"
+  ],
+  "B1.07": [
+   "timelapse_izq",
+   "timelapse_der",
+   "luz_izq",
+   "luz_der"
+  ],
+  "B1.08": [
+   "timelapse_izq",
+   "timelapse_der",
+   "luz_izq",
+   "luz_der"
+  ],
+  "B1.09": [
+   "timelapse_izq",
+   "timelapse_der",
+   "luz_izq",
+   "luz_der"
+  ],
+  "B1.10": [
+   "timelapse_izq",
+   "timelapse_der",
+   "luz_izq",
+   "luz_der"
+  ],
+  "B1.11": [
+   "timelapse_izq",
+   "timelapse_der",
+   "luz_izq",
+   "luz_der"
+  ],
+  "B2.01": [
+   "luna_izq",
+   "luna_cen",
+   "luna_der"
+  ],
+  "B3.06": [
+   "luna_izq",
+   "luna_cen",
+   "luna_der"
+  ],
+  "B3.07": [
+   "luna_izq",
+   "luna_cen",
+   "luna_der"
+  ],
+  "B3.08": [
+   "luna_izq",
+   "luna_cen",
+   "luna_der"
+  ],
+  "B3.10": [
+   "luna_izq",
+   "luna_cen",
+   "luna_der"
+  ],
+  "B3.11": [
+   "luna_izq",
+   "luna_cen",
+   "luna_der"
+  ],
+  "B3.12": [
+   "luna_izq",
+   "luna_cen",
+   "luna_der"
+  ],
+  "B5.02": [
+   "luna_izq",
+   "luna_cen",
+   "luna_der"
+  ],
+  "B5.01": [
+   "luna_izq",
+   "luna_cen",
+   "luna_der",
+   "timelapse_izq",
+   "timelapse_der",
+   "luz_izq",
+   "luz_der"
+  ],
+  "B5.03": [
+   "luna_izq",
+   "luna_cen",
+   "luna_der",
+   "timelapse_izq",
+   "timelapse_der",
+   "luz_izq",
+   "luz_der"
+  ],
+  "B6.01": [
+   "luna_izq",
+   "luna_cen",
+   "luna_der",
+   "timelapse_izq",
+   "timelapse_der",
+   "luz_izq",
+   "luz_der"
+  ],
+  "B6.02": [
+   "luna_izq",
+   "luna_cen",
+   "luna_der",
+   "timelapse_izq",
+   "timelapse_der",
+   "luz_izq",
+   "luz_der"
+  ]
+ },
+ "german_por_tipo": {
+  "B1.01": [
+   "cen",
+   "izq",
+   "der",
+   "strip"
+  ],
+  "B1.02": [
+   "cen",
+   "izq",
+   "der",
+   "strip"
+  ],
+  "B1.03": [
+   "cen",
+   "izq",
+   "der",
+   "strip"
+  ],
+  "B1.04": [
+   "cen",
+   "izq",
+   "der",
+   "strip"
+  ],
+  "B1.05": [
+   "cen",
+   "izq",
+   "der",
+   "strip"
+  ],
+  "B1.06": [
+   "cen",
+   "izq",
+   "der",
+   "strip"
+  ],
+  "B1.09": [
+   "cen",
+   "izq",
+   "der",
+   "strip"
+  ],
+  "B1.10": [
+   "cen",
+   "izq",
+   "der",
+   "strip"
+  ],
+  "B1.11": [
+   "cen",
+   "izq",
+   "der",
+   "strip"
+  ]
+ }
+}
