@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-14 16:44 UTC",
+ "generado": "2026-10-14 17:14 UTC",
  "repo": "iaghmtv/FNT2026",
  "branch": "main",
  "blocks": [
@@ -290,6 +290,12 @@
         "src": "assets/german/B1.01_extra0.jpg",
         "cap": "Loros (B 01.01, After)",
         "kind": "single"
+       },
+       {
+        "src": "assets/german/B1.01_loros_video.mp4",
+        "poster": "assets/german/B1.01_loros_video.jpg",
+        "cap": "Loros misioneros · video 30 s (B 01.01, After): llegan, se posan y se van",
+        "kind": "video"
        }
       ]
      },
@@ -613,12 +619,12 @@
       "version": "e2ee48b972",
       "scene_hash": "c533eb4e",
       "engine": "comfy",
-      "generated_at": "2026-10-14 11:59",
+      "generated_at": "2026-10-14 14:03",
       "refs_hash": "fc59c8334e4eb28ddd3912b01eae9a60",
       "files": {
-       "luna_izq": "previos/B1.03_PASTORES/luna_izq.jpg?v=295a4f13",
-       "luna_cen": "previos/B1.03_PASTORES/luna_cen.jpg?v=efcf6c6b",
-       "luna_der": "previos/B1.03_PASTORES/luna_der.jpg?v=dd1a8aa7",
+       "luna_izq": "previos/B1.03_PASTORES/luna_izq.jpg?v=548ccbb4",
+       "luna_cen": "previos/B1.03_PASTORES/luna_cen.jpg?v=0a6591d6",
+       "luna_der": "previos/B1.03_PASTORES/luna_der.jpg?v=cf205087",
        "atardecer_izq": "previos/B1.03_PASTORES/atardecer_izq.jpg?v=99dde041",
        "atardecer_cen": "previos/B1.03_PASTORES/atardecer_cen.jpg?v=25f2d329",
        "atardecer_der": "previos/B1.03_PASTORES/atardecer_der.jpg?v=e4b22cbd",
@@ -651,6 +657,12 @@
        ],
        "nota": "Variedad de cardones argentinos en las montanas: izquierda = dos cardones viejos, uno joven, uno de muchos brazos (L. terscheckii) y uno florecido; derecha = candelabro y pasacana claro y peludo (L. pasacana). Centro sin cambios. El timelapse no se rehizo (muestra los cactus anteriores).",
        "script": "pipeline/b1_atardecer_2025/cardones_fix2.py"
+      },
+      "luna_v2": {
+       "fecha": "2026-10-14 14:03",
+       "fuente": "imagen del equipo ElevenLabs gpt-image + Topaz (3 filas: centro, der, izq)",
+       "nota": "Centro: la imagen del equipo tal cual. Montanas: las filas venian achatadas (10:1) y con cielo/luna donde va el cerro, asi que se re-ilumino de noche el atardecer v2 (mismos cardones) con la paleta de esa imagen.",
+       "carpeta": "03_BLOQUES/B1_PAISAJES/B1.03_PASTORES/02_IA_GENERACION/LUNA_2026_v2"
       },
       "refs_al_generar": [
        "cardon_ref_1_florecido.jpg",

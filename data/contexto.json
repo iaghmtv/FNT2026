@@ -159,6 +159,12 @@
        "src": "assets/german/B1.01_extra0.jpg",
        "cap": "Loros (B 01.01, After)",
        "kind": "single"
+      },
+      {
+       "src": "assets/german/B1.01_loros_video.mp4",
+       "poster": "assets/german/B1.01_loros_video.jpg",
+       "cap": "Loros misioneros · video 30 s (B 01.01, After): llegan, se posan y se van",
+       "kind": "video"
       }
      ]
     },

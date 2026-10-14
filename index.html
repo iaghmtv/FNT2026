@@ -247,6 +247,7 @@ function panelGerman(c){if(!c||c.status26==='sin') return '<div class="empty">Ge
   var g=c.img26||[];var cen=g.filter(function(x){return x.kind==='cen'})[0],iz=g.filter(function(x){return x.kind==='izq'})[0],de=g.filter(function(x){return x.kind==='der'})[0];
   if(cen||iz||de)h+=stage(function(k){var o={cen:cen,izq:iz,der:de}[k];return o&&o.src},'German · ');
   g.filter(function(x){return x.kind==='strip'||x.kind==='single'}).forEach(function(x){h+='<figure style="margin-top:8px">'+img(x.src,x.cap)+'<figcaption>'+esc(x.cap)+'</figcaption></figure>'});
+  g.filter(function(x){return x.kind==='video'}).forEach(function(x){h+='<figure style="margin-top:8px"><video src="'+esc(x.src)+'"'+(x.poster?' poster="'+esc(x.poster)+'"':'')+' controls muted loop playsinline preload="metadata"></video><figcaption>'+esc(x.cap)+'</figcaption></figure>'});
   if(c.t26&&c.t26.length)h+='<span class="lbl">Herramientas</span>'+chips(c.t26,'m');
   if(c.todo26&&c.todo26.length)h+='<span class="lbl">Pendientes</span><div class="small">'+list(c.todo26)+'</div>';
   return h}
