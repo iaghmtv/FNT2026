@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-14 18:12 UTC",
+ "generado": "2026-10-14 19:01 UTC",
  "repo": "iaghmtv/FNT2026",
  "branch": "main",
  "blocks": [
@@ -146,16 +146,6 @@
        {
         "src": "assets/propuestas/B0.01_prop_fogon_guitarra_1_solo.jpg",
         "cap": "Propuesta · Buenaventura con la guitarra junto al fogón, solo bajo las estrellas (B/N, el fuego único color)",
-        "kind": "single"
-       },
-       {
-        "src": "assets/propuestas/B0.01_prop_fogon_guitarra_2_paisanos.jpg",
-        "cap": "Propuesta · Buenaventura en primer plano; paisanos a contraluz alrededor del fogón y caballos",
-        "kind": "single"
-       },
-       {
-        "src": "assets/propuestas/B0.01_prop_fogon_guitarra_3_ronda_caballos.jpg",
-        "cap": "Propuesta · Buenaventura de poncho, de espaldas; la ronda de paisanos y la tropilla frente al fuego",
         "kind": "single"
        },
        {
