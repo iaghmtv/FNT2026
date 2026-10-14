@@ -1,5 +1,5 @@
 {
- "nota": "Calendario del tablero. Las notas del equipo se cargan como issues '[Nota]' (formulario nota.yml); estas son notas fijas cargadas desde la PC17. 'hecho': true las muestra tachadas con ✓.",
+ "nota": "Calendario del tablero. Las notas del equipo se cargan como issues '[Nota]' (formulario nota.yml); estas son notas fijas cargadas desde la PC17. 'hecho': true las muestra tachadas con ✓. 'notas_ignoradas': números de issue que no se muestran (p. ej. duplicados).",
  "desde": "2026-10-14",
  "hasta": "2026-11-04",
  "notas": [
@@ -73,5 +73,8 @@
    "hecho": false,
    "texto": "Probar los DXV de las dos antorchas en Resolume sobre las máscaras."
   }
+ ],
+ "notas_ignoradas": [
+  2
  ]
 }

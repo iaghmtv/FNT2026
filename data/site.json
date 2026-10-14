@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-14 22:41 UTC",
+ "generado": "2026-10-14 22:43 UTC",
  "repo": "iaghmtv/FNT2026",
  "branch": "main",
  "blocks": [
@@ -3142,19 +3142,6 @@
     "autor": "gerace86",
     "url": "https://github.com/iaghmtv/FNT2026/issues/1",
     "n": 1,
-    "hecho": false,
-    "fuente": "nota"
-   },
-   {
-    "fecha": "2026-10-15",
-    "tipo": "otro",
-    "escena": "General",
-    "texto": "REUNION FNT 2026: REUNION PRODUCCION",
-    "responsable": "",
-    "hora": "",
-    "autor": "gerace86",
-    "url": "https://github.com/iaghmtv/FNT2026/issues/2",
-    "n": 2,
     "hecho": false,
     "fuente": "nota"
    }

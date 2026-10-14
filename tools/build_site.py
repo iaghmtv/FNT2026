@@ -108,7 +108,7 @@ def calendario(todos):
         names = {l["name"] for l in it.get("labels", [])}
         body = it.get("body") or ""
         es_nota = "calendario" in names or "[nota]" in it.get("title", "").lower() or ("### Fecha" in body and "### Tipo" in body)
-        if "pull_request" in it or not es_nota:
+        if "pull_request" in it or not es_nota or it["number"] in cal.get("notas_ignoradas", []):
             continue
         f = _fecha(_seccion(body, "Fecha")) or _fecha(it.get("title", "")) or it["created_at"][:10]
         t = _seccion(body, "Tipo").lower()
