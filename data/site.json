@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-14 15:11 UTC",
+ "generado": "2026-10-14 16:44 UTC",
  "repo": "iaghmtv/FNT2026",
  "branch": "main",
  "blocks": [
@@ -78,6 +78,13 @@
        "atardecer_der": "previos/B0.00_ANTORCHA/atardecer_der.jpg?v=03a49a69"
       },
       "seed": 10991582,
+      "animacion": {
+       "titulo": "Antorcha · render 2026 (Blender + After Effects)",
+       "fecha": "2026-10-14",
+       "izq": "previos/B0.00_ANTORCHA/antorcha_izq_v03b.mp4?v=f2e01e62",
+       "der": "previos/B0.00_ANTORCHA/antorcha_der_v03.mp4?v=0c1fa347",
+       "nota": "Una antorcha por montaña: la izquierda camina de izquierda a derecha y la derecha de derecha a izquierda, llegan al centro al mismo tiempo. Luz real sobre el cerro (Blender), estela de humo, llama fire_torch y chispas que se avivan en el centro; se apagan y la pantalla queda en negro. Preview a media resolución; entrega DXV en 03_BLOQUES/B0_APERTURA/B0.00_ANTORCHA/06_ENTREGA_DXV (izq 3840x1200 v03b, der 4096x1200 v03)."
+      },
       "refs_al_generar": [],
       "desactualizado": false
      },

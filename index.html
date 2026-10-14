@@ -209,6 +209,13 @@ function panelPrevios(s,repo,branch){var p=s.previos;
   h+='<p class="hint" style="margin-top:10px">Generado '+esc(p.generated_at)+' · motor '+esc(p.engine)+' · referencias usadas: '+(p.refs_al_generar&&p.refs_al_generar.length?esc(p.refs_al_generar.join(', ')):'ninguna (solo el prompt de la escena)')+'</p>';
   return h}
 
+function panelAnim(an){var v=function(k){return an[k]?'<figure><video src="'+esc(an[k])+'" muted loop playsinline autoplay controls preload="metadata"></video><figcaption>'+LBL[k]+'</figcaption></figure>':''};
+  var h='<p class="small">'+esc(an.nota||'')+'</p>';
+  if(an.cen)h+=v('cen');
+  h+='<div class="mtn">'+v('izq')+v('der')+'</div>';
+  h+='<div class="upl" style="margin-top:10px"><button class="btn ghost" type="button" onclick="juntas(this)">▶ Reproducir juntas desde el inicio</button></div>';
+  return h}
+function juntas(b){var vs=b.closest('.sub26').querySelectorAll('video');vs.forEach(function(x){x.pause();x.currentTime=0});vs.forEach(function(x){x.play()})}
 var ST={'en cola':'b-mid','procesando':'b-moon','listo':'b-ok','error':'b-red','no autorizado':'b-no','cerrado':'b-no'};
 function pedidos(s){var ps=s.pedidos||[];if(!ps.length)return '';
   return '<span class="lbl">Pedidos al generador ('+ps.length+')</span><div class="peds">'+ps.map(function(p){var f=p.files||{};
@@ -268,7 +275,7 @@ function audioRow(s,c){
 var KIND={paisaje:'Paisaje',tela:'Tela / poncho',fuego:'Fuego',bandera:'Bandera'};
 function scene(s,repo,branch){var c=s.ctx||{};var p=s.previos;var nref=s.refs.length;
   var g26=c.status26&&c.status26!=='sin';
-  var badges='<span class="badge '+(nref?'b-ok':'b-no')+'">'+nref+' ref.</span>'+(g26?'<span class="badge b-mid">Propuesta German</span>':'')+(p?'<span class="badge b-moon">Previos IA</span>':'')+(s.timelapse?'<span class="badge b-moon">Timelapse</span>':'');
+  var badges='<span class="badge '+(nref?'b-ok':'b-no')+'">'+nref+' ref.</span>'+(g26?'<span class="badge b-mid">Propuesta German</span>':'')+(p?'<span class="badge b-moon">Previos IA</span>':'')+(s.timelapse?'<span class="badge b-moon">Timelapse</span>':'')+(p&&p.animacion?'<span class="badge b-ok">Animación 2026</span>':'');
   var h='<article class="scene" id="'+esc(s.code)+'" data-refs="'+nref+'" data-prev="'+(p?1:0)+'" data-text="'+esc((s.code+' '+s.title+' '+(s.verse||'')).toLowerCase())+'">';
   h+='<div class="shead"><span class="code">'+esc(s.code)+'</span><h3>'+esc(s.title)+'</h3><span class="meta">⏱ '+esc(s.time)+' · '+esc(KIND[s.kind]||s.kind)+(c.dur?' · '+esc(c.dur):'')+'</span><div class="badges">'+badges+'</div></div>';
   if(s.verse)h+='<blockquote>'+esc(s.verse)+'</blockquote>';
@@ -278,6 +285,7 @@ function scene(s,repo,branch){var c=s.ctx||{};var p=s.previos;var nref=s.refs.le
   h+='<section class="col c25"><div class="colh">Edición 2025 · lo que se proyectó</div>'+panel25(c)+'</section>';
   h+='<section class="col c26"><div class="colh">Propuestas 2026</div>';
   h+='<div class="sub26"><h4 class="h26">Propuesta de German</h4>'+panelGerman(c)+'</div>';
+  if(p&&p.animacion)h+='<div class="sub26"><h4 class="h26">'+esc(p.animacion.titulo||'Animación 2026')+'</h4>'+panelAnim(p.animacion)+'</div>';
   h+='<div class="sub26"><h4 class="h26">Previos IA · ComfyUI</h4>'+panelPrevios(s,repo,branch)+'</div>';
   h+='</section></div>';
   h+='<section class="refsrow"><div class="colh">Referencias del equipo · '+nref+'</div>'+panelRefs(s,repo,branch)+'</section>';
