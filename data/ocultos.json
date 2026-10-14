@@ -147,6 +147,12 @@
    "atardecer_izq",
    "atardecer_cen",
    "atardecer_der"
+  ],
+  "B1.05": [
+   "timelapse_izq",
+   "timelapse_der",
+   "luz_izq",
+   "luz_der"
   ]
  },
  "german_por_tipo": {

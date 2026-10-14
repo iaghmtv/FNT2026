@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-14 19:57 UTC",
+ "generado": "2026-10-14 20:14 UTC",
  "repo": "iaghmtv/FNT2026",
  "branch": "main",
  "blocks": [
@@ -656,12 +656,12 @@
       "version": "e2ee48b972",
       "scene_hash": "3a3ff116",
       "engine": "comfy",
-      "generated_at": "2026-10-14 10:32",
+      "generated_at": "2026-10-14 17:14",
       "refs_hash": "add4b3651d27a93eec2c8edb31b698fe",
       "files": {
-       "luna_izq": "previos/B1.04_HIJOS_DE_LA_SELVA_GUARANIES/luna_izq.jpg?v=50370a06",
-       "luna_cen": "previos/B1.04_HIJOS_DE_LA_SELVA_GUARANIES/luna_cen.jpg?v=f8d40abe",
-       "luna_der": "previos/B1.04_HIJOS_DE_LA_SELVA_GUARANIES/luna_der.jpg?v=929cb3d2",
+       "luna_izq": "previos/B1.04_HIJOS_DE_LA_SELVA_GUARANIES/luna_izq.jpg?v=38c2d6ff",
+       "luna_cen": "previos/B1.04_HIJOS_DE_LA_SELVA_GUARANIES/luna_cen.jpg?v=d0b06b3b",
+       "luna_der": "previos/B1.04_HIJOS_DE_LA_SELVA_GUARANIES/luna_der.jpg?v=210af874",
        "atardecer_izq": "previos/B1.04_HIJOS_DE_LA_SELVA_GUARANIES/atardecer_izq.jpg?v=4c3a76c7",
        "atardecer_cen": "previos/B1.04_HIJOS_DE_LA_SELVA_GUARANIES/atardecer_cen.jpg?v=618a95ec",
        "atardecer_der": "previos/B1.04_HIJOS_DE_LA_SELVA_GUARANIES/atardecer_der.jpg?v=8ad33bb7"
@@ -685,6 +685,11 @@
         "mburucuya_Passiflora_caerulea_ref_2_enredadera.jpg"
        ],
        "nota": "Mburucuya real (Passiflora caerulea): corona azul-blanca-violeta, cruz de anteras y estigmas, enredadera con zarcillos, a escala real. Centro sin cambios."
+      },
+      "luna_v2": {
+       "fecha": "2026-10-14 17:14",
+       "fuente": "03_BLOQUES/B1_PAISAJES/B1.04_HIJOS_DE_LA_SELVA_GUARANIES/02_IA_GENERACION/PROPUESTA PANTALLA",
+       "nota": "Reemplaza la noche de luna del 10/10 (copias en LUNA_2026_v2/_reemplazadas)."
       },
       "refs_al_generar": [
        "mburucuya_Passiflora_caerulea_ref_1.jpg",
@@ -766,11 +771,7 @@
        "luna_der": "previos/B1.05_VIEJO_RUNA/luna_der.jpg?v=b6f92344",
        "atardecer_izq": "previos/B1.05_VIEJO_RUNA/atardecer_izq.jpg?v=9898da7e",
        "atardecer_cen": "previos/B1.05_VIEJO_RUNA/atardecer_cen.jpg?v=ded1554a",
-       "atardecer_der": "previos/B1.05_VIEJO_RUNA/atardecer_der.jpg?v=b93f5fd6",
-       "timelapse_izq": "previos/B1.05_VIEJO_RUNA/timelapse_izq.mp4?v=fa915be6",
-       "luz_izq": "previos/B1.05_VIEJO_RUNA/luz_izq.jpg?v=ba38c420",
-       "timelapse_der": "previos/B1.05_VIEJO_RUNA/timelapse_der.mp4?v=5d8674ad",
-       "luz_der": "previos/B1.05_VIEJO_RUNA/luz_der.jpg?v=6ebe3ec3"
+       "atardecer_der": "previos/B1.05_VIEJO_RUNA/atardecer_der.jpg?v=b93f5fd6"
       },
       "seed": 15854308,
       "atardecer_v2": {
