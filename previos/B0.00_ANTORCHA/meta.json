@@ -4,7 +4,7 @@
  "version": "e2ee48b972",
  "scene_hash": "e9d93a5b",
  "engine": "comfy",
- "generated_at": "2026-10-10 17:03",
+ "generated_at": "2026-10-14 19:32",
  "refs": [],
  "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
  "files": {
@@ -30,5 +30,19 @@
   "izq": "antorcha_izq_v03b.mp4",
   "der": "antorcha_der_v03.mp4",
   "nota": "Una antorcha por montaña: la izquierda camina de izquierda a derecha y la derecha de derecha a izquierda, llegan al centro al mismo tiempo. Luz real sobre el cerro (Blender), estela de humo, llama fire_torch y chispas que se avivan en el centro; se apagan y la pantalla queda en negro. Preview a media resolución; entrega DXV en 03_BLOQUES/B0_APERTURA/B0.00_ANTORCHA/06_ENTREGA_DXV (izq 3840x1200 v03b, der 4096x1200 v03)."
+ },
+ "propuesta": {
+  "titulo": "Propuesta pantallas · la antorcha como nota musical de fuego",
+  "nota": "En lugar de la llama, una nota musical de fuego recorre el cerro e ilumina la roca (sobre el encuadre de la antorcha 2025). Reemplaza a la luna y el atardecer del previo.",
+  "imgs": [
+   {
+    "src": "assets/propuestas/B0.00_nota_musical_fuego_A.jpg",
+    "cap": "Variante A · la nota de fuego enciende la roca, con chispas"
+   },
+   {
+    "src": "assets/propuestas/B0.00_nota_musical_fuego_B.jpg",
+    "cap": "Variante B · la nota de fuego más definida, con humo y chispas"
+   }
+  ]
  }
 }
