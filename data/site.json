@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-14 21:50 UTC",
+ "generado": "2026-10-14 22:03 UTC",
  "repo": "iaghmtv/FNT2026",
  "branch": "main",
  "blocks": [
@@ -1064,16 +1064,6 @@
         "src": "assets/german/B1.08_var3.jpg",
         "cap": "Variante C · noche",
         "kind": "strip"
-       },
-       {
-        "src": "assets/german/B1.08_extra0.jpg",
-        "cap": "Loop 20 s · montaña izquierda",
-        "kind": "single"
-       },
-       {
-        "src": "assets/german/B1.08_extra1.jpg",
-        "cap": "Spotlight: antes / después",
-        "kind": "single"
        }
       ]
      },
