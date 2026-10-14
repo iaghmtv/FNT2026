@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-14 21:19 UTC",
+ "generado": "2026-10-14 21:32 UTC",
  "repo": "iaghmtv/FNT2026",
  "branch": "main",
  "blocks": [
@@ -1201,12 +1201,12 @@
       "version": "e2ee48b972",
       "scene_hash": "64fa913f",
       "engine": "comfy",
-      "generated_at": "2026-10-13 19:33",
+      "generated_at": "2026-10-14 18:32",
       "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
       "files": {
        "luna_izq": "previos/B1.09_VERDES_LLANURAS/luna_izq.jpg?v=96efcd71",
-       "luna_cen": "previos/B1.09_VERDES_LLANURAS/luna_cen.jpg?v=9b643e4b",
-       "luna_der": "previos/B1.09_VERDES_LLANURAS/luna_der.jpg?v=e2d341ce",
+       "luna_cen": "previos/B1.09_VERDES_LLANURAS/luna_cen.jpg?v=e52caac8",
+       "luna_der": "previos/B1.09_VERDES_LLANURAS/luna_der.jpg?v=6baddc63",
        "atardecer_izq": "previos/B1.09_VERDES_LLANURAS/atardecer_izq.jpg?v=b8a11aa1",
        "atardecer_cen": "previos/B1.09_VERDES_LLANURAS/atardecer_cen.jpg?v=f4f8fee1",
        "atardecer_der": "previos/B1.09_VERDES_LLANURAS/atardecer_der.jpg?v=e977a833"
@@ -1222,6 +1222,11 @@
        "fecha": "2026-10-14 10:16",
        "luz": "solo atardecer: tarde dorada -> atardecer -> atardecer profundo -> ultima luz (sin noche, sin sol en cuadro)",
        "metodo": "cuadros guia con Qwen desde el fijo nuevo + MiniMax H3 (243 cuadros, 24 fps)"
+      },
+      "luna_v2": {
+       "fecha": "2026-10-14 18:32",
+       "fuente": "03_BLOQUES/B1_PAISAJES/B1.09_VERDES_LLANURAS/02_IA_GENERACION/PROPUESTA PANTALLA",
+       "nota": "Centro y montana derecha nuevos; la izquierda sigue con la luna del 10/10 (no vino imagen nueva). Anteriores en LUNA_2026_v2/_reemplazadas."
       },
       "refs_al_generar": [],
       "desactualizado": false
