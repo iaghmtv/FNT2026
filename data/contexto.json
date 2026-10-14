@@ -830,6 +830,42 @@
        "src": "assets/german/B2.02_extra2.jpg",
        "cap": "Toma completa derecha (Hunyuan) · hoja de cuadros",
        "kind": "single"
+      },
+      {
+       "src": "assets/german/B2.02_bandera_video1.mp4",
+       "poster": "assets/german/B2.02_bandera_video1.jpg",
+       "cap": "Bandera · se despega del cerro y se va volando (Seedance vía Magnific, 21:9, 10 s) · B 02 02/VIDEOS",
+       "kind": "video"
+      },
+      {
+       "src": "assets/german/B2.02_bandera_video2.mp4",
+       "poster": "assets/german/B2.02_bandera_video2.jpg",
+       "cap": "Bandera · flameando sobre el cerro, loop (10 s) · B 02 02/VIDEOS",
+       "kind": "video"
+      },
+      {
+       "src": "assets/german/B2.02_bandera_video3.mp4",
+       "poster": "assets/german/B2.02_bandera_video3.jpg",
+       "cap": "Bandera · flameando sobre el cerro, loop (Gemini Omni Flash vía ElevenLabs, 10 s) · B 02 02/VIDEOS",
+       "kind": "video"
+      },
+      {
+       "src": "assets/german/B2.02_bandera_video4.mp4",
+       "poster": "assets/german/B2.02_bandera_video4.jpg",
+       "cap": "Bandera · sobre el cerro de dos picos, loop (Gemini Omni Flash vía ElevenLabs, 10 s) · B 02 02/VIDEOS",
+       "kind": "video"
+      },
+      {
+       "src": "assets/german/B2.02_bandera_video5.mp4",
+       "poster": "assets/german/B2.02_bandera_video5.jpg",
+       "cap": "Bandera · flamea y se retira del cerro (Gemini Omni Flash vía ElevenLabs, 10 s) · B 02 02/VIDEOS",
+       "kind": "video"
+      },
+      {
+       "src": "assets/german/B2.02_bandera_video6.mp4",
+       "poster": "assets/german/B2.02_bandera_video6.jpg",
+       "cap": "Bandera · se desliza cerro arriba y sale de cuadro (10 s) · B 02 02/VIDEOS",
+       "kind": "video"
       }
      ]
     }
