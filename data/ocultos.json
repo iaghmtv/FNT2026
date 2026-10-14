@@ -150,6 +150,14 @@
    "timelapse_der",
    "luz_izq",
    "luz_der"
+  ],
+  "B0.00": [
+   "luna_izq",
+   "luna_cen",
+   "luna_der",
+   "atardecer_izq",
+   "atardecer_cen",
+   "atardecer_der"
   ]
  },
  "german_por_tipo": {

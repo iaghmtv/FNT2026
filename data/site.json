@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-14 20:46 UTC",
+ "generado": "2026-10-14 20:57 UTC",
  "repo": "iaghmtv/FNT2026",
  "branch": "main",
  "blocks": [
@@ -69,14 +69,7 @@
       "engine": "comfy",
       "generated_at": "2026-10-10 17:03",
       "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
-      "files": {
-       "luna_izq": "previos/B0.00_ANTORCHA/luna_izq.jpg?v=62254d65",
-       "luna_cen": "previos/B0.00_ANTORCHA/luna_cen.jpg?v=fce353b2",
-       "luna_der": "previos/B0.00_ANTORCHA/luna_der.jpg?v=9a3302b3",
-       "atardecer_izq": "previos/B0.00_ANTORCHA/atardecer_izq.jpg?v=3dc694af",
-       "atardecer_cen": "previos/B0.00_ANTORCHA/atardecer_cen.jpg?v=f574514a",
-       "atardecer_der": "previos/B0.00_ANTORCHA/atardecer_der.jpg?v=03a49a69"
-      },
+      "files": {},
       "seed": 10991582,
       "animacion": {
        "titulo": "Antorcha · render 2026 (Blender + After Effects)",
@@ -968,12 +961,12 @@
       "version": "e2ee48b972",
       "scene_hash": "7542a4d9",
       "engine": "comfy",
-      "generated_at": "2026-10-13 19:33",
+      "generated_at": "2026-10-14 17:57",
       "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
       "files": {
-       "luna_izq": "previos/B1.07_LOS_DE_SALTA/luna_izq.jpg?v=7f64c478",
-       "luna_cen": "previos/B1.07_LOS_DE_SALTA/luna_cen.jpg?v=1560e614",
-       "luna_der": "previos/B1.07_LOS_DE_SALTA/luna_der.jpg?v=2d6b5320",
+       "luna_izq": "previos/B1.07_LOS_DE_SALTA/luna_izq.jpg?v=d969bdff",
+       "luna_cen": "previos/B1.07_LOS_DE_SALTA/luna_cen.jpg?v=4805c14b",
+       "luna_der": "previos/B1.07_LOS_DE_SALTA/luna_der.jpg?v=b1f1d749",
        "atardecer_izq": "previos/B1.07_LOS_DE_SALTA/atardecer_izq.jpg?v=1cbe22d8",
        "atardecer_cen": "previos/B1.07_LOS_DE_SALTA/atardecer_cen.jpg?v=faa4ea60",
        "atardecer_der": "previos/B1.07_LOS_DE_SALTA/atardecer_der.jpg?v=1fcc0365"
@@ -989,6 +982,11 @@
        "fecha": "2026-10-14 10:16",
        "luz": "solo atardecer: tarde dorada -> atardecer -> atardecer profundo -> ultima luz (sin noche, sin sol en cuadro)",
        "metodo": "cuadros guia con Qwen desde el fijo nuevo + MiniMax H3 (243 cuadros, 24 fps)"
+      },
+      "luna_v2": {
+       "fecha": "2026-10-14 17:57",
+       "fuente": "03_BLOQUES/B1_PAISAJES/B1.07_LOS_DE_SALTA/02_IA_GENERACION/PROPUESTAS PANTALLAS",
+       "nota": "Noche de las variantes Flux de German (centro A, izq C, der B). Anteriores en LUNA_2026_v2/_reemplazadas."
       },
       "refs_al_generar": [],
       "desactualizado": false
