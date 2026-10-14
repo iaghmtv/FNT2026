@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-14 20:57 UTC",
+ "generado": "2026-10-14 21:01 UTC",
  "repo": "iaghmtv/FNT2026",
  "branch": "main",
  "blocks": [
@@ -394,11 +394,11 @@
       "version": "e2ee48b972",
       "scene_hash": "b53e98de",
       "engine": "comfy",
-      "generated_at": "2026-10-14 17:32",
+      "generated_at": "2026-10-14 18:01",
       "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
       "files": {
        "luna_izq": "previos/B1.02_LLANO_SUR_SELVA/luna_izq.jpg?v=1258bcb0",
-       "luna_cen": "previos/B1.02_LLANO_SUR_SELVA/luna_cen.jpg?v=0eba5825",
+       "luna_cen": "previos/B1.02_LLANO_SUR_SELVA/luna_cen.jpg?v=c1b3277d",
        "luna_der": "previos/B1.02_LLANO_SUR_SELVA/luna_der.jpg?v=9c8146f9",
        "atardecer_izq": "previos/B1.02_LLANO_SUR_SELVA/atardecer_izq.jpg?v=4155ab1a",
        "atardecer_cen": "previos/B1.02_LLANO_SUR_SELVA/atardecer_cen.jpg?v=3e61eece",
@@ -419,7 +419,7 @@
       "luna_v2": {
        "fecha": "2026-10-14 16:19",
        "fuente": "03_BLOQUES/B1_PAISAJES/B1.02_LLANO_SUR_SELVA/02_IA_GENERACION/PROPUESTA PANTALLAS",
-       "nota": "Montanas izq y der con las imagenes del equipo; el centro sigue con el previo del 10/10 (la imagen de centro que vino era de B1.01)."
+       "nota": "Centro, izquierda y derecha con las imagenes del equipo. Luna del 10/10 en LUNA_2026_v2/_reemplazadas."
       },
       "refs_al_generar": [],
       "desactualizado": false

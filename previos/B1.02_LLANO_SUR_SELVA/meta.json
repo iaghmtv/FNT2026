@@ -4,7 +4,7 @@
  "version": "e2ee48b972",
  "scene_hash": "b53e98de",
  "engine": "comfy",
- "generated_at": "2026-10-14 17:32",
+ "generated_at": "2026-10-14 18:01",
  "refs": [],
  "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
  "files": {
@@ -22,7 +22,7 @@
  "seed": 3622852,
  "prompts": {
   "luna_izq": "Noche de luna del equipo (14/10, ElevenLabs gpt-image, carpeta PROPUESTA PANTALLAS): cada imagen llevada a su superficie (centro: recorte del contenido a 1856x448 + mascara de pantallas; montanas: franja alineada con el atardecer v2 + mascara + silueta 2025, sin cielo).",
-  "luna_cen": "Previo del 10/10 (vuelto a poner el 14/10: la imagen del centro que habia en PROPUESTA PANTALLAS era la noche de B1.01).",
+  "luna_cen": "Noche del equipo (14/10, ElevenLabs gpt-image, PROPUESTA PANTALLAS): sendero con arroyo en la selva (misma composicion que la luna del 10/10, sin el yaguarete); franja alineada a 1856x448 + mascara de pantallas.",
   "luna_der": "Noche de luna del equipo (14/10, ElevenLabs gpt-image, carpeta PROPUESTA PANTALLAS): cada imagen llevada a su superficie (centro: recorte del contenido a 1856x448 + mascara de pantallas; montanas: franja alineada con el atardecer v2 + mascara + silueta 2025, sin cielo).",
   "atardecer_izq": "Qwen (relight 2025): Relight this exact image as a golden hour sunset. Warm low orange sunlight comes from the left and rakes across the landscape: glowing orange and amber highlights on every ridge, rock, tree and plant, long soft shadows on the opposite sides, warm golden color grading. Vegetation keeps its natural green color, only lit by the warm golden light. There is no sky in this image: everything above the ridgeline, the treetops and the hilltops is the pure black background; do not paint any sky, clouds, sunset glow or distant mountains above the landscape, and keep the pale distant slopes as land. Keep every tree, plant, flower, rock, cliff, water and the whole composition exactly the same; only the lighting and colors change. The waterfalls stay large, powerful and clearly visible, with bright white foaming water. Crisp clear air: no fog, no mist, no haze, no smoke and no glow along the outline; the outer silhouette stays sharp and clean against the black background. Keep the black background pure black. || Flux Krea img2img 0.5: Cinematic film still, golden hour sunset: Yungas cloud forest slopes with dense green trees and large white waterfalls cascading down the rocks into a stream. Warm low sunlight from the left rakes across the landscape with long soft shadows; rich natural colors, green vegetation stays green under the warm golden light. The waterfalls are large, powerful and clearly visible, with bright white foaming water. There is no sky: above the ridgeline and the treetops everything is pure black, no sky, no clouds, no glow. Shot on ARRI Alexa with an anamorphic lens, real filmed footage, natural film grain, photorealistic, sharp detailed textures, crisp clear air, no fog, no mist, no haze, no glow along the outline. The black background stays pure black.",
   "atardecer_cen": "Qwen (relight 2025): Relight this exact image as a calm, soft golden hour sunset: gentle warm light, low contrast, muted warm colors, a quiet and subtle mood where nothing dramatic happens, no bright sun disk. Remove every animal and bird from the image and fill those areas naturally with the surrounding landscape. Where there is sky, make it a soft warm sunset sky. Keep the landscape, vegetation, rocks, water and the composition the same. Do not add any waterfall or new element. Crisp clear air: no fog, no mist, no haze. Keep the black areas pure black. || Flux Krea img2img 0.5: Cinematic film still, calm soft golden hour sunset: the interior of a dark Yungas jungle with tall trees, hanging vines, palms and distant waterfalls. Gentle warm light, low contrast, subtle and peaceful mood, natural colors, no animals, no birds, no people, no bright sun disk. No waterfalls. Shot on ARRI Alexa with an anamorphic lens, real filmed footage, natural film grain, photorealistic, sharp detailed textures, crisp clear air, no fog, no mist, no haze, no glow along the outline. The black background stays pure black.",
@@ -42,6 +42,6 @@
  "luna_v2": {
   "fecha": "2026-10-14 16:19",
   "fuente": "03_BLOQUES/B1_PAISAJES/B1.02_LLANO_SUR_SELVA/02_IA_GENERACION/PROPUESTA PANTALLAS",
-  "nota": "Montanas izq y der con las imagenes del equipo; el centro sigue con el previo del 10/10 (la imagen de centro que vino era de B1.01)."
+  "nota": "Centro, izquierda y derecha con las imagenes del equipo. Luna del 10/10 en LUNA_2026_v2/_reemplazadas."
  }
 }
