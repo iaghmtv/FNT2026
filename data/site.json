@@ -1034,38 +1034,7 @@
       "todo26": [
        "Mediodía y noche: el paredón todavía parece meseta; la variante atardecer es la más fiel."
       ],
-      "img26": [
-       {
-        "src": "assets/german/B1.08_cen.jpg",
-        "cap": "Variante B · atardecer (la más fiel) · Pantallas centro",
-        "kind": "cen"
-       },
-       {
-        "src": "assets/german/B1.08_izq.jpg",
-        "cap": "Variante B · atardecer (la más fiel) · Montaña izq.",
-        "kind": "izq"
-       },
-       {
-        "src": "assets/german/B1.08_der.jpg",
-        "cap": "Variante B · atardecer (la más fiel) · Montaña der.",
-        "kind": "der"
-       },
-       {
-        "src": "assets/german/B1.08_var1.jpg",
-        "cap": "Variante A · mediodia",
-        "kind": "strip"
-       },
-       {
-        "src": "assets/german/B1.08_var2.jpg",
-        "cap": "Variante B · atardecer",
-        "kind": "strip"
-       },
-       {
-        "src": "assets/german/B1.08_var3.jpg",
-        "cap": "Variante C · noche",
-        "kind": "strip"
-       }
-      ]
+      "img26": []
      },
      "audio": {
       "track": "8",

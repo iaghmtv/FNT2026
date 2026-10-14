@@ -222,6 +222,10 @@
    "strip"
   ],
   "B1.08": [
+   "cen",
+   "izq",
+   "der",
+   "strip",
    "single"
   ]
  }
