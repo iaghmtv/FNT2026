@@ -13,6 +13,18 @@ Página: **https://iaghmtv.github.io/FNT2026/**
 
 Hace falta un usuario de GitHub con acceso de escritura al repo (invitación desde *Settings → Collaborators*).
 
+## Reemplazar imágenes de los previos a mano
+
+La imagen nueva tiene que llevar **el mismo nombre** que la que reemplaza: `atardecer_izq.jpg`, `luna_cen.jpg`, `timelapse_der.mp4`, `luz_izq.jpg`…
+Tamaños de referencia: montaña izquierda 1920×600, centro 1856×448, montaña derecha 2048×600.
+
+- **Desde la página** (cualquier PC): en la escena, pestaña de previos → **⇄ Reemplazar imágenes**. Se abre GitHub en `previos/<escena>/`;
+  arrastrás la imagen y hacés **Commit changes**. En 1–2 minutos se ve en la página.
+- **Desde la GHM17**: copiás la imagen en `D:\FNT2026\WEB_FNT2026\previos\<escena>\` pisando la anterior y hacés doble clic en `PUBLICAR_TABLERO.bat`.
+  Si la subiste en PNG con el mismo nombre (`atardecer_izq.png`), el .bat la pasa a JPG.
+
+Las imágenes llevan `?v=<hash>` en la página, así que el reemplazo se ve sin que quede la versión vieja en caché.
+
 ## Pedir previos con prompt (cola PC16 / PC17)
 
 En cada escena, **✦ Pedir previo con prompt** abre un formulario: prompt + hasta 4 imágenes + luna / atardecer / timelapse.

@@ -1,13 +1,22 @@
 # -*- coding: utf-8 -*-
 """Arma data/site.json para la página: escenas + contexto 2025/German + referencias del equipo + previos IA.
 Lo corre GitHub Actions en cada push (y se puede correr local para probar)."""
-import json, os, re, subprocess
+import hashlib, json, os, re, subprocess
 from datetime import datetime, timezone
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 IMG = (".jpg", ".jpeg", ".png", ".webp", ".gif")
 REPO = os.environ.get("GITHUB_REPOSITORY", "iaghmtv/FNT2026")
 BRANCH = os.environ.get("FNT_BRANCH", "main")
+
+
+def ver(rel):
+    """Agrega ?v=<hash del contenido> para que una imagen reemplazada con el mismo nombre se vea al instante (sin caché vieja)."""
+    p = os.path.join(ROOT, rel)
+    if not os.path.isfile(p):
+        return rel
+    with open(p, "rb") as f:
+        return rel + "?v=" + hashlib.md5(f.read()).hexdigest()[:8]
 
 
 def git_info(path):
@@ -92,7 +101,7 @@ def main():
         mp = os.path.join(ROOT, "previos", slug, "meta.json")
         if os.path.exists(mp):
             prev = json.load(open(mp, encoding="utf-8"))
-            prev["files"] = {k: f"previos/{slug}/{v}" for k, v in prev.get("files", {}).items()}
+            prev["files"] = {k: ver(f"previos/{slug}/{v}") for k, v in prev.get("files", {}).items()}
             prev.pop("prompts", None)
             prev["refs_al_generar"] = prev.pop("refs", [])
             prev["desactualizado"] = sorted(prev["refs_al_generar"]) != sorted(os.path.basename(r["src"]) for r in refs)

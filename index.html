@@ -193,7 +193,7 @@ function stage(get,prefix){var c=get('cen'),i=get('izq'),d=get('der');var h='<di
 function chips(a,cls){return (a||[]).map(function(t){return '<span class="chip '+(cls||'')+'">'+esc(t)+'</span>'}).join('')}
 function list(a){return a&&a.length?'<ul>'+a.map(function(t){return '<li>'+esc(t)+'</li>'}).join('')+'</ul>':''}
 
-function panelPrevios(s){var p=s.previos;
+function panelPrevios(s,repo,branch){var p=s.previos;
   if(!s.generar) return '<div class="empty">Esta escena no pasa por el generador. '+esc(s.nota||'')+'</div>';
   if(!p) return '<div class="empty">Todavía no hay previos. Se generan en la PC de render con <code>GENERAR_PREVIOS.bat</code>.</div>';
   var f=p.files||{};var h='';
@@ -203,6 +203,9 @@ function panelPrevios(s){var p=s.previos;
   if(f.timelapse_izq||f.timelapse_der){h+='<div class="tl"><h5>Timelapse de luz (loop · la luz entra desde el centro)</h5><div class="mtn">';
     ['izq','der'].forEach(function(k){if(f['timelapse_'+k])h+='<figure><video src="'+esc(f['timelapse_'+k])+'" muted loop playsinline autoplay preload="metadata"'+(f['luz_'+k]?' poster="'+esc(f['luz_'+k])+'"':'')+'></video><figcaption>'+LBL[k]+'</figcaption>'+(f['luz_'+k]?img(f['luz_'+k],'Cuadros guía de luz · '+LBL[k]):'')+'</figure>'});
     h+='</div></div>'}
+  var dir='previos/'+encodeURIComponent(s.slug);
+  h+='<div class="upl" style="margin-top:12px"><a class="btn ghost" href="https://github.com/'+repo+'/upload/'+branch+'/'+dir+'" target="_blank" rel="noopener">⇄ Reemplazar imágenes</a><a class="btn ghost" href="https://github.com/'+repo+'/tree/'+branch+'/'+dir+'" target="_blank" rel="noopener">Ver carpeta</a></div>';
+  h+='<p class="hint" style="margin:-4px 0 0"><b>Reemplazar:</b> arrastrá la imagen nueva con <b>el mismo nombre</b> que la que querés cambiar y hacé <i>Commit changes</i>; en 1–2 minutos se ve acá. Nombres: '+Object.keys(f).filter(function(k){return f[k]}).map(function(k){return '<code>'+esc(f[k].split('/').pop().split('?')[0])+'</code>'}).join(' ')+'.</p>';
   h+='<p class="hint" style="margin-top:10px">Generado '+esc(p.generated_at)+' · motor '+esc(p.engine)+' · referencias usadas: '+(p.refs_al_generar&&p.refs_al_generar.length?esc(p.refs_al_generar.join(', ')):'ninguna (solo el prompt de la escena)')+'</p>';
   return h}
 
@@ -275,7 +278,7 @@ function scene(s,repo,branch){var c=s.ctx||{};var p=s.previos;var nref=s.refs.le
   h+='<section class="col c25"><div class="colh">Edición 2025 · lo que se proyectó</div>'+panel25(c)+'</section>';
   h+='<section class="col c26"><div class="colh">Propuestas 2026</div>';
   h+='<div class="sub26"><h4 class="h26">Propuesta de German</h4>'+panelGerman(c)+'</div>';
-  h+='<div class="sub26"><h4 class="h26">Previos IA · ComfyUI</h4>'+panelPrevios(s)+'</div>';
+  h+='<div class="sub26"><h4 class="h26">Previos IA · ComfyUI</h4>'+panelPrevios(s,repo,branch)+'</div>';
   h+='</section></div>';
   h+='<section class="refsrow"><div class="colh">Referencias del equipo · '+nref+'</div>'+panelRefs(s,repo,branch)+'</section>';
   return h+'</article>'}
