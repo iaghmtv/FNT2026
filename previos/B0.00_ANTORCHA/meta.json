@@ -27,9 +27,9 @@
  "animacion": {
   "titulo": "Antorcha · render 2026 (Blender + After Effects)",
   "fecha": "2026-10-14",
-  "izq": "antorcha_izq_v03b.mp4",
+  "izq": "antorcha_izq_v03c.mp4",
   "der": "antorcha_der_v03.mp4",
-  "nota": "Una antorcha por montaña: la izquierda camina de izquierda a derecha y la derecha de derecha a izquierda, llegan al centro al mismo tiempo. Luz real sobre el cerro (Blender), estela de humo, llama fire_torch y chispas que se avivan en el centro; se apagan y la pantalla queda en negro. Preview a media resolución; entrega DXV en 03_BLOQUES/B0_APERTURA/B0.00_ANTORCHA/06_ENTREGA_DXV (izq 3840x1200 v03b, der 4096x1200 v03)."
+  "nota": "Una antorcha por montaña: la izquierda camina de izquierda a derecha y la derecha de derecha a izquierda, llegan al centro al mismo tiempo. Luz real sobre el cerro (Blender), estela de humo, llama fire_torch y chispas que se avivan en el centro; se apagan y la pantalla queda en negro. Preview a media resolución; entrega DXV en 03_BLOQUES/B0_APERTURA/B0.00_ANTORCHA/06_ENTREGA_DXV (izq 3840x1200 v03c, der 4096x1200 v03). La izquierda v03c (14/10) tiene la llama del mismo tamaño en pantalla que la derecha."
  },
  "propuesta": {
   "titulo": "Propuesta pantallas · la antorcha como nota musical de fuego",

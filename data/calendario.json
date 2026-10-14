@@ -72,6 +72,13 @@
    "escena": "B0.00",
    "hecho": false,
    "texto": "Probar los DXV de las dos antorchas en Resolume sobre las máscaras."
+  },
+  {
+   "fecha": "2026-10-15",
+   "tipo": "revision",
+   "escena": "B0.00",
+   "hecho": false,
+   "texto": "Revisar la antorcha izquierda v03c: llama del mismo tamaño que la derecha (tablero: Reproducir juntas; DXV en 06_ENTREGA_DXV)."
   }
  ],
  "notas_ignoradas": [
