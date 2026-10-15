@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-15 12:22 UTC",
+ "generado": "2026-10-15 14:58 UTC",
  "repo": "iaghmtv/FNT2026",
  "branch": "main",
  "blocks": [
@@ -61,6 +61,7 @@
      },
      "audio_nota": "",
      "refs": [],
+     "comentarios": [],
      "previos": {
       "code": "B0.00",
       "slug": "B0.00_ANTORCHA",
@@ -186,6 +187,7 @@
      },
      "audio_nota": "",
      "refs": [],
+     "comentarios": [],
      "previos": {
       "code": "B0.01",
       "slug": "B0.01_BUENAVENTURA_LUNA",
@@ -331,6 +333,7 @@
      },
      "audio_nota": "",
      "refs": [],
+     "comentarios": [],
      "previos": {
       "code": "B1.01",
       "slug": "B1.01_NORTE_SELVATICO",
@@ -436,6 +439,7 @@
      },
      "audio_nota": "",
      "refs": [],
+     "comentarios": [],
      "previos": {
       "code": "B1.02",
       "slug": "B1.02_LLANO_SUR_SELVA",
@@ -575,6 +579,7 @@
        "nota": "B1.03: cardones variados en las montanas con las fotos de referencia del equipo"
       }
      ],
+     "comentarios": [],
      "previos": {
       "code": "B1.03",
       "slug": "B1.03_PASTORES",
@@ -711,6 +716,7 @@
        "nota": "B1.04: mburucuya real (Passiflora caerulea) con las fotos de referencia del equipo, a escala real"
       }
      ],
+     "comentarios": [],
      "previos": {
       "code": "B1.04",
       "slug": "B1.04_HIJOS_DE_LA_SELVA_GUARANIES",
@@ -824,6 +830,7 @@
      },
      "audio_nota": "",
      "refs": [],
+     "comentarios": [],
      "previos": {
       "code": "B1.05",
       "slug": "B1.05_VIEJO_RUNA",
@@ -928,6 +935,7 @@
      },
      "audio_nota": "",
      "refs": [],
+     "comentarios": [],
      "previos": {
       "code": "B1.06",
       "slug": "B1.06_JUJENOS",
@@ -1033,6 +1041,7 @@
      },
      "audio_nota": "",
      "refs": [],
+     "comentarios": [],
      "previos": {
       "code": "B1.07",
       "slug": "B1.07_LOS_DE_SALTA",
@@ -1142,6 +1151,7 @@
      },
      "audio_nota": "",
      "refs": [],
+     "comentarios": [],
      "previos": {
       "code": "B1.08",
       "slug": "B1.08_RIOJANOS",
@@ -1255,6 +1265,7 @@
      },
      "audio_nota": "",
      "refs": [],
+     "comentarios": [],
      "previos": {
       "code": "B1.09",
       "slug": "B1.09_VERDES_LLANURAS",
@@ -1358,6 +1369,7 @@
      },
      "audio_nota": "",
      "refs": [],
+     "comentarios": [],
      "previos": {
       "code": "B1.10",
       "slug": "B1.10_CORRENTINOS",
@@ -1462,6 +1474,7 @@
      },
      "audio_nota": "",
      "refs": [],
+     "comentarios": [],
      "previos": {
       "code": "B1.11",
       "slug": "B1.11_CORDOBESES",
@@ -1542,6 +1555,7 @@
      "audio": null,
      "audio_nota": "Sin música: voz en off con apagón completo (opción de dejar solo el fogón iluminado).",
      "refs": [],
+     "comentarios": [],
      "previos": {
       "code": "B2.01",
       "slug": "B2.01_VOZ_EN_OFF_FUEGO_CORAZON",
@@ -1675,6 +1689,7 @@
      },
      "audio_nota": "",
      "refs": [],
+     "comentarios": [],
      "previos": null,
      "pedidos": []
     }
@@ -1743,6 +1758,7 @@
      },
      "audio_nota": "",
      "refs": [],
+     "comentarios": [],
      "previos": {
       "code": "B3.01",
       "slug": "B3.01_ENTRERRIANOS_Y_CHAQUENOS",
@@ -1831,6 +1847,7 @@
      },
      "audio_nota": "",
      "refs": [],
+     "comentarios": [],
      "previos": {
       "code": "B3.02",
       "slug": "B3.02_SANTIAGUENO",
@@ -1919,6 +1936,7 @@
      },
      "audio_nota": "",
      "refs": [],
+     "comentarios": [],
      "previos": {
       "code": "B3.03",
       "slug": "B3.03_RANQUEL",
@@ -2001,6 +2019,7 @@
      },
      "audio_nota": "",
      "refs": [],
+     "comentarios": [],
      "previos": {
       "code": "B3.04",
       "slug": "B3.04_LOS_DE_GUEMES",
@@ -2083,6 +2102,7 @@
      },
      "audio_nota": "",
      "refs": [],
+     "comentarios": [],
      "previos": {
       "code": "B3.05",
       "slug": "B3.05_LOS_DEL_CHACHO",
@@ -2165,6 +2185,7 @@
      },
      "audio_nota": "",
      "refs": [],
+     "comentarios": [],
      "previos": {
       "code": "B3.06",
       "slug": "B3.06_ILUSTRE_PAZ",
@@ -2244,6 +2265,7 @@
      },
      "audio_nota": "",
      "refs": [],
+     "comentarios": [],
      "previos": {
       "code": "B3.07",
       "slug": "B3.07_PAGO_LARGO",
@@ -2325,6 +2347,7 @@
      },
      "audio_nota": "",
      "refs": [],
+     "comentarios": [],
      "previos": {
       "code": "B3.08",
       "slug": "B3.08_POZO_DE_VARGAS_Y_QUEBRACHO",
@@ -2407,6 +2430,7 @@
      },
      "audio_nota": "",
      "refs": [],
+     "comentarios": [],
      "previos": {
       "code": "B3.09",
       "slug": "B3.09_DIAGUITAS",
@@ -2495,6 +2519,7 @@
      },
      "audio_nota": "",
      "refs": [],
+     "comentarios": [],
      "previos": {
       "code": "B3.10",
       "slug": "B3.10_LOS_DE_QUIROGA",
@@ -2578,6 +2603,7 @@
      },
      "audio_nota": "",
      "refs": [],
+     "comentarios": [],
      "previos": {
       "code": "B3.11",
       "slug": "B3.11_LOS_DE_FIERRO",
@@ -2659,6 +2685,7 @@
      },
      "audio_nota": "",
      "refs": [],
+     "comentarios": [],
      "previos": {
       "code": "B3.12",
       "slug": "B3.12_LOS_DE_LAVALLE",
@@ -2741,6 +2768,7 @@
      },
      "audio_nota": "",
      "refs": [],
+     "comentarios": [],
      "previos": {
       "code": "B4.01",
       "slug": "B4.01_AURORA_FALUCHO",
@@ -2826,6 +2854,7 @@
      },
      "audio_nota": "",
      "refs": [],
+     "comentarios": [],
      "previos": null,
      "pedidos": []
     }
@@ -2892,6 +2921,7 @@
      },
      "audio_nota": "",
      "refs": [],
+     "comentarios": [],
      "previos": {
       "code": "B5.01",
       "slug": "B5.01_LOS_5_DE_PRINGLES",
@@ -2973,6 +3003,7 @@
      },
      "audio_nota": "",
      "refs": [],
+     "comentarios": [],
      "previos": {
       "code": "B5.02",
       "slug": "B5.02_LOS_DE_LOPEZ",
@@ -3052,6 +3083,7 @@
      },
      "audio_nota": "",
      "refs": [],
+     "comentarios": [],
      "previos": {
       "code": "B5.03",
       "slug": "B5.03_SANJUANINO_Y_MENDOCINO",
@@ -3131,6 +3163,7 @@
      },
      "audio_nota": "",
      "refs": [],
+     "comentarios": [],
      "previos": {
       "code": "B6.01",
       "slug": "B6.01_CLARIN",
@@ -3215,6 +3248,7 @@
      },
      "audio_nota": "",
      "refs": [],
+     "comentarios": [],
      "previos": {
       "code": "B6.02",
       "slug": "B6.02_GRITO_DE_SAN_MARTIN",
@@ -3364,6 +3398,14 @@
     "escena": "B1.09",
     "hecho": true,
     "texto": "Verdes llanuras: noche de la montaña izquierda con la imagen nueva del equipo (misma composición que el atardecer, sin cielo).",
+    "fuente": "tablero"
+   },
+   {
+    "fecha": "2026-10-15",
+    "tipo": "entrega",
+    "escena": "General",
+    "hecho": true,
+    "texto": "Tablero: cajón de comentarios al pie de cada escena (se guardan como issues en GitHub, con sus respuestas; cerrado = resuelto).",
     "fuente": "tablero"
    },
    {

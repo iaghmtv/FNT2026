@@ -98,6 +98,55 @@ def _fecha(txt):
     return ""
 
 
+IMG_MD = re.compile(r"!\[[^\]]*\]\((https://[^)\s]+)\)")
+IMG_HTML = re.compile(r"<img[^>]*src=\"(https://[^\"]+)\"[^>]*>", re.I)
+
+
+def _texto_imgs(txt):
+    """Separa el texto de las imágenes que se arrastraron al comentario en GitHub."""
+    imgs = IMG_MD.findall(txt or "") + IMG_HTML.findall(txt or "")
+    return IMG_HTML.sub("", IMG_MD.sub("", txt or "")).strip(), imgs
+
+
+def _ar(ts):
+    """Fecha de GitHub (UTC) a hora de Argentina."""
+    from datetime import timedelta
+    return (datetime.fromisoformat(ts.replace("Z", "+00:00")) - timedelta(hours=3)).strftime("%Y-%m-%d %H:%M")
+
+
+def _api(url):
+    import urllib.request
+    req = urllib.request.Request(url, headers={"Accept": "application/vnd.github+json", "User-Agent": "fnt2026-site",
+                                               **({"Authorization": "Bearer " + os.environ["GITHUB_TOKEN"]} if os.environ.get("GITHUB_TOKEN") else {})})
+    return json.loads(urllib.request.urlopen(req, timeout=30).read())
+
+
+def comentarios(todos):
+    """Comentarios por escena: issues '[Comentario]' del formulario comentario.yml, con sus respuestas (cerrado = resuelto)."""
+    out = {}
+    for it in todos:
+        body = it.get("body") or ""; titulo = it.get("title", "")
+        if "pull_request" in it or not (titulo.lower().startswith("[comentario]") or "### Comentario" in body):
+            continue
+        m = re.search(r"B\d\.\d\d", _seccion(body, "Escena")) or re.search(r"B\d\.\d\d", titulo)
+        if not m:
+            continue
+        txt, imgs = _texto_imgs(_seccion(body, "Comentario") or re.sub(r"^\[comentario\]\s*", "", titulo, flags=re.I))
+        resp = []
+        if it.get("comments"):
+            try:
+                for c in _api(it["comments_url"] + "?per_page=100"):
+                    t2, i2 = _texto_imgs(c.get("body") or "")
+                    resp.append({"autor": c["user"]["login"], "fecha": _ar(c["created_at"]), "texto": t2[:2000], "imgs": i2[:6]})
+            except Exception as e:
+                print(f"no se pudieron leer las respuestas de #{it['number']}: {e}")
+        out.setdefault(m.group(0), []).append({"n": it["number"], "url": it["html_url"], "autor": it["user"]["login"], "fecha": _ar(it["created_at"]),
+                                               "texto": txt[:3000], "imgs": imgs[:6], "resuelto": it.get("state") == "closed", "respuestas": resp})
+    for v in out.values():
+        v.sort(key=lambda c: c["n"], reverse=True)
+    return out
+
+
 def calendario(todos):
     """Calendario: notas fijas de data/calendario.json + issues '[Nota]' del formulario nota.yml (cerrada = hecha)."""
     cp = os.path.join(ROOT, "data", "calendario.json")
@@ -149,6 +198,7 @@ def main():
     peds = {}
     todos = issues()
     out["calendario"] = calendario(todos)
+    coms = comentarios(todos)
     for it in todos:
         body = it.get("body") or ""
         names = {l["name"] for l in it.get("labels", [])}
@@ -204,6 +254,7 @@ def main():
         item["audio"] = audio["escenas"].get(e["code"])
         item["audio_nota"] = audio.get("sin_track", {}).get(e["code"], "")
         item["refs"] = refs
+        item["comentarios"] = coms.get(e["code"], [])
         item["previos"] = prev
         # resultados de cada pedido: previos/<escena>/pedidos/<n>/meta.json
         res = {}

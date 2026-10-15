@@ -135,6 +135,18 @@ a.cnote:hover,a.cnote:focus-visible{background:color-mix(in srgb,var(--t) 24%,va
 .t-entrega{--t:var(--ok)}.t-revision{--t:var(--moon)}.t-correccion{--t:var(--fire)}.t-otro{--t:var(--ink3)}
 @media (max-width:860px){.calgrid{grid-template-columns:1fr}.calh{display:none}.cday.out{display:none}.cday{min-height:0}.cday .dw{display:inline}}
 @media (max-width:860px){.aud{grid-template-columns:1fr}.audrow{margin:12px 12px 0}.wrap{padding:0 16px}.grid3,.grid2,.cols{grid-template-columns:1fr}.c25{border-right:0;border-bottom:1px solid var(--line)}.mtn{grid-template-columns:1fr}.badges{margin-left:0}}
+.coms{border-top:1px solid var(--line);padding:14px 18px 18px;background:var(--bg2)}
+.coms .colh{color:var(--fire2)}
+.com{border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--card);margin-bottom:8px}
+.com.ok{opacity:.72}
+.comh{font-size:12.5px;color:var(--ink3);display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.comh b{color:var(--ink)} .com a{color:var(--moon2)}
+.comt{white-space:pre-wrap;overflow-wrap:anywhere;font-size:14px;color:var(--ink);margin:4px 0 0}
+.comimgs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin-top:6px}
+.rep{margin:8px 0 0 10px;padding-left:10px;border-left:2px solid var(--line)}
+.comform textarea{display:block;width:100%;box-sizing:border-box;min-height:72px;resize:vertical;background:var(--card);border:1px solid var(--line);color:var(--ink);border-radius:10px;padding:10px 12px;font:inherit;font-size:14px}
+.comform textarea:focus{outline:2px solid color-mix(in srgb,var(--fire) 55%,transparent);outline-offset:0;border-color:var(--fire)}
+.comform .upl{margin:8px 0 0}
 </style>
 </head>
 <body>
@@ -175,6 +187,7 @@ a.cnote:hover,a.cnote:focus-visible{background:color-mix(in srgb,var(--t) 24%,va
       <li><b>Submit</b>: la cola lo manda a la PC16 o la PC17, la que esté libre, y te responde en el pedido con los previos (unos 3 min; con timelapse, ~10).</li>
       <li>Para sumar imágenes sin generar, usá <b>＋ Subir referencia</b>.</li>
       <li>Entregas, revisiones y reuniones: botón <b>Calendario</b> de arriba y <b>+</b> en el día.</li>
+      <li>Comentarios: al pie de cada escena, escribí y tocá <b>Enviar comentario</b>.</li>
     </ol></div>
   </div>
 </section>
@@ -335,9 +348,18 @@ function audioRow(s,c){
   if(!s.audio)return h+'<p class="small">'+esc(s.audio_nota)+'</p></section>';
   return h+audioBody(s.audio,c,'aud_'+s.code.replace('.','_'))+'</section>'}
 var KIND={paisaje:'Paisaje',tela:'Tela / poncho',fuego:'Fuego',bandera:'Bandera'};
+function comItem(c){var ims=function(a,alt){return (a||[]).length?'<div class="comimgs">'+a.map(function(u){return img(u,alt)}).join('')+'</div>':''};
+  return '<div class="com'+(c.resuelto?' ok':'')+'"><div class="comh"><b>'+esc(c.autor)+'</b> · '+esc(c.fecha)+' · <a href="'+esc(c.url)+'" target="_blank" rel="noopener">#'+c.n+'</a>'+(c.resuelto?'<span class="badge b-ok">✓ resuelto</span>':'')+'</div>'
+    +(c.texto?'<p class="comt">'+esc(c.texto)+'</p>':'')+ims(c.imgs,'Imagen del comentario #'+c.n)
+    +(c.respuestas||[]).map(function(r){return '<div class="rep"><div class="comh"><b>'+esc(r.autor)+'</b> · '+esc(r.fecha)+'</div>'+(r.texto?'<p class="comt">'+esc(r.texto)+'</p>':'')+ims(r.imgs,'Imagen de la respuesta')+'</div>'}).join('')
+    +'<div class="hint" style="margin-top:6px"><a href="'+esc(c.url)+'" target="_blank" rel="noopener">Responder en GitHub</a></div></div>'}
+function panelComs(s){var cs=s.comentarios||[];
+  return '<section class="coms"><div class="colh">Comentarios de la escena · '+cs.length+'</div>'+cs.map(comItem).join('')
+    +'<div class="comform"><textarea data-code="'+esc(s.code)+'" data-title="'+esc(s.title)+'" aria-label="Comentario sobre '+esc(s.code)+' · '+esc(s.title)+'" placeholder="Escribí un comentario sobre '+esc(s.code)+' · '+esc(s.title)+'…"></textarea>'
+    +'<div class="upl"><button class="btn" type="button">Enviar comentario</button><span class="hint">Se abre GitHub con el comentario cargado: confirmalo ahí (podés sumar imágenes) y aparece acá en 1–2 minutos.</span></div></div></section>'}
 function scene(s,repo,branch){var c=s.ctx||{};var p=s.previos;var nref=s.refs.length;
   var g26=(c.img26||[]).length>0;var fv=(p&&p.files)||{};var nv=vis(p).length;var npr=(p&&p.propuestas||[]).length;
-  var badges='<span class="badge '+(nref?'b-ok':'b-no')+'">'+nref+' ref.</span>'+(g26?'<span class="badge b-mid">Propuesta German</span>':'')+(p&&p.animacion?'<span class="badge b-ok">Animación 2026</span>':'')+(npr?'<span class="badge b-ok">Propuesta pantallas</span>':'')+(nv?'<span class="badge b-moon">'+esc(luces(p))+'</span>':'');
+  var badges='<span class="badge '+(nref?'b-ok':'b-no')+'">'+nref+' ref.</span>'+((s.comentarios||[]).length?'<span class="badge b-mid">'+s.comentarios.length+' comentario'+(s.comentarios.length>1?'s':'')+'</span>':'')+(g26?'<span class="badge b-mid">Propuesta German</span>':'')+(p&&p.animacion?'<span class="badge b-ok">Animación 2026</span>':'')+(npr?'<span class="badge b-ok">Propuesta pantallas</span>':'')+(nv?'<span class="badge b-moon">'+esc(luces(p))+'</span>':'');
   var h='<article class="scene" id="'+esc(s.code)+'" data-refs="'+nref+'" data-prev="'+(nv||npr||(p&&p.animacion)?1:0)+'" data-text="'+esc((s.code+' '+s.title+' '+(s.verse||'')).toLowerCase())+'">';
   h+='<div class="shead"><span class="code">'+esc(s.code)+'</span><h3>'+esc(s.title)+'</h3><span class="meta">⏱ '+esc(s.time)+' · '+esc(KIND[s.kind]||s.kind)+(c.dur?' · '+esc(c.dur):'')+'</span><div class="badges">'+badges+'</div></div>';
   if(s.verse)h+='<blockquote>'+esc(s.verse)+'</blockquote>';
@@ -352,10 +374,11 @@ function scene(s,repo,branch){var c=s.ctx||{};var p=s.previos;var nref=s.refs.le
   if(s.generar&&(!p||nv))h+='<div class="sub26"><h4 class="h26">'+esc(p?luces(p):'Previos')+'</h4>'+panelPrevios(s,repo,branch)+'</div>';
   h+='</section></div>';
   h+='<section class="refsrow"><div class="colh">Referencias del equipo · '+nref+'</div>'+panelRefs(s,repo,branch)+'</section>';
+  h+=panelComs(s);
   return h+'</article>'}
 
 fetch('data/site.json?t='+Date.now(),{cache:'no-store'}).then(function(r){return r.json()}).then(function(d){
-  document.getElementById('gen').textContent=d.generado;
+  document.getElementById('gen').textContent=d.generado; REPO=d.repo||REPO;
   document.getElementById('nav').innerHTML=d.blocks.map(function(b){return '<a href="#'+b.id+'"><b>'+b.id+'</b> '+esc(b.name)+'</a>'}).join('')+'<a href="#zonas">Zonas aptas</a>';
   document.getElementById('blocks').innerHTML=d.blocks.map(function(b){
     var fin=(b.id==='B6'&&(d.audio_finales||[]).length)?'<article class="scene" id="final" data-refs="0" data-prev="0" data-text="pistas finales desconcentracion marcha san lorenzo ituzaingo camelias"><div class="shead"><span class="code">Final</span><h3>Pistas finales · desconcentración</h3><span class="meta">Se alternan las tres marchas mientras dura la desconcentración (~10 min)</span></div>'+d.audio_finales.map(function(a,i){return '<section class="audrow" style="margin-bottom:12px"><div class="colh">♪ '+esc(a.nombre)+'</div>'+audioBody(a,null,'aud_fin_'+i)+'</section>'}).join('')+'</article>':'';
@@ -375,11 +398,17 @@ function wire(){
     var off=function(){au.hidden=true;var m=au.parentNode.querySelector('.audmsg');if(m)m.hidden=false};
     fetch(au.getAttribute('src'),{method:'HEAD'}).then(function(r){if(!r.ok)off()}).catch(off);
   });
+  document.querySelectorAll('.comform').forEach(function(f){var ta=f.querySelector('textarea'),k='fnt-com-'+ta.dataset.code,dr=store.get(k);if(dr)ta.value=dr;
+    ta.addEventListener('input',function(){store.set(k,ta.value)});
+    f.querySelector('button').onclick=function(){var t=ta.value.trim();if(!t){ta.focus();return}
+      var en=ta.dataset.code+' · '+ta.dataset.title, cor=t.replace(/\s+/g,' ').slice(0,60);
+      window.open('https://github.com/'+REPO+'/issues/new?template=comentario.yml&title='+encodeURIComponent('[Comentario] '+en+': '+cor)+'&escena='+encodeURIComponent(en)+'&comentario='+encodeURIComponent(t.slice(0,6000)),'_blank','noopener');
+      ta.value='';store.set(k,'')}});
   document.querySelectorAll('.scene').forEach(function(sc){
     sc.querySelectorAll('.seg button').forEach(function(b){b.onclick=function(){var seg=b.parentNode;seg.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});sc.querySelectorAll('.lset').forEach(function(s){s.hidden=s.dataset.l!==b.dataset.l})}});
   });
 }
-var cur='todas';
+var cur='todas', REPO='iaghmtv/FNT2026';
 function applyFilter(f){cur=f;store.set('fnt-filter',f);document.querySelectorAll('.filters .fbtn').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.f===f)});run()}
 function run(){var q=(document.getElementById('q').value||'').toLowerCase().trim();
   document.querySelectorAll('.scene').forEach(function(s){var ok=true,n=+s.dataset.refs;

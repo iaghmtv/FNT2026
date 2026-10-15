@@ -1,0 +1,25 @@
+name: Comentario de escena
+description: Dejá un comentario sobre una escena del tablero.
+title: "[Comentario] "
+labels: ["comentario"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        El comentario aparece en el **tablero, al pie de la escena**, en 1–2 minutos. Podés arrastrar imágenes al texto.
+        Las respuestas que se escriban acá abajo también se ven en el tablero.
+        Cuando el tema quede resuelto, **cerrá el comentario** (Close issue) y en el tablero queda marcado ✓ resuelto.
+  - type: input
+    id: escena
+    attributes:
+      label: Escena
+      description: "Código y nombre (ya viene cargada si entraste desde el tablero)."
+      placeholder: "B1.09 · Verdes llanuras"
+    validations:
+      required: true
+  - type: textarea
+    id: comentario
+    attributes:
+      label: Comentario
+    validations:
+      required: true
