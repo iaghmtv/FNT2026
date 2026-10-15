@@ -4,7 +4,7 @@
  "version": "e2ee48b972",
  "scene_hash": "37675e4f",
  "engine": "comfy",
- "generated_at": "2026-10-14 17:46",
+ "generated_at": "2026-10-15 19:58",
  "refs": [],
  "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
  "files": {
@@ -42,10 +42,12 @@
  "luna_v2": {
   "fecha": "2026-10-14 16:56",
   "fuente": "03_BLOQUES/B1_PAISAJES/B1.06_JUJENOS/02_IA_GENERACION/PROPUESTA PANTALLAS",
-  "nota": "Centro, izquierda y derecha con las imagenes del equipo. Anteriores en LUNA_2026_v2/_reemplazadas."
+  "nota": "Centro, izquierda y derecha con las imagenes del equipo. Anteriores en LUNA_2026_v2/_reemplazadas.",
+  "fecha_15-10": "2026-10-15 19:58",
+  "nota_15-10": "Actualizado izq, der, cen con las imágenes nuevas del equipo; anteriores en LUNA_2026_v2/_reemplazadas."
  },
  "textos": {
   "atardecer": "IA sobre el cuadro que se proyectó en 2025 (Qwen + Flux Krea, 13/10): misma composición, siempre atardecer, con la silueta real del cerro.",
-  "luna": "Imágenes del equipo (carpeta PROPUESTA PANTALLA de la escena, 14/10), ajustadas a cada pantalla con su máscara."
+  "luna": "Imágenes del equipo (carpeta PROPUESTA PANTALLAS): centro nuevo y montañas sin los cactus (15/10), ajustadas a cada pantalla con su máscara."
  }
 }

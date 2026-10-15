@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-15 15:24 UTC",
+ "generado": "2026-10-15 22:58 UTC",
  "repo": "iaghmtv/FNT2026",
  "branch": "main",
  "blocks": [
@@ -844,11 +844,11 @@
       "version": "e2ee48b972",
       "scene_hash": "8a36f863",
       "engine": "comfy",
-      "generated_at": "2026-10-14 16:43",
+      "generated_at": "2026-10-15 19:58",
       "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
       "files": {
        "luna_izq": "previos/B1.05_VIEJO_RUNA/luna_izq.jpg?v=8b90cc57",
-       "luna_cen": "previos/B1.05_VIEJO_RUNA/luna_cen.jpg?v=6b1421c0",
+       "luna_cen": "previos/B1.05_VIEJO_RUNA/luna_cen.jpg?v=3f30afc0",
        "luna_der": "previos/B1.05_VIEJO_RUNA/luna_der.jpg?v=b6f92344",
        "atardecer_izq": "previos/B1.05_VIEJO_RUNA/atardecer_izq.jpg?v=9898da7e",
        "atardecer_cen": "previos/B1.05_VIEJO_RUNA/atardecer_cen.jpg?v=ded1554a",
@@ -869,12 +869,14 @@
       "luna_v2": {
        "fecha": "2026-10-14 16:43",
        "fuente": "03_BLOQUES/B1_PAISAJES/B1.05_VIEJO_RUNA/02_IA_GENERACION/PROPUESTA PANTALLA",
-       "nota": "Reemplaza la noche de luna del 10/10 (copias en LUNA_2026_v2/_reemplazadas)."
+       "nota": "Reemplaza la noche de luna del 10/10 (copias en LUNA_2026_v2/_reemplazadas).",
+       "fecha_15-10": "2026-10-15 19:58",
+       "nota_15-10": "Actualizado cen con las imágenes nuevas del equipo; anteriores en LUNA_2026_v2/_reemplazadas."
       },
       "propuestas": [],
       "textos": {
        "atardecer": "IA sobre el cuadro que se proyectó en 2025 (Qwen + Flux Krea, 13/10): misma composición, siempre atardecer, con la silueta real del cerro.",
-       "luna": "Imágenes del equipo (carpeta PROPUESTA PANTALLA de la escena, 14/10), ajustadas a cada pantalla con su máscara."
+       "luna": "Imágenes del equipo (carpeta PROPUESTA PANTALLA de la escena), ajustadas a cada pantalla con su máscara. El centro se actualizó el 15/10, sin cielo."
       },
       "refs_al_generar": [],
       "desactualizado": false
@@ -950,12 +952,12 @@
       "version": "e2ee48b972",
       "scene_hash": "37675e4f",
       "engine": "comfy",
-      "generated_at": "2026-10-14 17:46",
+      "generated_at": "2026-10-15 19:58",
       "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
       "files": {
-       "luna_izq": "previos/B1.06_JUJENOS/luna_izq.jpg?v=53d6cb1d",
-       "luna_cen": "previos/B1.06_JUJENOS/luna_cen.jpg?v=9fd43c0d",
-       "luna_der": "previos/B1.06_JUJENOS/luna_der.jpg?v=47b19c85",
+       "luna_izq": "previos/B1.06_JUJENOS/luna_izq.jpg?v=f2e26a7a",
+       "luna_cen": "previos/B1.06_JUJENOS/luna_cen.jpg?v=8e06832d",
+       "luna_der": "previos/B1.06_JUJENOS/luna_der.jpg?v=0ccad151",
        "atardecer_izq": "previos/B1.06_JUJENOS/atardecer_izq.jpg?v=9867db33",
        "atardecer_cen": "previos/B1.06_JUJENOS/atardecer_cen.jpg?v=a9a6a848",
        "atardecer_der": "previos/B1.06_JUJENOS/atardecer_der.jpg?v=a485d7d7"
@@ -975,12 +977,14 @@
       "luna_v2": {
        "fecha": "2026-10-14 16:56",
        "fuente": "03_BLOQUES/B1_PAISAJES/B1.06_JUJENOS/02_IA_GENERACION/PROPUESTA PANTALLAS",
-       "nota": "Centro, izquierda y derecha con las imagenes del equipo. Anteriores en LUNA_2026_v2/_reemplazadas."
+       "nota": "Centro, izquierda y derecha con las imagenes del equipo. Anteriores en LUNA_2026_v2/_reemplazadas.",
+       "fecha_15-10": "2026-10-15 19:58",
+       "nota_15-10": "Actualizado izq, der, cen con las imágenes nuevas del equipo; anteriores en LUNA_2026_v2/_reemplazadas."
       },
       "propuestas": [],
       "textos": {
        "atardecer": "IA sobre el cuadro que se proyectó en 2025 (Qwen + Flux Krea, 13/10): misma composición, siempre atardecer, con la silueta real del cerro.",
-       "luna": "Imágenes del equipo (carpeta PROPUESTA PANTALLA de la escena, 14/10), ajustadas a cada pantalla con su máscara."
+       "luna": "Imágenes del equipo (carpeta PROPUESTA PANTALLAS): centro nuevo y montañas sin los cactus (15/10), ajustadas a cada pantalla con su máscara."
       },
       "refs_al_generar": [],
       "desactualizado": false
@@ -1168,11 +1172,11 @@
       "version": "e2ee48b972",
       "scene_hash": "0e8f1e18",
       "engine": "comfy",
-      "generated_at": "2026-10-14 18:19",
+      "generated_at": "2026-10-15 19:58",
       "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
       "files": {
        "luna_izq": "previos/B1.08_RIOJANOS/luna_izq.jpg?v=decc54d7",
-       "luna_cen": "previos/B1.08_RIOJANOS/luna_cen.jpg?v=33aa291b",
+       "luna_cen": "previos/B1.08_RIOJANOS/luna_cen.jpg?v=b814fb2a",
        "luna_der": "previos/B1.08_RIOJANOS/luna_der.jpg?v=2dc24561",
        "atardecer_izq": "previos/B1.08_RIOJANOS/atardecer_izq.jpg?v=d10ebd25",
        "atardecer_cen": "previos/B1.08_RIOJANOS/atardecer_cen.jpg?v=4f902cd9",
@@ -1193,12 +1197,14 @@
       "luna_v2": {
        "fecha": "2026-10-14 18:19",
        "fuente": "03_BLOQUES/B1_PAISAJES/B1.08_RIOJANOS/02_IA_GENERACION/PROPUESTA PANTALLA",
-       "nota": "Reemplaza la noche de luna del 10/10 (copias en LUNA_2026_v2/_reemplazadas)."
+       "nota": "Reemplaza la noche de luna del 10/10 (copias en LUNA_2026_v2/_reemplazadas).",
+       "fecha_15-10": "2026-10-15 19:58",
+       "nota_15-10": "Actualizado cen con las imágenes nuevas del equipo; anteriores en LUNA_2026_v2/_reemplazadas."
       },
       "propuestas": [],
       "textos": {
        "atardecer": "IA sobre el cuadro que se proyectó en 2025 (Qwen + Flux Krea, 13/10): misma composición, siempre atardecer, con la silueta real del cerro.",
-       "luna": "Imágenes del equipo (carpeta PROPUESTA PANTALLA de la escena, 14/10), ajustadas a cada pantalla con su máscara."
+       "luna": "Imágenes del equipo (carpeta PROPUESTA PANTALLA), ajustadas a cada pantalla con su máscara. Centro del 15/10: la meseta sin cielo y sin el guanaco."
       },
       "refs_al_generar": [],
       "desactualizado": false
@@ -1388,12 +1394,12 @@
       "version": "e2ee48b972",
       "scene_hash": "f9a69ab8",
       "engine": "comfy",
-      "generated_at": "2026-10-14 18:50",
+      "generated_at": "2026-10-15 19:58",
       "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
       "files": {
-       "luna_izq": "previos/B1.10_CORRENTINOS/luna_izq.jpg?v=966d7227",
-       "luna_cen": "previos/B1.10_CORRENTINOS/luna_cen.jpg?v=010541aa",
-       "luna_der": "previos/B1.10_CORRENTINOS/luna_der.jpg?v=c4604004",
+       "luna_izq": "previos/B1.10_CORRENTINOS/luna_izq.jpg?v=338d7fe4",
+       "luna_cen": "previos/B1.10_CORRENTINOS/luna_cen.jpg?v=cf829e39",
+       "luna_der": "previos/B1.10_CORRENTINOS/luna_der.jpg?v=cac98678",
        "atardecer_izq": "previos/B1.10_CORRENTINOS/atardecer_izq.jpg?v=3b1e16c2",
        "atardecer_cen": "previos/B1.10_CORRENTINOS/atardecer_cen.jpg?v=35f82892",
        "atardecer_der": "previos/B1.10_CORRENTINOS/atardecer_der.jpg?v=4f8e44f3"
@@ -1413,12 +1419,14 @@
       "luna_v2": {
        "fecha": "2026-10-14 18:50",
        "fuente": "03_BLOQUES/B1_PAISAJES/B1.10_CORRENTINOS/02_IA_GENERACION/PROPUESTA PANTALLA",
-       "nota": "Reemplaza la noche de luna del 10/10 (copias en LUNA_2026_v2/_reemplazadas)."
+       "nota": "Reemplaza la noche de luna del 10/10 (copias en LUNA_2026_v2/_reemplazadas).",
+       "fecha_15-10": "2026-10-15 19:58",
+       "nota_15-10": "Actualizado izq, cen, der con las imágenes nuevas del equipo; anteriores en LUNA_2026_v2/_reemplazadas."
       },
       "propuestas": [],
       "textos": {
        "atardecer": "IA sobre el cuadro que se proyectó en 2025 (Qwen + Flux Krea, 13/10): misma composición, siempre atardecer, con la silueta real del cerro.",
-       "luna": "Imágenes del equipo (carpeta PROPUESTA PANTALLA de la escena, 14/10), ajustadas a cada pantalla con su máscara."
+       "luna": "Panorámica de humedales del equipo para todo el pixel map (15/10), repartida sin deformar en las tres pantallas según su lugar en el MAPPING GENERAL."
       },
       "refs_al_generar": [],
       "desactualizado": false
@@ -3447,6 +3455,14 @@
     "escena": "General",
     "hecho": true,
     "texto": "Tablero: los 35 tracks del show 2025 se escuchan en cada escena (copias de 128 kbps).",
+    "fuente": "tablero"
+   },
+   {
+    "fecha": "2026-10-15",
+    "tipo": "correccion",
+    "escena": "B1",
+    "hecho": true,
+    "texto": "Noche: imágenes nuevas del equipo en B1.05 (centro sin cielo), B1.06 (centro nuevo y montañas sin cactus), B1.08 (centro sin cielo ni guanaco) y B1.10 (panorámica de humedales repartida en las tres pantallas).",
     "fuente": "tablero"
    },
    {

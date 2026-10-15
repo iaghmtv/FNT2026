@@ -121,6 +121,13 @@
    "escena": "General",
    "hecho": true,
    "texto": "Tablero: los 35 tracks del show 2025 se escuchan en cada escena (copias de 128 kbps)."
+  },
+  {
+   "fecha": "2026-10-15",
+   "tipo": "correccion",
+   "escena": "B1",
+   "hecho": true,
+   "texto": "Noche: imágenes nuevas del equipo en B1.05 (centro sin cielo), B1.06 (centro nuevo y montañas sin cactus), B1.08 (centro sin cielo ni guanaco) y B1.10 (panorámica de humedales repartida en las tres pantallas)."
   }
  ],
  "notas_ignoradas": [
