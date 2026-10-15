@@ -3,8 +3,8 @@
 
 Se corre en la PC que tiene los audios (lee la carpeta de tracks del Fogón):
   python tools/audio_info.py "G:/DD3/FT2025_dd3/Tracks del FOGON"
-Escribe data/audio.json y assets/audio/<escena>_onda.png (públicos) y copia los MP3 a audio/ (NO se sube:
-son temas con derechos; el reproductor de la página funciona al abrirla desde la copia local del repo).
+Escribe data/audio.json y assets/audio/<escena>_onda.png, copia los MP3 originales a audio/ (no se sube)
+y hace copias de 128 kbps en audio_web/, que sí se publican: el reproductor del tablero usa esas (pedido del 15/10).
 """
 import json, os, re, shutil, subprocess, sys
 
@@ -72,6 +72,11 @@ def main(src):
         safe = re.sub(r"[^A-Za-z0-9._-]", "_", f)
         shutil.copy2(p, os.path.join(ROOT, "audio", safe))
         d["audio_local"] = "audio/" + safe
+        os.makedirs(os.path.join(ROOT, "audio_web"), exist_ok=True)
+        web = os.path.join(ROOT, "audio_web", safe)
+        subprocess.run([FFMPEG, "-nostdin", "-v", "error", "-y", "-i", p, "-map", "0:a:0", "-c:a", "libmp3lame",
+                        "-b:a", f"{min(128, int(d.get('kbps') or 128))}k", "-map_metadata", "-1", web], check=True)
+        d["audio_web"] = "audio_web/" + safe
         return d, p
 
     for num, codes in MAPA.items():

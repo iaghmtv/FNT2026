@@ -335,13 +335,13 @@ function audioBody(a,c,id){
   (a.notas||[]).forEach(function(n){warn.push('<span class="badge b-mid">'+esc(n)+'</span>')});
   var v25=c&&c.dur?secs(c.dur):0;
   var cmp=v25?'<tr><th>Video 2025</th><td>'+esc(c.dur)+(v25&&a.duracion?' · el track dura '+(a.duracion>v25?'+':'')+Math.round(a.duracion-v25)+' s respecto del video':'')+'</td></tr>':'';
-  return '<div class="aud"><div class="audwave">'+img(a.onda,'Forma de onda · '+a.nombre)+'<audio id="'+id+'" controls preload="none" src="'+esc(a.audio_local)+'"></audio><p class="hint audmsg" hidden>El audio no se publica online (temas con derechos): se escucha abriendo la página desde la copia del repo en la PC17.</p></div>'+
+  return '<div class="aud"><div class="audwave">'+img(a.onda,'Forma de onda · '+a.nombre)+'<audio id="'+id+'" controls preload="none" src="'+esc(a.audio_web||a.audio_local)+'"></audio><p class="hint audmsg" hidden>No se pudo cargar el audio. Recargá la página; los originales están en G:/DD3/FT2025_dd3/Tracks del FOGON.</p></div>'+
     '<table class="audt"><tr><th>Track</th><td><b>'+esc(a.nombre)+'</b> · n.º '+esc(a.track)+'</td></tr>'+
     '<tr><th>Duración</th><td>'+mmss(a.duracion)+' ('+a.duracion+' s)</td></tr>'+cmp+
     '<tr><th>Formato</th><td>'+esc((a.codec||'').toUpperCase())+' · '+a.kbps+' kbps · '+(a.hz/1000)+' kHz · '+(a.canales==2?'estéreo':a.canales==1?'mono':a.canales+' canales')+' · '+a.mb+' MB</td></tr>'+
     '<tr><th>Sonoridad</th><td>'+(lufs!=null?lufs+' LUFS integrados':'—')+(a.lra!=null?' · rango '+a.lra+' LU':'')+(pk!=null?' · pico '+pk+' dBTP':'')+'</td></tr>'+
     (a.artista_tag||a.titulo_tag?'<tr><th>Tags</th><td>'+esc([a.titulo_tag,a.artista_tag,a.album_tag].filter(Boolean).join(' · '))+'</td></tr>':'')+
-    '<tr><th>Archivo</th><td class="mono">'+esc(a.archivo)+'</td></tr></table>'+(warn.length?'<div class="audw">'+warn.join('')+'</div>':'')+'</div>'}
+    '<tr><th>Archivo</th><td><span class="mono">'+esc(a.archivo)+'</span>'+(a.audio_web?' · en el tablero se escucha una copia de 128 kbps':'')+'</td></tr></table>'+(warn.length?'<div class="audw">'+warn.join('')+'</div>':'')+'</div>'}
 function audioRow(s,c){
   if(!s.audio&&!s.audio_nota)return '';
   var h='<section class="audrow"><div class="colh">♪ Audio de la escena · arranca en '+esc(s.time)+' del show</div>';

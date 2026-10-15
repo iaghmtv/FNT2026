@@ -19,7 +19,8 @@
    "lra": 5.9,
    "pico_dbtp": 0.1,
    "audio_local": "audio/00-_track_m_sica_Apertura_Fogon_-_2023.mp3",
-   "onda": "assets/audio/track00_onda.png"
+   "onda": "assets/audio/track00_onda.png",
+   "audio_web": "audio_web/00-_track_m_sica_Apertura_Fogon_-_2023.mp3"
   },
   "B0.01": {
    "track": "00",
@@ -39,7 +40,8 @@
    "lra": 5.9,
    "pico_dbtp": 0.1,
    "audio_local": "audio/00-_track_m_sica_Apertura_Fogon_-_2023.mp3",
-   "onda": "assets/audio/track00_onda.png"
+   "onda": "assets/audio/track00_onda.png",
+   "audio_web": "audio_web/00-_track_m_sica_Apertura_Fogon_-_2023.mp3"
   },
   "B1.01": {
    "track": "1",
@@ -59,7 +61,8 @@
    "lra": 11.0,
    "pico_dbtp": 0.7,
    "audio_local": "audio/1-_track_Norte_Selvatico_y_Uranio.mp3",
-   "onda": "assets/audio/track1_onda.png"
+   "onda": "assets/audio/track1_onda.png",
+   "audio_web": "audio_web/1-_track_Norte_Selvatico_y_Uranio.mp3"
   },
   "B1.02": {
    "track": "2",
@@ -79,7 +82,8 @@
    "lra": 3.8,
    "pico_dbtp": -5.1,
    "audio_local": "audio/2-_track_Los_del_llano_sur.mp3",
-   "onda": "assets/audio/track2_onda.png"
+   "onda": "assets/audio/track2_onda.png",
+   "audio_web": "audio_web/2-_track_Los_del_llano_sur.mp3"
   },
   "B1.03": {
    "track": "3",
@@ -99,7 +103,8 @@
    "lra": 8.0,
    "pico_dbtp": -0.1,
    "audio_local": "audio/3-_track_los_pastores--CHAYA_DE_LOS_POBRES-ramon_navarro.mp3",
-   "onda": "assets/audio/track3_onda.png"
+   "onda": "assets/audio/track3_onda.png",
+   "audio_web": "audio_web/3-_track_los_pastores--CHAYA_DE_LOS_POBRES-ramon_navarro.mp3"
   },
   "B1.04": {
    "track": "4",
@@ -119,7 +124,8 @@
    "lra": 1.8,
    "pico_dbtp": -1.2,
    "audio_local": "audio/4-_track_Los_hijos_de_la_selva_guaranies.mp3",
-   "onda": "assets/audio/track4_onda.png"
+   "onda": "assets/audio/track4_onda.png",
+   "audio_web": "audio_web/4-_track_Los_hijos_de_la_selva_guaranies.mp3"
   },
   "B1.05": {
    "track": "5",
@@ -139,7 +145,8 @@
    "lra": 3.2,
    "pico_dbtp": -1.3,
    "audio_local": "audio/5-_track_Viejo_Rura.mp3",
-   "onda": "assets/audio/track5_onda.png"
+   "onda": "assets/audio/track5_onda.png",
+   "audio_web": "audio_web/5-_track_Viejo_Rura.mp3"
   },
   "B1.06": {
    "track": "6",
@@ -159,7 +166,8 @@
    "lra": 2.9,
    "pico_dbtp": 0.4,
    "audio_local": "audio/6-_track_Los_Juje_os.mp3",
-   "onda": "assets/audio/track6_onda.png"
+   "onda": "assets/audio/track6_onda.png",
+   "audio_web": "audio_web/6-_track_Los_Juje_os.mp3"
   },
   "B1.07": {
    "track": "7",
@@ -179,7 +187,8 @@
    "lra": 16.9,
    "pico_dbtp": -2.4,
    "audio_local": "audio/7-_track_Los_de_Salta.mp3",
-   "onda": "assets/audio/track7_onda.png"
+   "onda": "assets/audio/track7_onda.png",
+   "audio_web": "audio_web/7-_track_Los_de_Salta.mp3"
   },
   "B1.08": {
    "track": "8",
@@ -199,7 +208,8 @@
    "lra": 6.0,
    "pico_dbtp": -0.2,
    "audio_local": "audio/8-_track_Los_Riojanos.mp3",
-   "onda": "assets/audio/track8_onda.png"
+   "onda": "assets/audio/track8_onda.png",
+   "audio_web": "audio_web/8-_track_Los_Riojanos.mp3"
   },
   "B1.09": {
    "track": "9",
@@ -219,7 +229,8 @@
    "lra": 6.0,
    "pico_dbtp": 1.6,
    "audio_local": "audio/9-_track_Verdes_Llanuras.mp3",
-   "onda": "assets/audio/track9_onda.png"
+   "onda": "assets/audio/track9_onda.png",
+   "audio_web": "audio_web/9-_track_Verdes_Llanuras.mp3"
   },
   "B1.10": {
    "track": "10",
@@ -239,7 +250,8 @@
    "lra": 8.7,
    "pico_dbtp": 0.3,
    "audio_local": "audio/10-_track_Los_Correntinos.mp3",
-   "onda": "assets/audio/track10_onda.png"
+   "onda": "assets/audio/track10_onda.png",
+   "audio_web": "audio_web/10-_track_Los_Correntinos.mp3"
   },
   "B1.11": {
    "track": "11",
@@ -261,7 +273,8 @@
    "lra": 2.3,
    "pico_dbtp": 0.4,
    "audio_local": "audio/11-__track_Los_Cordobeses-BAJAR_DESPACIO.mp3",
-   "onda": "assets/audio/track11_onda.png"
+   "onda": "assets/audio/track11_onda.png",
+   "audio_web": "audio_web/11-__track_Los_Cordobeses-BAJAR_DESPACIO.mp3"
   },
   "B2.02": {
    "track": "12",
@@ -281,7 +294,8 @@
    "lra": 6.7,
    "pico_dbtp": -5.5,
    "audio_local": "audio/12-_track_Himno_Nacional_Argentino___Banda_Militar_del_Ej_rcito.mp3",
-   "onda": "assets/audio/track12_onda.png"
+   "onda": "assets/audio/track12_onda.png",
+   "audio_web": "audio_web/12-_track_Himno_Nacional_Argentino___Banda_Militar_del_Ej_rcito.mp3"
   },
   "B3.01": {
    "track": "13",
@@ -301,7 +315,8 @@
    "lra": 4.9,
    "pico_dbtp": 0.4,
    "audio_local": "audio/13-_track_Los_Entrerrianos_y_Chaque_os.mp3",
-   "onda": "assets/audio/track13_onda.png"
+   "onda": "assets/audio/track13_onda.png",
+   "audio_web": "audio_web/13-_track_Los_Entrerrianos_y_Chaque_os.mp3"
   },
   "B3.02": {
    "track": "14",
@@ -321,7 +336,8 @@
    "lra": 2.1,
    "pico_dbtp": 0.4,
    "audio_local": "audio/14-_track_El_Santiague_o.mp3",
-   "onda": "assets/audio/track14_onda.png"
+   "onda": "assets/audio/track14_onda.png",
+   "audio_web": "audio_web/14-_track_El_Santiague_o.mp3"
   },
   "B3.03": {
    "track": "15",
@@ -341,7 +357,8 @@
    "lra": 2.0,
    "pico_dbtp": 0.9,
    "audio_local": "audio/15-_trackEL_RANQUEL.mp3",
-   "onda": "assets/audio/track15_onda.png"
+   "onda": "assets/audio/track15_onda.png",
+   "audio_web": "audio_web/15-_trackEL_RANQUEL.mp3"
   },
   "B3.04": {
    "track": "16",
@@ -361,7 +378,8 @@
    "lra": 3.5,
    "pico_dbtp": 0.3,
    "audio_local": "audio/16-_track_LOS_DE_GUEMES.mp3",
-   "onda": "assets/audio/track16_onda.png"
+   "onda": "assets/audio/track16_onda.png",
+   "audio_web": "audio_web/16-_track_LOS_DE_GUEMES.mp3"
   },
   "B3.05": {
    "track": "17",
@@ -381,7 +399,8 @@
    "lra": 2.7,
    "pico_dbtp": 0.5,
    "audio_local": "audio/17-_track_los_del_chacho.mp3",
-   "onda": "assets/audio/track17_onda.png"
+   "onda": "assets/audio/track17_onda.png",
+   "audio_web": "audio_web/17-_track_los_del_chacho.mp3"
   },
   "B3.06": {
    "track": "18",
@@ -401,7 +420,8 @@
    "lra": 1.1,
    "pico_dbtp": 0.8,
    "audio_local": "audio/18-_track_ilustre_paz.mp3",
-   "onda": "assets/audio/track18_onda.png"
+   "onda": "assets/audio/track18_onda.png",
+   "audio_web": "audio_web/18-_track_ilustre_paz.mp3"
   },
   "B3.07": {
    "track": "19",
@@ -421,7 +441,8 @@
    "lra": 5.6,
    "pico_dbtp": 0.4,
    "audio_local": "audio/19-_track_pago_largo.mp3",
-   "onda": "assets/audio/track19_onda.png"
+   "onda": "assets/audio/track19_onda.png",
+   "audio_web": "audio_web/19-_track_pago_largo.mp3"
   },
   "B3.08": {
    "track": "20",
@@ -441,7 +462,8 @@
    "lra": 3.0,
    "pico_dbtp": -0.1,
    "audio_local": "audio/20-_track_los_de_pozo_del_vargas_y_quebracho.mp3",
-   "onda": "assets/audio/track20_onda.png"
+   "onda": "assets/audio/track20_onda.png",
+   "audio_web": "audio_web/20-_track_los_de_pozo_del_vargas_y_quebracho.mp3"
   },
   "B3.09": {
    "track": "21",
@@ -461,7 +483,8 @@
    "lra": 2.6,
    "pico_dbtp": 0.1,
    "audio_local": "audio/21-_track_los_diaguitas.mp3",
-   "onda": "assets/audio/track21_onda.png"
+   "onda": "assets/audio/track21_onda.png",
+   "audio_web": "audio_web/21-_track_los_diaguitas.mp3"
   },
   "B3.10": {
    "track": "22",
@@ -481,7 +504,8 @@
    "lra": 2.9,
    "pico_dbtp": 0.2,
    "audio_local": "audio/22-_track_los_de_quiroga.mp3",
-   "onda": "assets/audio/track22_onda.png"
+   "onda": "assets/audio/track22_onda.png",
+   "audio_web": "audio_web/22-_track_los_de_quiroga.mp3"
   },
   "B3.11": {
    "track": "23",
@@ -503,7 +527,8 @@
    "lra": 4.2,
    "pico_dbtp": 0.4,
    "audio_local": "audio/23-_track_los_de_fierro-CAMBIAR.mp3",
-   "onda": "assets/audio/track23_onda.png"
+   "onda": "assets/audio/track23_onda.png",
+   "audio_web": "audio_web/23-_track_los_de_fierro-CAMBIAR.mp3"
   },
   "B3.12": {
    "track": "24",
@@ -523,7 +548,8 @@
    "lra": 4.6,
    "pico_dbtp": 1.2,
    "audio_local": "audio/24-_track_los_de_lavalle.mp3",
-   "onda": "assets/audio/track24_onda.png"
+   "onda": "assets/audio/track24_onda.png",
+   "audio_web": "audio_web/24-_track_los_de_lavalle.mp3"
   },
   "B4.01": {
    "track": "25",
@@ -543,7 +569,8 @@
    "lra": 3.5,
    "pico_dbtp": -1.3,
    "audio_local": "audio/25-_track_Aurora.mp3",
-   "onda": "assets/audio/track25_onda.png"
+   "onda": "assets/audio/track25_onda.png",
+   "audio_web": "audio_web/25-_track_Aurora.mp3"
   },
   "B4.02": {
    "track": "26",
@@ -563,7 +590,8 @@
    "lra": 2.4,
    "pico_dbtp": 0.0,
    "audio_local": "audio/26-_track_Mi_Bandera_-_BELGRANO.mp3",
-   "onda": "assets/audio/track26_onda.png"
+   "onda": "assets/audio/track26_onda.png",
+   "audio_web": "audio_web/26-_track_Mi_Bandera_-_BELGRANO.mp3"
   },
   "B5.01": {
    "track": "27",
@@ -583,7 +611,8 @@
    "lra": 14.7,
    "pico_dbtp": 0.4,
    "audio_local": "audio/27-_track_Los_5_de_Pringles_1.mp3",
-   "onda": "assets/audio/track27_onda.png"
+   "onda": "assets/audio/track27_onda.png",
+   "audio_web": "audio_web/27-_track_Los_5_de_Pringles_1.mp3"
   },
   "B5.02": {
    "track": "28.1",
@@ -605,7 +634,8 @@
    "lra": 3.5,
    "pico_dbtp": 0.0,
    "audio_local": "audio/28.1-_track_Los_de_Lopez_-_por_las_dudas.mp3",
-   "onda": "assets/audio/track28_1_onda.png"
+   "onda": "assets/audio/track28_1_onda.png",
+   "audio_web": "audio_web/28.1-_track_Los_de_Lopez_-_por_las_dudas.mp3"
   },
   "B5.03": {
    "track": "29",
@@ -625,7 +655,8 @@
    "lra": 7.9,
    "pico_dbtp": 0.1,
    "audio_local": "audio/29-_track_el_sanjuanino_y_el_mendocino.mp3",
-   "onda": "assets/audio/track29_onda.png"
+   "onda": "assets/audio/track29_onda.png",
+   "audio_web": "audio_web/29-_track_el_sanjuanino_y_el_mendocino.mp3"
   },
   "B6.01": {
    "track": "30",
@@ -645,7 +676,8 @@
    "lra": 7.4,
    "pico_dbtp": -0.0,
    "audio_local": "audio/30-_track_clarin.mp3",
-   "onda": "assets/audio/track30_onda.png"
+   "onda": "assets/audio/track30_onda.png",
+   "audio_web": "audio_web/30-_track_clarin.mp3"
   },
   "B6.02": {
    "track": "31",
@@ -667,7 +699,8 @@
    "lra": 6.8,
    "pico_dbtp": 0.2,
    "audio_local": "audio/31-_track_Grito_San_Martin_bien.mp3",
-   "onda": "assets/audio/track31_onda.png"
+   "onda": "assets/audio/track31_onda.png",
+   "audio_web": "audio_web/31-_track_Grito_San_Martin_bien.mp3"
   }
  },
  "finales": [
@@ -689,7 +722,8 @@
    "lra": 2.4,
    "pico_dbtp": 0.5,
    "audio_local": "audio/32-_track_Avenida_de_Las_Camelias.mp3",
-   "onda": "assets/audio/track32_onda.png"
+   "onda": "assets/audio/track32_onda.png",
+   "audio_web": "audio_web/32-_track_Avenida_de_Las_Camelias.mp3"
   },
   {
    "track": "33",
@@ -709,7 +743,8 @@
    "lra": 6.8,
    "pico_dbtp": -0.0,
    "audio_local": "audio/33-_track_Marcha_de_San_Lorenzo.mp3",
-   "onda": "assets/audio/track33_onda.png"
+   "onda": "assets/audio/track33_onda.png",
+   "audio_web": "audio_web/33-_track_Marcha_de_San_Lorenzo.mp3"
   },
   {
    "track": "34",
@@ -729,7 +764,8 @@
    "lra": 4.6,
    "pico_dbtp": 0.5,
    "audio_local": "audio/34-_track_Ituzaingo_-_Banda_Militar_-.mp3",
-   "onda": "assets/audio/track34_onda.png"
+   "onda": "assets/audio/track34_onda.png",
+   "audio_web": "audio_web/34-_track_Ituzaingo_-_Banda_Militar_-.mp3"
   }
  ],
  "sin_track": {

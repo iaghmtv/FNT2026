@@ -114,6 +114,13 @@
    "escena": "General",
    "hecho": true,
    "texto": "Tablero: cajón de comentarios al pie de cada escena (se guardan como issues en GitHub, con sus respuestas; cerrado = resuelto)."
+  },
+  {
+   "fecha": "2026-10-15",
+   "tipo": "entrega",
+   "escena": "General",
+   "hecho": true,
+   "texto": "Tablero: los 35 tracks del show 2025 se escuchan en cada escena (copias de 128 kbps)."
   }
  ],
  "notas_ignoradas": [
