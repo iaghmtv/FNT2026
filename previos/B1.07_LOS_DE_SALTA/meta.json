@@ -43,5 +43,9 @@
   "fecha": "2026-10-14 17:57",
   "fuente": "03_BLOQUES/B1_PAISAJES/B1.07_LOS_DE_SALTA/02_IA_GENERACION/PROPUESTAS PANTALLAS",
   "nota": "Noche de las variantes Flux de German (centro A, izq C, der B). Anteriores en LUNA_2026_v2/_reemplazadas."
+ },
+ "textos": {
+  "atardecer": "IA sobre el cuadro que se proyectó en 2025 (Qwen + Flux Krea, 13/10): misma composición, siempre atardecer, con la silueta real del cerro.",
+  "luna": "Las variantes Flux de German llevadas a la noche (centro A, montaña izq. C, der. B), de la carpeta PROPUESTAS PANTALLAS de la escena (14/10)."
  }
 }

@@ -24,26 +24,48 @@
   "atardecer_cen": "Golden hour sunset. Warm low orange sunlight rakes across the relief coming from behind the scene (backlight): glowing orange and amber highlights on every ridge, rock and plant, long violet shadows in the gullies, warm orange and magenta color grading, dusky sky. Wide panoramic landscape view. A large campfire at night in the Argentine Andean foothills near Jachal, an old wooden cart beside it, gauchos in ponchos gathering around the fire, sepia tones, cinematic. Natural landscape photography, highly detailed, realistic textures, no people, no text, no buildings unless described.",
   "atardecer_der": "Golden hour sunset. Warm low orange sunlight rakes across the relief coming from the right: glowing orange and amber highlights on every ridge, rock and plant, long violet shadows in the gullies, warm orange and magenta color grading, dusky sky. The landscape covers the whole long hill from base to ridge. Treat the mountain as one continuous surface texture: vegetation only as low ground cover or as a continuous canopy seen from above, no isolated tall trees, no tall cacti, no poles, no vertical objects, no buildings. The beauty comes from color, rock texture, strata and the raking light that sculpts every ridge and gully. Thousands of orange embers and sparks drifting over the dark rocky mountain, tracing the contour of its ridges, faint glow of a distant campfire, smoke. Natural landscape photography, highly detailed, realistic textures, no people, no text, no buildings unless described."
  },
- "propuesta": {
-  "titulo": "Propuesta pantallas · notas musicales de fuego",
-  "nota": "Reemplaza a la noche de luna del previo (pedido del 14/10). Clave de sol y pentagramas encendidos sobre negro; el fuego es el único color.",
-  "imgs": [
-   {
-    "src": "assets/propuestas/B0.01_laterales_notas_fuego_1.jpg",
-    "cap": "clave de sol y pentagrama encendidos, con chispas"
-   },
-   {
-    "src": "assets/propuestas/B0.01_laterales_notas_fuego_2.jpg",
-    "cap": "pentagrama de fuego ondulante; las notas se desprenden en chispas"
-   },
-   {
-    "src": "assets/propuestas/B0.01_laterales_notas_fuego_3.jpg",
-    "cap": "pentagrama recto de brasas sobre un fondo de destellos"
-   },
-   {
-    "src": "assets/propuestas/B0.01_laterales_notas_fuego_4.jpg",
-    "cap": "espiral de humo y chispas que se abre en un pentagrama"
-   }
-  ]
- }
+ "propuestas": [
+  {
+   "titulo": "Propuesta pantallas laterales · notas musicales de fuego",
+   "nota": "Clave de sol y pentagramas encendidos sobre negro; el fuego es el único color.",
+   "imgs": [
+    {
+     "src": "assets/propuestas/B0.01_laterales_notas_fuego_1.jpg",
+     "cap": "Clave de sol y pentagrama encendidos, con chispas"
+    },
+    {
+     "src": "assets/propuestas/B0.01_laterales_notas_fuego_2.jpg",
+     "cap": "Pentagrama de fuego ondulante; las notas se desprenden en chispas"
+    },
+    {
+     "src": "assets/propuestas/B0.01_laterales_notas_fuego_3.jpg",
+     "cap": "Pentagrama recto de brasas sobre un fondo de destellos"
+    },
+    {
+     "src": "assets/propuestas/B0.01_laterales_notas_fuego_4.jpg",
+     "cap": "Espiral de humo y chispas que se abre en un pentagrama"
+    }
+   ]
+  },
+  {
+   "titulo": "Propuesta · Buenaventura con la guitarra junto al fogón",
+   "nota": "Blanco y negro, con el fuego como único color.",
+   "imgs": [
+    {
+     "src": "assets/propuestas/B0.01_fogon_guitarra_animada.mp4",
+     "poster": "assets/propuestas/B0.01_fogon_guitarra_animada.jpg",
+     "video": true,
+     "cap": "Animada (MiniMax, 6,6 s) · Buenaventura toca la guitarra junto al fogón"
+    },
+    {
+     "src": "assets/propuestas/B0.01_prop_fogon_guitarra_1_solo.jpg",
+     "cap": "Solo junto al fogón, bajo las estrellas"
+    },
+    {
+     "src": "assets/propuestas/B0.01_prop_fogon_guitarra_4_solo_izq.jpg",
+     "cap": "De poncho, a la izquierda, solo frente al fogón"
+    }
+   ]
+  }
+ ]
 }

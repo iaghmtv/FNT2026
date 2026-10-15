@@ -43,5 +43,9 @@
   "fecha": "2026-10-14 18:19",
   "fuente": "03_BLOQUES/B1_PAISAJES/B1.08_RIOJANOS/02_IA_GENERACION/PROPUESTA PANTALLA",
   "nota": "Reemplaza la noche de luna del 10/10 (copias en LUNA_2026_v2/_reemplazadas)."
+ },
+ "textos": {
+  "atardecer": "IA sobre el cuadro que se proyectó en 2025 (Qwen + Flux Krea, 13/10): misma composición, siempre atardecer, con la silueta real del cerro.",
+  "luna": "Imágenes del equipo (carpeta PROPUESTA PANTALLA de la escena, 14/10), ajustadas a cada pantalla con su máscara."
  }
 }

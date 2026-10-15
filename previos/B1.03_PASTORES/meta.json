@@ -64,5 +64,9 @@
   "fuente": "imagen del equipo ElevenLabs gpt-image + Topaz (3 filas: centro, der, izq)",
   "nota": "Centro: la imagen del equipo tal cual. Montanas: las filas venian achatadas (10:1) y con cielo/luna donde va el cerro, asi que se re-ilumino de noche el atardecer v2 (mismos cardones) con la paleta de esa imagen.",
   "carpeta": "03_BLOQUES/B1_PAISAJES/B1.03_PASTORES/02_IA_GENERACION/LUNA_2026_v2"
+ },
+ "textos": {
+  "atardecer": "IA sobre el cuadro que se proyectó en 2025 (Qwen + Flux Krea, 13/10): misma composición, siempre atardecer, con la silueta real del cerro. En las montañas, cardones argentinos variados (14/10, con 6 fotos de referencia).",
+  "luna": "Centro: la imagen del equipo (14/10). Montañas: el atardecer con los mismos cardones, llevado a la noche con la paleta de esa imagen."
  }
 }

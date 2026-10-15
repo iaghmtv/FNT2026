@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-14 23:05 UTC",
+ "generado": "2026-10-15 01:05 UTC",
  "repo": "iaghmtv/FNT2026",
  "branch": "main",
  "blocks": [
@@ -76,27 +76,33 @@
        "fecha": "2026-10-14",
        "izq": "previos/B0.00_ANTORCHA/antorcha_izq_v03c.mp4?v=82e73ee6",
        "der": "previos/B0.00_ANTORCHA/antorcha_der_v03.mp4?v=0c1fa347",
-       "nota": "Una antorcha por montaña: la izquierda camina de izquierda a derecha y la derecha de derecha a izquierda, llegan al centro al mismo tiempo. Luz real sobre el cerro (Blender), estela de humo, llama fire_torch y chispas que se avivan en el centro; se apagan y la pantalla queda en negro. Preview a media resolución; entrega DXV en 03_BLOQUES/B0_APERTURA/B0.00_ANTORCHA/06_ENTREGA_DXV (izq 3840x1200 v03c, der 4096x1200 v03). La izquierda v03c (14/10) tiene la llama del mismo tamaño en pantalla que la derecha."
+       "nota": "Una antorcha por montaña: la izquierda va de izquierda a derecha y la derecha de derecha a izquierda; llegan al centro al mismo tiempo, se apagan y la pantalla queda en negro. Luz real sobre el cerro (Blender), estela de humo, llama fire_torch y chispas que se avivan en el centro. Izquierda v03c (14/10, llama del mismo tamaño que la derecha) · derecha v03. Preview a media resolución; entrega DXV en 03_BLOQUES/B0_APERTURA/B0.00_ANTORCHA/06_ENTREGA_DXV."
       },
-      "propuesta": {
-       "titulo": "Propuesta pantallas · la antorcha como nota musical de fuego",
-       "nota": "En lugar de la llama, una nota musical de fuego recorre el cerro e ilumina la roca (sobre el encuadre de la antorcha 2025). Reemplaza a la luna y el atardecer del previo.",
-       "imgs": [
-        {
-         "src": "assets/propuestas/B0.00_nota_musical_fuego_animada.mp4?v=481ed027",
-         "poster": "assets/propuestas/B0.00_nota_musical_fuego_animada.jpg?v=b8414b9e",
-         "video": true,
-         "cap": "Animada (MiniMax, 6,6 s) · la nota de fuego avanza sobre la roca y la ilumina"
-        },
-        {
-         "src": "assets/propuestas/B0.00_nota_musical_fuego_A.jpg?v=4c3d73ef",
-         "cap": "Variante A · la nota de fuego enciende la roca, con chispas"
-        },
-        {
-         "src": "assets/propuestas/B0.00_nota_musical_fuego_B.jpg?v=30e9600a",
-         "cap": "Variante B · la nota de fuego más definida, con humo y chispas"
-        }
-       ]
+      "propuestas": [
+       {
+        "titulo": "Propuesta · la antorcha como nota musical de fuego",
+        "nota": "Alternativa a la antorcha: en lugar de la llama, una nota musical de fuego recorre el cerro e ilumina la roca (sobre el encuadre de la antorcha 2025). El fuego es el único color, como pide el Bloque 0.",
+        "imgs": [
+         {
+          "src": "assets/propuestas/B0.00_nota_musical_fuego_animada.mp4?v=481ed027",
+          "poster": "assets/propuestas/B0.00_nota_musical_fuego_animada.jpg?v=b8414b9e",
+          "video": true,
+          "cap": "Animada (MiniMax, 6,6 s) · la nota de fuego avanza sobre la roca y la ilumina"
+         },
+         {
+          "src": "assets/propuestas/B0.00_nota_musical_fuego_A.jpg?v=4c3d73ef",
+          "cap": "Variante A · la nota de fuego enciende la roca, con chispas"
+         },
+         {
+          "src": "assets/propuestas/B0.00_nota_musical_fuego_B.jpg?v=30e9600a",
+          "cap": "Variante B · la nota de fuego más definida, con humo y chispas"
+         }
+        ]
+       }
+      ],
+      "textos": {
+       "luna": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro).",
+       "atardecer": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro)."
       },
       "refs_al_generar": [],
       "desactualizado": false
@@ -155,22 +161,6 @@
         "src": "assets/german/B0.01_extra1.jpg",
         "cap": "Turnaround cabeza · v2",
         "kind": "single"
-       },
-       {
-        "src": "assets/propuestas/B0.01_prop_fogon_guitarra_1_solo.jpg",
-        "cap": "Propuesta · Buenaventura con la guitarra junto al fogón, solo bajo las estrellas (B/N, el fuego único color)",
-        "kind": "single"
-       },
-       {
-        "src": "assets/propuestas/B0.01_fogon_guitarra_animada.mp4",
-        "poster": "assets/propuestas/B0.01_fogon_guitarra_animada.jpg",
-        "kind": "video",
-        "cap": "Propuesta animada (MiniMax, 6,6 s) · Buenaventura toca la guitarra junto al fogón · 02_IA_GENERACION/MINIMAX_H3"
-       },
-       {
-        "src": "assets/propuestas/B0.01_prop_fogon_guitarra_4_solo_izq.jpg",
-        "cap": "Propuesta · Buenaventura de poncho a la izquierda, solo frente al fogón",
-        "kind": "single"
        }
       ]
      },
@@ -206,27 +196,53 @@
       "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
       "files": {},
       "seed": 14616238,
-      "propuesta": {
-       "titulo": "Propuesta pantallas · notas musicales de fuego",
-       "nota": "Reemplaza a la noche de luna del previo (pedido del 14/10). Clave de sol y pentagramas encendidos sobre negro; el fuego es el único color.",
-       "imgs": [
-        {
-         "src": "assets/propuestas/B0.01_laterales_notas_fuego_1.jpg?v=aa5951b1",
-         "cap": "clave de sol y pentagrama encendidos, con chispas"
-        },
-        {
-         "src": "assets/propuestas/B0.01_laterales_notas_fuego_2.jpg?v=661cdfbd",
-         "cap": "pentagrama de fuego ondulante; las notas se desprenden en chispas"
-        },
-        {
-         "src": "assets/propuestas/B0.01_laterales_notas_fuego_3.jpg?v=cf95deb8",
-         "cap": "pentagrama recto de brasas sobre un fondo de destellos"
-        },
-        {
-         "src": "assets/propuestas/B0.01_laterales_notas_fuego_4.jpg?v=616074a9",
-         "cap": "espiral de humo y chispas que se abre en un pentagrama"
-        }
-       ]
+      "propuestas": [
+       {
+        "titulo": "Propuesta pantallas laterales · notas musicales de fuego",
+        "nota": "Clave de sol y pentagramas encendidos sobre negro; el fuego es el único color.",
+        "imgs": [
+         {
+          "src": "assets/propuestas/B0.01_laterales_notas_fuego_1.jpg?v=aa5951b1",
+          "cap": "Clave de sol y pentagrama encendidos, con chispas"
+         },
+         {
+          "src": "assets/propuestas/B0.01_laterales_notas_fuego_2.jpg?v=661cdfbd",
+          "cap": "Pentagrama de fuego ondulante; las notas se desprenden en chispas"
+         },
+         {
+          "src": "assets/propuestas/B0.01_laterales_notas_fuego_3.jpg?v=cf95deb8",
+          "cap": "Pentagrama recto de brasas sobre un fondo de destellos"
+         },
+         {
+          "src": "assets/propuestas/B0.01_laterales_notas_fuego_4.jpg?v=616074a9",
+          "cap": "Espiral de humo y chispas que se abre en un pentagrama"
+         }
+        ]
+       },
+       {
+        "titulo": "Propuesta · Buenaventura con la guitarra junto al fogón",
+        "nota": "Blanco y negro, con el fuego como único color.",
+        "imgs": [
+         {
+          "src": "assets/propuestas/B0.01_fogon_guitarra_animada.mp4?v=4cea9a84",
+          "poster": "assets/propuestas/B0.01_fogon_guitarra_animada.jpg?v=35b314f7",
+          "video": true,
+          "cap": "Animada (MiniMax, 6,6 s) · Buenaventura toca la guitarra junto al fogón"
+         },
+         {
+          "src": "assets/propuestas/B0.01_prop_fogon_guitarra_1_solo.jpg?v=cef839c3",
+          "cap": "Solo junto al fogón, bajo las estrellas"
+         },
+         {
+          "src": "assets/propuestas/B0.01_prop_fogon_guitarra_4_solo_izq.jpg?v=2147913a",
+          "cap": "De poncho, a la izquierda, solo frente al fogón"
+         }
+        ]
+       }
+      ],
+      "textos": {
+       "luna": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro).",
+       "atardecer": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro)."
       },
       "refs_al_generar": [],
       "desactualizado": false
@@ -250,7 +266,7 @@
      "verse": "Llegaron a mis pagos jachalleros, los del norte selvático y huraño.",
      "kind": "paisaje",
      "timelapse": true,
-     "nota": "Cascada: la rehace Diego en Blender 3D. Acá se generan solo la selva y la luz.",
+     "nota": "Cascada: la rehace Diego en Blender 3D.",
      "generar": true,
      "ctx": {
       "code": "B1.01",
@@ -270,10 +286,9 @@
        "der": "assets/2025/B1.01_der.jpg"
       },
       "status26": "trab",
-      "y26": "Cataratas del Iguazú con selva paranaense (pindó, helechos arborescentes, lapachos en flor). Laterales de selva con niebla y tierra colorada. Se reemplazó el ave africana por un coatí. Además ya hay un proyecto de After con loros misioneros en estilo render 3D (llegan, se posan y se van).",
+      "y26": "Loros misioneros en estilo render 3D, en un proyecto de After (carpeta B 01.01): llegan, se posan y se van, en un video de 30 s. Sus variantes Flux de la escena (Iguazú con coatí) no se muestran en el tablero; se ven en el comparativo 2025 vs German.",
       "crit26": "Los pájaros parecían agapornis (africanos).",
       "t26": [
-       "Flux Krea",
        "Magnific (imagen loros)",
        "IA video loros",
        "After Effects: FNT26-B1.1-Norte_Selvatico.aep"
@@ -291,7 +306,8 @@
         "cap": "Loros misioneros · video 30 s (B 01.01, After): llegan, se posan y se van",
         "kind": "video"
        }
-      ]
+      ],
+      "oculto26": true
      },
      "audio": {
       "track": "1",
@@ -348,6 +364,11 @@
        "fuente": "03_BLOQUES/B1_PAISAJES/B1.01_NORTE_SELVATICO/02_IA_GENERACION/PROPUESTAS PANTALLAS",
        "nota": "Reemplaza la noche de luna del 10/10 (Iguazu con coati), que estaba oculta."
       },
+      "propuestas": [],
+      "textos": {
+       "atardecer": "IA sobre el cuadro que se proyectó en 2025 (Qwen + Flux Krea, 13/10): misma composición, siempre atardecer, con la silueta real del cerro.",
+       "luna": "Imágenes del equipo (carpeta PROPUESTA PANTALLA de la escena, 14/10), ajustadas a cada pantalla con su máscara."
+      },
       "refs_al_generar": [],
       "desactualizado": false
      },
@@ -390,7 +411,8 @@
        "Flux Krea"
       ],
       "todo26": [],
-      "img26": []
+      "img26": [],
+      "oculto26": true
      },
      "audio": {
       "track": "2",
@@ -447,6 +469,11 @@
        "fuente": "03_BLOQUES/B1_PAISAJES/B1.02_LLANO_SUR_SELVA/02_IA_GENERACION/PROPUESTA PANTALLAS",
        "nota": "Centro, izquierda y derecha con las imagenes del equipo. Luna del 10/10 en LUNA_2026_v2/_reemplazadas."
       },
+      "propuestas": [],
+      "textos": {
+       "atardecer": "IA sobre el cuadro que se proyectó en 2025 (Qwen + Flux Krea, 13/10): misma composición, siempre atardecer, con la silueta real del cerro.",
+       "luna": "Imágenes del equipo (carpeta PROPUESTA PANTALLA de la escena, 14/10), ajustadas a cada pantalla con su máscara."
+      },
       "refs_al_generar": [],
       "desactualizado": false
      },
@@ -486,7 +513,8 @@
        "Flux Krea"
       ],
       "todo26": [],
-      "img26": []
+      "img26": [],
+      "oculto26": true
      },
      "audio": {
       "track": "3",
@@ -594,6 +622,11 @@
        "nota": "Centro: la imagen del equipo tal cual. Montanas: las filas venian achatadas (10:1) y con cielo/luna donde va el cerro, asi que se re-ilumino de noche el atardecer v2 (mismos cardones) con la paleta de esa imagen.",
        "carpeta": "03_BLOQUES/B1_PAISAJES/B1.03_PASTORES/02_IA_GENERACION/LUNA_2026_v2"
       },
+      "propuestas": [],
+      "textos": {
+       "atardecer": "IA sobre el cuadro que se proyectó en 2025 (Qwen + Flux Krea, 13/10): misma composición, siempre atardecer, con la silueta real del cerro. En las montañas, cardones argentinos variados (14/10, con 6 fotos de referencia).",
+       "luna": "Centro: la imagen del equipo (14/10). Montañas: el atardecer con los mismos cardones, llevado a la noche con la paleta de esa imagen."
+      },
       "refs_al_generar": [
        "cardon_ref_1_florecido.jpg",
        "cardon_ref_2_pasacana_peludo.jpg",
@@ -640,7 +673,8 @@
        "Flux Krea"
       ],
       "todo26": [],
-      "img26": []
+      "img26": [],
+      "oculto26": true
      },
      "audio": {
       "track": "4",
@@ -718,6 +752,11 @@
        "fuente": "03_BLOQUES/B1_PAISAJES/B1.04_HIJOS_DE_LA_SELVA_GUARANIES/02_IA_GENERACION/PROPUESTA PANTALLA",
        "nota": "Reemplaza la noche de luna del 10/10 (copias en LUNA_2026_v2/_reemplazadas)."
       },
+      "propuestas": [],
+      "textos": {
+       "atardecer": "IA sobre el cuadro que se proyectó en 2025 (Qwen + Flux Krea, 13/10): misma composición, siempre atardecer, con la silueta real del cerro. En las montañas, mburucuyá real (14/10, con fotos de referencia).",
+       "luna": "Imágenes del equipo (carpeta PROPUESTA PANTALLA de la escena, 14/10), ajustadas a cada pantalla con su máscara."
+      },
       "refs_al_generar": [
        "mburucuya_Passiflora_caerulea_ref_1.jpg",
        "mburucuya_Passiflora_caerulea_ref_2_enredadera.jpg"
@@ -760,7 +799,8 @@
        "Flux Krea"
       ],
       "todo26": [],
-      "img26": []
+      "img26": [],
+      "oculto26": true
      },
      "audio": {
       "track": "5",
@@ -817,6 +857,11 @@
        "fuente": "03_BLOQUES/B1_PAISAJES/B1.05_VIEJO_RUNA/02_IA_GENERACION/PROPUESTA PANTALLA",
        "nota": "Reemplaza la noche de luna del 10/10 (copias en LUNA_2026_v2/_reemplazadas)."
       },
+      "propuestas": [],
+      "textos": {
+       "atardecer": "IA sobre el cuadro que se proyectó en 2025 (Qwen + Flux Krea, 13/10): misma composición, siempre atardecer, con la silueta real del cerro.",
+       "luna": "Imágenes del equipo (carpeta PROPUESTA PANTALLA de la escena, 14/10), ajustadas a cada pantalla con su máscara."
+      },
       "refs_al_generar": [],
       "desactualizado": false
      },
@@ -858,7 +903,8 @@
       "todo26": [
        "Las vicuñas salen algo estilizadas (de lejos parecen antílopes)."
       ],
-      "img26": []
+      "img26": [],
+      "oculto26": true
      },
      "audio": {
       "track": "6",
@@ -915,6 +961,11 @@
        "fuente": "03_BLOQUES/B1_PAISAJES/B1.06_JUJENOS/02_IA_GENERACION/PROPUESTA PANTALLAS",
        "nota": "Centro, izquierda y derecha con las imagenes del equipo. Anteriores en LUNA_2026_v2/_reemplazadas."
       },
+      "propuestas": [],
+      "textos": {
+       "atardecer": "IA sobre el cuadro que se proyectó en 2025 (Qwen + Flux Krea, 13/10): misma composición, siempre atardecer, con la silueta real del cerro.",
+       "luna": "Imágenes del equipo (carpeta PROPUESTA PANTALLA de la escena, 14/10), ajustadas a cada pantalla con su máscara."
+      },
       "refs_al_generar": [],
       "desactualizado": false
      },
@@ -957,7 +1008,8 @@
        "Quedan 1 o 2 cactus chicos tipo saguaro en los laterales.",
        "Variante Cafayate: los viñedos casi no se ven."
       ],
-      "img26": []
+      "img26": [],
+      "oculto26": true
      },
      "audio": {
       "track": "7",
@@ -1014,6 +1066,11 @@
        "fuente": "03_BLOQUES/B1_PAISAJES/B1.07_LOS_DE_SALTA/02_IA_GENERACION/PROPUESTAS PANTALLAS",
        "nota": "Noche de las variantes Flux de German (centro A, izq C, der B). Anteriores en LUNA_2026_v2/_reemplazadas."
       },
+      "propuestas": [],
+      "textos": {
+       "atardecer": "IA sobre el cuadro que se proyectó en 2025 (Qwen + Flux Krea, 13/10): misma composición, siempre atardecer, con la silueta real del cerro.",
+       "luna": "Las variantes Flux de German llevadas a la noche (centro A, montaña izq. C, der. B), de la carpeta PROPUESTAS PANTALLAS de la escena (14/10)."
+      },
       "refs_al_generar": [],
       "desactualizado": false
      },
@@ -1060,7 +1117,8 @@
       "todo26": [
        "Mediodía y noche: el paredón todavía parece meseta; la variante atardecer es la más fiel."
       ],
-      "img26": []
+      "img26": [],
+      "oculto26": true
      },
      "audio": {
       "track": "8",
@@ -1117,6 +1175,11 @@
        "fuente": "03_BLOQUES/B1_PAISAJES/B1.08_RIOJANOS/02_IA_GENERACION/PROPUESTA PANTALLA",
        "nota": "Reemplaza la noche de luna del 10/10 (copias en LUNA_2026_v2/_reemplazadas)."
       },
+      "propuestas": [],
+      "textos": {
+       "atardecer": "IA sobre el cuadro que se proyectó en 2025 (Qwen + Flux Krea, 13/10): misma composición, siempre atardecer, con la silueta real del cerro.",
+       "luna": "Imágenes del equipo (carpeta PROPUESTA PANTALLA de la escena, 14/10), ajustadas a cada pantalla con su máscara."
+      },
       "refs_al_generar": [],
       "desactualizado": false
      },
@@ -1156,7 +1219,8 @@
        "Flux Krea"
       ],
       "todo26": [],
-      "img26": []
+      "img26": [],
+      "oculto26": true
      },
      "audio": {
       "track": "9",
@@ -1213,6 +1277,11 @@
        "fuente": "03_BLOQUES/B1_PAISAJES/B1.09_VERDES_LLANURAS/02_IA_GENERACION/PROPUESTA PANTALLA",
        "nota": "Centro y montana derecha nuevos; la izquierda sigue con la luna del 10/10 (no vino imagen nueva). Anteriores en LUNA_2026_v2/_reemplazadas."
       },
+      "propuestas": [],
+      "textos": {
+       "atardecer": "IA sobre el cuadro que se proyectó en 2025 (Qwen + Flux Krea, 13/10): misma composición, siempre atardecer, con la silueta real del cerro.",
+       "luna": "Centro y montaña derecha: imágenes del equipo (14/10). Montaña izquierda: todavía el previo IA del 10/10 (falta la imagen nueva)."
+      },
       "refs_al_generar": [],
       "desactualizado": false
      },
@@ -1252,7 +1321,8 @@
        "Flux Krea"
       ],
       "todo26": [],
-      "img26": []
+      "img26": [],
+      "oculto26": true
      },
      "audio": {
       "track": "10",
@@ -1309,6 +1379,11 @@
        "fuente": "03_BLOQUES/B1_PAISAJES/B1.10_CORRENTINOS/02_IA_GENERACION/PROPUESTA PANTALLA",
        "nota": "Reemplaza la noche de luna del 10/10 (copias en LUNA_2026_v2/_reemplazadas)."
       },
+      "propuestas": [],
+      "textos": {
+       "atardecer": "IA sobre el cuadro que se proyectó en 2025 (Qwen + Flux Krea, 13/10): misma composición, siempre atardecer, con la silueta real del cerro.",
+       "luna": "Imágenes del equipo (carpeta PROPUESTA PANTALLA de la escena, 14/10), ajustadas a cada pantalla con su máscara."
+      },
       "refs_al_generar": [],
       "desactualizado": false
      },
@@ -1348,7 +1423,8 @@
        "Flux Krea"
       ],
       "todo26": [],
-      "img26": []
+      "img26": [],
+      "oculto26": true
      },
      "audio": {
       "track": "11",
@@ -1401,6 +1477,11 @@
        "fecha": "2026-10-14 10:16",
        "luz": "solo atardecer: tarde dorada -> atardecer -> atardecer profundo -> ultima luz (sin noche, sin sol en cuadro)",
        "metodo": "cuadros guia con Qwen desde el fijo nuevo + MiniMax H3 (243 cuadros, 24 fps)"
+      },
+      "propuestas": [],
+      "textos": {
+       "atardecer": "IA sobre el cuadro que se proyectó en 2025 (Qwen + Flux Krea, 13/10): misma composición, siempre atardecer, con la silueta real del cerro.",
+       "luna": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro)."
       },
       "refs_al_generar": [],
       "desactualizado": false
@@ -1463,6 +1544,11 @@
        "atardecer_der": "previos/B2.01_VOZ_EN_OFF_FUEGO_CORAZON/atardecer_der.jpg?v=f82273a9"
       },
       "seed": 186467,
+      "propuestas": [],
+      "textos": {
+       "luna": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro).",
+       "atardecer": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro)."
+      },
       "refs_al_generar": [],
       "desactualizado": false
      },
@@ -1666,6 +1752,11 @@
        "luz_der": "previos/B3.01_ENTRERRIANOS_Y_CHAQUENOS/luz_der.jpg?v=1a3d1cf9"
       },
       "seed": 11799438,
+      "propuestas": [],
+      "textos": {
+       "luna": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro).",
+       "atardecer": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro)."
+      },
       "refs_al_generar": [],
       "desactualizado": false
      },
@@ -1749,6 +1840,11 @@
        "luz_der": "previos/B3.02_SANTIAGUENO/luz_der.jpg?v=8c457bf8"
       },
       "seed": 7700353,
+      "propuestas": [],
+      "textos": {
+       "luna": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro).",
+       "atardecer": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro)."
+      },
       "refs_al_generar": [],
       "desactualizado": false
      },
@@ -1828,6 +1924,11 @@
        "atardecer_der": "previos/B3.03_RANQUEL/atardecer_der.jpg?v=d9047c46"
       },
       "seed": 7408117,
+      "propuestas": [],
+      "textos": {
+       "luna": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro).",
+       "atardecer": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro)."
+      },
       "refs_al_generar": [],
       "desactualizado": false
      },
@@ -1905,6 +2006,11 @@
        "atardecer_der": "previos/B3.04_LOS_DE_GUEMES/atardecer_der.jpg?v=c7452673"
       },
       "seed": 7396943,
+      "propuestas": [],
+      "textos": {
+       "luna": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro).",
+       "atardecer": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro)."
+      },
       "refs_al_generar": [],
       "desactualizado": false
      },
@@ -1982,6 +2088,11 @@
        "atardecer_der": "previos/B3.05_LOS_DEL_CHACHO/atardecer_der.jpg?v=d87eac0a"
       },
       "seed": 10874012,
+      "propuestas": [],
+      "textos": {
+       "luna": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro).",
+       "atardecer": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro)."
+      },
       "refs_al_generar": [],
       "desactualizado": false
      },
@@ -2056,6 +2167,11 @@
        "atardecer_der": "previos/B3.06_ILUSTRE_PAZ/atardecer_der.jpg?v=3fd1b525"
       },
       "seed": 13103480,
+      "propuestas": [],
+      "textos": {
+       "luna": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro).",
+       "atardecer": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro)."
+      },
       "refs_al_generar": [],
       "desactualizado": false
      },
@@ -2130,6 +2246,11 @@
        "atardecer_der": "previos/B3.07_PAGO_LARGO/atardecer_der.jpg?v=efd5fd8a"
       },
       "seed": 14679212,
+      "propuestas": [],
+      "textos": {
+       "luna": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro).",
+       "atardecer": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro)."
+      },
       "refs_al_generar": [],
       "desactualizado": false
      },
@@ -2206,6 +2327,11 @@
        "atardecer_der": "previos/B3.08_POZO_DE_VARGAS_Y_QUEBRACHO/atardecer_der.jpg?v=83ebcee5"
       },
       "seed": 13023579,
+      "propuestas": [],
+      "textos": {
+       "luna": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro).",
+       "atardecer": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro)."
+      },
       "refs_al_generar": [],
       "desactualizado": false
      },
@@ -2290,6 +2416,11 @@
        "luz_der": "previos/B3.09_DIAGUITAS/luz_der.jpg?v=0dc1fb5d"
       },
       "seed": 3130640,
+      "propuestas": [],
+      "textos": {
+       "luna": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro).",
+       "atardecer": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro)."
+      },
       "refs_al_generar": [],
       "desactualizado": false
      },
@@ -2366,6 +2497,11 @@
        "atardecer_der": "previos/B3.10_LOS_DE_QUIROGA/atardecer_der.jpg?v=d1cfff67"
       },
       "seed": 11432187,
+      "propuestas": [],
+      "textos": {
+       "luna": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro).",
+       "atardecer": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro)."
+      },
       "refs_al_generar": [],
       "desactualizado": false
      },
@@ -2444,6 +2580,11 @@
        "atardecer_der": "previos/B3.11_LOS_DE_FIERRO/atardecer_der.jpg?v=2fe3a287"
       },
       "seed": 5852787,
+      "propuestas": [],
+      "textos": {
+       "luna": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro).",
+       "atardecer": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro)."
+      },
       "refs_al_generar": [],
       "desactualizado": false
      },
@@ -2520,6 +2661,11 @@
        "atardecer_der": "previos/B3.12_LOS_DE_LAVALLE/atardecer_der.jpg?v=a0648d23"
       },
       "seed": 14416138,
+      "propuestas": [],
+      "textos": {
+       "luna": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro).",
+       "atardecer": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro)."
+      },
       "refs_al_generar": [],
       "desactualizado": false
      },
@@ -2604,6 +2750,11 @@
        "luz_der": "previos/B4.01_AURORA_FALUCHO/luz_der.jpg?v=adf16ad1"
       },
       "seed": 6802789,
+      "propuestas": [],
+      "textos": {
+       "luna": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro).",
+       "atardecer": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro)."
+      },
       "refs_al_generar": [],
       "desactualizado": false
      },
@@ -2635,7 +2786,7 @@
        "der": "assets/2025/B4.02_der.jpg"
       },
       "status26": "sin",
-      "y26": "",
+      "y26": "La bandera de esta escena la resuelve German junto con la del Himno (ver B2.02).",
       "crit26": "",
       "t26": [],
       "todo26": [],
@@ -2743,6 +2894,11 @@
        "atardecer_der": "previos/B5.01_LOS_5_DE_PRINGLES/atardecer_der.jpg?v=3c577fc9"
       },
       "seed": 10931872,
+      "propuestas": [],
+      "textos": {
+       "luna": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro).",
+       "atardecer": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro)."
+      },
       "refs_al_generar": [],
       "desactualizado": false
      },
@@ -2819,6 +2975,11 @@
        "atardecer_der": "previos/B5.02_LOS_DE_LOPEZ/atardecer_der.jpg?v=929bb7fd"
       },
       "seed": 15961450,
+      "propuestas": [],
+      "textos": {
+       "luna": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro).",
+       "atardecer": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro)."
+      },
       "refs_al_generar": [],
       "desactualizado": false
      },
@@ -2893,6 +3054,11 @@
        "atardecer_der": "previos/B5.03_SANJUANINO_Y_MENDOCINO/atardecer_der.jpg?v=0aaf732b"
       },
       "seed": 11521011,
+      "propuestas": [],
+      "textos": {
+       "luna": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro).",
+       "atardecer": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro)."
+      },
       "refs_al_generar": [],
       "desactualizado": false
      },
@@ -2967,6 +3133,11 @@
        "atardecer_der": "previos/B6.01_CLARIN/atardecer_der.jpg?v=dbc7a878"
       },
       "seed": 9078265,
+      "propuestas": [],
+      "textos": {
+       "luna": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro).",
+       "atardecer": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro)."
+      },
       "refs_al_generar": [],
       "desactualizado": false
      },
@@ -3046,6 +3217,11 @@
        "atardecer_der": "previos/B6.02_GRITO_DE_SAN_MARTIN/atardecer_der.jpg?v=bb553c75"
       },
       "seed": 15312785,
+      "propuestas": [],
+      "textos": {
+       "luna": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro).",
+       "atardecer": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro)."
+      },
       "refs_al_generar": [],
       "desactualizado": false
      },
@@ -3063,7 +3239,7 @@
     "tipo": "entrega",
     "escena": "B0.00",
     "hecho": true,
-    "texto": "Antorcha en las dos montañas: izquierda v03b (3840×1200) y derecha v03 (4096×1200). DXV en 06_ENTREGA_DXV y preview en el tablero.",
+    "texto": "Antorcha en las dos montañas: izquierda v03b (3840×1200) y derecha v03 (4096×1200), con DXV y preview en el tablero. A la noche la izquierda pasó a v03c, con la llama del tamaño de la derecha (revisar el 15/10).",
     "fuente": "tablero"
    },
    {
@@ -3103,7 +3279,7 @@
     "tipo": "entrega",
     "escena": "B0.01",
     "hecho": true,
-    "texto": "Propuesta para las pantallas: notas musicales de fuego, en lugar de la luna y el atardecer del previo.",
+    "texto": "Propuesta para las pantallas laterales: notas musicales de fuego. Ocupa el lugar de la luna y el atardecer del previo.",
     "fuente": "tablero"
    },
    {
@@ -3136,6 +3312,30 @@
     "escena": "B0.00",
     "hecho": false,
     "texto": "Probar los DXV de las dos antorchas en Resolume sobre las máscaras.",
+    "fuente": "tablero"
+   },
+   {
+    "fecha": "2026-10-14",
+    "tipo": "entrega",
+    "escena": "B0.00",
+    "hecho": true,
+    "texto": "Propuesta: la antorcha como nota musical de fuego (2 imágenes y un video MiniMax).",
+    "fuente": "tablero"
+   },
+   {
+    "fecha": "2026-10-14",
+    "tipo": "entrega",
+    "escena": "B0.01",
+    "hecho": true,
+    "texto": "Video MiniMax de Buenaventura con la guitarra junto al fogón, junto a las 2 imágenes de esa propuesta.",
+    "fuente": "tablero"
+   },
+   {
+    "fecha": "2026-10-14",
+    "tipo": "revision",
+    "escena": "General",
+    "hecho": true,
+    "texto": "Tablero revisado: los textos describen lo que se ve (de dónde sale cada noche y atardecer, propuestas aparte del panel de German, badges y filtros).",
     "fuente": "tablero"
    },
    {

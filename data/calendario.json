@@ -8,7 +8,7 @@
    "tipo": "entrega",
    "escena": "B0.00",
    "hecho": true,
-   "texto": "Antorcha en las dos montañas: izquierda v03b (3840×1200) y derecha v03 (4096×1200). DXV en 06_ENTREGA_DXV y preview en el tablero."
+   "texto": "Antorcha en las dos montañas: izquierda v03b (3840×1200) y derecha v03 (4096×1200), con DXV y preview en el tablero. A la noche la izquierda pasó a v03c, con la llama del tamaño de la derecha (revisar el 15/10)."
   },
   {
    "fecha": "2026-10-14",
@@ -43,7 +43,7 @@
    "tipo": "entrega",
    "escena": "B0.01",
    "hecho": true,
-   "texto": "Propuesta para las pantallas: notas musicales de fuego, en lugar de la luna y el atardecer del previo."
+   "texto": "Propuesta para las pantallas laterales: notas musicales de fuego. Ocupa el lugar de la luna y el atardecer del previo."
   },
   {
    "fecha": "2026-10-14",
@@ -79,6 +79,27 @@
    "escena": "B0.00",
    "hecho": false,
    "texto": "Revisar la antorcha izquierda v03c: llama del mismo tamaño que la derecha (tablero: Reproducir juntas; DXV en 06_ENTREGA_DXV)."
+  },
+  {
+   "fecha": "2026-10-14",
+   "tipo": "entrega",
+   "escena": "B0.00",
+   "hecho": true,
+   "texto": "Propuesta: la antorcha como nota musical de fuego (2 imágenes y un video MiniMax)."
+  },
+  {
+   "fecha": "2026-10-14",
+   "tipo": "entrega",
+   "escena": "B0.01",
+   "hecho": true,
+   "texto": "Video MiniMax de Buenaventura con la guitarra junto al fogón, junto a las 2 imágenes de esa propuesta."
+  },
+  {
+   "fecha": "2026-10-14",
+   "tipo": "revision",
+   "escena": "General",
+   "hecho": true,
+   "texto": "Tablero revisado: los textos describen lo que se ve (de dónde sale cada noche y atardecer, propuestas aparte del panel de German, badges y filtros)."
   }
  ],
  "notas_ignoradas": [

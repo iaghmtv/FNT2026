@@ -43,5 +43,9 @@
   "fecha": "2026-10-14 18:32",
   "fuente": "03_BLOQUES/B1_PAISAJES/B1.09_VERDES_LLANURAS/02_IA_GENERACION/PROPUESTA PANTALLA",
   "nota": "Centro y montana derecha nuevos; la izquierda sigue con la luna del 10/10 (no vino imagen nueva). Anteriores en LUNA_2026_v2/_reemplazadas."
+ },
+ "textos": {
+  "atardecer": "IA sobre el cuadro que se proyectó en 2025 (Qwen + Flux Krea, 13/10): misma composición, siempre atardecer, con la silueta real del cerro.",
+  "luna": "Centro y montaña derecha: imágenes del equipo (14/10). Montaña izquierda: todavía el previo IA del 10/10 (falta la imagen nueva)."
  }
 }

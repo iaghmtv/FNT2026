@@ -144,7 +144,7 @@ a.cnote:hover,a.cnote:focus-visible{background:color-mix(in srgb,var(--t) 24%,va
     <button class="fbtn" data-f="todas" aria-pressed="true">Todas</button>
     <button class="fbtn" data-f="conrefs" aria-pressed="false">Con referencias</button>
     <button class="fbtn" data-f="sinrefs" aria-pressed="false">Sin referencias</button>
-    <button class="fbtn" data-f="previos" aria-pressed="false">Con previos IA</button>
+    <button class="fbtn" data-f="previos" aria-pressed="false">Con propuestas o previos</button>
     <input id="q" type="search" placeholder="Buscar escena…" aria-label="Buscar escena">
   </div>
 </div></header>
@@ -152,26 +152,29 @@ a.cnote:hover,a.cnote:focus-visible{background:color-mix(in srgb,var(--t) 24%,va
 <main class="wrap">
 <section class="hero">
   <div class="kicker">El Fogón de los Arrieros · Jáchal · GHM</div>
-  <h1>Tablero de referencias y previos por escena</h1>
-  <p class="lead">Cada uno del equipo puede subir imágenes de referencia a cualquier escena para encauzar su perfil visual. En la PC de render, ComfyUI toma esas referencias y genera los previos: noche de luna, atardecer y el timelapse de luz de cada montaña, con la forma real de los cerros.</p>
+  <h1>Tablero de propuestas por escena</h1>
+  <p class="lead">Escena por escena: a la izquierda, lo que se proyectó en 2025; a la derecha, las propuestas 2026 (German, el equipo, las animaciones terminadas y la noche y el atardecer de cada pantalla, con la forma real de los cerros). Cualquiera del equipo puede subir referencias o pedir un previo, y anotar entregas y revisiones en el calendario del final.</p>
   <div class="grid3">
     <div class="card"><h4>Criterio visual 2026</h4><ul>
       <li>El show es de noche: los paisajes viven en <b>luz de luna azul</b> y en <b>atardeceres naranjas</b>.</li>
       <li>El fuerte del mapping es el <b>color y la iluminación</b> que transforman la montaña, más elementos bien claros y definidos.</li>
       <li>Nada de elementos altos en las laderas (cactus, árboles, postes): desde el fondo de las tribunas se ven acostados.</li>
       <li>Las cascadas las rehace Diego en Blender 3D; las banderas las resuelve German.</li>
+      <li><b>Bloque 0</b>: blanco y negro / sepia, con el fuego como único color.</li>
     </ul></div>
-    <div class="card"><h4>El paso de luz</h4><ul>
+    <div class="card"><h4>El paso de luz · timelapses</h4><ul>
       <li>La luz entra <b>desde el centro</b>: en la montaña derecha por la izquierda, en la izquierda por la derecha.</li>
       <li>Arranca como contraluz detrás de la cresta y barre el relieve marcando los detalles.</li>
       <li><b>Pasa rápido por el mediodía</b> (pocas sombras) y <b>se demora en la golden hour</b>.</li>
       <li>Loop: luna → amanecer → mediodía → atardecer → crepúsculo → luna.</li>
+      <li id="tlscenes" hidden></li>
     </ul></div>
     <div class="card"><h4>Cómo participar</h4><ol>
       <li>En la escena tocá <b>✦ Pedir previo con prompt</b> (necesitás tu usuario de GitHub invitado al repo).</li>
       <li>Escribí qué buscás, arrastrá hasta 4 imágenes de referencia y marcá luna, atardecer y/o timelapse.</li>
       <li><b>Submit</b>: la cola lo manda a la PC16 o la PC17, la que esté libre, y te responde en el pedido con los previos (unos 3 min; con timelapse, ~10).</li>
       <li>Para sumar imágenes sin generar, usá <b>＋ Subir referencia</b>.</li>
+      <li>Entregas, revisiones y reuniones: botón <b>Calendario</b> de arriba y <b>+</b> en el día.</li>
     </ol></div>
   </div>
 </section>
@@ -223,23 +226,25 @@ function stage(get,prefix){var c=get('cen'),i=get('izq'),d=get('der');var h='<di
 function chips(a,cls){return (a||[]).map(function(t){return '<span class="chip '+(cls||'')+'">'+esc(t)+'</span>'}).join('')}
 function list(a){return a&&a.length?'<ul>'+a.map(function(t){return '<li>'+esc(t)+'</li>'}).join('')+'</ul>':''}
 
+function luces(p){var f=(p&&p.files)||{};var n=f.luna_cen||f.luna_izq||f.luna_der,t=f.atardecer_cen||f.atardecer_izq||f.atardecer_der,tl=f.timelapse_izq||f.timelapse_der;var s=n&&t?'Noche y atardecer':n?'Noche':t?'Atardecer':'';return tl?(s?s+' · timelapse':'Timelapse'):s}
+function vis(p){var f=(p&&p.files)||{};return Object.keys(f).filter(function(k){return f[k]})}
+function panelProps(p){return ((p&&p.propuestas)||[]).map(function(pr){return '<div class="sub26"><h4 class="h26">'+esc(pr.titulo||'Propuesta')+'</h4>'+(pr.nota?'<p class="small">'+esc(pr.nota)+'</p>':'')+'<div class="grid2">'+(pr.imgs||[]).map(function(x){return x.video?'<figure style="grid-column:1/-1"><video src="'+esc(x.src)+'"'+(x.poster?' poster="'+esc(x.poster)+'"':'')+' controls muted loop playsinline autoplay preload="metadata"></video><figcaption>'+esc(x.cap)+'</figcaption></figure>':'<figure>'+img(x.src,x.cap)+'<figcaption>'+esc(x.cap)+'</figcaption></figure>'}).join('')+'</div></div>'}).join('')}
 function panelPrevios(s,repo,branch){var p=s.previos;
   if(!s.generar) return '<div class="empty">Esta escena no pasa por el generador. '+esc(s.nota||'')+'</div>';
   if(!p) return '<div class="empty">Todavía no hay previos. Se generan en la PC de render con <code>GENERAR_PREVIOS.bat</code>.</div>';
-  var f=p.files||{};var h='';
+  var f=p.files||{};var T=p.textos||{};var h='';
   if(p.desactualizado) h+='<p class="nota" style="margin:0 0 10px">Hay referencias nuevas desde la última generación: estos previos se van a rehacer.</p>';
-  if(p.propuesta){var pr=p.propuesta;h+='<span class="lbl">'+esc(pr.titulo||'Propuesta')+'</span>'+(pr.nota?'<p class="small">'+esc(pr.nota)+'</p>':'')+'<div class="grid2" style="margin-bottom:14px">'+(pr.imgs||[]).map(function(x){return x.video?'<figure style="grid-column:1/-1"><video src="'+esc(x.src)+'"'+(x.poster?' poster="'+esc(x.poster)+'"':'')+' controls muted loop playsinline autoplay preload="metadata"></video><figcaption>'+esc(x.cap)+'</figcaption></figure>':'<figure>'+img(x.src,x.cap)+'<figcaption>'+esc(x.cap)+'</figcaption></figure>'}).join('')+'</div>'}
-  var LS=['luna','atardecer'].filter(function(L){return f[L+'_cen']||f[L+'_izq']||f[L+'_der']});var LN={luna:'☾ Noche de luna',atardecer:'☀ Atardecer'};
+  var LS=['luna','atardecer'].filter(function(L){return f[L+'_cen']||f[L+'_izq']||f[L+'_der']});var LN={luna:'☾ Noche',atardecer:'☀ Atardecer'};
   if(LS.length>1)h+='<div class="seg" role="group" aria-label="Luz">'+LS.map(function(L,ix){return '<button class="'+L+'" data-l="'+L+'" aria-pressed="'+(ix?'false':'true')+'">'+LN[L]+'</button>'}).join('')+'</div>';
   else if(LS.length)h+='<p class="hint" style="margin:0 0 8px">'+LN[LS[0]]+'</p>';
-  LS.forEach(function(L,ix){h+='<div class="lset" data-l="'+L+'"'+(ix?' hidden':'')+'>'+stage(function(k){return f[L+'_'+k]},'Previo '+L+' · ')+'</div>'});
-  if(f.timelapse_izq||f.timelapse_der){h+='<div class="tl"><h5>Timelapse de luz (loop · la luz entra desde el centro)</h5><div class="mtn">';
+  LS.forEach(function(L,ix){h+='<div class="lset" data-l="'+L+'"'+(ix?' hidden':'')+'>'+(T[L]?'<p class="small" style="margin:0 0 8px">'+esc(T[L])+'</p>':'')+stage(function(k){return f[L+'_'+k]},LN[L]+' · ')+'</div>'});
+  if(f.timelapse_izq||f.timelapse_der){h+='<div class="tl"><h5>'+esc(T.timelapse||'Timelapse de luz del 10/10 (loop · la luz entra desde el centro)')+'</h5><div class="mtn">';
     ['izq','der'].forEach(function(k){if(f['timelapse_'+k])h+='<figure><video src="'+esc(f['timelapse_'+k])+'" muted loop playsinline autoplay preload="metadata"'+(f['luz_'+k]?' poster="'+esc(f['luz_'+k])+'"':'')+'></video><figcaption>'+LBL[k]+'</figcaption>'+(f['luz_'+k]?img(f['luz_'+k],'Cuadros guía de luz · '+LBL[k]):'')+'</figure>'});
     h+='</div></div>'}
   var dir='previos/'+encodeURIComponent(s.slug);
   h+='<div class="upl" style="margin-top:12px"><a class="btn ghost" href="https://github.com/'+repo+'/upload/'+branch+'/'+dir+'" target="_blank" rel="noopener">⇄ Reemplazar imágenes</a><a class="btn ghost" href="https://github.com/'+repo+'/tree/'+branch+'/'+dir+'" target="_blank" rel="noopener">Ver carpeta</a></div>';
-  h+='<p class="hint" style="margin:-4px 0 0"><b>Reemplazar:</b> arrastrá la imagen nueva con <b>el mismo nombre</b> que la que querés cambiar y hacé <i>Commit changes</i>; en 1–2 minutos se ve acá. Nombres: '+Object.keys(f).filter(function(k){return f[k]}).map(function(k){return '<code>'+esc(f[k].split('/').pop().split('?')[0])+'</code>'}).join(' ')+'.</p>';
-  h+='<p class="hint" style="margin-top:10px">Generado '+esc(p.generated_at)+' · motor '+esc(p.engine)+' · referencias usadas: '+(p.refs_al_generar&&p.refs_al_generar.length?esc(p.refs_al_generar.join(', ')):'ninguna (solo el prompt de la escena)')+'</p>';
+  h+='<p class="hint" style="margin:-4px 0 0"><b>Reemplazar:</b> arrastrá la imagen nueva con <b>el mismo nombre</b> que la que querés cambiar y hacé <i>Commit changes</i>; en 1–2 minutos se ve acá. Nombres: '+vis(p).map(function(k){return '<code>'+esc(f[k].split('/').pop().split('?')[0])+'</code>'}).join(' ')+'.</p>';
+  if(p.refs_al_generar&&p.refs_al_generar.length)h+='<p class="hint" style="margin-top:10px">Referencias del equipo usadas: '+esc(p.refs_al_generar.join(', '))+'</p>';
   return h}
 
 function panelAnim(an){var v=function(k){return an[k]?'<figure><video src="'+esc(an[k])+'" muted loop playsinline autoplay controls preload="metadata"></video><figcaption>'+LBL[k]+'</figcaption></figure>':''};
@@ -248,7 +253,7 @@ function panelAnim(an){var v=function(k){return an[k]?'<figure><video src="'+esc
   h+='<div class="mtn">'+v('izq')+v('der')+'</div>';
   h+='<div class="upl" style="margin-top:10px"><button class="btn ghost" type="button" onclick="juntas(this)">▶ Reproducir juntas desde el inicio</button></div>';
   return h}
-function juntas(b){var vs=b.closest('.sub26').querySelectorAll('video');vs.forEach(function(x){x.pause();x.currentTime=0});vs.forEach(function(x){x.play()})}
+window.juntas=function(b){var vs=b.closest('.sub26').querySelectorAll('video');vs.forEach(function(x){x.pause();x.currentTime=0});vs.forEach(function(x){x.play()})}
 var MES=['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'],DIA=['dom','lun','mar','mié','jue','vie','sáb'];
 var TIPO={entrega:'Entrega',revision:'Revisión',correccion:'Corrección',otro:'Reunión / otro'};
 function iso(d){return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')}
@@ -295,8 +300,11 @@ function panel25(c){if(!c||!c.y25) return '<div class="empty">Sin datos 2025.</d
   if(c.fix25&&c.fix25.length)h+='<span class="lbl">Correcciones del cliente 2025</span><div class="small">'+list(c.fix25)+'</div>';
   return h}
 
-function panelGerman(c){if(!c||c.status26==='sin') return '<div class="empty">German todavía no trabajó esta escena.</div>';
-  var h=(c.crit26?'<span class="lbl">Diagnóstico</span><p class="small">'+esc(c.crit26)+'</p>':'')+'<p class="small">'+esc(c.y26)+'</p>';
+function panelGerman(c){var gg=(c&&c.img26)||[];
+  if(!c||(c.status26==='sin'&&!gg.length)) return '<div class="empty">'+esc((c&&c.y26)||'German todavía no trabajó esta escena.')+'</div>';
+  var h=c.crit26?'<span class="lbl">Diagnóstico de la pieza 2025</span><p class="small">'+esc(c.crit26)+'</p>':'';
+  if(c.oculto26&&!gg.length) return h+'<p class="small">Sus variantes Flux de esta escena no se muestran en el tablero desde el 14/10. Se pueden ver en el <a href="comparativo.html#'+esc(c.code)+'" target="_blank" rel="noopener">comparativo 2025 vs German</a>.</p>';
+  h+='<p class="small">'+esc(c.y26)+'</p>';
   var g=c.img26||[];var cen=g.filter(function(x){return x.kind==='cen'})[0],iz=g.filter(function(x){return x.kind==='izq'})[0],de=g.filter(function(x){return x.kind==='der'})[0];
   if(cen||iz||de)h+=stage(function(k){var o={cen:cen,izq:iz,der:de}[k];return o&&o.src},'German · ');
   g.filter(function(x){return x.kind==='strip'||x.kind==='single'}).forEach(function(x){h+='<figure style="margin-top:8px">'+img(x.src,x.cap)+'<figcaption>'+esc(x.cap)+'</figcaption></figure>'});
@@ -328,9 +336,9 @@ function audioRow(s,c){
   return h+audioBody(s.audio,c,'aud_'+s.code.replace('.','_'))+'</section>'}
 var KIND={paisaje:'Paisaje',tela:'Tela / poncho',fuego:'Fuego',bandera:'Bandera'};
 function scene(s,repo,branch){var c=s.ctx||{};var p=s.previos;var nref=s.refs.length;
-  var g26=c.status26&&c.status26!=='sin';
-  var badges='<span class="badge '+(nref?'b-ok':'b-no')+'">'+nref+' ref.</span>'+(g26?'<span class="badge b-mid">Propuesta German</span>':'')+(p?'<span class="badge b-moon">Previos IA</span>':'')+(s.timelapse?'<span class="badge b-moon">Timelapse</span>':'')+(p&&p.animacion?'<span class="badge b-ok">Animación 2026</span>':'');
-  var h='<article class="scene" id="'+esc(s.code)+'" data-refs="'+nref+'" data-prev="'+(p?1:0)+'" data-text="'+esc((s.code+' '+s.title+' '+(s.verse||'')).toLowerCase())+'">';
+  var g26=(c.img26||[]).length>0;var fv=(p&&p.files)||{};var nv=vis(p).length;var npr=(p&&p.propuestas||[]).length;
+  var badges='<span class="badge '+(nref?'b-ok':'b-no')+'">'+nref+' ref.</span>'+(g26?'<span class="badge b-mid">Propuesta German</span>':'')+(p&&p.animacion?'<span class="badge b-ok">Animación 2026</span>':'')+(npr?'<span class="badge b-ok">Propuesta pantallas</span>':'')+(nv?'<span class="badge b-moon">'+esc(luces(p))+'</span>':'');
+  var h='<article class="scene" id="'+esc(s.code)+'" data-refs="'+nref+'" data-prev="'+(nv||npr||(p&&p.animacion)?1:0)+'" data-text="'+esc((s.code+' '+s.title+' '+(s.verse||'')).toLowerCase())+'">';
   h+='<div class="shead"><span class="code">'+esc(s.code)+'</span><h3>'+esc(s.title)+'</h3><span class="meta">⏱ '+esc(s.time)+' · '+esc(KIND[s.kind]||s.kind)+(c.dur?' · '+esc(c.dur):'')+'</span><div class="badges">'+badges+'</div></div>';
   if(s.verse)h+='<blockquote>'+esc(s.verse)+'</blockquote>';
   if(s.nota)h+='<p class="nota">'+esc(s.nota)+'</p>';
@@ -340,7 +348,8 @@ function scene(s,repo,branch){var c=s.ctx||{};var p=s.previos;var nref=s.refs.le
   h+='<section class="col c26"><div class="colh">Propuestas 2026</div>';
   h+='<div class="sub26"><h4 class="h26">Propuesta de German</h4>'+panelGerman(c)+'</div>';
   if(p&&p.animacion)h+='<div class="sub26"><h4 class="h26">'+esc(p.animacion.titulo||'Animación 2026')+'</h4>'+panelAnim(p.animacion)+'</div>';
-  h+='<div class="sub26"><h4 class="h26">Previos IA · ComfyUI</h4>'+panelPrevios(s,repo,branch)+'</div>';
+  h+=panelProps(p);
+  if(s.generar&&(!p||nv))h+='<div class="sub26"><h4 class="h26">'+esc(p?luces(p):'Previos')+'</h4>'+panelPrevios(s,repo,branch)+'</div>';
   h+='</section></div>';
   h+='<section class="refsrow"><div class="colh">Referencias del equipo · '+nref+'</div>'+panelRefs(s,repo,branch)+'</section>';
   return h+'</article>'}
@@ -355,6 +364,8 @@ fetch('data/site.json?t='+Date.now(),{cache:'no-store'}).then(function(r){return
   if(cal.desde)document.getElementById('calsub').innerHTML='Entregas, revisiones y correcciones del '+fecha(cal.desde)+' al '+fecha(cal.hasta)+'. Tocá <b>+</b> en un día para agregar una nota: se abre GitHub con la fecha cargada, elegís el tipo y la escena y escribís el detalle. Aparece acá en 1–2 minutos. Cuando esté resuelta, cerrá la nota en GitHub y queda tachada con ✓.';
   document.getElementById('calacc').innerHTML='<a class="btn" href="https://github.com/'+d.repo+'/issues/new?template=nota.yml" target="_blank" rel="noopener">＋ Nueva nota</a><a class="btn ghost" href="https://github.com/'+d.repo+'/issues?q='+encodeURIComponent('is:issue "[Nota]" in:title')+'" target="_blank" rel="noopener">Ver todas las notas en GitHub</a>';
   document.getElementById('cal').innerHTML=calendario(cal,d.repo);
+  var tl=[];d.blocks.forEach(function(b){b.scenes.forEach(function(s){var f=(s.previos&&s.previos.files)||{};if(f.timelapse_izq||f.timelapse_der)tl.push(s.code)})});
+  var te=document.getElementById('tlscenes');if(te&&tl.length){te.innerHTML='Hoy se ven en '+tl.map(function(c){return '<a href="#'+c+'">'+c+'</a>'}).join(' · ')+'.';te.hidden=false}
   wire(); applyFilter(store.get('fnt-filter')||'todas');
   if(location.hash.length>1)setTimeout(function(){irA(decodeURIComponent(location.hash.slice(1)))},200);
 }).catch(function(e){document.getElementById('loading').textContent='No se pudieron cargar los datos ('+e+').'});

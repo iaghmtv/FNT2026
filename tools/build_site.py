@@ -135,7 +135,13 @@ def main():
     oprev, oger = ocultos.get("previos", {}), ocultos.get("german_por_tipo", {})
     for code, kinds in oger.items():
         if code in cmap:
-            cmap[code] = dict(cmap[code], img26=[x for x in cmap[code].get("img26", []) if x.get("kind") not in kinds])
+            cmap[code] = dict(cmap[code], img26=[x for x in cmap[code].get("img26", []) if x.get("kind") not in kinds], oculto26=True)
+    for code, c in list(cmap.items()):     # textos propios del tablero (cuando lo visible cambió): y26_tablero, t26_tablero, todo26_tablero
+        c = dict(c)
+        for k in ("y26", "t26", "todo26"):
+            if k + "_tablero" in c:
+                c[k] = c.pop(k + "_tablero")
+        cmap[code] = c
     ap = os.path.join(ROOT, "data", "audio.json")
     audio = json.load(open(ap, encoding="utf-8")) if os.path.exists(ap) else {"escenas": {}, "finales": [], "sin_track": {}}
     out = {"generado": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"), "repo": REPO, "branch": BRANCH, "blocks": []}
@@ -173,10 +179,18 @@ def main():
             prev = json.load(open(mp, encoding="utf-8"))
             prev["files"] = {k: ver(f"previos/{slug}/{v}") for k, v in prev.get("files", {}).items() if k not in oprev.get(e["code"], [])}
             prev.pop("prompts", None)
-            for im in (prev.get("propuesta") or {}).get("imgs", []):   # propuesta en el lugar de un previo
-                im["src"] = ver(im["src"])
-                if im.get("poster"):
-                    im["poster"] = ver(im["poster"])
+            props = prev.pop("propuestas", None) or ([prev["propuesta"]] if prev.get("propuesta") else [])
+            prev.pop("propuesta", None)
+            for pr in props:                 # propuestas para las pantallas (cada una con su bloque)
+                for im in pr.get("imgs", []):
+                    im["src"] = ver(im["src"])
+                    if im.get("poster"):
+                        im["poster"] = ver(im["poster"])
+            prev["propuestas"] = props
+            txt = dict(prev.pop("textos", None) or {})   # de dónde sale cada luz (equipo o IA)
+            for k in ("luna", "atardecer"):
+                txt.setdefault(k, "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro).")
+            prev["textos"] = txt
             if prev.get("animacion"):        # render final de la escena (videos por montaña)
                 an = prev["animacion"]
                 for k in ("izq", "cen", "der"):

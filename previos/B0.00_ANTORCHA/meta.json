@@ -29,26 +29,28 @@
   "fecha": "2026-10-14",
   "izq": "antorcha_izq_v03c.mp4",
   "der": "antorcha_der_v03.mp4",
-  "nota": "Una antorcha por montaña: la izquierda camina de izquierda a derecha y la derecha de derecha a izquierda, llegan al centro al mismo tiempo. Luz real sobre el cerro (Blender), estela de humo, llama fire_torch y chispas que se avivan en el centro; se apagan y la pantalla queda en negro. Preview a media resolución; entrega DXV en 03_BLOQUES/B0_APERTURA/B0.00_ANTORCHA/06_ENTREGA_DXV (izq 3840x1200 v03c, der 4096x1200 v03). La izquierda v03c (14/10) tiene la llama del mismo tamaño en pantalla que la derecha."
+  "nota": "Una antorcha por montaña: la izquierda va de izquierda a derecha y la derecha de derecha a izquierda; llegan al centro al mismo tiempo, se apagan y la pantalla queda en negro. Luz real sobre el cerro (Blender), estela de humo, llama fire_torch y chispas que se avivan en el centro. Izquierda v03c (14/10, llama del mismo tamaño que la derecha) · derecha v03. Preview a media resolución; entrega DXV en 03_BLOQUES/B0_APERTURA/B0.00_ANTORCHA/06_ENTREGA_DXV."
  },
- "propuesta": {
-  "titulo": "Propuesta pantallas · la antorcha como nota musical de fuego",
-  "nota": "En lugar de la llama, una nota musical de fuego recorre el cerro e ilumina la roca (sobre el encuadre de la antorcha 2025). Reemplaza a la luna y el atardecer del previo.",
-  "imgs": [
-   {
-    "src": "assets/propuestas/B0.00_nota_musical_fuego_animada.mp4",
-    "poster": "assets/propuestas/B0.00_nota_musical_fuego_animada.jpg",
-    "video": true,
-    "cap": "Animada (MiniMax, 6,6 s) · la nota de fuego avanza sobre la roca y la ilumina"
-   },
-   {
-    "src": "assets/propuestas/B0.00_nota_musical_fuego_A.jpg",
-    "cap": "Variante A · la nota de fuego enciende la roca, con chispas"
-   },
-   {
-    "src": "assets/propuestas/B0.00_nota_musical_fuego_B.jpg",
-    "cap": "Variante B · la nota de fuego más definida, con humo y chispas"
-   }
-  ]
- }
+ "propuestas": [
+  {
+   "titulo": "Propuesta · la antorcha como nota musical de fuego",
+   "nota": "Alternativa a la antorcha: en lugar de la llama, una nota musical de fuego recorre el cerro e ilumina la roca (sobre el encuadre de la antorcha 2025). El fuego es el único color, como pide el Bloque 0.",
+   "imgs": [
+    {
+     "src": "assets/propuestas/B0.00_nota_musical_fuego_animada.mp4",
+     "poster": "assets/propuestas/B0.00_nota_musical_fuego_animada.jpg",
+     "video": true,
+     "cap": "Animada (MiniMax, 6,6 s) · la nota de fuego avanza sobre la roca y la ilumina"
+    },
+    {
+     "src": "assets/propuestas/B0.00_nota_musical_fuego_A.jpg",
+     "cap": "Variante A · la nota de fuego enciende la roca, con chispas"
+    },
+    {
+     "src": "assets/propuestas/B0.00_nota_musical_fuego_B.jpg",
+     "cap": "Variante B · la nota de fuego más definida, con humo y chispas"
+    }
+   ]
+  }
+ ]
 }
