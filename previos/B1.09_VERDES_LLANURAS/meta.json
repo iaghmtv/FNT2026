@@ -4,7 +4,7 @@
  "version": "e2ee48b972",
  "scene_hash": "64fa913f",
  "engine": "comfy",
- "generated_at": "2026-10-14 18:32",
+ "generated_at": "2026-10-15 09:22",
  "refs": [],
  "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
  "files": {
@@ -21,7 +21,7 @@
  },
  "seed": 10494647,
  "prompts": {
-  "luna_izq": "Moonlit night scene. Everything is bathed in cold blue moonlight coming from the right: silver-blue rim light on the ridges, deep navy-blue shadows in every gully, strong blue color grading, local colors desaturated by the moonlight, very dark sky with a few stars. The landscape covers the whole mountain from base to summit. Treat the mountain as one continuous surface texture: vegetation only as low ground cover or as a continuous canopy seen from above, no isolated tall trees, no tall cacti, no poles, no vertical objects, no buildings. The beauty comes from color, rock texture, strata and the raking light that sculpts every ridge and gully. Low hills of Sierra de la Ventana covered in tall green and golden pampas grass waving in the wind, scattered quartzite outcrops. Natural landscape photography, highly detailed, realistic textures, no people, no text, no buildings unless described.",
+  "luna_izq": "Noche del equipo (15/10, ElevenLabs gpt-image, PROPUESTA PANTALLA): el atardecer v2 de la montaña izquierda llevado a la noche (cerro boscoso, río con piedras); franja y15-465 alineada con el atardecer + máscara + silueta 2025, sin cielo.",
   "luna_cen": "Noche del equipo (14/10, ElevenLabs gpt-image, PROPUESTA PANTALLA): lomas, lago y piedras; cada panel alineado con el atardecer v2 (x 60-1776) + mascara de pantallas.",
   "luna_der": "Noche del equipo (14/10): rio entre sierras; franja alineada con el atardecer v2 + mascara + silueta 2025 (sin cielo).",
   "atardecer_izq": "Qwen (relight 2025): Relight this exact image as a golden hour sunset. Warm low orange sunlight comes from the left and rakes across the landscape: glowing orange and amber highlights on every ridge, rock, tree and plant, long soft shadows on the opposite sides, warm golden color grading. Vegetation keeps its natural green color, only lit by the warm golden light. There is no sky in this image: everything above the ridgeline, the treetops and the hilltops is the pure black background; do not paint any sky, clouds, sunset glow or distant mountains above the landscape, and keep the pale distant slopes as land. Keep every tree, plant, flower, rock, cliff, water and the whole composition exactly the same; only the lighting and colors change. Do not add any waterfall or new element. Crisp clear air: no fog, no mist, no haze, no smoke and no glow along the outline; the outer silhouette stays sharp and clean against the black background. Keep the black background pure black. || Flux Krea img2img 0.5: Cinematic film still, golden hour sunset: green wooded sierras with granite boulders along the shore of a calm lake and a winding river. Warm low sunlight from the left rakes across the landscape with long soft shadows; rich natural colors, green vegetation stays green under the warm golden light. No waterfalls. There is no sky: above the ridgeline and the treetops everything is pure black, no sky, no clouds, no glow. Shot on ARRI Alexa with an anamorphic lens, real filmed footage, natural film grain, photorealistic, sharp detailed textures, crisp clear air, no fog, no mist, no haze, no glow along the outline. The black background stays pure black.",
@@ -42,10 +42,11 @@
  "luna_v2": {
   "fecha": "2026-10-14 18:32",
   "fuente": "03_BLOQUES/B1_PAISAJES/B1.09_VERDES_LLANURAS/02_IA_GENERACION/PROPUESTA PANTALLA",
-  "nota": "Centro y montana derecha nuevos; la izquierda sigue con la luna del 10/10 (no vino imagen nueva). Anteriores en LUNA_2026_v2/_reemplazadas."
+  "nota": "Centro y montaña derecha del 14/10; montaña izquierda del 15/10. Anteriores en LUNA_2026_v2/_reemplazadas.",
+  "fecha_izq": "2026-10-15 09:22"
  },
  "textos": {
   "atardecer": "IA sobre el cuadro que se proyectó en 2025 (Qwen + Flux Krea, 13/10): misma composición, siempre atardecer, con la silueta real del cerro.",
-  "luna": "Centro y montaña derecha: imágenes del equipo (14/10). Montaña izquierda: todavía el previo IA del 10/10 (falta la imagen nueva)."
+  "luna": "Imágenes del equipo (carpeta PROPUESTA PANTALLA de la escena), ajustadas a cada pantalla con su máscara: centro y montaña derecha del 14/10; montaña izquierda del 15/10, la misma composición que el atardecer."
  }
 }

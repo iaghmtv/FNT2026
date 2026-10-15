@@ -63,8 +63,8 @@
    "fecha": "2026-10-14",
    "tipo": "revision",
    "escena": "B1.09",
-   "hecho": false,
-   "texto": "Falta la noche de la montaña izquierda (sigue la del 10/10)."
+   "hecho": true,
+   "texto": "Falta la noche de la montaña izquierda (sigue la del 10/10). Resuelto el 15/10."
   },
   {
    "fecha": "2026-10-14",
@@ -100,6 +100,13 @@
    "escena": "General",
    "hecho": true,
    "texto": "Tablero revisado: los textos describen lo que se ve (de dónde sale cada noche y atardecer, propuestas aparte del panel de German, badges y filtros)."
+  },
+  {
+   "fecha": "2026-10-15",
+   "tipo": "correccion",
+   "escena": "B1.09",
+   "hecho": true,
+   "texto": "Verdes llanuras: noche de la montaña izquierda con la imagen nueva del equipo (misma composición que el atardecer, sin cielo)."
   }
  ],
  "notas_ignoradas": [

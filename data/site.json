@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-15 01:05 UTC",
+ "generado": "2026-10-15 12:22 UTC",
  "repo": "iaghmtv/FNT2026",
  "branch": "main",
  "blocks": [
@@ -1183,7 +1183,18 @@
       "refs_al_generar": [],
       "desactualizado": false
      },
-     "pedidos": []
+     "pedidos": [
+      {
+       "n": 3,
+       "url": "https://github.com/iaghmtv/FNT2026/issues/3",
+       "autor": "Ariel131313",
+       "fecha": "2026-10-15 02:30",
+       "prompt": "la version de noche me gusta, me gustaria que la misma escena se vea al atardecer",
+       "estado": "en cola",
+       "maquina": "",
+       "files": {}
+      }
+     ]
     },
     {
      "code": "B1.09",
@@ -1250,10 +1261,10 @@
       "version": "e2ee48b972",
       "scene_hash": "64fa913f",
       "engine": "comfy",
-      "generated_at": "2026-10-14 18:32",
+      "generated_at": "2026-10-15 09:22",
       "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
       "files": {
-       "luna_izq": "previos/B1.09_VERDES_LLANURAS/luna_izq.jpg?v=96efcd71",
+       "luna_izq": "previos/B1.09_VERDES_LLANURAS/luna_izq.jpg?v=329855f5",
        "luna_cen": "previos/B1.09_VERDES_LLANURAS/luna_cen.jpg?v=e52caac8",
        "luna_der": "previos/B1.09_VERDES_LLANURAS/luna_der.jpg?v=6baddc63",
        "atardecer_izq": "previos/B1.09_VERDES_LLANURAS/atardecer_izq.jpg?v=b8a11aa1",
@@ -1275,12 +1286,13 @@
       "luna_v2": {
        "fecha": "2026-10-14 18:32",
        "fuente": "03_BLOQUES/B1_PAISAJES/B1.09_VERDES_LLANURAS/02_IA_GENERACION/PROPUESTA PANTALLA",
-       "nota": "Centro y montana derecha nuevos; la izquierda sigue con la luna del 10/10 (no vino imagen nueva). Anteriores en LUNA_2026_v2/_reemplazadas."
+       "nota": "Centro y montaña derecha del 14/10; montaña izquierda del 15/10. Anteriores en LUNA_2026_v2/_reemplazadas.",
+       "fecha_izq": "2026-10-15 09:22"
       },
       "propuestas": [],
       "textos": {
        "atardecer": "IA sobre el cuadro que se proyectó en 2025 (Qwen + Flux Krea, 13/10): misma composición, siempre atardecer, con la silueta real del cerro.",
-       "luna": "Centro y montaña derecha: imágenes del equipo (14/10). Montaña izquierda: todavía el previo IA del 10/10 (falta la imagen nueva)."
+       "luna": "Imágenes del equipo (carpeta PROPUESTA PANTALLA de la escena), ajustadas a cada pantalla con su máscara: centro y montaña derecha del 14/10; montaña izquierda del 15/10, la misma composición que el atardecer."
       },
       "refs_al_generar": [],
       "desactualizado": false
@@ -3302,8 +3314,8 @@
     "fecha": "2026-10-14",
     "tipo": "revision",
     "escena": "B1.09",
-    "hecho": false,
-    "texto": "Falta la noche de la montaña izquierda (sigue la del 10/10).",
+    "hecho": true,
+    "texto": "Falta la noche de la montaña izquierda (sigue la del 10/10). Resuelto el 15/10.",
     "fuente": "tablero"
    },
    {
@@ -3344,6 +3356,14 @@
     "escena": "B0.00",
     "hecho": false,
     "texto": "Revisar la antorcha izquierda v03c: llama del mismo tamaño que la derecha (tablero: Reproducir juntas; DXV en 06_ENTREGA_DXV).",
+    "fuente": "tablero"
+   },
+   {
+    "fecha": "2026-10-15",
+    "tipo": "correccion",
+    "escena": "B1.09",
+    "hecho": true,
+    "texto": "Verdes llanuras: noche de la montaña izquierda con la imagen nueva del equipo (misma composición que el atardecer, sin cielo).",
     "fuente": "tablero"
    },
    {
