@@ -26,16 +26,16 @@
  },
  "propuestas": [
   {
-   "titulo": "Propuesta 2026 · poncho del lugar de origen en montañas y laterales",
-   "nota": "Versiones en baja del 16/10 (ComfyUI, Flux Krea). En las montañas va solo la textura sobre el relieve real de cada cerro, recortada con la máscara de mapping; en el LED centro, las laterales con el principal 2025 como referencia. Poncho pampa marrón con guarda pampa (el fondo de poncho marrón estaba aprobado en 2025).",
+   "titulo": "Propuesta 2026 · poncho pampa: ocre 2025 + guarda pampa (montañas y laterales)",
+   "nota": "Pedido del 16/10: la tela con el mismo color que la propuesta 2025 (ocre, RGB 158,97,29, medido en el render final) y el patrón del poncho pampa que dejó el equipo como referencia: guarda de rombos escalonados con cruz central, en marrón oscuro, entre dos listas finas a cada lado. La misma tela y la misma guarda en las dos montañas y en las pantallas laterales, siguiendo los pliegues. Tela generada con Flux Krea; en alta resolución (montañas 3840×1200 y 4096×1200, LED 3712×896). Hay dos versiones de pliegues (A y B).",
    "imgs": [
     {
-     "src": "assets/propuestas/B3.11_poncho_origen_A.jpg",
-     "cap": "Versión A · montaña izquierda, LED centro y montaña derecha"
+     "src": "assets/propuestas/B3.11_poncho_pampa_ocre2025_A.jpg",
+     "cap": "Versión A · montaña izquierda, LED centro y montaña derecha (alta resolución)"
     },
     {
-     "src": "assets/propuestas/B3.11_poncho_origen_B.jpg",
-     "cap": "Versión B · montaña izquierda, LED centro y montaña derecha"
+     "src": "assets/propuestas/B3.11_poncho_pampa_ocre2025_B.jpg",
+     "cap": "Versión B · montaña izquierda, LED centro y montaña derecha (alta resolución)"
     }
    ]
   }
