@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-15 22:58 UTC",
+ "generado": "2026-10-16 13:38 UTC",
  "repo": "iaghmtv/FNT2026",
  "branch": "main",
  "blocks": [
@@ -1803,7 +1803,22 @@
        "luz_der": "previos/B3.01_ENTRERRIANOS_Y_CHAQUENOS/luz_der.jpg?v=1a3d1cf9"
       },
       "seed": 11799438,
-      "propuestas": [],
+      "propuestas": [
+       {
+        "titulo": "Propuesta 2026 · poncho del lugar de origen en montañas y laterales",
+        "nota": "Versiones en baja del 16/10 (ComfyUI, Flux Krea). En las montañas va solo la textura sobre el relieve real de cada cerro, recortada con la máscara de mapping; en el LED centro, las laterales con el principal 2025 como referencia. Jinetes de Entre Ríos y del Chaco: a la izquierda (montaña y lateral) un poncho criollo entrerriano, vicuña con listas punzó y celeste; a la derecha, un textil qom–wichí del Chaco. No encontramos un poncho entrerriano documentado: a confirmar con el equipo.",
+        "imgs": [
+         {
+          "src": "assets/propuestas/B3.01_poncho_origen_A.jpg?v=c15005c5",
+          "cap": "Versión A · montaña izquierda, LED centro y montaña derecha"
+         },
+         {
+          "src": "assets/propuestas/B3.01_poncho_origen_B.jpg?v=e5fe8fb1",
+          "cap": "Versión B · montaña izquierda, LED centro y montaña derecha"
+         }
+        ]
+       }
+      ],
       "textos": {
        "luna": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro).",
        "atardecer": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro)."
@@ -1893,7 +1908,22 @@
        "luz_der": "previos/B3.02_SANTIAGUENO/luz_der.jpg?v=8c457bf8"
       },
       "seed": 7700353,
-      "propuestas": [],
+      "propuestas": [
+       {
+        "titulo": "Propuesta 2026 · poncho del lugar de origen en montañas y laterales",
+        "nota": "Versiones en baja del 16/10 (ComfyUI, Flux Krea). En las montañas va solo la textura sobre el relieve real de cada cerro, recortada con la máscara de mapping; en el LED centro, las laterales con el principal 2025 como referencia. Telar santiagueño con tintes naturales: terracota, óxido, marrón y crudo, con listas finas. Sin un diseño oficial documentado: a confirmar con el equipo.",
+        "imgs": [
+         {
+          "src": "assets/propuestas/B3.02_poncho_origen_A.jpg?v=82bd119b",
+          "cap": "Versión A · montaña izquierda, LED centro y montaña derecha"
+         },
+         {
+          "src": "assets/propuestas/B3.02_poncho_origen_B.jpg?v=9c829105",
+          "cap": "Versión B · montaña izquierda, LED centro y montaña derecha"
+         }
+        ]
+       }
+      ],
       "textos": {
        "luna": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro).",
        "atardecer": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro)."
@@ -1979,7 +2009,22 @@
        "atardecer_der": "previos/B3.03_RANQUEL/atardecer_der.jpg?v=d9047c46"
       },
       "seed": 7408117,
-      "propuestas": [],
+      "propuestas": [
+       {
+        "titulo": "Propuesta 2026 · montañas y laterales de fuego amarillo",
+        "nota": "Versiones en baja del 16/10 (ComfyUI, Flux Krea). En las montañas va solo la textura sobre el relieve real de cada cerro, recortada con la máscara de mapping; en el LED centro, las laterales con el principal 2025 como referencia. Pedido del 16/10: montañas y laterales solo de fuego amarillo, sin poncho. A: muro de fuego que cubre todo el relieve. B: llamaradas. Se quedan las dos propuestas.",
+        "imgs": [
+         {
+          "src": "assets/propuestas/B3.03_fuego_amarillo_A.jpg?v=b1e37315",
+          "cap": "A · muro de fuego: montaña izquierda, LED centro y montaña derecha"
+         },
+         {
+          "src": "assets/propuestas/B3.03_fuego_amarillo_B.jpg?v=8e4fcee3",
+          "cap": "B · llamaradas: montaña izquierda, LED centro y montaña derecha"
+         }
+        ]
+       }
+      ],
       "textos": {
        "luna": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro).",
        "atardecer": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro)."
@@ -2063,7 +2108,22 @@
        "atardecer_der": "previos/B3.04_LOS_DE_GUEMES/atardecer_der.jpg?v=c7452673"
       },
       "seed": 7396943,
-      "propuestas": [],
+      "propuestas": [
+       {
+        "titulo": "Propuesta 2026 · poncho del lugar de origen en montañas y laterales",
+        "nota": "Versiones en baja del 16/10 (ComfyUI, Flux Krea). En las montañas va solo la textura sobre el relieve real de cada cerro, recortada con la máscara de mapping; en el LED centro, las laterales con el principal 2025 como referencia. Poncho salteño (de Güemes): bordó con franjas negras anchas.",
+        "imgs": [
+         {
+          "src": "assets/propuestas/B3.04_poncho_origen_A.jpg?v=d00af1b5",
+          "cap": "Versión A · montaña izquierda, LED centro y montaña derecha"
+         },
+         {
+          "src": "assets/propuestas/B3.04_poncho_origen_B.jpg?v=440cb6eb",
+          "cap": "Versión B · montaña izquierda, LED centro y montaña derecha"
+         }
+        ]
+       }
+      ],
       "textos": {
        "luna": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro).",
        "atardecer": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro)."
@@ -2147,7 +2207,22 @@
        "atardecer_der": "previos/B3.05_LOS_DEL_CHACHO/atardecer_der.jpg?v=d87eac0a"
       },
       "seed": 10874012,
-      "propuestas": [],
+      "propuestas": [
+       {
+        "titulo": "Propuesta 2026 · poncho del lugar de origen en montañas y laterales",
+        "nota": "Versiones en baja del 16/10 (ComfyUI, Flux Krea). En las montañas va solo la textura sobre el relieve real de cada cerro, recortada con la máscara de mapping; en el LED centro, las laterales con el principal 2025 como referencia. Poncho riojano, símbolo oficial de La Rioja (Ley 8.742): fondo rojo, flecos negros, listas en colores de la tierra y guarda en forma de cruz.",
+        "imgs": [
+         {
+          "src": "assets/propuestas/B3.05_poncho_origen_A.jpg?v=ae33bf8b",
+          "cap": "Versión A · montaña izquierda, LED centro y montaña derecha"
+         },
+         {
+          "src": "assets/propuestas/B3.05_poncho_origen_B.jpg?v=a55346b9",
+          "cap": "Versión B · montaña izquierda, LED centro y montaña derecha"
+         }
+        ]
+       }
+      ],
       "textos": {
        "luna": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro).",
        "atardecer": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro)."
@@ -2228,7 +2303,22 @@
        "atardecer_der": "previos/B3.06_ILUSTRE_PAZ/atardecer_der.jpg?v=3fd1b525"
       },
       "seed": 13103480,
-      "propuestas": [],
+      "propuestas": [
+       {
+        "titulo": "Propuesta 2026 · poncho del lugar de origen en montañas y laterales",
+        "nota": "Versiones en baja del 16/10 (ComfyUI, Flux Krea). En las montañas va solo la textura sobre el relieve real de cada cerro, recortada con la máscara de mapping; en el LED centro, las laterales con el principal 2025 como referencia. Paño celeste unitario. El Manco Paz era cordobés, pero no encontramos un poncho cordobés documentado.",
+        "imgs": [
+         {
+          "src": "assets/propuestas/B3.06_poncho_origen_A.jpg?v=608e3772",
+          "cap": "Versión A · montaña izquierda, LED centro y montaña derecha"
+         },
+         {
+          "src": "assets/propuestas/B3.06_poncho_origen_B.jpg?v=0642a788",
+          "cap": "Versión B · montaña izquierda, LED centro y montaña derecha"
+         }
+        ]
+       }
+      ],
       "textos": {
        "luna": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro).",
        "atardecer": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro)."
@@ -2309,7 +2399,22 @@
        "atardecer_der": "previos/B3.07_PAGO_LARGO/atardecer_der.jpg?v=efd5fd8a"
       },
       "seed": 14679212,
-      "propuestas": [],
+      "propuestas": [
+       {
+        "titulo": "Propuesta 2026 · poncho del lugar de origen en montañas y laterales",
+        "nota": "Versiones en baja del 16/10 (ComfyUI, Flux Krea). En las montañas va solo la textura sobre el relieve real de cada cerro, recortada con la máscara de mapping; en el LED centro, las laterales con el principal 2025 como referencia. Poncho criollo correntino en lana cruda y vicuña con listas marrones (sin referencia documentada: a confirmar). En las laterales el poncho se quema: el amargo final de Pago Largo.",
+        "imgs": [
+         {
+          "src": "assets/propuestas/B3.07_poncho_origen_A.jpg?v=d0fb3193",
+          "cap": "Versión A · montaña izquierda, LED centro y montaña derecha"
+         },
+         {
+          "src": "assets/propuestas/B3.07_poncho_origen_B.jpg?v=81f6442c",
+          "cap": "Versión B · montaña izquierda, LED centro y montaña derecha"
+         }
+        ]
+       }
+      ],
       "textos": {
        "luna": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro).",
        "atardecer": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro)."
@@ -2392,7 +2497,22 @@
        "atardecer_der": "previos/B3.08_POZO_DE_VARGAS_Y_QUEBRACHO/atardecer_der.jpg?v=83ebcee5"
       },
       "seed": 13023579,
-      "propuestas": [],
+      "propuestas": [
+       {
+        "titulo": "Propuesta 2026 · poncho del lugar de origen en montañas y laterales",
+        "nota": "Versiones en baja del 16/10 (ComfyUI, Flux Krea). En las montañas va solo la textura sobre el relieve real de cada cerro, recortada con la máscara de mapping; en el LED centro, las laterales con el principal 2025 como referencia. Telar de Belén, Catamarca (Felipe Varela era catamarqueño), teñido punzó, con tejido ojo de perdiz.",
+        "imgs": [
+         {
+          "src": "assets/propuestas/B3.08_poncho_origen_A.jpg?v=9ecf3360",
+          "cap": "Versión A · montaña izquierda, LED centro y montaña derecha"
+         },
+         {
+          "src": "assets/propuestas/B3.08_poncho_origen_B.jpg?v=68f3a4f5",
+          "cap": "Versión B · montaña izquierda, LED centro y montaña derecha"
+         }
+        ]
+       }
+      ],
       "textos": {
        "luna": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro).",
        "atardecer": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro)."
@@ -2483,7 +2603,22 @@
        "luz_der": "previos/B3.09_DIAGUITAS/luz_der.jpg?v=0dc1fb5d"
       },
       "seed": 3130640,
-      "propuestas": [],
+      "propuestas": [
+       {
+        "titulo": "Propuesta 2026 · poncho del lugar de origen en montañas y laterales",
+        "nota": "Versiones en baja del 16/10 (ComfyUI, Flux Krea). En las montañas va solo la textura sobre el relieve real de cada cerro, recortada con la máscara de mapping; en el LED centro, las laterales con el principal 2025 como referencia. Textil diaguita-calchaquí y aguayo aymara: guardas escalonadas, zigzags y cruces andinas en ocre, rojo, negro, crudo e índigo.",
+        "imgs": [
+         {
+          "src": "assets/propuestas/B3.09_poncho_origen_A.jpg?v=a5c573b1",
+          "cap": "Versión A · montaña izquierda, LED centro y montaña derecha"
+         },
+         {
+          "src": "assets/propuestas/B3.09_poncho_origen_B.jpg?v=b21cdaf9",
+          "cap": "Versión B · montaña izquierda, LED centro y montaña derecha"
+         }
+        ]
+       }
+      ],
       "textos": {
        "luna": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro).",
        "atardecer": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro)."
@@ -2566,7 +2701,22 @@
        "atardecer_der": "previos/B3.10_LOS_DE_QUIROGA/atardecer_der.jpg?v=d1cfff67"
       },
       "seed": 11432187,
-      "propuestas": [],
+      "propuestas": [
+       {
+        "titulo": "Propuesta 2026 · poncho del lugar de origen en montañas y laterales",
+        "nota": "Versiones en baja del 16/10 (ComfyUI, Flux Krea). En las montañas va solo la textura sobre el relieve real de cada cerro, recortada con la máscara de mapping; en el LED centro, las laterales con el principal 2025 como referencia. Poncho riojano (Facundo Quiroga, de Los Llanos) tiznado: manchas de hollín que chorrean por la tela, las «lágrimas oscuras» del verso.",
+        "imgs": [
+         {
+          "src": "assets/propuestas/B3.10_poncho_origen_A.jpg?v=dd2ac65a",
+          "cap": "Versión A · montaña izquierda, LED centro y montaña derecha"
+         },
+         {
+          "src": "assets/propuestas/B3.10_poncho_origen_B.jpg?v=29765010",
+          "cap": "Versión B · montaña izquierda, LED centro y montaña derecha"
+         }
+        ]
+       }
+      ],
       "textos": {
        "luna": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro).",
        "atardecer": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro)."
@@ -2651,7 +2801,22 @@
        "atardecer_der": "previos/B3.11_LOS_DE_FIERRO/atardecer_der.jpg?v=2fe3a287"
       },
       "seed": 5852787,
-      "propuestas": [],
+      "propuestas": [
+       {
+        "titulo": "Propuesta 2026 · poncho del lugar de origen en montañas y laterales",
+        "nota": "Versiones en baja del 16/10 (ComfyUI, Flux Krea). En las montañas va solo la textura sobre el relieve real de cada cerro, recortada con la máscara de mapping; en el LED centro, las laterales con el principal 2025 como referencia. Poncho pampa marrón con guarda pampa (el fondo de poncho marrón estaba aprobado en 2025).",
+        "imgs": [
+         {
+          "src": "assets/propuestas/B3.11_poncho_origen_A.jpg?v=cd867a5e",
+          "cap": "Versión A · montaña izquierda, LED centro y montaña derecha"
+         },
+         {
+          "src": "assets/propuestas/B3.11_poncho_origen_B.jpg?v=c793c2b3",
+          "cap": "Versión B · montaña izquierda, LED centro y montaña derecha"
+         }
+        ]
+       }
+      ],
       "textos": {
        "luna": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro).",
        "atardecer": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro)."
@@ -2734,7 +2899,22 @@
        "atardecer_der": "previos/B3.12_LOS_DE_LAVALLE/atardecer_der.jpg?v=a0648d23"
       },
       "seed": 14416138,
-      "propuestas": [],
+      "propuestas": [
+       {
+        "titulo": "Propuesta 2026 · poncho del lugar de origen en montañas y laterales",
+        "nota": "Versiones en baja del 16/10 (ComfyUI, Flux Krea). En las montañas va solo la textura sobre el relieve real de cada cerro, recortada con la máscara de mapping; en el LED centro, las laterales con el principal 2025 como referencia. Paño celeste (aprobado en 2025); en las laterales, encendido desde abajo por el fuego.",
+        "imgs": [
+         {
+          "src": "assets/propuestas/B3.12_poncho_origen_A.jpg?v=5d13a56e",
+          "cap": "Versión A · montaña izquierda, LED centro y montaña derecha"
+         },
+         {
+          "src": "assets/propuestas/B3.12_poncho_origen_B.jpg?v=8797c5b4",
+          "cap": "Versión B · montaña izquierda, LED centro y montaña derecha"
+         }
+        ]
+       }
+      ],
       "textos": {
        "luna": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro).",
        "atardecer": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro)."

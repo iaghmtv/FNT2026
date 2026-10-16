@@ -23,5 +23,21 @@
   "atardecer_izq": "Golden hour sunset. Warm low orange sunlight rakes across the relief coming from the left: glowing orange and amber highlights on every ridge, rock and plant, long violet shadows in the gullies, warm orange and magenta color grading, dusky sky. The landscape covers the whole mountain from base to summit. Treat the mountain as one continuous surface texture: vegetation only as low ground cover or as a continuous canopy seen from above, no isolated tall trees, no tall cacti, no poles, no vertical objects, no buildings. The beauty comes from color, rock texture, strata and the raking light that sculpts every ridge and gully. A giant red punzo federal fabric draped over the whole mountain like a huge flag, following every ridge and gully, dust in the air. Natural landscape photography, highly detailed, realistic textures, no people, no text, no buildings unless described.",
   "atardecer_cen": "Golden hour sunset. Warm low orange sunlight rakes across the relief coming from behind the scene (backlight): glowing orange and amber highlights on every ridge, rock and plant, long violet shadows in the gullies, warm orange and magenta color grading, dusky sky. Wide panoramic landscape view. Red punzo fabric waving in the wind with dust in the air. Natural landscape photography, highly detailed, realistic textures, no people, no text, no buildings unless described.",
   "atardecer_der": "Golden hour sunset. Warm low orange sunlight rakes across the relief coming from the right: glowing orange and amber highlights on every ridge, rock and plant, long violet shadows in the gullies, warm orange and magenta color grading, dusky sky. The landscape covers the whole long hill from base to ridge. Treat the mountain as one continuous surface texture: vegetation only as low ground cover or as a continuous canopy seen from above, no isolated tall trees, no tall cacti, no poles, no vertical objects, no buildings. The beauty comes from color, rock texture, strata and the raking light that sculpts every ridge and gully. A giant red punzo federal fabric draped over the whole mountain like a huge flag, following every ridge and gully, dust in the air. Natural landscape photography, highly detailed, realistic textures, no people, no text, no buildings unless described."
- }
+ },
+ "propuestas": [
+  {
+   "titulo": "Propuesta 2026 · poncho del lugar de origen en montañas y laterales",
+   "nota": "Versiones en baja del 16/10 (ComfyUI, Flux Krea). En las montañas va solo la textura sobre el relieve real de cada cerro, recortada con la máscara de mapping; en el LED centro, las laterales con el principal 2025 como referencia. Poncho riojano, símbolo oficial de La Rioja (Ley 8.742): fondo rojo, flecos negros, listas en colores de la tierra y guarda en forma de cruz.",
+   "imgs": [
+    {
+     "src": "assets/propuestas/B3.05_poncho_origen_A.jpg",
+     "cap": "Versión A · montaña izquierda, LED centro y montaña derecha"
+    },
+    {
+     "src": "assets/propuestas/B3.05_poncho_origen_B.jpg",
+     "cap": "Versión B · montaña izquierda, LED centro y montaña derecha"
+    }
+   ]
+  }
+ ]
 }
