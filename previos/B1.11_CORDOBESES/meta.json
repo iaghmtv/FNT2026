@@ -40,6 +40,14 @@
   "metodo": "cuadros guia con Qwen desde el fijo nuevo + MiniMax H3 (243 cuadros, 24 fps)"
  },
  "textos": {
-  "atardecer": "IA sobre el cuadro que se proyectó en 2025 (Qwen + Flux Krea, 13/10): misma composición, siempre atardecer, con la silueta real del cerro."
+  "atardecer": "Sierras de Córdoba al atardecer según la referencia del equipo (16/10, Flux Krea con el relieve real de cada cerro): cerros cubiertos de monte serrano en verdes oliva, ocres y dorados, cumbres de granito y el valle verde al pie. Versión en baja."
+ },
+ "sierras_v3": {
+  "fecha": "2026-10-16",
+  "version": "A",
+  "metodo": "Flux Krea + LoRA de profundidad con el Z-depth real de cada cerro (montañas) y Flux Krea t2i (centro), generado en baja y recortado con la máscara de mapping",
+  "referencia": "01_REFERENCIAS/P6CLA3H6CZHBTCQZXTLM2HQPG4.jpg (equipo, 16/10)",
+  "carpeta": "03_BLOQUES/B1_PAISAJES/B1.11_CORDOBESES/02_IA_GENERACION/SIERRAS_CORDOBA_REF_2026_v3",
+  "reemplaza": "atardecer v2 del 13/10 (sigue en ATARDECER_2026_v2)"
  }
 }

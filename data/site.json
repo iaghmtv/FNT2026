@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-16 13:46 UTC",
+ "generado": "2026-10-16 15:50 UTC",
  "repo": "iaghmtv/FNT2026",
  "branch": "main",
  "blocks": [
@@ -735,9 +735,9 @@
        "luna_izq": "previos/B1.04_HIJOS_DE_LA_SELVA_GUARANIES/luna_izq.jpg?v=38c2d6ff",
        "luna_cen": "previos/B1.04_HIJOS_DE_LA_SELVA_GUARANIES/luna_cen.jpg?v=d0b06b3b",
        "luna_der": "previos/B1.04_HIJOS_DE_LA_SELVA_GUARANIES/luna_der.jpg?v=210af874",
-       "atardecer_izq": "previos/B1.04_HIJOS_DE_LA_SELVA_GUARANIES/atardecer_izq.jpg?v=4c3a76c7",
-       "atardecer_cen": "previos/B1.04_HIJOS_DE_LA_SELVA_GUARANIES/atardecer_cen.jpg?v=618a95ec",
-       "atardecer_der": "previos/B1.04_HIJOS_DE_LA_SELVA_GUARANIES/atardecer_der.jpg?v=8ad33bb7"
+       "atardecer_izq": "previos/B1.04_HIJOS_DE_LA_SELVA_GUARANIES/atardecer_izq.jpg?v=617d9e2a",
+       "atardecer_cen": "previos/B1.04_HIJOS_DE_LA_SELVA_GUARANIES/atardecer_cen.jpg?v=1e242202",
+       "atardecer_der": "previos/B1.04_HIJOS_DE_LA_SELVA_GUARANIES/atardecer_der.jpg?v=3653263c"
       },
       "seed": 14472732,
       "atardecer_v2": {
@@ -764,9 +764,17 @@
        "fuente": "03_BLOQUES/B1_PAISAJES/B1.04_HIJOS_DE_LA_SELVA_GUARANIES/02_IA_GENERACION/PROPUESTA PANTALLA",
        "nota": "Reemplaza la noche de luna del 10/10 (copias en LUNA_2026_v2/_reemplazadas)."
       },
+      "selva_v3": {
+       "fecha": "2026-10-16",
+       "version": "A",
+       "metodo": "Flux Krea + LoRA de profundidad con el Z-depth real de cada cerro (montañas) y Flux Krea t2i (centro), generado en baja y recortado con la máscara de mapping",
+       "pedido": "El paisaje no convencía: más referencia de selva paranaense (Misiones)",
+       "carpeta": "03_BLOQUES/B1_PAISAJES/B1.04_HIJOS_DE_LA_SELVA_GUARANIES/02_IA_GENERACION/SELVA_PARANAENSE_2026_v3",
+       "reemplaza": "atardecer v2 del 13-14/10 (sigue en ATARDECER_2026_v2)"
+      },
       "propuestas": [],
       "textos": {
-       "atardecer": "IA sobre el cuadro que se proyectó en 2025 (Qwen + Flux Krea, 13/10): misma composición, siempre atardecer, con la silueta real del cerro. En las montañas, mburucuyá real (14/10, con fotos de referencia).",
+       "atardecer": "Selva paranaense al atardecer (16/10, Flux Krea con el relieve real de cada cerro): en las montañas, dosel cerrado de selva misionera visto desde arriba, con lapachos rosados en flor; en el centro, sendero de tierra colorada entre árboles con raíces tablares, helechos arborescentes, güembé y palmeras pindó, sin animales. Versión en baja.",
        "luna": "Imágenes del equipo (carpeta PROPUESTA PANTALLA de la escena, 14/10), ajustadas a cada pantalla con su máscara."
       },
       "refs_al_generar": [
@@ -1508,9 +1516,9 @@
        "luna_izq": "previos/B1.11_CORDOBESES/luna_izq.jpg?v=18b3ffd9",
        "luna_cen": "previos/B1.11_CORDOBESES/luna_cen.jpg?v=084499b5",
        "luna_der": "previos/B1.11_CORDOBESES/luna_der.jpg?v=2eeb7497",
-       "atardecer_izq": "previos/B1.11_CORDOBESES/atardecer_izq.jpg?v=f74151d7",
-       "atardecer_cen": "previos/B1.11_CORDOBESES/atardecer_cen.jpg?v=80494afa",
-       "atardecer_der": "previos/B1.11_CORDOBESES/atardecer_der.jpg?v=353d035a"
+       "atardecer_izq": "previos/B1.11_CORDOBESES/atardecer_izq.jpg?v=c89fba4b",
+       "atardecer_cen": "previos/B1.11_CORDOBESES/atardecer_cen.jpg?v=e51cdfc7",
+       "atardecer_der": "previos/B1.11_CORDOBESES/atardecer_der.jpg?v=bfe25c7a"
       },
       "seed": 6262992,
       "atardecer_v2": {
@@ -1524,9 +1532,17 @@
        "luz": "solo atardecer: tarde dorada -> atardecer -> atardecer profundo -> ultima luz (sin noche, sin sol en cuadro)",
        "metodo": "cuadros guia con Qwen desde el fijo nuevo + MiniMax H3 (243 cuadros, 24 fps)"
       },
+      "sierras_v3": {
+       "fecha": "2026-10-16",
+       "version": "A",
+       "metodo": "Flux Krea + LoRA de profundidad con el Z-depth real de cada cerro (montañas) y Flux Krea t2i (centro), generado en baja y recortado con la máscara de mapping",
+       "referencia": "01_REFERENCIAS/P6CLA3H6CZHBTCQZXTLM2HQPG4.jpg (equipo, 16/10)",
+       "carpeta": "03_BLOQUES/B1_PAISAJES/B1.11_CORDOBESES/02_IA_GENERACION/SIERRAS_CORDOBA_REF_2026_v3",
+       "reemplaza": "atardecer v2 del 13/10 (sigue en ATARDECER_2026_v2)"
+      },
       "propuestas": [],
       "textos": {
-       "atardecer": "IA sobre el cuadro que se proyectó en 2025 (Qwen + Flux Krea, 13/10): misma composición, siempre atardecer, con la silueta real del cerro.",
+       "atardecer": "Sierras de Córdoba al atardecer según la referencia del equipo (16/10, Flux Krea con el relieve real de cada cerro): cerros cubiertos de monte serrano en verdes oliva, ocres y dorados, cumbres de granito y el valle verde al pie. Versión en baja.",
        "luna": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro)."
       },
       "refs_al_generar": [],

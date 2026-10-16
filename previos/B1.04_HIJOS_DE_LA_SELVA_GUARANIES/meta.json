@@ -56,7 +56,15 @@
   "nota": "Reemplaza la noche de luna del 10/10 (copias en LUNA_2026_v2/_reemplazadas)."
  },
  "textos": {
-  "atardecer": "IA sobre el cuadro que se proyectó en 2025 (Qwen + Flux Krea, 13/10): misma composición, siempre atardecer, con la silueta real del cerro. En las montañas, mburucuyá real (14/10, con fotos de referencia).",
+  "atardecer": "Selva paranaense al atardecer (16/10, Flux Krea con el relieve real de cada cerro): en las montañas, dosel cerrado de selva misionera visto desde arriba, con lapachos rosados en flor; en el centro, sendero de tierra colorada entre árboles con raíces tablares, helechos arborescentes, güembé y palmeras pindó, sin animales. Versión en baja.",
   "luna": "Imágenes del equipo (carpeta PROPUESTA PANTALLA de la escena, 14/10), ajustadas a cada pantalla con su máscara."
+ },
+ "selva_v3": {
+  "fecha": "2026-10-16",
+  "version": "A",
+  "metodo": "Flux Krea + LoRA de profundidad con el Z-depth real de cada cerro (montañas) y Flux Krea t2i (centro), generado en baja y recortado con la máscara de mapping",
+  "pedido": "El paisaje no convencía: más referencia de selva paranaense (Misiones)",
+  "carpeta": "03_BLOQUES/B1_PAISAJES/B1.04_HIJOS_DE_LA_SELVA_GUARANIES/02_IA_GENERACION/SELVA_PARANAENSE_2026_v3",
+  "reemplaza": "atardecer v2 del 13-14/10 (sigue en ATARDECER_2026_v2)"
  }
 }
