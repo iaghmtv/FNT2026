@@ -1,5 +1,5 @@
 {
- "nota": "Imagenes que NO se muestran en el tablero (pedido del 14/10/2026; capturas en D:/FNT2026/07_PRESENTACIONES/no mostrar en el tablero). Los archivos siguen en el repo. Para volver a mostrar algo, sacarlo de esta lista y publicar.",
+ "nota": "Imagenes que NO se muestran en el tablero (pedido del 14/10/2026; capturas en D:/FNT2026/07_PRESENTACIONES/no mostrar en el tablero). Los archivos siguen en el repo. Para volver a mostrar algo, sacarlo de esta lista y publicar. 16/10: en el Bloque 3 se ocultan todos los previos anteriores (luna, atardecer y timelapse); queda solo la propuesta 2026 del poncho de origen.",
  "previos": {
   "B1.01": [
    "timelapse_izq",
@@ -69,32 +69,50 @@
   "B3.06": [
    "luna_izq",
    "luna_cen",
-   "luna_der"
+   "luna_der",
+   "atardecer_izq",
+   "atardecer_cen",
+   "atardecer_der"
   ],
   "B3.07": [
    "luna_izq",
    "luna_cen",
-   "luna_der"
+   "luna_der",
+   "atardecer_izq",
+   "atardecer_cen",
+   "atardecer_der"
   ],
   "B3.08": [
    "luna_izq",
    "luna_cen",
-   "luna_der"
+   "luna_der",
+   "atardecer_izq",
+   "atardecer_cen",
+   "atardecer_der"
   ],
   "B3.10": [
    "luna_izq",
    "luna_cen",
-   "luna_der"
+   "luna_der",
+   "atardecer_izq",
+   "atardecer_cen",
+   "atardecer_der"
   ],
   "B3.11": [
    "luna_izq",
    "luna_cen",
-   "luna_der"
+   "luna_der",
+   "atardecer_izq",
+   "atardecer_cen",
+   "atardecer_der"
   ],
   "B3.12": [
    "luna_izq",
    "luna_cen",
-   "luna_der"
+   "luna_der",
+   "atardecer_izq",
+   "atardecer_cen",
+   "atardecer_der"
   ],
   "B5.02": [
    "luna_izq",
@@ -158,6 +176,66 @@
    "atardecer_izq",
    "atardecer_cen",
    "atardecer_der"
+  ],
+  "B3.01": [
+   "luna_izq",
+   "luna_cen",
+   "luna_der",
+   "atardecer_izq",
+   "atardecer_cen",
+   "atardecer_der",
+   "timelapse_izq",
+   "luz_izq",
+   "timelapse_der",
+   "luz_der"
+  ],
+  "B3.02": [
+   "luna_izq",
+   "luna_cen",
+   "luna_der",
+   "atardecer_izq",
+   "atardecer_cen",
+   "atardecer_der",
+   "timelapse_izq",
+   "luz_izq",
+   "timelapse_der",
+   "luz_der"
+  ],
+  "B3.03": [
+   "luna_izq",
+   "luna_cen",
+   "luna_der",
+   "atardecer_izq",
+   "atardecer_cen",
+   "atardecer_der"
+  ],
+  "B3.04": [
+   "luna_izq",
+   "luna_cen",
+   "luna_der",
+   "atardecer_izq",
+   "atardecer_cen",
+   "atardecer_der"
+  ],
+  "B3.05": [
+   "luna_izq",
+   "luna_cen",
+   "luna_der",
+   "atardecer_izq",
+   "atardecer_cen",
+   "atardecer_der"
+  ],
+  "B3.09": [
+   "luna_izq",
+   "luna_cen",
+   "luna_der",
+   "atardecer_izq",
+   "atardecer_cen",
+   "atardecer_der",
+   "timelapse_izq",
+   "luz_izq",
+   "timelapse_der",
+   "luz_der"
   ]
  },
  "german_por_tipo": {

@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-16 13:38 UTC",
+ "generado": "2026-10-16 13:46 UTC",
  "repo": "iaghmtv/FNT2026",
  "branch": "main",
  "blocks": [
@@ -1790,18 +1790,7 @@
       "engine": "comfy",
       "generated_at": "2026-10-10 17:04",
       "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
-      "files": {
-       "luna_izq": "previos/B3.01_ENTRERRIANOS_Y_CHAQUENOS/luna_izq.jpg?v=7e0dd083",
-       "luna_cen": "previos/B3.01_ENTRERRIANOS_Y_CHAQUENOS/luna_cen.jpg?v=e0e7988c",
-       "luna_der": "previos/B3.01_ENTRERRIANOS_Y_CHAQUENOS/luna_der.jpg?v=96030bb5",
-       "atardecer_izq": "previos/B3.01_ENTRERRIANOS_Y_CHAQUENOS/atardecer_izq.jpg?v=c2343ebb",
-       "atardecer_cen": "previos/B3.01_ENTRERRIANOS_Y_CHAQUENOS/atardecer_cen.jpg?v=842b0bdc",
-       "atardecer_der": "previos/B3.01_ENTRERRIANOS_Y_CHAQUENOS/atardecer_der.jpg?v=9519d85a",
-       "timelapse_izq": "previos/B3.01_ENTRERRIANOS_Y_CHAQUENOS/timelapse_izq.mp4?v=40f0e6ba",
-       "luz_izq": "previos/B3.01_ENTRERRIANOS_Y_CHAQUENOS/luz_izq.jpg?v=44a1ed50",
-       "timelapse_der": "previos/B3.01_ENTRERRIANOS_Y_CHAQUENOS/timelapse_der.mp4?v=4588edb3",
-       "luz_der": "previos/B3.01_ENTRERRIANOS_Y_CHAQUENOS/luz_der.jpg?v=1a3d1cf9"
-      },
+      "files": {},
       "seed": 11799438,
       "propuestas": [
        {
@@ -1895,18 +1884,7 @@
       "engine": "comfy",
       "generated_at": "2026-10-10 17:04",
       "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
-      "files": {
-       "luna_izq": "previos/B3.02_SANTIAGUENO/luna_izq.jpg?v=5afe2b25",
-       "luna_cen": "previos/B3.02_SANTIAGUENO/luna_cen.jpg?v=44b3499b",
-       "luna_der": "previos/B3.02_SANTIAGUENO/luna_der.jpg?v=29b15512",
-       "atardecer_izq": "previos/B3.02_SANTIAGUENO/atardecer_izq.jpg?v=86d5f5b3",
-       "atardecer_cen": "previos/B3.02_SANTIAGUENO/atardecer_cen.jpg?v=cb231c59",
-       "atardecer_der": "previos/B3.02_SANTIAGUENO/atardecer_der.jpg?v=6f9e77f9",
-       "timelapse_izq": "previos/B3.02_SANTIAGUENO/timelapse_izq.mp4?v=add7e537",
-       "luz_izq": "previos/B3.02_SANTIAGUENO/luz_izq.jpg?v=40a89e02",
-       "timelapse_der": "previos/B3.02_SANTIAGUENO/timelapse_der.mp4?v=b99b036c",
-       "luz_der": "previos/B3.02_SANTIAGUENO/luz_der.jpg?v=8c457bf8"
-      },
+      "files": {},
       "seed": 7700353,
       "propuestas": [
        {
@@ -2000,14 +1978,7 @@
       "engine": "comfy",
       "generated_at": "2026-10-10 17:04",
       "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
-      "files": {
-       "luna_izq": "previos/B3.03_RANQUEL/luna_izq.jpg?v=dbb33bbd",
-       "luna_cen": "previos/B3.03_RANQUEL/luna_cen.jpg?v=c4da4251",
-       "luna_der": "previos/B3.03_RANQUEL/luna_der.jpg?v=dd962957",
-       "atardecer_izq": "previos/B3.03_RANQUEL/atardecer_izq.jpg?v=4f08ff25",
-       "atardecer_cen": "previos/B3.03_RANQUEL/atardecer_cen.jpg?v=7ad86fea",
-       "atardecer_der": "previos/B3.03_RANQUEL/atardecer_der.jpg?v=d9047c46"
-      },
+      "files": {},
       "seed": 7408117,
       "propuestas": [
        {
@@ -2099,14 +2070,7 @@
       "engine": "comfy",
       "generated_at": "2026-10-10 17:04",
       "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
-      "files": {
-       "luna_izq": "previos/B3.04_LOS_DE_GUEMES/luna_izq.jpg?v=47fd7e0e",
-       "luna_cen": "previos/B3.04_LOS_DE_GUEMES/luna_cen.jpg?v=dbf5f2d5",
-       "luna_der": "previos/B3.04_LOS_DE_GUEMES/luna_der.jpg?v=0c9d595b",
-       "atardecer_izq": "previos/B3.04_LOS_DE_GUEMES/atardecer_izq.jpg?v=327d8714",
-       "atardecer_cen": "previos/B3.04_LOS_DE_GUEMES/atardecer_cen.jpg?v=f32ceeb2",
-       "atardecer_der": "previos/B3.04_LOS_DE_GUEMES/atardecer_der.jpg?v=c7452673"
-      },
+      "files": {},
       "seed": 7396943,
       "propuestas": [
        {
@@ -2198,14 +2162,7 @@
       "engine": "comfy",
       "generated_at": "2026-10-10 17:04",
       "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
-      "files": {
-       "luna_izq": "previos/B3.05_LOS_DEL_CHACHO/luna_izq.jpg?v=2df25a95",
-       "luna_cen": "previos/B3.05_LOS_DEL_CHACHO/luna_cen.jpg?v=c706fd45",
-       "luna_der": "previos/B3.05_LOS_DEL_CHACHO/luna_der.jpg?v=df8dc771",
-       "atardecer_izq": "previos/B3.05_LOS_DEL_CHACHO/atardecer_izq.jpg?v=bd52b410",
-       "atardecer_cen": "previos/B3.05_LOS_DEL_CHACHO/atardecer_cen.jpg?v=14c58bb6",
-       "atardecer_der": "previos/B3.05_LOS_DEL_CHACHO/atardecer_der.jpg?v=d87eac0a"
-      },
+      "files": {},
       "seed": 10874012,
       "propuestas": [
        {
@@ -2297,11 +2254,7 @@
       "engine": "comfy",
       "generated_at": "2026-10-10 17:04",
       "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
-      "files": {
-       "atardecer_izq": "previos/B3.06_ILUSTRE_PAZ/atardecer_izq.jpg?v=d333bca7",
-       "atardecer_cen": "previos/B3.06_ILUSTRE_PAZ/atardecer_cen.jpg?v=6c987f0a",
-       "atardecer_der": "previos/B3.06_ILUSTRE_PAZ/atardecer_der.jpg?v=3fd1b525"
-      },
+      "files": {},
       "seed": 13103480,
       "propuestas": [
        {
@@ -2393,11 +2346,7 @@
       "engine": "comfy",
       "generated_at": "2026-10-10 17:04",
       "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
-      "files": {
-       "atardecer_izq": "previos/B3.07_PAGO_LARGO/atardecer_izq.jpg?v=21041ca0",
-       "atardecer_cen": "previos/B3.07_PAGO_LARGO/atardecer_cen.jpg?v=91b9e335",
-       "atardecer_der": "previos/B3.07_PAGO_LARGO/atardecer_der.jpg?v=efd5fd8a"
-      },
+      "files": {},
       "seed": 14679212,
       "propuestas": [
        {
@@ -2491,11 +2440,7 @@
       "engine": "comfy",
       "generated_at": "2026-10-10 17:04",
       "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
-      "files": {
-       "atardecer_izq": "previos/B3.08_POZO_DE_VARGAS_Y_QUEBRACHO/atardecer_izq.jpg?v=b0d408a5",
-       "atardecer_cen": "previos/B3.08_POZO_DE_VARGAS_Y_QUEBRACHO/atardecer_cen.jpg?v=78864bd9",
-       "atardecer_der": "previos/B3.08_POZO_DE_VARGAS_Y_QUEBRACHO/atardecer_der.jpg?v=83ebcee5"
-      },
+      "files": {},
       "seed": 13023579,
       "propuestas": [
        {
@@ -2590,18 +2535,7 @@
       "engine": "comfy",
       "generated_at": "2026-10-10 17:04",
       "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
-      "files": {
-       "luna_izq": "previos/B3.09_DIAGUITAS/luna_izq.jpg?v=d9c55c4a",
-       "luna_cen": "previos/B3.09_DIAGUITAS/luna_cen.jpg?v=2c9fe0cb",
-       "luna_der": "previos/B3.09_DIAGUITAS/luna_der.jpg?v=9bea2429",
-       "atardecer_izq": "previos/B3.09_DIAGUITAS/atardecer_izq.jpg?v=059a534c",
-       "atardecer_cen": "previos/B3.09_DIAGUITAS/atardecer_cen.jpg?v=24b718da",
-       "atardecer_der": "previos/B3.09_DIAGUITAS/atardecer_der.jpg?v=05bee92b",
-       "timelapse_izq": "previos/B3.09_DIAGUITAS/timelapse_izq.mp4?v=af6b0199",
-       "luz_izq": "previos/B3.09_DIAGUITAS/luz_izq.jpg?v=b3a020da",
-       "timelapse_der": "previos/B3.09_DIAGUITAS/timelapse_der.mp4?v=a78dc0f0",
-       "luz_der": "previos/B3.09_DIAGUITAS/luz_der.jpg?v=0dc1fb5d"
-      },
+      "files": {},
       "seed": 3130640,
       "propuestas": [
        {
@@ -2695,11 +2629,7 @@
       "engine": "comfy",
       "generated_at": "2026-10-10 17:04",
       "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
-      "files": {
-       "atardecer_izq": "previos/B3.10_LOS_DE_QUIROGA/atardecer_izq.jpg?v=620673f2",
-       "atardecer_cen": "previos/B3.10_LOS_DE_QUIROGA/atardecer_cen.jpg?v=20011ba6",
-       "atardecer_der": "previos/B3.10_LOS_DE_QUIROGA/atardecer_der.jpg?v=d1cfff67"
-      },
+      "files": {},
       "seed": 11432187,
       "propuestas": [
        {
@@ -2795,11 +2725,7 @@
       "engine": "comfy",
       "generated_at": "2026-10-10 17:04",
       "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
-      "files": {
-       "atardecer_izq": "previos/B3.11_LOS_DE_FIERRO/atardecer_izq.jpg?v=4a26aca3",
-       "atardecer_cen": "previos/B3.11_LOS_DE_FIERRO/atardecer_cen.jpg?v=bbb60aeb",
-       "atardecer_der": "previos/B3.11_LOS_DE_FIERRO/atardecer_der.jpg?v=2fe3a287"
-      },
+      "files": {},
       "seed": 5852787,
       "propuestas": [
        {
@@ -2893,11 +2819,7 @@
       "engine": "comfy",
       "generated_at": "2026-10-10 17:04",
       "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
-      "files": {
-       "atardecer_izq": "previos/B3.12_LOS_DE_LAVALLE/atardecer_izq.jpg?v=76210392",
-       "atardecer_cen": "previos/B3.12_LOS_DE_LAVALLE/atardecer_cen.jpg?v=f5a03fba",
-       "atardecer_der": "previos/B3.12_LOS_DE_LAVALLE/atardecer_der.jpg?v=a0648d23"
-      },
+      "files": {},
       "seed": 14416138,
       "propuestas": [
        {
