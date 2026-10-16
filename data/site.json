@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-16 16:59 UTC",
+ "generado": "2026-10-16 21:09 UTC",
  "repo": "iaghmtv/FNT2026",
  "branch": "main",
  "blocks": [
@@ -2746,11 +2746,11 @@
       "propuestas": [
        {
         "titulo": "Propuesta 2026 · poncho pampa: ocre 2025 + guarda pampa (montañas y laterales) · versión A elegida",
-        "nota": "Pedido del 16/10: la tela con el mismo color que la propuesta 2025 (ocre, RGB 158,97,29, medido en el render final) y el patrón del poncho pampa que dejó el equipo como referencia: guarda de rombos escalonados con cruz central, en marrón oscuro, entre dos listas finas a cada lado. La misma tela y la misma guarda en las dos montañas y en las pantallas laterales, siguiendo los pliegues. Tela generada con Flux Krea; en alta resolución (montañas 3840×1200 y 4096×1200, LED 3712×896). Se eligió la versión A (16/10); la B queda como alternativa en la carpeta de la escena.",
+        "nota": "Pedido del 16/10: la tela con el mismo color que la propuesta 2025 (ocre, RGB 158,97,29, medido en el render final) y el patrón del poncho pampa que dejó el equipo como referencia: guarda de rombos escalonados con cruz central, en marrón oscuro, entre dos listas finas a cada lado. La misma tela y la misma guarda en las dos montañas y en las pantallas laterales, siguiendo los pliegues. Tela generada con Flux Krea; en alta resolución (montañas 3840×1200 y 4096×1200, LED 3712×896). Se eligió la versión A (16/10); la B queda como alternativa en la carpeta de la escena. Ajuste del 16/10 en la montaña izquierda: la guarda va con menos contraste y sigue el trayecto que más se ve desde la tribuna general (medido en el simulador), para que los cortes que hacen las sombras del relieve se noten menos. Se sacó también la punta del poncho.",
         "imgs": [
          {
-          "src": "assets/propuestas/B3.11_poncho_pampa_ocre2025_A.jpg?v=6932b937",
-          "cap": "Versión A (elegida el 16/10) · montaña izquierda, LED centro y montaña derecha, alta resolución"
+          "src": "assets/propuestas/B3.11_poncho_pampa_ocre2025_A.jpg?v=dafcbcd4",
+          "cap": "Versión A (elegida el 16/10) · montaña izquierda con la guarda suave por el trayecto más visible, LED centro y montaña derecha, alta resolución"
          }
         ]
        }
