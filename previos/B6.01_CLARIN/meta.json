@@ -27,5 +27,25 @@
   "atardecer_izq": "Golden hour sunset. Warm low orange sunlight rakes across the relief coming from the left: glowing orange and amber highlights on every ridge, rock and plant, long violet shadows in the gullies, warm orange and magenta color grading, dusky sky. The landscape covers the whole mountain from base to summit. Treat the mountain as one continuous surface texture: vegetation only as low ground cover or as a continuous canopy seen from above, no isolated tall trees, no tall cacti, no poles, no vertical objects, no buildings. The beauty comes from color, rock texture, strata and the raking light that sculpts every ridge and gully. High Andes mountain: dark rock, snow patches and ice on the ridges, wind blowing snow off the crest. Natural landscape photography, highly detailed, realistic textures, no people, no text, no buildings unless described.",
   "atardecer_cen": "Golden hour sunset. Warm low orange sunlight rakes across the relief coming from behind the scene (backlight): glowing orange and amber highlights on every ridge, rock and plant, long violet shadows in the gullies, warm orange and magenta color grading, dusky sky. Wide panoramic landscape view. Andes cordillera with snowy peaks, an Andean condor soaring. Natural landscape photography, highly detailed, realistic textures, no people, no text, no buildings unless described.",
   "atardecer_der": "Golden hour sunset. Warm low orange sunlight rakes across the relief coming from the right: glowing orange and amber highlights on every ridge, rock and plant, long violet shadows in the gullies, warm orange and magenta color grading, dusky sky. The landscape covers the whole long hill from base to ridge. Treat the mountain as one continuous surface texture: vegetation only as low ground cover or as a continuous canopy seen from above, no isolated tall trees, no tall cacti, no poles, no vertical objects, no buildings. The beauty comes from color, rock texture, strata and the raking light that sculpts every ridge and gully. High Andes mountain: dark rock, snow patches and ice on the ridges, wind blowing snow off the crest. Natural landscape photography, highly detailed, realistic textures, no people, no text, no buildings unless described."
- }
+ },
+ "propuestas": [
+  {
+   "titulo": "Propuesta 2026 · noche de luna en la cordillera · 3 centros para elegir (previo)",
+   "nota": "En 2025 el Clarín no tuvo pieza propia. Previo: las dos montañas con la misma luz de luna (en 2025 una era fría y la otra cálida), con el relieve y el recorrido de los jinetes de 2025 sin cambios. En el centro, tres opciones para el clarín: A, el cóndor sobre la cordillera (lo que pedía el storyboard); B, un granadero con morrión tocando el clarín; C, la luna saliendo entre picos con un sendero. Media resolución; falta elegir el centro.",
+   "imgs": [
+    {
+     "src": "assets/propuestas/B6.01_luna_centro_A_condor.jpg",
+     "cap": "A · cóndor sobre la cordillera"
+    },
+    {
+     "src": "assets/propuestas/B6.01_luna_centro_B_clarin.jpg",
+     "cap": "B · granadero con morrión tocando el clarín"
+    },
+    {
+     "src": "assets/propuestas/B6.01_luna_centro_C_luna.jpg",
+     "cap": "C · luna saliendo entre picos, con un sendero"
+    }
+   ]
+  }
+ ]
 }

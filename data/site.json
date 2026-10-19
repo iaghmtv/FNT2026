@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-16 21:09 UTC",
+ "generado": "2026-10-19 13:42 UTC",
  "repo": "iaghmtv/FNT2026",
  "branch": "main",
  "blocks": [
@@ -3282,7 +3282,7 @@
      "generar": true,
      "ctx": {
       "code": "B6.01",
-      "y25": "El storyboard pedía cordillera y cóndor. En el collect final no hay pieza propia; el bloque usa el valle vacío de B6.2.",
+      "y25": "El storyboard pedía cordillera y cóndor. Se generaron 4 clips de cóndor (27/10/2025), pero no llegaron al collect: el Clarín no tuvo pieza propia y el clarín y la voz en off de Mario quedaron sobre el loop del valle vacío de B6.2.",
       "t25": [],
       "fix25": [],
       "dur": "",
@@ -3326,13 +3326,28 @@
       "engine": "comfy",
       "generated_at": "2026-10-10 17:05",
       "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
-      "files": {
-       "atardecer_izq": "previos/B6.01_CLARIN/atardecer_izq.jpg?v=422e1029",
-       "atardecer_cen": "previos/B6.01_CLARIN/atardecer_cen.jpg?v=44605f19",
-       "atardecer_der": "previos/B6.01_CLARIN/atardecer_der.jpg?v=dbc7a878"
-      },
+      "files": {},
       "seed": 9078265,
-      "propuestas": [],
+      "propuestas": [
+       {
+        "titulo": "Propuesta 2026 · noche de luna en la cordillera · 3 centros para elegir (previo)",
+        "nota": "En 2025 el Clarín no tuvo pieza propia. Previo: las dos montañas con la misma luz de luna (en 2025 una era fría y la otra cálida), con el relieve y el recorrido de los jinetes de 2025 sin cambios. En el centro, tres opciones para el clarín: A, el cóndor sobre la cordillera (lo que pedía el storyboard); B, un granadero con morrión tocando el clarín; C, la luna saliendo entre picos con un sendero. Media resolución; falta elegir el centro.",
+        "imgs": [
+         {
+          "src": "assets/propuestas/B6.01_luna_centro_A_condor.jpg?v=e26af4f1",
+          "cap": "A · cóndor sobre la cordillera"
+         },
+         {
+          "src": "assets/propuestas/B6.01_luna_centro_B_clarin.jpg?v=7d707f1e",
+          "cap": "B · granadero con morrión tocando el clarín"
+         },
+         {
+          "src": "assets/propuestas/B6.01_luna_centro_C_luna.jpg?v=a251c9cb",
+          "cap": "C · luna saliendo entre picos, con un sendero"
+         }
+        ]
+       }
+      ],
       "textos": {
        "luna": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro).",
        "atardecer": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro)."
@@ -3355,7 +3370,7 @@
      "generar": true,
      "ctx": {
       "code": "B6.02",
-      "y25": "Amanece sobre un valle cordillerano vacío con un camino hacia los picos nevados (IN + LOOP). Desde un crepúsculo violeta aparece una columna de granaderos a caballo, con primeros planos en las pantallas laterales; una fila de jinetes cruza la montaña derecha. Al final el valle queda vacío.",
+      "y25": "Amanece desde negro sobre un valle cordillerano vacío con un camino de tierra hacia los picos nevados (IN y LOOP con niebla). Granaderos: en el centro, crepúsculo violeta, columna lejana, amanecer a contraluz y primeros planos de granaderos, paisanos y mulas en los laterales; al final el valle queda vacío y vuelve a negro. En las montañas, una fila de jinetes en silueta cruza la derecha y hay grupos en zigzag en la izquierda. Las duraciones no coincidían (centro 79 s, montañas 125 s): las montañas repetían el IN y la transición era manual.",
       "t25": [
        "IA video por personaje (granadero, cazador, paisano, mestizo, mulas cargueras y con cañón)",
        "Chroma de granaderos",
@@ -3365,7 +3380,7 @@
        "Más contraste.",
        "Centro: los granaderos aparecen caminando, se iluminan unos segundos y vuelve a negro."
       ],
-      "dur": "IN 22 s · LOOP 16 s · Granaderos 75 s",
+      "dur": "Granaderos: montañas 125 s, centro 79 s · IN 21–23 s · LOOP 16–21 s",
       "img25": {
        "izq": "assets/2025/B6.02_izq.jpg",
        "cen": "assets/2025/B6.02_cen.jpg",
@@ -3412,13 +3427,34 @@
       "engine": "comfy",
       "generated_at": "2026-10-10 17:05",
       "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
-      "files": {
-       "atardecer_izq": "previos/B6.02_GRITO_DE_SAN_MARTIN/atardecer_izq.jpg?v=aeb31c3e",
-       "atardecer_cen": "previos/B6.02_GRITO_DE_SAN_MARTIN/atardecer_cen.jpg?v=3b3a1ae4",
-       "atardecer_der": "previos/B6.02_GRITO_DE_SAN_MARTIN/atardecer_der.jpg?v=bb553c75"
-      },
+      "files": {},
       "seed": 15312785,
-      "propuestas": [],
+      "propuestas": [
+       {
+        "titulo": "Propuesta 2026 · amanecer con nieve en zonas (montañas) · elegida el 19/10",
+        "nota": "Las montañas de 2025 con la misma forma y el mismo relieve; el recorrido por donde pasan los jinetes y los caballos reales queda idéntico (medido: 0 px). Cambia la hora: amanecer alpenglow, crestas naranja-coral, sombras lavanda y más nieve en algunas zonas (referencias de textura del 16/10). La columna de jinetes es la de 2025; en la montaña derecha va sobre suelo naranja, sin nieve alrededor. Alta resolución (3840×1200 y 4096×1200). En el centro va de referencia el LED de 2025: el centro 2026 está para elegir más abajo.",
+        "imgs": [
+         {
+          "src": "assets/propuestas/B6.02_amanecer_nieve_jinetes.jpg?v=75c65ed1",
+          "cap": "Con la columna de jinetes 2025 · montaña izquierda, LED centro 2025 (referencia) y montaña derecha"
+         },
+         {
+          "src": "assets/propuestas/B6.02_amanecer_nieve_vacia.jpg?v=433aab52",
+          "cap": "Vacía (antes y después de la columna) · LED centro: valle 2025 (referencia)"
+         }
+        ]
+       },
+       {
+        "titulo": "Centro LED 2026 para el grito · 3 opciones para elegir (previo)",
+        "nota": "Para los 15 s del grito: A, San Martín a caballo al frente de la columna; B, San Martín con el sable en alto sobre la cresta (la composición más fuerte); C, la columna subiendo una cresta nevada (la más sobria). Previo a media resolución con luz dorada: cuando se elija, se lleva a la luz del amanecer de las montañas. A corregir en B: los granaderos están a pie y con gorros de piel (tendrían que ir a caballo y con morrión).",
+        "imgs": [
+         {
+          "src": "assets/propuestas/B6.02_centros_para_elegir.jpg?v=5cd20f16",
+          "cap": "LED centro · opciones A, B y C"
+         }
+        ]
+       }
+      ],
       "textos": {
        "luna": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro).",
        "atardecer": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro)."

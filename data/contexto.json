@@ -1262,7 +1262,7 @@
    "scenes": [
     {
      "code": "B6.01",
-     "y25": "El storyboard pedía cordillera y cóndor. En el collect final no hay pieza propia; el bloque usa el valle vacío de B6.2.",
+     "y25": "El storyboard pedía cordillera y cóndor. Se generaron 4 clips de cóndor (27/10/2025), pero no llegaron al collect: el Clarín no tuvo pieza propia y el clarín y la voz en off de Mario quedaron sobre el loop del valle vacío de B6.2.",
      "t25": [],
      "fix25": [],
      "dur": "",
@@ -1276,7 +1276,7 @@
     },
     {
      "code": "B6.02",
-     "y25": "Amanece sobre un valle cordillerano vacío con un camino hacia los picos nevados (IN + LOOP). Desde un crepúsculo violeta aparece una columna de granaderos a caballo, con primeros planos en las pantallas laterales; una fila de jinetes cruza la montaña derecha. Al final el valle queda vacío.",
+     "y25": "Amanece desde negro sobre un valle cordillerano vacío con un camino de tierra hacia los picos nevados (IN y LOOP con niebla). Granaderos: en el centro, crepúsculo violeta, columna lejana, amanecer a contraluz y primeros planos de granaderos, paisanos y mulas en los laterales; al final el valle queda vacío y vuelve a negro. En las montañas, una fila de jinetes en silueta cruza la derecha y hay grupos en zigzag en la izquierda. Las duraciones no coincidían (centro 79 s, montañas 125 s): las montañas repetían el IN y la transición era manual.",
      "t25": [
       "IA video por personaje (granadero, cazador, paisano, mestizo, mulas cargueras y con cañón)",
       "Chroma de granaderos",
@@ -1286,7 +1286,7 @@
       "Más contraste.",
       "Centro: los granaderos aparecen caminando, se iluminan unos segundos y vuelve a negro."
      ],
-     "dur": "IN 22 s · LOOP 16 s · Granaderos 75 s",
+     "dur": "Granaderos: montañas 125 s, centro 79 s · IN 21–23 s · LOOP 16–21 s",
      "img25": {
       "izq": "assets/2025/B6.02_izq.jpg",
       "cen": "assets/2025/B6.02_cen.jpg",

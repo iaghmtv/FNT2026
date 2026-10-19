@@ -27,5 +27,31 @@
   "atardecer_izq": "Golden hour sunset. Warm low orange sunlight rakes across the relief coming from the left: glowing orange and amber highlights on every ridge, rock and plant, long violet shadows in the gullies, warm orange and magenta color grading, dusky sky. The landscape covers the whole mountain from base to summit. Treat the mountain as one continuous surface texture: vegetation only as low ground cover or as a continuous canopy seen from above, no isolated tall trees, no tall cacti, no poles, no vertical objects, no buildings. The beauty comes from color, rock texture, strata and the raking light that sculpts every ridge and gully. Andes crossing terrain: rugged high mountain of grey and reddish rock with snow in the gullies, a narrow mule trail zigzagging up the slope. Natural landscape photography, highly detailed, realistic textures, no people, no text, no buildings unless described.",
   "atardecer_cen": "Golden hour sunset. Warm low orange sunlight rakes across the relief coming from behind the scene (backlight): glowing orange and amber highlights on every ridge, rock and plant, long violet shadows in the gullies, warm orange and magenta color grading, dusky sky. Wide panoramic landscape view. Andean valley with a dirt trail leading toward snowy peaks, wide and empty. Natural landscape photography, highly detailed, realistic textures, no people, no text, no buildings unless described.",
   "atardecer_der": "Golden hour sunset. Warm low orange sunlight rakes across the relief coming from the right: glowing orange and amber highlights on every ridge, rock and plant, long violet shadows in the gullies, warm orange and magenta color grading, dusky sky. The landscape covers the whole long hill from base to ridge. Treat the mountain as one continuous surface texture: vegetation only as low ground cover or as a continuous canopy seen from above, no isolated tall trees, no tall cacti, no poles, no vertical objects, no buildings. The beauty comes from color, rock texture, strata and the raking light that sculpts every ridge and gully. Andes crossing terrain: rugged high mountain of grey and reddish rock with snow in the gullies, a narrow mule trail zigzagging up the slope. Natural landscape photography, highly detailed, realistic textures, no people, no text, no buildings unless described."
- }
+ },
+ "propuestas": [
+  {
+   "titulo": "Propuesta 2026 · amanecer con nieve en zonas (montañas) · elegida el 19/10",
+   "nota": "Las montañas de 2025 con la misma forma y el mismo relieve; el recorrido por donde pasan los jinetes y los caballos reales queda idéntico (medido: 0 px). Cambia la hora: amanecer alpenglow, crestas naranja-coral, sombras lavanda y más nieve en algunas zonas (referencias de textura del 16/10). La columna de jinetes es la de 2025; en la montaña derecha va sobre suelo naranja, sin nieve alrededor. Alta resolución (3840×1200 y 4096×1200). En el centro va de referencia el LED de 2025: el centro 2026 está para elegir más abajo.",
+   "imgs": [
+    {
+     "src": "assets/propuestas/B6.02_amanecer_nieve_jinetes.jpg",
+     "cap": "Con la columna de jinetes 2025 · montaña izquierda, LED centro 2025 (referencia) y montaña derecha"
+    },
+    {
+     "src": "assets/propuestas/B6.02_amanecer_nieve_vacia.jpg",
+     "cap": "Vacía (antes y después de la columna) · LED centro: valle 2025 (referencia)"
+    }
+   ]
+  },
+  {
+   "titulo": "Centro LED 2026 para el grito · 3 opciones para elegir (previo)",
+   "nota": "Para los 15 s del grito: A, San Martín a caballo al frente de la columna; B, San Martín con el sable en alto sobre la cresta (la composición más fuerte); C, la columna subiendo una cresta nevada (la más sobria). Previo a media resolución con luz dorada: cuando se elija, se lleva a la luz del amanecer de las montañas. A corregir en B: los granaderos están a pie y con gorros de piel (tendrían que ir a caballo y con morrión).",
+   "imgs": [
+    {
+     "src": "assets/propuestas/B6.02_centros_para_elegir.jpg",
+     "cap": "LED centro · opciones A, B y C"
+    }
+   ]
+  }
+ ]
 }
