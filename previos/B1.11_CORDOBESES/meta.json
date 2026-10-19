@@ -40,7 +40,8 @@
   "metodo": "cuadros guia con Qwen desde el fijo nuevo + MiniMax H3 (243 cuadros, 24 fps)"
  },
  "textos": {
-  "atardecer": "Sierras de Córdoba al atardecer según la referencia del equipo (16/10, Flux Krea con el relieve real de cada cerro): cerros cubiertos de monte serrano en verdes oliva, ocres y dorados, cumbres de granito y el valle verde al pie. Versión en baja."
+  "atardecer": "Sierras de Córdoba al atardecer según la referencia del equipo (16/10, Flux Krea con el relieve real de cada cerro): cerros cubiertos de monte serrano en verdes oliva, ocres y dorados, cumbres de granito y el valle verde al pie. Versión en baja.",
+  "luna": "El mismo paisaje del atardecer (sierras de Córdoba, versión A) de noche, sin cielo y con la luna justo arriba (luz cenital), 19/10: Qwen da la luz de noche y la forma y el detalle son los del atardecer píxel a píxel. El centro lleva el color emparejado con las montañas."
  },
  "sierras_v3": {
   "fecha": "2026-10-16",
@@ -49,5 +50,12 @@
   "referencia": "01_REFERENCIAS/P6CLA3H6CZHBTCQZXTLM2HQPG4.jpg (equipo, 16/10)",
   "carpeta": "03_BLOQUES/B1_PAISAJES/B1.11_CORDOBESES/02_IA_GENERACION/SIERRAS_CORDOBA_REF_2026_v3",
   "reemplaza": "atardecer v2 del 13/10 (sigue en ATARDECER_2026_v2)"
+ },
+ "noche_cenital": {
+  "fecha": "2026-10-19",
+  "pedido": "que la noche sea igual a la tarde, sin cielo y con luz cenital",
+  "metodo": "atardecer sierras v3 A -> Qwen Image Edit (noche, luna cenital, sin cielo; en el centro una segunda pasada para sacar la luna que dibuja Qwen) -> alineado contra el atardecer -> final = blur(Qwen) * L_atardecer / blur(L_atardecer) -> cielo negro + mascara; resolucion final con el color del centro emparejado (MAPPING_FINAL_19-10)",
+  "carpeta": "03_BLOQUES/B1_PAISAJES/B1.11_CORDOBESES/02_IA_GENERACION/NOCHE_CENITAL_2026_v1",
+  "reemplaza": "previo IA de luna del 10/10 (sigue en 02_IA_GENERACION/PREVIOS_TABLERO_LUNA_ATARDECER_B1.11_CORDOBESES)"
  }
 }
