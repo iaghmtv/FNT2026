@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-22 13:37 UTC",
+ "generado": "2026-10-22 13:40 UTC",
  "repo": "iaghmtv/FNT2026",
  "branch": "main",
  "blocks": [
@@ -348,10 +348,7 @@
       "files": {
        "luna_izq": "previos/B1.01_NORTE_SELVATICO/luna_izq.jpg?v=071c6d9f",
        "luna_cen": "previos/B1.01_NORTE_SELVATICO/luna_cen.jpg?v=3ec5feac",
-       "luna_der": "previos/B1.01_NORTE_SELVATICO/luna_der.jpg?v=ad12e18e",
-       "atardecer_izq": "previos/B1.01_NORTE_SELVATICO/atardecer_izq.jpg?v=234878be",
-       "atardecer_cen": "previos/B1.01_NORTE_SELVATICO/atardecer_cen.jpg?v=5c28ea64",
-       "atardecer_der": "previos/B1.01_NORTE_SELVATICO/atardecer_der.jpg?v=85cf6a27"
+       "luna_der": "previos/B1.01_NORTE_SELVATICO/luna_der.jpg?v=ad12e18e"
       },
       "seed": 7876847,
       "atardecer_v2": {
@@ -462,10 +459,7 @@
       "files": {
        "luna_izq": "previos/B1.02_LLANO_SUR_SELVA/luna_izq.jpg?v=9469ee8a",
        "luna_cen": "previos/B1.02_LLANO_SUR_SELVA/luna_cen.jpg?v=ed17c271",
-       "luna_der": "previos/B1.02_LLANO_SUR_SELVA/luna_der.jpg?v=a1834301",
-       "atardecer_izq": "previos/B1.02_LLANO_SUR_SELVA/atardecer_izq.jpg?v=4155ab1a",
-       "atardecer_cen": "previos/B1.02_LLANO_SUR_SELVA/atardecer_cen.jpg?v=3e61eece",
-       "atardecer_der": "previos/B1.02_LLANO_SUR_SELVA/atardecer_der.jpg?v=413b0d81"
+       "luna_der": "previos/B1.02_LLANO_SUR_SELVA/luna_der.jpg?v=a1834301"
       },
       "seed": 3622852,
       "atardecer_v2": {
@@ -610,10 +604,7 @@
       "files": {
        "luna_izq": "previos/B1.03_PASTORES/luna_izq.jpg?v=4b596ac1",
        "luna_cen": "previos/B1.03_PASTORES/luna_cen.jpg?v=85a494cf",
-       "luna_der": "previos/B1.03_PASTORES/luna_der.jpg?v=37d970e7",
-       "atardecer_izq": "previos/B1.03_PASTORES/atardecer_izq.jpg?v=99dde041",
-       "atardecer_cen": "previos/B1.03_PASTORES/atardecer_cen.jpg?v=25f2d329",
-       "atardecer_der": "previos/B1.03_PASTORES/atardecer_der.jpg?v=e4b22cbd"
+       "luna_der": "previos/B1.03_PASTORES/luna_der.jpg?v=37d970e7"
       },
       "seed": 3795293,
       "atardecer_v2": {
@@ -755,10 +746,7 @@
       "files": {
        "luna_izq": "previos/B1.04_HIJOS_DE_LA_SELVA_GUARANIES/luna_izq.jpg?v=b66dfd4c",
        "luna_cen": "previos/B1.04_HIJOS_DE_LA_SELVA_GUARANIES/luna_cen.jpg?v=628b75d6",
-       "luna_der": "previos/B1.04_HIJOS_DE_LA_SELVA_GUARANIES/luna_der.jpg?v=4e92f9ad",
-       "atardecer_izq": "previos/B1.04_HIJOS_DE_LA_SELVA_GUARANIES/atardecer_izq.jpg?v=617d9e2a",
-       "atardecer_cen": "previos/B1.04_HIJOS_DE_LA_SELVA_GUARANIES/atardecer_cen.jpg?v=1e242202",
-       "atardecer_der": "previos/B1.04_HIJOS_DE_LA_SELVA_GUARANIES/atardecer_der.jpg?v=3653263c"
+       "luna_der": "previos/B1.04_HIJOS_DE_LA_SELVA_GUARANIES/luna_der.jpg?v=4e92f9ad"
       },
       "seed": 14472732,
       "atardecer_v2": {
@@ -885,10 +873,7 @@
       "files": {
        "luna_izq": "previos/B1.05_VIEJO_RUNA/luna_izq.jpg?v=d09bb8f7",
        "luna_cen": "previos/B1.05_VIEJO_RUNA/luna_cen.jpg?v=b2151c27",
-       "luna_der": "previos/B1.05_VIEJO_RUNA/luna_der.jpg?v=adb22cb4",
-       "atardecer_izq": "previos/B1.05_VIEJO_RUNA/atardecer_izq.jpg?v=9898da7e",
-       "atardecer_cen": "previos/B1.05_VIEJO_RUNA/atardecer_cen.jpg?v=ded1554a",
-       "atardecer_der": "previos/B1.05_VIEJO_RUNA/atardecer_der.jpg?v=b93f5fd6"
+       "luna_der": "previos/B1.05_VIEJO_RUNA/luna_der.jpg?v=adb22cb4"
       },
       "seed": 15854308,
       "atardecer_v2": {
@@ -1000,10 +985,7 @@
       "files": {
        "luna_izq": "previos/B1.06_JUJENOS/luna_izq.jpg?v=73214d0b",
        "luna_cen": "previos/B1.06_JUJENOS/luna_cen.jpg?v=8a8c421d",
-       "luna_der": "previos/B1.06_JUJENOS/luna_der.jpg?v=1acffdc9",
-       "atardecer_izq": "previos/B1.06_JUJENOS/atardecer_izq.jpg?v=9867db33",
-       "atardecer_cen": "previos/B1.06_JUJENOS/atardecer_cen.jpg?v=a9a6a848",
-       "atardecer_der": "previos/B1.06_JUJENOS/atardecer_der.jpg?v=a485d7d7"
+       "luna_der": "previos/B1.06_JUJENOS/luna_der.jpg?v=1acffdc9"
       },
       "seed": 9733397,
       "atardecer_v2": {
@@ -1116,10 +1098,7 @@
       "files": {
        "luna_izq": "previos/B1.07_LOS_DE_SALTA/luna_izq.jpg?v=e3375219",
        "luna_cen": "previos/B1.07_LOS_DE_SALTA/luna_cen.jpg?v=a03c5c6e",
-       "luna_der": "previos/B1.07_LOS_DE_SALTA/luna_der.jpg?v=7f2fac9a",
-       "atardecer_izq": "previos/B1.07_LOS_DE_SALTA/atardecer_izq.jpg?v=1cbe22d8",
-       "atardecer_cen": "previos/B1.07_LOS_DE_SALTA/atardecer_cen.jpg?v=faa4ea60",
-       "atardecer_der": "previos/B1.07_LOS_DE_SALTA/atardecer_der.jpg?v=1fcc0365"
+       "luna_der": "previos/B1.07_LOS_DE_SALTA/luna_der.jpg?v=7f2fac9a"
       },
       "seed": 9529547,
       "atardecer_v2": {
@@ -1234,10 +1213,7 @@
       "files": {
        "luna_izq": "previos/B1.08_RIOJANOS/luna_izq.jpg?v=06e96ef6",
        "luna_cen": "previos/B1.08_RIOJANOS/luna_cen.jpg?v=baea0e73",
-       "luna_der": "previos/B1.08_RIOJANOS/luna_der.jpg?v=e3a5a356",
-       "atardecer_izq": "previos/B1.08_RIOJANOS/atardecer_izq.jpg?v=d10ebd25",
-       "atardecer_cen": "previos/B1.08_RIOJANOS/atardecer_cen.jpg?v=4f902cd9",
-       "atardecer_der": "previos/B1.08_RIOJANOS/atardecer_der.jpg?v=f3b4a16b"
+       "luna_der": "previos/B1.08_RIOJANOS/luna_der.jpg?v=e3a5a356"
       },
       "seed": 6215683,
       "atardecer_v2": {
@@ -1358,10 +1334,7 @@
       "files": {
        "luna_izq": "previos/B1.09_VERDES_LLANURAS/luna_izq.jpg?v=662b026a",
        "luna_cen": "previos/B1.09_VERDES_LLANURAS/luna_cen.jpg?v=80dbaf88",
-       "luna_der": "previos/B1.09_VERDES_LLANURAS/luna_der.jpg?v=f08e8ae9",
-       "atardecer_izq": "previos/B1.09_VERDES_LLANURAS/atardecer_izq.jpg?v=b8a11aa1",
-       "atardecer_cen": "previos/B1.09_VERDES_LLANURAS/atardecer_cen.jpg?v=f4f8fee1",
-       "atardecer_der": "previos/B1.09_VERDES_LLANURAS/atardecer_der.jpg?v=e977a833"
+       "luna_der": "previos/B1.09_VERDES_LLANURAS/luna_der.jpg?v=f08e8ae9"
       },
       "seed": 10494647,
       "atardecer_v2": {
@@ -1470,10 +1443,7 @@
       "files": {
        "luna_izq": "previos/B1.10_CORRENTINOS/luna_izq.jpg?v=39d70221",
        "luna_cen": "previos/B1.10_CORRENTINOS/luna_cen.jpg?v=4f3ddf10",
-       "luna_der": "previos/B1.10_CORRENTINOS/luna_der.jpg?v=3de65c7e",
-       "atardecer_izq": "previos/B1.10_CORRENTINOS/atardecer_izq.jpg?v=3b1e16c2",
-       "atardecer_cen": "previos/B1.10_CORRENTINOS/atardecer_cen.jpg?v=35f82892",
-       "atardecer_der": "previos/B1.10_CORRENTINOS/atardecer_der.jpg?v=4f8e44f3"
+       "luna_der": "previos/B1.10_CORRENTINOS/luna_der.jpg?v=3de65c7e"
       },
       "seed": 9984175,
       "atardecer_v2": {
@@ -1585,10 +1555,7 @@
       "files": {
        "luna_izq": "previos/B1.11_CORDOBESES/luna_izq.jpg?v=f03eff9f",
        "luna_cen": "previos/B1.11_CORDOBESES/luna_cen.jpg?v=bc0844e2",
-       "luna_der": "previos/B1.11_CORDOBESES/luna_der.jpg?v=217a3127",
-       "atardecer_izq": "previos/B1.11_CORDOBESES/atardecer_izq.jpg?v=c89fba4b",
-       "atardecer_cen": "previos/B1.11_CORDOBESES/atardecer_cen.jpg?v=e51cdfc7",
-       "atardecer_der": "previos/B1.11_CORDOBESES/atardecer_der.jpg?v=bfe25c7a"
+       "luna_der": "previos/B1.11_CORDOBESES/luna_der.jpg?v=217a3127"
       },
       "seed": 6262992,
       "atardecer_v2": {
