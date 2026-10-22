@@ -48,6 +48,13 @@
  },
  "textos": {
   "atardecer": "IA sobre el cuadro que se proyectó en 2025 (Qwen + Flux Krea, 13/10): misma composición, siempre atardecer, con la silueta real del cerro.",
-  "luna": "Imágenes del equipo (carpeta PROPUESTA PANTALLAS): centro nuevo y montañas sin los cactus (15/10), ajustadas a cada pantalla con su máscara."
+  "luna": "Noche final sin sombras proyectadas (Magnific, 21/10), la que va al mapping: propuesta 2026 rehecha (cerros de colores); la roca llena la silueta; luz igualada al bloque."
+ },
+ "noche_sin_sombras": {
+  "fecha": "2026-10-21",
+  "metodo": "Magnific Spaces (modelos y pasos en el LEEME de la carpeta): noche sin sombras proyectadas, luz igualada al bloque, nada afuera ni cortado por la silueta de la máscara",
+  "carpeta": "03_BLOQUES/B1_PAISAJES/B1.06_JUJENOS/02_IA_GENERACION/MAGNIFIC_NOCHE_SIN_SOMBRAS",
+  "editor": "PARA EDITOR/B1_PAISAJES/ASSETS/B1.06",
+  "reemplaza": "noche publicada antes (MAPPING_FINAL_19-10/NOCHE, sigue en el historial del repo)"
  }
 }

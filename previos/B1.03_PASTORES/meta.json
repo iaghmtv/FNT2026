@@ -67,6 +67,13 @@
  },
  "textos": {
   "atardecer": "IA sobre el cuadro que se proyectó en 2025 (Qwen + Flux Krea, 13/10): misma composición, siempre atardecer, con la silueta real del cerro. En las montañas, cardones argentinos variados (14/10, con 6 fotos de referencia).",
-  "luna": "Centro: la imagen del equipo (14/10). Montañas: el atardecer con los mismos cardones, llevado a la noche con la paleta de esa imagen."
+  "luna": "Noche final sin sombras proyectadas (Magnific, 21/10), la que va al mapping: la misma geometría que la noche del equipo, con la luz más clara elegida el 21/10. Centro completo, con el cardón candelabro achicado para que ningún cactus se salga de las pantallas."
+ },
+ "noche_sin_sombras": {
+  "fecha": "2026-10-21",
+  "metodo": "Magnific Spaces (modelos y pasos en el LEEME de la carpeta): noche sin sombras proyectadas, luz igualada al bloque, nada afuera ni cortado por la silueta de la máscara",
+  "carpeta": "03_BLOQUES/B1_PAISAJES/B1.03_PASTORES/02_IA_GENERACION/MAGNIFIC_NOCHE_SIN_SOMBRAS",
+  "editor": "PARA EDITOR/B1_PAISAJES/ASSETS/B1.03",
+  "reemplaza": "noche publicada antes (MAPPING_FINAL_19-10/NOCHE, sigue en el historial del repo)"
  }
 }

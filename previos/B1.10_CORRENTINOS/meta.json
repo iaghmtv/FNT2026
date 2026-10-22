@@ -48,6 +48,13 @@
  },
  "textos": {
   "atardecer": "IA sobre el cuadro que se proyectó en 2025 (Qwen + Flux Krea, 13/10): misma composición, siempre atardecer, con la silueta real del cerro.",
-  "luna": "Panorámica de humedales del equipo para todo el pixel map (15/10), repartida sin deformar en las tres pantallas según su lugar en el MAPPING GENERAL."
+  "luna": "Noche final sin sombras proyectadas (Magnific, 21/10), la que va al mapping: humedales: la panorámica del equipo refinada y nítida; en las montañas, humedal hasta la silueta (isleta de monte con palmeras yatay, sin cielo) y cielo nocturno solo en el centro; copas naturales por debajo del contorno."
+ },
+ "noche_sin_sombras": {
+  "fecha": "2026-10-21",
+  "metodo": "Magnific Spaces (modelos y pasos en el LEEME de la carpeta): noche sin sombras proyectadas, luz igualada al bloque, nada afuera ni cortado por la silueta de la máscara",
+  "carpeta": "03_BLOQUES/B1_PAISAJES/B1.10_CORRENTINOS/02_IA_GENERACION/MAGNIFIC_NOCHE_SIN_SOMBRAS",
+  "editor": "PARA EDITOR/B1_PAISAJES/ASSETS/B1.10",
+  "reemplaza": "noche publicada antes (MAPPING_FINAL_19-10/NOCHE, sigue en el historial del repo)"
  }
 }

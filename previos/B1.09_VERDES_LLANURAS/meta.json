@@ -47,6 +47,13 @@
  },
  "textos": {
   "atardecer": "IA sobre el cuadro que se proyectó en 2025 (Qwen + Flux Krea, 13/10): misma composición, siempre atardecer, con la silueta real del cerro.",
-  "luna": "Imágenes del equipo (carpeta PROPUESTA PANTALLA de la escena), ajustadas a cada pantalla con su máscara: centro y montaña derecha del 14/10; montaña izquierda del 15/10, la misma composición que el atardecer."
+  "luna": "Noche final sin sombras proyectadas (Magnific, 21/10), la que va al mapping: la noche del equipo con la luz del bloque; copas completas por debajo del contorno y el centro igualado como una sola escena."
+ },
+ "noche_sin_sombras": {
+  "fecha": "2026-10-21",
+  "metodo": "Magnific Spaces (modelos y pasos en el LEEME de la carpeta): noche sin sombras proyectadas, luz igualada al bloque, nada afuera ni cortado por la silueta de la máscara",
+  "carpeta": "03_BLOQUES/B1_PAISAJES/B1.09_VERDES_LLANURAS/02_IA_GENERACION/MAGNIFIC_NOCHE_SIN_SOMBRAS",
+  "editor": "PARA EDITOR/B1_PAISAJES/ASSETS/B1.09",
+  "reemplaza": "noche publicada antes (MAPPING_FINAL_19-10/NOCHE, sigue en el historial del repo)"
  }
 }

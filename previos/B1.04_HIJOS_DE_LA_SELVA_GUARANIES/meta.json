@@ -57,7 +57,7 @@
  },
  "textos": {
   "atardecer": "Selva paranaense al atardecer (16/10, Flux Krea con el relieve real de cada cerro): en las montañas, dosel cerrado de selva misionera visto desde arriba, con lapachos rosados en flor; en el centro, sendero de tierra colorada entre árboles con raíces tablares, helechos arborescentes, güembé y palmeras pindó, sin animales. Versión en baja.",
-  "luna": "Imágenes del equipo (carpeta PROPUESTA PANTALLA de la escena, 14/10), ajustadas a cada pantalla con su máscara."
+  "luna": "Noche final sin sombras proyectadas (Magnific, 21/10), la que va al mapping: laterales 2025 renovados con la flor de mburucuyá y centro con la selva 2026; luz igualada al bloque y nada recortado por la silueta."
  },
  "selva_v3": {
   "fecha": "2026-10-16",
@@ -66,5 +66,12 @@
   "pedido": "El paisaje no convencía: más referencia de selva paranaense (Misiones)",
   "carpeta": "03_BLOQUES/B1_PAISAJES/B1.04_HIJOS_DE_LA_SELVA_GUARANIES/02_IA_GENERACION/SELVA_PARANAENSE_2026_v3",
   "reemplaza": "atardecer v2 del 13-14/10 (sigue en ATARDECER_2026_v2)"
+ },
+ "noche_sin_sombras": {
+  "fecha": "2026-10-21",
+  "metodo": "Magnific Spaces (modelos y pasos en el LEEME de la carpeta): noche sin sombras proyectadas, luz igualada al bloque, nada afuera ni cortado por la silueta de la máscara",
+  "carpeta": "03_BLOQUES/B1_PAISAJES/B1.04_HIJOS_DE_LA_SELVA_GUARANIES/02_IA_GENERACION/MAGNIFIC_NOCHE_SIN_SOMBRAS",
+  "editor": "PARA EDITOR/B1_PAISAJES/ASSETS/B1.04",
+  "reemplaza": "noche publicada antes (MAPPING_FINAL_19-10/NOCHE, sigue en el historial del repo)"
  }
 }

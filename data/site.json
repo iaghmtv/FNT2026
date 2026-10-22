@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-19 13:42 UTC",
+ "generado": "2026-10-22 13:37 UTC",
  "repo": "iaghmtv/FNT2026",
  "branch": "main",
  "blocks": [
@@ -346,9 +346,9 @@
       "generated_at": "2026-10-14 17:32",
       "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
       "files": {
-       "luna_izq": "previos/B1.01_NORTE_SELVATICO/luna_izq.jpg?v=e9f5bae9",
-       "luna_cen": "previos/B1.01_NORTE_SELVATICO/luna_cen.jpg?v=43fa0fab",
-       "luna_der": "previos/B1.01_NORTE_SELVATICO/luna_der.jpg?v=3444506b",
+       "luna_izq": "previos/B1.01_NORTE_SELVATICO/luna_izq.jpg?v=071c6d9f",
+       "luna_cen": "previos/B1.01_NORTE_SELVATICO/luna_cen.jpg?v=3ec5feac",
+       "luna_der": "previos/B1.01_NORTE_SELVATICO/luna_der.jpg?v=ad12e18e",
        "atardecer_izq": "previos/B1.01_NORTE_SELVATICO/atardecer_izq.jpg?v=234878be",
        "atardecer_cen": "previos/B1.01_NORTE_SELVATICO/atardecer_cen.jpg?v=5c28ea64",
        "atardecer_der": "previos/B1.01_NORTE_SELVATICO/atardecer_der.jpg?v=85cf6a27"
@@ -370,10 +370,17 @@
        "fuente": "03_BLOQUES/B1_PAISAJES/B1.01_NORTE_SELVATICO/02_IA_GENERACION/PROPUESTAS PANTALLAS",
        "nota": "Reemplaza la noche de luna del 10/10 (Iguazu con coati), que estaba oculta."
       },
+      "noche_sin_sombras": {
+       "fecha": "2026-10-21",
+       "metodo": "Magnific Spaces (modelos y pasos en el LEEME de la carpeta): noche sin sombras proyectadas, luz igualada al bloque, nada afuera ni cortado por la silueta de la máscara",
+       "carpeta": "03_BLOQUES/B1_PAISAJES/B1.01_NORTE_SELVATICO/02_IA_GENERACION/MAGNIFIC_NOCHE_SIN_SOMBRAS",
+       "editor": "PARA EDITOR/B1_PAISAJES/ASSETS/B1.01",
+       "reemplaza": "noche publicada antes (MAPPING_FINAL_19-10/NOCHE, sigue en el historial del repo)"
+      },
       "propuestas": [],
       "textos": {
        "atardecer": "IA sobre el cuadro que se proyectó en 2025 (Qwen + Flux Krea, 13/10): misma composición, siempre atardecer, con la silueta real del cerro.",
-       "luna": "Imágenes del equipo (carpeta PROPUESTA PANTALLA de la escena, 14/10), ajustadas a cada pantalla con su máscara."
+       "luna": "Noche final sin sombras proyectadas (Magnific, 21/10), la que va al mapping: la noche del equipo con la luz del bloque, copas y palmeras enteras por debajo del contorno de la montaña y el centro igualado como una sola escena (sin la bruma del panel derecho)."
       },
       "refs_al_generar": [],
       "desactualizado": false
@@ -453,9 +460,9 @@
       "generated_at": "2026-10-14 18:01",
       "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
       "files": {
-       "luna_izq": "previos/B1.02_LLANO_SUR_SELVA/luna_izq.jpg?v=1258bcb0",
-       "luna_cen": "previos/B1.02_LLANO_SUR_SELVA/luna_cen.jpg?v=c1b3277d",
-       "luna_der": "previos/B1.02_LLANO_SUR_SELVA/luna_der.jpg?v=9c8146f9",
+       "luna_izq": "previos/B1.02_LLANO_SUR_SELVA/luna_izq.jpg?v=9469ee8a",
+       "luna_cen": "previos/B1.02_LLANO_SUR_SELVA/luna_cen.jpg?v=ed17c271",
+       "luna_der": "previos/B1.02_LLANO_SUR_SELVA/luna_der.jpg?v=a1834301",
        "atardecer_izq": "previos/B1.02_LLANO_SUR_SELVA/atardecer_izq.jpg?v=4155ab1a",
        "atardecer_cen": "previos/B1.02_LLANO_SUR_SELVA/atardecer_cen.jpg?v=3e61eece",
        "atardecer_der": "previos/B1.02_LLANO_SUR_SELVA/atardecer_der.jpg?v=413b0d81"
@@ -477,10 +484,17 @@
        "fuente": "03_BLOQUES/B1_PAISAJES/B1.02_LLANO_SUR_SELVA/02_IA_GENERACION/PROPUESTA PANTALLAS",
        "nota": "Centro, izquierda y derecha con las imagenes del equipo. Luna del 10/10 en LUNA_2026_v2/_reemplazadas."
       },
+      "noche_sin_sombras": {
+       "fecha": "2026-10-22",
+       "metodo": "Magnific Spaces (modelos y pasos en el LEEME de la carpeta): noche sin sombras proyectadas, luz igualada al bloque, nada afuera ni cortado por la silueta de la máscara",
+       "carpeta": "03_BLOQUES/B1_PAISAJES/B1.02_LLANO_SUR_SELVA/02_IA_GENERACION/MAGNIFIC_NOCHE_SIN_SOMBRAS",
+       "editor": "PARA EDITOR/B1_PAISAJES/ASSETS/B1.02",
+       "reemplaza": "noche publicada antes (MAPPING_FINAL_19-10/NOCHE, sigue en el historial del repo)"
+      },
       "propuestas": [],
       "textos": {
        "atardecer": "IA sobre el cuadro que se proyectó en 2025 (Qwen + Flux Krea, 13/10): misma composición, siempre atardecer, con la silueta real del cerro.",
-       "luna": "Imágenes del equipo (carpeta PROPUESTA PANTALLA de la escena, 14/10), ajustadas a cada pantalla con su máscara."
+       "luna": "Noche final sin sombras proyectadas (Magnific, 22/10), la que va al mapping: la noche del equipo con la luz del bloque, copas enteras por debajo del contorno de arriba, la base cerrada con suelo hasta el contorno de abajo y el centro como una sola selva continua. Las cascadas las rehace Diego en Blender."
       },
       "refs_al_generar": [],
       "desactualizado": false
@@ -594,9 +608,9 @@
       "generated_at": "2026-10-14 14:03",
       "refs_hash": "fc59c8334e4eb28ddd3912b01eae9a60",
       "files": {
-       "luna_izq": "previos/B1.03_PASTORES/luna_izq.jpg?v=548ccbb4",
-       "luna_cen": "previos/B1.03_PASTORES/luna_cen.jpg?v=0a6591d6",
-       "luna_der": "previos/B1.03_PASTORES/luna_der.jpg?v=cf205087",
+       "luna_izq": "previos/B1.03_PASTORES/luna_izq.jpg?v=4b596ac1",
+       "luna_cen": "previos/B1.03_PASTORES/luna_cen.jpg?v=85a494cf",
+       "luna_der": "previos/B1.03_PASTORES/luna_der.jpg?v=37d970e7",
        "atardecer_izq": "previos/B1.03_PASTORES/atardecer_izq.jpg?v=99dde041",
        "atardecer_cen": "previos/B1.03_PASTORES/atardecer_cen.jpg?v=25f2d329",
        "atardecer_der": "previos/B1.03_PASTORES/atardecer_der.jpg?v=e4b22cbd"
@@ -632,10 +646,17 @@
        "nota": "Centro: la imagen del equipo tal cual. Montanas: las filas venian achatadas (10:1) y con cielo/luna donde va el cerro, asi que se re-ilumino de noche el atardecer v2 (mismos cardones) con la paleta de esa imagen.",
        "carpeta": "03_BLOQUES/B1_PAISAJES/B1.03_PASTORES/02_IA_GENERACION/LUNA_2026_v2"
       },
+      "noche_sin_sombras": {
+       "fecha": "2026-10-21",
+       "metodo": "Magnific Spaces (modelos y pasos en el LEEME de la carpeta): noche sin sombras proyectadas, luz igualada al bloque, nada afuera ni cortado por la silueta de la máscara",
+       "carpeta": "03_BLOQUES/B1_PAISAJES/B1.03_PASTORES/02_IA_GENERACION/MAGNIFIC_NOCHE_SIN_SOMBRAS",
+       "editor": "PARA EDITOR/B1_PAISAJES/ASSETS/B1.03",
+       "reemplaza": "noche publicada antes (MAPPING_FINAL_19-10/NOCHE, sigue en el historial del repo)"
+      },
       "propuestas": [],
       "textos": {
        "atardecer": "IA sobre el cuadro que se proyectó en 2025 (Qwen + Flux Krea, 13/10): misma composición, siempre atardecer, con la silueta real del cerro. En las montañas, cardones argentinos variados (14/10, con 6 fotos de referencia).",
-       "luna": "Centro: la imagen del equipo (14/10). Montañas: el atardecer con los mismos cardones, llevado a la noche con la paleta de esa imagen."
+       "luna": "Noche final sin sombras proyectadas (Magnific, 21/10), la que va al mapping: la misma geometría que la noche del equipo, con la luz más clara elegida el 21/10. Centro completo, con el cardón candelabro achicado para que ningún cactus se salga de las pantallas."
       },
       "refs_al_generar": [
        "cardon_ref_1_florecido.jpg",
@@ -732,9 +753,9 @@
       "generated_at": "2026-10-14 17:14",
       "refs_hash": "add4b3651d27a93eec2c8edb31b698fe",
       "files": {
-       "luna_izq": "previos/B1.04_HIJOS_DE_LA_SELVA_GUARANIES/luna_izq.jpg?v=38c2d6ff",
-       "luna_cen": "previos/B1.04_HIJOS_DE_LA_SELVA_GUARANIES/luna_cen.jpg?v=d0b06b3b",
-       "luna_der": "previos/B1.04_HIJOS_DE_LA_SELVA_GUARANIES/luna_der.jpg?v=210af874",
+       "luna_izq": "previos/B1.04_HIJOS_DE_LA_SELVA_GUARANIES/luna_izq.jpg?v=b66dfd4c",
+       "luna_cen": "previos/B1.04_HIJOS_DE_LA_SELVA_GUARANIES/luna_cen.jpg?v=628b75d6",
+       "luna_der": "previos/B1.04_HIJOS_DE_LA_SELVA_GUARANIES/luna_der.jpg?v=4e92f9ad",
        "atardecer_izq": "previos/B1.04_HIJOS_DE_LA_SELVA_GUARANIES/atardecer_izq.jpg?v=617d9e2a",
        "atardecer_cen": "previos/B1.04_HIJOS_DE_LA_SELVA_GUARANIES/atardecer_cen.jpg?v=1e242202",
        "atardecer_der": "previos/B1.04_HIJOS_DE_LA_SELVA_GUARANIES/atardecer_der.jpg?v=3653263c"
@@ -772,10 +793,17 @@
        "carpeta": "03_BLOQUES/B1_PAISAJES/B1.04_HIJOS_DE_LA_SELVA_GUARANIES/02_IA_GENERACION/SELVA_PARANAENSE_2026_v3",
        "reemplaza": "atardecer v2 del 13-14/10 (sigue en ATARDECER_2026_v2)"
       },
+      "noche_sin_sombras": {
+       "fecha": "2026-10-21",
+       "metodo": "Magnific Spaces (modelos y pasos en el LEEME de la carpeta): noche sin sombras proyectadas, luz igualada al bloque, nada afuera ni cortado por la silueta de la máscara",
+       "carpeta": "03_BLOQUES/B1_PAISAJES/B1.04_HIJOS_DE_LA_SELVA_GUARANIES/02_IA_GENERACION/MAGNIFIC_NOCHE_SIN_SOMBRAS",
+       "editor": "PARA EDITOR/B1_PAISAJES/ASSETS/B1.04",
+       "reemplaza": "noche publicada antes (MAPPING_FINAL_19-10/NOCHE, sigue en el historial del repo)"
+      },
       "propuestas": [],
       "textos": {
        "atardecer": "Selva paranaense al atardecer (16/10, Flux Krea con el relieve real de cada cerro): en las montañas, dosel cerrado de selva misionera visto desde arriba, con lapachos rosados en flor; en el centro, sendero de tierra colorada entre árboles con raíces tablares, helechos arborescentes, güembé y palmeras pindó, sin animales. Versión en baja.",
-       "luna": "Imágenes del equipo (carpeta PROPUESTA PANTALLA de la escena, 14/10), ajustadas a cada pantalla con su máscara."
+       "luna": "Noche final sin sombras proyectadas (Magnific, 21/10), la que va al mapping: laterales 2025 renovados con la flor de mburucuyá y centro con la selva 2026; luz igualada al bloque y nada recortado por la silueta."
       },
       "refs_al_generar": [
        "mburucuya_Passiflora_caerulea_ref_1.jpg",
@@ -855,9 +883,9 @@
       "generated_at": "2026-10-15 19:58",
       "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
       "files": {
-       "luna_izq": "previos/B1.05_VIEJO_RUNA/luna_izq.jpg?v=8b90cc57",
-       "luna_cen": "previos/B1.05_VIEJO_RUNA/luna_cen.jpg?v=3f30afc0",
-       "luna_der": "previos/B1.05_VIEJO_RUNA/luna_der.jpg?v=b6f92344",
+       "luna_izq": "previos/B1.05_VIEJO_RUNA/luna_izq.jpg?v=d09bb8f7",
+       "luna_cen": "previos/B1.05_VIEJO_RUNA/luna_cen.jpg?v=b2151c27",
+       "luna_der": "previos/B1.05_VIEJO_RUNA/luna_der.jpg?v=adb22cb4",
        "atardecer_izq": "previos/B1.05_VIEJO_RUNA/atardecer_izq.jpg?v=9898da7e",
        "atardecer_cen": "previos/B1.05_VIEJO_RUNA/atardecer_cen.jpg?v=ded1554a",
        "atardecer_der": "previos/B1.05_VIEJO_RUNA/atardecer_der.jpg?v=b93f5fd6"
@@ -881,10 +909,17 @@
        "fecha_15-10": "2026-10-15 19:58",
        "nota_15-10": "Actualizado cen con las imágenes nuevas del equipo; anteriores en LUNA_2026_v2/_reemplazadas."
       },
+      "noche_sin_sombras": {
+       "fecha": "2026-10-21",
+       "metodo": "Magnific Spaces (modelos y pasos en el LEEME de la carpeta): noche sin sombras proyectadas, luz igualada al bloque, nada afuera ni cortado por la silueta de la máscara",
+       "carpeta": "03_BLOQUES/B1_PAISAJES/B1.05_VIEJO_RUNA/02_IA_GENERACION/MAGNIFIC_NOCHE_SIN_SOMBRAS",
+       "editor": "PARA EDITOR/B1_PAISAJES/ASSETS/B1.05",
+       "reemplaza": "noche publicada antes (MAPPING_FINAL_19-10/NOCHE, sigue en el historial del repo)"
+      },
       "propuestas": [],
       "textos": {
        "atardecer": "IA sobre el cuadro que se proyectó en 2025 (Qwen + Flux Krea, 13/10): misma composición, siempre atardecer, con la silueta real del cerro.",
-       "luna": "Imágenes del equipo (carpeta PROPUESTA PANTALLA de la escena), ajustadas a cada pantalla con su máscara. El centro se actualizó el 15/10, sin cielo."
+       "luna": "Noche final sin sombras proyectadas (Magnific, 21/10), la que va al mapping: luz igualada al bloque; ninguna pirca toca el contorno de la máscara ni de las pantallas; centro completo, sin recorte."
       },
       "refs_al_generar": [],
       "desactualizado": false
@@ -963,9 +998,9 @@
       "generated_at": "2026-10-15 19:58",
       "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
       "files": {
-       "luna_izq": "previos/B1.06_JUJENOS/luna_izq.jpg?v=f2e26a7a",
-       "luna_cen": "previos/B1.06_JUJENOS/luna_cen.jpg?v=8e06832d",
-       "luna_der": "previos/B1.06_JUJENOS/luna_der.jpg?v=0ccad151",
+       "luna_izq": "previos/B1.06_JUJENOS/luna_izq.jpg?v=73214d0b",
+       "luna_cen": "previos/B1.06_JUJENOS/luna_cen.jpg?v=8a8c421d",
+       "luna_der": "previos/B1.06_JUJENOS/luna_der.jpg?v=1acffdc9",
        "atardecer_izq": "previos/B1.06_JUJENOS/atardecer_izq.jpg?v=9867db33",
        "atardecer_cen": "previos/B1.06_JUJENOS/atardecer_cen.jpg?v=a9a6a848",
        "atardecer_der": "previos/B1.06_JUJENOS/atardecer_der.jpg?v=a485d7d7"
@@ -989,10 +1024,17 @@
        "fecha_15-10": "2026-10-15 19:58",
        "nota_15-10": "Actualizado izq, der, cen con las imágenes nuevas del equipo; anteriores en LUNA_2026_v2/_reemplazadas."
       },
+      "noche_sin_sombras": {
+       "fecha": "2026-10-21",
+       "metodo": "Magnific Spaces (modelos y pasos en el LEEME de la carpeta): noche sin sombras proyectadas, luz igualada al bloque, nada afuera ni cortado por la silueta de la máscara",
+       "carpeta": "03_BLOQUES/B1_PAISAJES/B1.06_JUJENOS/02_IA_GENERACION/MAGNIFIC_NOCHE_SIN_SOMBRAS",
+       "editor": "PARA EDITOR/B1_PAISAJES/ASSETS/B1.06",
+       "reemplaza": "noche publicada antes (MAPPING_FINAL_19-10/NOCHE, sigue en el historial del repo)"
+      },
       "propuestas": [],
       "textos": {
        "atardecer": "IA sobre el cuadro que se proyectó en 2025 (Qwen + Flux Krea, 13/10): misma composición, siempre atardecer, con la silueta real del cerro.",
-       "luna": "Imágenes del equipo (carpeta PROPUESTA PANTALLAS): centro nuevo y montañas sin los cactus (15/10), ajustadas a cada pantalla con su máscara."
+       "luna": "Noche final sin sombras proyectadas (Magnific, 21/10), la que va al mapping: propuesta 2026 rehecha (cerros de colores); la roca llena la silueta; luz igualada al bloque."
       },
       "refs_al_generar": [],
       "desactualizado": false
@@ -1072,9 +1114,9 @@
       "generated_at": "2026-10-14 17:57",
       "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
       "files": {
-       "luna_izq": "previos/B1.07_LOS_DE_SALTA/luna_izq.jpg?v=d969bdff",
-       "luna_cen": "previos/B1.07_LOS_DE_SALTA/luna_cen.jpg?v=4805c14b",
-       "luna_der": "previos/B1.07_LOS_DE_SALTA/luna_der.jpg?v=b1f1d749",
+       "luna_izq": "previos/B1.07_LOS_DE_SALTA/luna_izq.jpg?v=e3375219",
+       "luna_cen": "previos/B1.07_LOS_DE_SALTA/luna_cen.jpg?v=a03c5c6e",
+       "luna_der": "previos/B1.07_LOS_DE_SALTA/luna_der.jpg?v=7f2fac9a",
        "atardecer_izq": "previos/B1.07_LOS_DE_SALTA/atardecer_izq.jpg?v=1cbe22d8",
        "atardecer_cen": "previos/B1.07_LOS_DE_SALTA/atardecer_cen.jpg?v=faa4ea60",
        "atardecer_der": "previos/B1.07_LOS_DE_SALTA/atardecer_der.jpg?v=1fcc0365"
@@ -1096,10 +1138,17 @@
        "fuente": "03_BLOQUES/B1_PAISAJES/B1.07_LOS_DE_SALTA/02_IA_GENERACION/PROPUESTAS PANTALLAS",
        "nota": "Noche de las variantes Flux de German (centro A, izq C, der B). Anteriores en LUNA_2026_v2/_reemplazadas."
       },
+      "noche_sin_sombras": {
+       "fecha": "2026-10-21",
+       "metodo": "Magnific Spaces (modelos y pasos en el LEEME de la carpeta): noche sin sombras proyectadas, luz igualada al bloque, nada afuera ni cortado por la silueta de la máscara",
+       "carpeta": "03_BLOQUES/B1_PAISAJES/B1.07_LOS_DE_SALTA/02_IA_GENERACION/MAGNIFIC_NOCHE_SIN_SOMBRAS",
+       "editor": "PARA EDITOR/B1_PAISAJES/ASSETS/B1.07",
+       "reemplaza": "noche publicada antes (MAPPING_FINAL_19-10/NOCHE, sigue en el historial del repo)"
+      },
       "propuestas": [],
       "textos": {
        "atardecer": "IA sobre el cuadro que se proyectó en 2025 (Qwen + Flux Krea, 13/10): misma composición, siempre atardecer, con la silueta real del cerro.",
-       "luna": "Las variantes Flux de German llevadas a la noche (centro A, montaña izq. C, der. B), de la carpeta PROPUESTAS PANTALLAS de la escena (14/10)."
+       "luna": "Noche final sin sombras proyectadas (Magnific, 21/10), la que va al mapping: la noche del equipo con la luz del bloque; cerros, copas y cardones completos por debajo del contorno."
       },
       "refs_al_generar": [],
       "desactualizado": false
@@ -1183,9 +1232,9 @@
       "generated_at": "2026-10-15 19:58",
       "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
       "files": {
-       "luna_izq": "previos/B1.08_RIOJANOS/luna_izq.jpg?v=decc54d7",
-       "luna_cen": "previos/B1.08_RIOJANOS/luna_cen.jpg?v=b814fb2a",
-       "luna_der": "previos/B1.08_RIOJANOS/luna_der.jpg?v=2dc24561",
+       "luna_izq": "previos/B1.08_RIOJANOS/luna_izq.jpg?v=06e96ef6",
+       "luna_cen": "previos/B1.08_RIOJANOS/luna_cen.jpg?v=baea0e73",
+       "luna_der": "previos/B1.08_RIOJANOS/luna_der.jpg?v=e3a5a356",
        "atardecer_izq": "previos/B1.08_RIOJANOS/atardecer_izq.jpg?v=d10ebd25",
        "atardecer_cen": "previos/B1.08_RIOJANOS/atardecer_cen.jpg?v=4f902cd9",
        "atardecer_der": "previos/B1.08_RIOJANOS/atardecer_der.jpg?v=f3b4a16b"
@@ -1209,10 +1258,17 @@
        "fecha_15-10": "2026-10-15 19:58",
        "nota_15-10": "Actualizado cen con las imágenes nuevas del equipo; anteriores en LUNA_2026_v2/_reemplazadas."
       },
+      "noche_sin_sombras": {
+       "fecha": "2026-10-21",
+       "metodo": "Magnific Spaces (modelos y pasos en el LEEME de la carpeta): noche sin sombras proyectadas, luz igualada al bloque, nada afuera ni cortado por la silueta de la máscara",
+       "carpeta": "03_BLOQUES/B1_PAISAJES/B1.08_RIOJANOS/02_IA_GENERACION/MAGNIFIC_NOCHE_SIN_SOMBRAS",
+       "editor": "PARA EDITOR/B1_PAISAJES/ASSETS/B1.08",
+       "reemplaza": "noche publicada antes (MAPPING_FINAL_19-10/NOCHE, sigue en el historial del repo)"
+      },
       "propuestas": [],
       "textos": {
        "atardecer": "IA sobre el cuadro que se proyectó en 2025 (Qwen + Flux Krea, 13/10): misma composición, siempre atardecer, con la silueta real del cerro.",
-       "luna": "Imágenes del equipo (carpeta PROPUESTA PANTALLA), ajustadas a cada pantalla con su máscara. Centro del 15/10: la meseta sin cielo y sin el guanaco."
+       "luna": "Noche final sin sombras proyectadas (Magnific, 21/10), la que va al mapping: la misma geometría que la noche del equipo, con la luz más clara elegida el 21/10."
       },
       "refs_al_generar": [],
       "desactualizado": false
@@ -1300,9 +1356,9 @@
       "generated_at": "2026-10-15 09:22",
       "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
       "files": {
-       "luna_izq": "previos/B1.09_VERDES_LLANURAS/luna_izq.jpg?v=329855f5",
-       "luna_cen": "previos/B1.09_VERDES_LLANURAS/luna_cen.jpg?v=e52caac8",
-       "luna_der": "previos/B1.09_VERDES_LLANURAS/luna_der.jpg?v=6baddc63",
+       "luna_izq": "previos/B1.09_VERDES_LLANURAS/luna_izq.jpg?v=662b026a",
+       "luna_cen": "previos/B1.09_VERDES_LLANURAS/luna_cen.jpg?v=80dbaf88",
+       "luna_der": "previos/B1.09_VERDES_LLANURAS/luna_der.jpg?v=f08e8ae9",
        "atardecer_izq": "previos/B1.09_VERDES_LLANURAS/atardecer_izq.jpg?v=b8a11aa1",
        "atardecer_cen": "previos/B1.09_VERDES_LLANURAS/atardecer_cen.jpg?v=f4f8fee1",
        "atardecer_der": "previos/B1.09_VERDES_LLANURAS/atardecer_der.jpg?v=e977a833"
@@ -1325,10 +1381,17 @@
        "nota": "Centro y montaña derecha del 14/10; montaña izquierda del 15/10. Anteriores en LUNA_2026_v2/_reemplazadas.",
        "fecha_izq": "2026-10-15 09:22"
       },
+      "noche_sin_sombras": {
+       "fecha": "2026-10-21",
+       "metodo": "Magnific Spaces (modelos y pasos en el LEEME de la carpeta): noche sin sombras proyectadas, luz igualada al bloque, nada afuera ni cortado por la silueta de la máscara",
+       "carpeta": "03_BLOQUES/B1_PAISAJES/B1.09_VERDES_LLANURAS/02_IA_GENERACION/MAGNIFIC_NOCHE_SIN_SOMBRAS",
+       "editor": "PARA EDITOR/B1_PAISAJES/ASSETS/B1.09",
+       "reemplaza": "noche publicada antes (MAPPING_FINAL_19-10/NOCHE, sigue en el historial del repo)"
+      },
       "propuestas": [],
       "textos": {
        "atardecer": "IA sobre el cuadro que se proyectó en 2025 (Qwen + Flux Krea, 13/10): misma composición, siempre atardecer, con la silueta real del cerro.",
-       "luna": "Imágenes del equipo (carpeta PROPUESTA PANTALLA de la escena), ajustadas a cada pantalla con su máscara: centro y montaña derecha del 14/10; montaña izquierda del 15/10, la misma composición que el atardecer."
+       "luna": "Noche final sin sombras proyectadas (Magnific, 21/10), la que va al mapping: la noche del equipo con la luz del bloque; copas completas por debajo del contorno y el centro igualado como una sola escena."
       },
       "refs_al_generar": [],
       "desactualizado": false
@@ -1405,9 +1468,9 @@
       "generated_at": "2026-10-15 19:58",
       "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
       "files": {
-       "luna_izq": "previos/B1.10_CORRENTINOS/luna_izq.jpg?v=338d7fe4",
-       "luna_cen": "previos/B1.10_CORRENTINOS/luna_cen.jpg?v=cf829e39",
-       "luna_der": "previos/B1.10_CORRENTINOS/luna_der.jpg?v=cac98678",
+       "luna_izq": "previos/B1.10_CORRENTINOS/luna_izq.jpg?v=39d70221",
+       "luna_cen": "previos/B1.10_CORRENTINOS/luna_cen.jpg?v=4f3ddf10",
+       "luna_der": "previos/B1.10_CORRENTINOS/luna_der.jpg?v=3de65c7e",
        "atardecer_izq": "previos/B1.10_CORRENTINOS/atardecer_izq.jpg?v=3b1e16c2",
        "atardecer_cen": "previos/B1.10_CORRENTINOS/atardecer_cen.jpg?v=35f82892",
        "atardecer_der": "previos/B1.10_CORRENTINOS/atardecer_der.jpg?v=4f8e44f3"
@@ -1431,10 +1494,17 @@
        "fecha_15-10": "2026-10-15 19:58",
        "nota_15-10": "Actualizado izq, cen, der con las imágenes nuevas del equipo; anteriores en LUNA_2026_v2/_reemplazadas."
       },
+      "noche_sin_sombras": {
+       "fecha": "2026-10-21",
+       "metodo": "Magnific Spaces (modelos y pasos en el LEEME de la carpeta): noche sin sombras proyectadas, luz igualada al bloque, nada afuera ni cortado por la silueta de la máscara",
+       "carpeta": "03_BLOQUES/B1_PAISAJES/B1.10_CORRENTINOS/02_IA_GENERACION/MAGNIFIC_NOCHE_SIN_SOMBRAS",
+       "editor": "PARA EDITOR/B1_PAISAJES/ASSETS/B1.10",
+       "reemplaza": "noche publicada antes (MAPPING_FINAL_19-10/NOCHE, sigue en el historial del repo)"
+      },
       "propuestas": [],
       "textos": {
        "atardecer": "IA sobre el cuadro que se proyectó en 2025 (Qwen + Flux Krea, 13/10): misma composición, siempre atardecer, con la silueta real del cerro.",
-       "luna": "Panorámica de humedales del equipo para todo el pixel map (15/10), repartida sin deformar en las tres pantallas según su lugar en el MAPPING GENERAL."
+       "luna": "Noche final sin sombras proyectadas (Magnific, 21/10), la que va al mapping: humedales: la panorámica del equipo refinada y nítida; en las montañas, humedal hasta la silueta (isleta de monte con palmeras yatay, sin cielo) y cielo nocturno solo en el centro; copas naturales por debajo del contorno."
       },
       "refs_al_generar": [],
       "desactualizado": false
@@ -1513,9 +1583,9 @@
       "generated_at": "2026-10-13 19:33",
       "refs_hash": "d41d8cd98f00b204e9800998ecf8427e",
       "files": {
-       "luna_izq": "previos/B1.11_CORDOBESES/luna_izq.jpg?v=18b3ffd9",
-       "luna_cen": "previos/B1.11_CORDOBESES/luna_cen.jpg?v=084499b5",
-       "luna_der": "previos/B1.11_CORDOBESES/luna_der.jpg?v=2eeb7497",
+       "luna_izq": "previos/B1.11_CORDOBESES/luna_izq.jpg?v=f03eff9f",
+       "luna_cen": "previos/B1.11_CORDOBESES/luna_cen.jpg?v=bc0844e2",
+       "luna_der": "previos/B1.11_CORDOBESES/luna_der.jpg?v=217a3127",
        "atardecer_izq": "previos/B1.11_CORDOBESES/atardecer_izq.jpg?v=c89fba4b",
        "atardecer_cen": "previos/B1.11_CORDOBESES/atardecer_cen.jpg?v=e51cdfc7",
        "atardecer_der": "previos/B1.11_CORDOBESES/atardecer_der.jpg?v=bfe25c7a"
@@ -1540,10 +1610,24 @@
        "carpeta": "03_BLOQUES/B1_PAISAJES/B1.11_CORDOBESES/02_IA_GENERACION/SIERRAS_CORDOBA_REF_2026_v3",
        "reemplaza": "atardecer v2 del 13/10 (sigue en ATARDECER_2026_v2)"
       },
+      "noche_cenital": {
+       "fecha": "2026-10-19",
+       "pedido": "que la noche sea igual a la tarde, sin cielo y con luz cenital",
+       "metodo": "atardecer sierras v3 A -> Qwen Image Edit (noche, luna cenital, sin cielo; en el centro una segunda pasada para sacar la luna que dibuja Qwen) -> alineado contra el atardecer -> final = blur(Qwen) * L_atardecer / blur(L_atardecer) -> cielo negro + mascara; resolucion final con el color del centro emparejado (MAPPING_FINAL_19-10)",
+       "carpeta": "03_BLOQUES/B1_PAISAJES/B1.11_CORDOBESES/02_IA_GENERACION/NOCHE_CENITAL_2026_v1",
+       "reemplaza": "previo IA de luna del 10/10 (sigue en 02_IA_GENERACION/PREVIOS_TABLERO_LUNA_ATARDECER_B1.11_CORDOBESES)"
+      },
+      "noche_sin_sombras": {
+       "fecha": "2026-10-21",
+       "metodo": "Magnific Spaces (modelos y pasos en el LEEME de la carpeta): noche sin sombras proyectadas, luz igualada al bloque, nada afuera ni cortado por la silueta de la máscara",
+       "carpeta": "03_BLOQUES/B1_PAISAJES/B1.11_CORDOBESES/02_IA_GENERACION/MAGNIFIC_NOCHE_SIN_SOMBRAS",
+       "editor": "PARA EDITOR/B1_PAISAJES/ASSETS/B1.11",
+       "reemplaza": "noche publicada antes (MAPPING_FINAL_19-10/NOCHE, sigue en el historial del repo)"
+      },
       "propuestas": [],
       "textos": {
        "atardecer": "Sierras de Córdoba al atardecer según la referencia del equipo (16/10, Flux Krea con el relieve real de cada cerro): cerros cubiertos de monte serrano en verdes oliva, ocres y dorados, cumbres de granito y el valle verde al pie. Versión en baja.",
-       "luna": "Previo IA del 10/10 (ComfyUI: Flux Krea con el relieve real de cada cerro)."
+       "luna": "Noche final sin sombras proyectadas (Magnific, 21/10), la que va al mapping: refresh de 2025 (sierras de Córdoba con pajonal y senda); el centro es una sola panorámica, sin uniones."
       },
       "refs_al_generar": [],
       "desactualizado": false
