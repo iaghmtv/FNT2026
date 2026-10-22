@@ -171,7 +171,7 @@ a.cnote:hover,a.cnote:focus-visible{background:color-mix(in srgb,var(--t) 24%,va
       <li>El show es de noche: los paisajes viven en <b>luz de luna azul</b> y en <b>atardeceres naranjas</b>.</li>
       <li>El fuerte del mapping es el <b>color y la iluminación</b> que transforman la montaña, más elementos bien claros y definidos.</li>
       <li>Nada de elementos altos en las laderas (cactus, árboles, postes): desde el fondo de las tribunas se ven acostados.</li>
-      <li>Las cascadas las rehace Diego en Blender 3D; las banderas las resuelve German.</li>
+      <li>Las cascadas las rehace Diego en Blender 3D; las banderas se resuelven aparte.</li>
       <li><b>Bloque 0</b>: blanco y negro / sepia, con el fuego como único color.</li>
     </ul></div>
     <div class="card"><h4>El paso de luz · timelapses</h4><ul>
@@ -313,7 +313,7 @@ function panel25(c){if(!c||!c.y25) return '<div class="empty">Sin datos 2025.</d
   if(c.fix25&&c.fix25.length)h+='<span class="lbl">Correcciones del cliente 2025</span><div class="small">'+list(c.fix25)+'</div>';
   return h}
 
-function panelGerman(c){var g=(c&&c.img26)||[];
+function panelEquipo(c){var g=(c&&c.img26)||[];
   var diag=c&&c.crit26?'<p class="small">'+esc(c.crit26)+'</p>':'';
   if(!g.length) return diag?'<div class="sub26"><h4 class="h26">Diagnóstico de la pieza 2025</h4>'+diag+'</div>':'';
   var h='<div class="sub26"><h4 class="h26">Propuesta del equipo</h4>'+(diag?'<span class="lbl">Diagnóstico de la pieza 2025</span>'+diag:'');
@@ -368,7 +368,7 @@ function scene(s,repo,branch){var c=s.ctx||{};var p=s.previos;var nref=s.refs.le
   h+='<div class="cols">';
   h+='<section class="col c25"><div class="colh">Edición 2025 · lo que se proyectó</div>'+panel25(c)+'</section>';
   h+='<section class="col c26"><div class="colh">Propuestas 2026</div>';
-  h+=panelGerman(c);
+  h+=panelEquipo(c);
   if(p&&p.animacion)h+='<div class="sub26"><h4 class="h26">'+esc(p.animacion.titulo||'Animación 2026')+'</h4>'+panelAnim(p.animacion)+'</div>';
   h+=panelProps(p);
   if(s.generar&&(!p||nv))h+='<div class="sub26"><h4 class="h26">'+esc(p?luces(p):'Previos')+'</h4>'+panelPrevios(s,repo,branch)+'</div>';

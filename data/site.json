@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-22 13:52 UTC",
+ "generado": "2026-10-22 14:01 UTC",
  "repo": "iaghmtv/FNT2026",
  "branch": "main",
  "blocks": [
@@ -120,7 +120,7 @@
      "verse": "El Fogón de los Arrieros",
      "kind": "fuego",
      "timelapse": false,
-     "nota": "El personaje de Buenaventura (Qwen) lo está trabajando German.",
+     "nota": "El personaje de Buenaventura (Qwen) se está trabajando aparte.",
      "generar": true,
      "ctx": {
       "code": "B0.01",
@@ -290,7 +290,7 @@
        "der": "assets/2025/B1.01_der.jpg"
       },
       "status26": "trab",
-      "y26": "Loros misioneros en estilo render 3D, en un proyecto de After (carpeta B 01.01): llegan, se posan y se van, en un video de 30 s. Sus variantes Flux de la escena (Iguazú con coatí) no se muestran en el tablero; se ven en el comparativo 2025 vs German.",
+      "y26": "Loros misioneros en estilo render 3D, en un proyecto de After (carpeta B 01.01): llegan, se posan y se van, en un video de 30 s. Sus variantes Flux de la escena (Iguazú con coatí) no se muestran en el tablero; se ven en el comparativo 2025 vs 2026.",
       "crit26": "Los pájaros parecían agapornis (africanos).",
       "t26": [
        "Magnific (imagen loros)",
@@ -1103,7 +1103,7 @@
       "luna_v2": {
        "fecha": "2026-10-14 17:57",
        "fuente": "03_BLOQUES/B1_PAISAJES/B1.07_LOS_DE_SALTA/02_IA_GENERACION/PROPUESTAS PANTALLAS",
-       "nota": "Noche de las variantes Flux de German (centro A, izq C, der B). Anteriores en LUNA_2026_v2/_reemplazadas."
+       "nota": "Noche de las variantes Flux anteriores (centro A, izq C, der B). Anteriores en LUNA_2026_v2/_reemplazadas."
       },
       "noche_sin_sombras": {
        "fecha": "2026-10-21",
@@ -1665,7 +1665,7 @@
      "verse": "Aparece la Patria y se desenrolla la bandera en el cerro.",
      "kind": "bandera",
      "timelapse": false,
-     "nota": "La bandera la está resolviendo German (ver comparativo); no se generan previos acá.",
+     "nota": "La bandera se resuelve aparte; no se generan previos acá.",
      "generar": false,
      "ctx": {
       "code": "B2.02",
@@ -2997,7 +2997,7 @@
      "verse": "Los que el verbo de Mayo, el Paraguay llevaron, por más gloria, con Belgrano.",
      "kind": "bandera",
      "timelapse": false,
-     "nota": "Bandera: la resuelve German junto con B2.02.",
+     "nota": "Bandera: se resuelve junto con la de B2.02.",
      "generar": false,
      "ctx": {
       "code": "B4.02",
@@ -3014,7 +3014,7 @@
        "der": "assets/2025/B4.02_der.jpg"
       },
       "status26": "sin",
-      "y26": "La bandera de esta escena la resuelve German junto con la del Himno (ver B2.02).",
+      "y26": "La bandera de esta escena se resuelve junto con la del Himno (ver B2.02).",
       "crit26": "",
       "t26": [],
       "todo26": [],

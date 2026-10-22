@@ -22,7 +22,7 @@
   "timelapse": false,
   "prompt_montana": "Thousands of orange embers and sparks drifting over the dark rocky mountain, tracing the contour of its ridges, faint glow of a distant campfire, smoke.",
   "prompt_cen": "A large campfire at night in the Argentine Andean foothills near Jachal, an old wooden cart beside it, gauchos in ponchos gathering around the fire, sepia tones, cinematic.",
-  "nota": "El personaje de Buenaventura (Qwen) lo está trabajando German."
+  "nota": "El personaje de Buenaventura (Qwen) se está trabajando aparte."
  },
  {
   "code": "B1.01",
@@ -193,7 +193,7 @@
   "timelapse": false,
   "prompt_montana": "",
   "prompt_cen": "",
-  "nota": "La bandera la está resolviendo German (ver comparativo); no se generan previos acá."
+  "nota": "La bandera se resuelve aparte; no se generan previos acá."
  },
  {
   "code": "B3.01",
@@ -368,7 +368,7 @@
   "timelapse": false,
   "prompt_montana": "",
   "prompt_cen": "",
-  "nota": "Bandera: la resuelve German junto con B2.02."
+  "nota": "Bandera: se resuelve junto con la de B2.02."
  },
  {
   "code": "B5.01",
