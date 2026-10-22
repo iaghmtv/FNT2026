@@ -165,7 +165,7 @@ a.cnote:hover,a.cnote:focus-visible{background:color-mix(in srgb,var(--t) 24%,va
 <section class="hero">
   <div class="kicker">El Fogón de los Arrieros · Jáchal · GHM</div>
   <h1>Tablero de propuestas por escena</h1>
-  <p class="lead">Escena por escena: a la izquierda, lo que se proyectó en 2025; a la derecha, las propuestas 2026 (German, el equipo, las animaciones terminadas y la noche y el atardecer de cada pantalla, con la forma real de los cerros). Cualquiera del equipo puede subir referencias o pedir un previo, y anotar entregas y revisiones en el calendario del final.</p>
+  <p class="lead">Escena por escena: a la izquierda, lo que se proyectó en 2025; a la derecha, las propuestas 2026 (el equipo, las animaciones terminadas y la noche y el atardecer de cada pantalla, con la forma real de los cerros). Cualquiera del equipo puede subir referencias o pedir un previo, y anotar entregas y revisiones en el calendario del final.</p>
   <div class="grid3">
     <div class="card"><h4>Criterio visual 2026</h4><ul>
       <li>El show es de noche: los paisajes viven en <b>luz de luna azul</b> y en <b>atardeceres naranjas</b>.</li>
@@ -213,7 +213,7 @@ a.cnote:hover,a.cnote:focus-visible{background:color-mix(in srgb,var(--t) 24%,va
 </section>
 </main>
 
-<footer><div class="wrap">FNT 2026 · GHM · Comparativo completo 2025 vs German: <a href="comparativo.html">comparativo.html</a> · Datos actualizados <span id="gen"></span></div></footer>
+<footer><div class="wrap">FNT 2026 · GHM · Comparativo completo 2025 vs 2026: <a href="comparativo.html">comparativo.html</a> · Datos actualizados <span id="gen"></span></div></footer>
 <div id="lb" role="dialog" aria-label="Imagen ampliada"><img alt=""><div></div></div>
 
 <script>
@@ -313,18 +313,18 @@ function panel25(c){if(!c||!c.y25) return '<div class="empty">Sin datos 2025.</d
   if(c.fix25&&c.fix25.length)h+='<span class="lbl">Correcciones del cliente 2025</span><div class="small">'+list(c.fix25)+'</div>';
   return h}
 
-function panelGerman(c){var gg=(c&&c.img26)||[];
-  if(!c||(c.status26==='sin'&&!gg.length)) return '<div class="empty">'+esc((c&&c.y26)||'German todavía no trabajó esta escena.')+'</div>';
-  var h=c.crit26?'<span class="lbl">Diagnóstico de la pieza 2025</span><p class="small">'+esc(c.crit26)+'</p>':'';
-  if(c.oculto26&&!gg.length) return h+'<p class="small">Sus variantes Flux de esta escena no se muestran en el tablero desde el 14/10. Se pueden ver en el <a href="comparativo.html#'+esc(c.code)+'" target="_blank" rel="noopener">comparativo 2025 vs German</a>.</p>';
-  h+='<p class="small">'+esc(c.y26)+'</p>';
-  var g=c.img26||[];var cen=g.filter(function(x){return x.kind==='cen'})[0],iz=g.filter(function(x){return x.kind==='izq'})[0],de=g.filter(function(x){return x.kind==='der'})[0];
-  if(cen||iz||de)h+=stage(function(k){var o={cen:cen,izq:iz,der:de}[k];return o&&o.src},'German · ');
+function panelGerman(c){var g=(c&&c.img26)||[];
+  var diag=c&&c.crit26?'<p class="small">'+esc(c.crit26)+'</p>':'';
+  if(!g.length) return diag?'<div class="sub26"><h4 class="h26">Diagnóstico de la pieza 2025</h4>'+diag+'</div>':'';
+  var h='<div class="sub26"><h4 class="h26">Propuesta del equipo</h4>'+(diag?'<span class="lbl">Diagnóstico de la pieza 2025</span>'+diag:'');
+  if(c.y26)h+='<p class="small">'+esc(c.y26)+'</p>';
+  var cen=g.filter(function(x){return x.kind==='cen'})[0],iz=g.filter(function(x){return x.kind==='izq'})[0],de=g.filter(function(x){return x.kind==='der'})[0];
+  if(cen||iz||de)h+=stage(function(k){var o={cen:cen,izq:iz,der:de}[k];return o&&o.src},'');
   g.filter(function(x){return x.kind==='strip'||x.kind==='single'}).forEach(function(x){h+='<figure style="margin-top:8px">'+img(x.src,x.cap)+'<figcaption>'+esc(x.cap)+'</figcaption></figure>'});
   g.filter(function(x){return x.kind==='video'}).forEach(function(x){h+='<figure style="margin-top:8px"><video src="'+esc(x.src)+'"'+(x.poster?' poster="'+esc(x.poster)+'"':'')+' controls muted loop playsinline preload="metadata"></video><figcaption>'+esc(x.cap)+'</figcaption></figure>'});
   if(c.t26&&c.t26.length)h+='<span class="lbl">Herramientas</span>'+chips(c.t26,'m');
   if(c.todo26&&c.todo26.length)h+='<span class="lbl">Pendientes</span><div class="small">'+list(c.todo26)+'</div>';
-  return h}
+  return h+'</div>'}
 
 function mmss(x){x=Math.round(x||0);return Math.floor(x/60)+':'+String(x%60).padStart(2,'0')}
 function secs(t){var m=String(t||'').match(/(\d+)\s*s/);var mm=String(t||'').match(/(\d+)\s*min/);return (mm?+mm[1]*60:0)+(m?+m[1]:0)}
@@ -359,7 +359,7 @@ function panelComs(s){var cs=s.comentarios||[];
     +'<div class="upl"><button class="btn" type="button">Enviar comentario</button><span class="hint">Se abre GitHub con el comentario cargado: confirmalo ahí (podés sumar imágenes) y aparece acá en 1–2 minutos.</span></div></div></section>'}
 function scene(s,repo,branch){var c=s.ctx||{};var p=s.previos;var nref=s.refs.length;
   var g26=(c.img26||[]).length>0;var fv=(p&&p.files)||{};var nv=vis(p).length;var npr=(p&&p.propuestas||[]).length;
-  var badges='<span class="badge '+(nref?'b-ok':'b-no')+'">'+nref+' ref.</span>'+((s.comentarios||[]).length?'<span class="badge b-mid">'+s.comentarios.length+' comentario'+(s.comentarios.length>1?'s':'')+'</span>':'')+(g26?'<span class="badge b-mid">Propuesta German</span>':'')+(p&&p.animacion?'<span class="badge b-ok">Animación 2026</span>':'')+(npr?'<span class="badge b-ok">Propuesta pantallas</span>':'')+(nv?'<span class="badge b-moon">'+esc(luces(p))+'</span>':'');
+  var badges='<span class="badge '+(nref?'b-ok':'b-no')+'">'+nref+' ref.</span>'+((s.comentarios||[]).length?'<span class="badge b-mid">'+s.comentarios.length+' comentario'+(s.comentarios.length>1?'s':'')+'</span>':'')+(g26?'<span class="badge b-mid">Propuesta equipo</span>':'')+(p&&p.animacion?'<span class="badge b-ok">Animación 2026</span>':'')+(npr?'<span class="badge b-ok">Propuesta pantallas</span>':'')+(nv?'<span class="badge b-moon">'+esc(luces(p))+'</span>':'');
   var h='<article class="scene" id="'+esc(s.code)+'" data-refs="'+nref+'" data-prev="'+(nv||npr||(p&&p.animacion)?1:0)+'" data-text="'+esc((s.code+' '+s.title+' '+(s.verse||'')).toLowerCase())+'">';
   h+='<div class="shead"><span class="code">'+esc(s.code)+'</span><h3>'+esc(s.title)+'</h3><span class="meta">⏱ '+esc(s.time)+' · '+esc(KIND[s.kind]||s.kind)+(c.dur?' · '+esc(c.dur):'')+'</span><div class="badges">'+badges+'</div></div>';
   if(s.verse)h+='<blockquote>'+esc(s.verse)+'</blockquote>';
@@ -368,7 +368,7 @@ function scene(s,repo,branch){var c=s.ctx||{};var p=s.previos;var nref=s.refs.le
   h+='<div class="cols">';
   h+='<section class="col c25"><div class="colh">Edición 2025 · lo que se proyectó</div>'+panel25(c)+'</section>';
   h+='<section class="col c26"><div class="colh">Propuestas 2026</div>';
-  h+='<div class="sub26"><h4 class="h26">Propuesta de German</h4>'+panelGerman(c)+'</div>';
+  h+=panelGerman(c);
   if(p&&p.animacion)h+='<div class="sub26"><h4 class="h26">'+esc(p.animacion.titulo||'Animación 2026')+'</h4>'+panelAnim(p.animacion)+'</div>';
   h+=panelProps(p);
   if(s.generar&&(!p||nv))h+='<div class="sub26"><h4 class="h26">'+esc(p?luces(p):'Previos')+'</h4>'+panelPrevios(s,repo,branch)+'</div>';

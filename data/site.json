@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-22 13:44 UTC",
+ "generado": "2026-10-22 13:52 UTC",
  "repo": "iaghmtv/FNT2026",
  "branch": "main",
  "blocks": [
@@ -3539,7 +3539,7 @@
     "tipo": "entrega",
     "escena": "General",
     "hecho": true,
-    "texto": "Tablero: videos de German (loros B1.01 y bandera B2.02, quedan 4) y se ocultaron las imágenes de 'no mostrar en el tablero'.",
+    "texto": "Tablero: videos de los loros (B1.01) y de la bandera (B2.02), quedan 4; se ocultaron las imágenes de 'no mostrar en el tablero'.",
     "fuente": "tablero"
    },
    {
@@ -3563,7 +3563,7 @@
     "tipo": "revision",
     "escena": "General",
     "hecho": true,
-    "texto": "Tablero depurado: fuera las propuestas de German del Bloque 1 (menos los loros), los timelapses del B1, varias lunas, 2 videos de bandera y 2 propuestas de Buenaventura.",
+    "texto": "Tablero depurado: fuera las variantes Flux anteriores del Bloque 1 (menos los loros), los timelapses del B1, varias lunas, 2 videos de bandera y 2 propuestas de Buenaventura.",
     "fuente": "tablero"
    },
    {
@@ -3611,7 +3611,7 @@
     "tipo": "revision",
     "escena": "General",
     "hecho": true,
-    "texto": "Tablero revisado: los textos describen lo que se ve (de dónde sale cada noche y atardecer, propuestas aparte del panel de German, badges y filtros).",
+    "texto": "Tablero revisado: los textos describen lo que se ve (de dónde sale cada noche y atardecer, propuestas aparte del panel del equipo, badges y filtros).",
     "fuente": "tablero"
    },
    {
