@@ -1,5 +1,5 @@
 {
- "nota": "Imagenes que NO se muestran en el tablero (pedido del 14/10/2026; capturas en D:/FNT2026/07_PRESENTACIONES/no mostrar en el tablero). Los archivos siguen en el repo. Para volver a mostrar algo, sacarlo de esta lista y publicar. 16/10: en el Bloque 3 se ocultan todos los previos anteriores (luna, atardecer y timelapse); queda solo la propuesta 2026 del poncho de origen. 19/10: en el Bloque 6 se ocultan los previos del 10/10 (luna, atardecer y timelapse); quedan las propuestas 2026 (B6.02 amanecer con nieve, elegido; centros y B6.01 para elegir). 22/10: en el Bloque 1 se oculta el atardecer (pedido del usuario); queda solo la noche final sin sombras, que reemplazó a la noche publicada.",
+ "nota": "Imagenes que NO se muestran en el tablero (pedido del 14/10/2026; capturas en D:/FNT2026/07_PRESENTACIONES/no mostrar en el tablero). Los archivos siguen en el repo. Para volver a mostrar algo, sacarlo de esta lista y publicar. 16/10: en el Bloque 3 se ocultan todos los previos anteriores (luna, atardecer y timelapse); queda solo la propuesta 2026 del poncho de origen. 19/10: en el Bloque 6 se ocultan los previos del 10/10 (luna, atardecer y timelapse); quedan las propuestas 2026 (B6.02 amanecer con nieve, elegido; centros y B6.01 para elegir). 22/10: en el Bloque 1 se oculta el atardecer (pedido del usuario); queda solo la noche final sin sombras, que reemplazó a la noche publicada. 22/10: en B1.01 se ocultan también los loros de German (imagen y video de 30 s), pedido del usuario.",
  "previos": {
   "B1.01": [
    "timelapse_izq",
@@ -282,7 +282,9 @@
    "cen",
    "izq",
    "der",
-   "strip"
+   "strip",
+   "single",
+   "video"
   ],
   "B1.02": [
    "cen",

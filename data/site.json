@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-22 13:40 UTC",
+ "generado": "2026-10-22 13:44 UTC",
  "repo": "iaghmtv/FNT2026",
  "branch": "main",
  "blocks": [
@@ -298,19 +298,7 @@
        "After Effects: FNT26-B1.1-Norte_Selvatico.aep"
       ],
       "todo26": [],
-      "img26": [
-       {
-        "src": "assets/german/B1.01_extra0.jpg",
-        "cap": "Loros (B 01.01, After)",
-        "kind": "single"
-       },
-       {
-        "src": "assets/german/B1.01_loros_video.mp4",
-        "poster": "assets/german/B1.01_loros_video.jpg",
-        "cap": "Loros misioneros · video 30 s (B 01.01, After): llegan, se posan y se van",
-        "kind": "video"
-       }
-      ],
+      "img26": [],
       "oculto26": true
      },
      "audio": {
