@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Escenario FNT 2026 en AR</title>
+<meta name="description" content="Visor de realidad aumentada del escenario del Fogón de los Arrieros 2026: guitarra de referencia, estructura Layher y pantallas LED propuestas.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600;700&display=swap">
+<script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+<style>
+:root{--bg:#f3efe6;--fg:#1c1813;--muted:#6b6256;--panel:#e6e0d3;--layher:#8c1a16;--led:#0e7c8a;--guit:#e0b020;--btn:#1c1813;--btn-fg:#f3efe6;--font:"Barlow Semi Condensed",system-ui,-apple-system,"Segoe UI",sans-serif}
+@media (prefers-color-scheme:dark){:root{--bg:#121014;--fg:#efe9df;--muted:#a79d8f;--panel:#1d1a20;--btn:#efe9df;--btn-fg:#121014;color-scheme:dark}}
+html,body{height:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.4 var(--font);display:flex;flex-direction:column;min-height:100%;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+.wrap{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:12px}
+header .wrap{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+h1{margin:0;font-size:clamp(20px,4vw,28px);font-weight:700;text-wrap:balance}
+.sub{color:var(--muted);font-size:14px}
+model-viewer{flex:1 1 auto;width:100%;min-height:52vh;background:var(--panel);--poster-color:var(--panel)}
+.ctl{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+button{padding:11px 16px;border:0;border-radius:6px;background:var(--btn);color:var(--btn-fg);font:600 15px var(--font);cursor:pointer}
+button[aria-pressed="true"],button:focus-visible{outline:3px solid var(--led);outline-offset:2px}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--muted)}
+.sw{display:inline-block;width:10px;height:10px;border-radius:2px;vertical-align:-1px;margin-right:6px}
+#info{font-size:14px;color:var(--muted);flex-basis:100%}
+.ar-btn{position:absolute;bottom:16px;right:16px;padding:12px 18px;border-radius:999px;background:var(--layher);color:#fff;font:700 15px var(--font);border:0}
+.steps{font-size:14px;margin:0;padding-left:20px;max-width:62ch}
+.steps li{margin-bottom:6px}
+@media (prefers-reduced-motion:reduce){model-viewer{--auto-rotate:none}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <h1>Escenario FNT 2026 en AR</h1>
+  <span class="sub">Layout op03 · guitarra de referencia, Layher y 7 pantallas · Jáchal</span>
+</div></header>
+
+<model-viewer id="mv"
+  src="FNT2026_AR_layout_op03_1a50.glb"
+  ios-src="FNT2026_AR_layout_op03_1a50.usdz"
+  ar ar-modes="scene-viewer quick-look webxr" ar-scale="fixed" ar-placement="floor"
+  camera-controls auto-rotate rotation-per-second="8deg" shadow-intensity="1" exposure="1.05"
+  camera-orbit="35deg 70deg auto" alt="Escenario del Fogón de los Arrieros con la estructura Layher y las pantallas LED propuestas">
+  <button slot="ar-button" class="ar-btn">Ver en mi espacio</button>
+</model-viewer>
+
+<div class="wrap ctl">
+  <button id="b50" aria-pressed="true" onclick="setM('1a50')">Maqueta 1:50</button>
+  <button id="b1" aria-pressed="false" onclick="setM('1a1')">Tamaño real, en el anfiteatro</button>
+  <span class="legend">
+    <span><i class="sw" style="background:var(--guit)"></i>guitarra (piso del escenario)</span>
+    <span><i class="sw" style="background:var(--layher)"></i>Layher</span>
+    <span><i class="sw" style="background:var(--led)"></i>pantallas LED</span>
+  </span>
+  <span id="info"></span>
+</div>
+<div class="wrap">
+  <ol class="steps">
+    <li>Elegí la escala y tocá <strong>Ver en mi espacio</strong>. iPhone abre AR Quick Look; Android abre Scene Viewer (necesita Google Play Services para AR).</li>
+    <li>Apuntá al piso, esperá que detecte el plano y tocá para apoyar el modelo. Queda con la base del Layher sobre el suelo.</li>
+    <li><strong>En el anfiteatro, a tamaño real:</strong> parate cerca del escenario y arrastrá o girá el modelo hasta que el contorno amarillo coincida con el borde real de la guitarra. Cuando coincide, la estructura y las pantallas están donde van a ir.</li>
+  </ol>
+</div>
+
+<script>
+function setM(s){
+  var mv=document.getElementById('mv');
+  mv.src='FNT2026_AR_layout_op03_'+s+'.glb';
+  mv.iosSrc='FNT2026_AR_layout_op03_'+s+'.usdz'+(s==='1a1'?'#allowsContentScaling=0':'');
+  document.getElementById('b50').setAttribute('aria-pressed', s==='1a50');
+  document.getElementById('b1').setAttribute('aria-pressed', s==='1a1');
+  document.getElementById('info').textContent = s==='1a1'
+    ? 'Tamaño real: 50 m de ancho por 135 m de largo. La escala queda fija para poder calzar la guitarra con el escenario real.'
+    : 'Maqueta 1:50: 1,0 m de ancho por 2,7 m de largo. Entra en una mesa grande o en el piso de una sala.';
+}
+setM('1a50');
+</script>
+</body>
+</html>
