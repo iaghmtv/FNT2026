@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600;700&display=swap">
 <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
 <style>
-:root{--bg:#f3efe6;--fg:#1c1813;--muted:#6b6256;--panel:#e6e0d3;--layher:#8c1a16;--led:#0e7c8a;--guit:#e0b020;--btn:#1c1813;--btn-fg:#f3efe6;--font:"Barlow Semi Condensed",system-ui,-apple-system,"Segoe UI",sans-serif}
+:root{--bg:#f3efe6;--fg:#1c1813;--muted:#6b6256;--panel:#e6e0d3;--layher:#8c1a16;--led:#0e7c8a;--guit:#e0b020;--truss:#9aa0a8;--btn:#1c1813;--btn-fg:#f3efe6;--font:"Barlow Semi Condensed",system-ui,-apple-system,"Segoe UI",sans-serif}
 @media (prefers-color-scheme:dark){:root{--bg:#121014;--fg:#efe9df;--muted:#a79d8f;--panel:#1d1a20;--btn:#efe9df;--btn-fg:#121014;color-scheme:dark}}
 html,body{height:100%}
 body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.4 var(--font);display:flex;flex-direction:column;min-height:100%;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -32,12 +32,12 @@ button[aria-pressed="true"],button:focus-visible{outline:3px solid var(--led);ou
 <body>
 <header><div class="wrap">
   <h1>Escenario FNT 2026 en AR</h1>
-  <span class="sub">Layout op03 · guitarra de referencia, Layher y 7 pantallas · Jáchal</span>
+  <span class="sub">Layout op04 (01/11) · guitarra de referencia, Layher, fondo, dos alas de 3 pantallas con torres de truss y CCTV · Jáchal</span>
 </div></header>
 
 <model-viewer id="mv"
-  src="FNT2026_AR_layout_op03_1a50.glb"
-  ios-src="FNT2026_AR_layout_op03_1a50.usdz"
+  src="FNT2026_AR_layout_op04_1a50.glb"
+  ios-src="FNT2026_AR_layout_op04_1a50.usdz"
   ar ar-modes="scene-viewer quick-look webxr" ar-scale="fixed" ar-placement="floor"
   camera-controls auto-rotate rotation-per-second="8deg" shadow-intensity="1" exposure="1.05"
   camera-orbit="35deg 70deg auto" alt="Escenario del Fogón de los Arrieros con la estructura Layher y las pantallas LED propuestas">
@@ -51,6 +51,7 @@ button[aria-pressed="true"],button:focus-visible{outline:3px solid var(--led);ou
     <span><i class="sw" style="background:var(--guit)"></i>guitarra (piso del escenario)</span>
     <span><i class="sw" style="background:var(--layher)"></i>Layher</span>
     <span><i class="sw" style="background:var(--led)"></i>pantallas LED</span>
+    <span><i class="sw" style="background:var(--truss)"></i>torres y truss</span>
   </span>
   <span id="info"></span>
 </div>
@@ -65,8 +66,8 @@ button[aria-pressed="true"],button:focus-visible{outline:3px solid var(--led);ou
 <script>
 function setM(s){
   var mv=document.getElementById('mv');
-  mv.src='FNT2026_AR_layout_op03_'+s+'.glb';
-  mv.iosSrc='FNT2026_AR_layout_op03_'+s+'.usdz'+(s==='1a1'?'#allowsContentScaling=0':'');
+  mv.src='FNT2026_AR_layout_op04_'+s+'.glb';
+  mv.iosSrc='FNT2026_AR_layout_op04_'+s+'.usdz'+(s==='1a1'?'#allowsContentScaling=0':'');
   document.getElementById('b50').setAttribute('aria-pressed', s==='1a50');
   document.getElementById('b1').setAttribute('aria-pressed', s==='1a1');
   document.getElementById('info').textContent = s==='1a1'
