@@ -26,6 +26,8 @@ button[aria-pressed="true"],button:focus-visible{outline:3px solid var(--led);ou
 .ar-btn{position:absolute;bottom:16px;right:16px;padding:12px 18px;border-radius:999px;background:var(--layher);color:#fff;font:700 15px var(--font);border:0}
 .steps{font-size:14px;margin:0;padding-left:20px;max-width:62ch}
 .steps li{margin-bottom:6px}
+.aviso{margin:0 0 10px;padding:10px 12px;border-radius:6px;background:var(--panel);border-left:4px solid var(--layher);font-size:14px;max-width:62ch}
+[hidden]{display:none!important}
 @media (prefers-reduced-motion:reduce){model-viewer{--auto-rotate:none}}
 </style>
 </head>
@@ -45,6 +47,7 @@ button[aria-pressed="true"],button:focus-visible{outline:3px solid var(--led);ou
 </model-viewer>
 
 <div class="wrap ctl">
+  <button id="b200" aria-pressed="false" onclick="setM('1a200')">Prueba en la mesa 1:200</button>
   <button id="b50" aria-pressed="true" onclick="setM('1a50')">Maqueta 1:50</button>
   <button id="b1" aria-pressed="false" onclick="setM('1a1')">Tamaño real, en el anfiteatro</button>
   <span class="legend">
@@ -56,7 +59,9 @@ button[aria-pressed="true"],button:focus-visible{outline:3px solid var(--led);ou
   <span id="info"></span>
 </div>
 <div class="wrap">
+  <p id="inapp" class="aviso" hidden><strong>Abrí este link en Safari (iPhone) o Chrome (Android).</strong> Dentro de WhatsApp, Instagram o Facebook la realidad aumentada no abre: tocá el menú ⋯ y elegí “Abrir en el navegador”.</p>
   <ol class="steps">
+    <li>Si no ves nada, probá primero <strong>Prueba en la mesa 1:200</strong> (25 × 70 cm) apuntando a una mesa. Si esa aparece, el celular funciona.</li>
     <li>Elegí la escala y tocá <strong>Ver en mi espacio</strong>. iPhone abre AR Quick Look; Android abre Scene Viewer (necesita Google Play Services para AR).</li>
     <li>Apuntá al piso, esperá que detecte el plano y tocá para apoyar el modelo. Queda con la base del Layher sobre el suelo.</li>
     <li><strong>En el anfiteatro, a tamaño real:</strong> parate cerca del escenario y arrastrá o girá el modelo hasta que el contorno amarillo coincida con el borde real de la guitarra. Cuando coincide, la estructura y las pantallas están donde van a ir.</li>
@@ -67,13 +72,16 @@ button[aria-pressed="true"],button:focus-visible{outline:3px solid var(--led);ou
 function setM(s){
   var mv=document.getElementById('mv');
   mv.src='FNT2026_AR_layout_op04b_'+s+'.glb';
-  mv.iosSrc='FNT2026_AR_layout_op04b_'+s+'.usdz'+(s==='1a1'?'#allowsContentScaling=0':'');
+  mv.iosSrc='FNT2026_AR_layout_op04b_'+s+'.usdz';   // model-viewer ya agrega allowsContentScaling=0 por ar-scale="fixed"
+  document.getElementById('b200').setAttribute('aria-pressed', s==='1a200');
   document.getElementById('b50').setAttribute('aria-pressed', s==='1a50');
   document.getElementById('b1').setAttribute('aria-pressed', s==='1a1');
   document.getElementById('info').textContent = s==='1a1'
     ? 'Tamaño real: 50 m de ancho por 135 m de largo. La escala queda fija para poder calzar la guitarra con el escenario real.'
+    : s==='1a200' ? 'Prueba 1:200: 25 cm de ancho por 70 cm de largo. Sirve para ver que la realidad aumentada abre en este celular.'
     : 'Maqueta 1:50: 1,0 m de ancho por 2,7 m de largo. Entra en una mesa grande o en el piso de una sala.';
 }
+if (/FBAN|FBAV|Instagram|WhatsApp|Line\/|; wv\)/i.test(navigator.userAgent)) document.getElementById('inapp').hidden = false;
 setM('1a50');
 </script>
 </body>
